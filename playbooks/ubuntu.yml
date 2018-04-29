@@ -51,6 +51,9 @@
     - { role: developer/intellij              ,
           intellij_year       : "2017.3"      ,
           intellij_subversion : "2"           }
+    - { role: developer/pycharm               ,
+          pycharm_year        : "2018.1"      ,
+          pycharm_subversion  : "2"           }
     - { role: developer/android               ,
           android_version     : "3.0.1.0"     ,
           android_build       : "171.4443003" }

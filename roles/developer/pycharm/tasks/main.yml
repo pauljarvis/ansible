@@ -1,0 +1,65 @@
+---
+
+#################################################################
+
+- name: "mkdirs"
+  file:
+    name    : "{{ item }}"
+    state   : "directory"
+    recurse : "yes"
+    owner   : "{{ primary_user.id }}"
+    group   : "{{ primary_user.id }}"
+    mode    : "0755"
+  with_items:
+    - "{{ pycharm.home }}/{{ pycharm_version }}"
+  tags:
+    - developer
+    - pycharm
+
+#################################################################
+
+- name: "apt | install"
+  apt:
+    name    : "{{ item }}"
+    state   : "latest"
+  with_items: "{{ libraries_apt }}"
+  tags:
+    - developer
+    - pycharm
+
+#################################################################
+
+- name: "unpack | application"
+  unarchive:
+    src         : "{{ pycharm.url }}{{ pycharm.zip }}"
+    dest        : "{{ pycharm.home }}/{{ pycharm_version }}"
+    remote_src  : "yes"
+    extra_opts  : [--strip-components=1]
+    creates     : "{{ pycharm.home }}/{{ pycharm_version }}/bin/"
+  become : "{{ primary_user.id }}"
+  tags:
+    - developer
+    - pycharm
+
+#################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src         : "jetbrains-pycharm-ce.desktop.j2"
+    dest        : "/usr/share/applications/jetbrains-pycharm-ce.desktop"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    mode        : "0644"
+  tags:
+    - developer
+    - pycharm
+
+- name    : "cmd | add to launcher"
+  script  : "{{ unity_launcher.script }}"
+  become  : "{{ primary_user.id }}"
+  tags:
+    - developer
+    - pycharm
+
+#################################################################
+
