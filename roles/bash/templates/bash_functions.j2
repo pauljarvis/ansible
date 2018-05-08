@@ -2,7 +2,7 @@ func_json_pretty() {
   cat ${1} | python -m json.tool
 }
 
-fucntion return_limits(){
+function return_limits(){
   for process in $@; do
     process_pids=`ps -C $process -o pid --no-headers | cut -d " " -f 2`
     if [ -z $@ ]; then

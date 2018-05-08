@@ -1,9 +1,9 @@
 ---
 
-- hosts         : retropi
+- hosts         : retropie
   become        : yes
   become_method : sudo
-  connection    : local
+#  connection    : local
   gather_facts  : yes
 
   vars:
@@ -33,12 +33,13 @@
         msg: "VM Status   : {{ ansible_virtualization_role }} [{{ ansible_virtualization_type }}]"
 
   roles:
-    - { role: prereq                                              }
-    - { role: git                                                 }
-    - { role: bash                                                }
-    - { role: vim                                                 }
-    - { role: powerline-shell                                     }
-    - { role: java                                                }
-    - { role: general                                             }
-    - { role: keychain                                            }
+    - { role: prereq                          }
+    - { role: git                             }
+    - { role: bash                            }
+    - { role: vim                             }
+    - { role: powerline-shell                 }
+#    - { role: java                            }
+    - { role: general                         }
+    - { role: keychain                        }
+    - { role: developer/general               }
 

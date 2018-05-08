@@ -2,11 +2,18 @@
 
 #################################################################
 
-- name: "apt | install"
+- name: "apt | install | gui"
+  when: gui is True
+  with_items: "{{ libraries_apt.gui }}"
   apt:
-    name: "{{ item }}"
-    state: "latest"
-  with_items: "{{ libraries_apt }}"
+    name  : "{{ item }}"
+    state : "latest"
+
+- name: "apt | install | all"
+  with_items: "{{ libraries_apt.all }}"
+  apt:
+    name  : "{{ item }}"
+    state : "latest"
 
 #################################################################
 
