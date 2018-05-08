@@ -57,6 +57,8 @@
     - { role: developer/android               ,
           android_version     : "3.0.1.0"     ,
           android_build       : "171.4443003" }
+    - { role: developer/dbeaver               ,
+          dbeaver_version     : "5.0.4"       }
     - { role: developer/gradle                }
     - { role: developer/terraform             }
     - { role: developer/docker                }

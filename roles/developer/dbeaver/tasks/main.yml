@@ -1,0 +1,44 @@
+---
+
+#################################################################
+
+- name: "apt | install"
+  apt:
+    name    : "{{ item }}"
+    state   : "latest"
+  with_items: "{{ libraries_apt }}"
+  tags:
+    - developer
+    - dbeaver
+
+#################################################################
+
+- name: "apt | download and install dev"
+  apt:
+    devb        : "{{ dbeaver.url }}"
+  tags:
+    - developer
+    - dbeaver
+
+#################################################################
+
+#- name: "copy | desktop icon"
+#  template:
+#    src         : "jetbrains-dbeaver-ce.desktop.j2"
+#    dest        : "/usr/share/applications/jetbrains-dbeaver-ce.desktop"
+#    owner       : "{{ primary_user.id }}"
+#    group       : "{{ primary_user.id }}"
+#    mode        : "0644"
+#  tags:
+#    - developer
+#    - dbeaver
+#
+#- name    : "cmd | add to launcher"
+#  script  : "{{ unity_launcher.script }}"
+#  become  : "{{ primary_user.id }}"
+#  tags:
+#    - developer
+#    - dbeaver
+
+#################################################################
+
