@@ -41,5 +41,5 @@
 #    - { role: java                            }
     - { role: general                         }
     - { role: keychain                        }
-    - { role: developer/general               }
+#    - { role: developer/general               }
 
