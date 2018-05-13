@@ -1,14 +1,14 @@
 ---
 
 libraries_apt:
-  all:
-    - curl
-    - wget
-    - tree
-    - git
-    - jq
-    - xclip
-  gui:
-    - vlc
-    - baobab            # Disk Usage
+  - curl
+  - wget
+  - tree
+  - git
+  - jq
+  - xclip
+
+libraries_apt_gui:
+  - vlc
+  - baobab            # Disk Usage
 
