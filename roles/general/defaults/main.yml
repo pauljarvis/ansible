@@ -11,4 +11,5 @@ libraries_apt:
 libraries_apt_gui:
   - vlc
   - baobab            # Disk Usage
+  - gedit
 

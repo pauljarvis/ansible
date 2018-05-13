@@ -1,0 +1,68 @@
+---
+
+#################################################################
+
+- name: "apt | install"
+  when:
+    - item is iterable
+  with_items:
+    - "{{ libraries_apt }}"
+  apt:
+    name    : "{{ item }}"
+    state   : "latest"
+  tags:
+    - retropie
+
+#################################################################
+
+- name: "mkdirs"
+  when:
+    - item is iterable
+  with_items:
+    - "{{ retropie_dirs }}"
+  file:
+    name    : "{{ item         }}"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+    mode    : "0755"
+    state   : "directory"
+  tags:
+    - retropie
+
+#################################################################
+
+- name: "copy | files"
+  when:
+    - item is iterable
+  with_items:
+    - "{{ retropie_files }}"
+  file:
+    src     : "{{ item.src  }}"
+    dest    : "{{ item.dest }}/{{ item.src }}"
+    owner   : "{{ item.user }}"
+    group   : "{{ item.user }}"
+    mode    : "0664"
+  tags:
+    - retropie
+
+#################################################################
+
+- name: "copy | templates"
+  when:
+    - item is iterable
+  with_items:
+    - "{{ retropie_templates }}"
+  become: yes
+  become_user: root
+  template:
+    src     : "{{ item.src  }}.j2"
+    dest    : "{{ item.dest }}/{{ item.src }}"
+    owner   : "{{ item.user }}"
+    group   : "{{ item.user }}"
+    mode    : "0664"
+  tags:
+    - retropie
+    - retropie1
+
+#################################################################
+

@@ -40,6 +40,6 @@
     - { role: powerline-shell                 }
 #    - { role: java                            }
     - { role: general                         }
-    - { role: keychain                        }
+    - { role: retropie                        }
 #    - { role: developer/general               }
 
