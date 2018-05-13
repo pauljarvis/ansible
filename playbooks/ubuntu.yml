@@ -35,6 +35,7 @@
   roles:
     - { role: prereq                          }
     - { role: git                             }
+    - { role: ssh                             }
     - { role: bash                            }
     - { role: vim                             }
     - { role: powerline-shell                 }

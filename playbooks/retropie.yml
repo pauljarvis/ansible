@@ -3,7 +3,6 @@
 - hosts         : retropie
   become        : yes
   become_method : sudo
-#  connection    : local
   gather_facts  : yes
 
   vars:
@@ -35,6 +34,7 @@
   roles:
     - { role: prereq                          }
     - { role: git                             }
+    - { role: ssh                             }
     - { role: bash                            }
     - { role: vim                             }
     - { role: powerline-shell                 }
