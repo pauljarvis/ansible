@@ -26,25 +26,28 @@ get_playbook () {
 #######################################################################
 # Get Input
 
-while getopts ":p:t:z:v:dsh" arg; do
+while getopts ":p:t:z:v:dsch" arg; do
   case $arg in
     p)
       playbook=$(get_playbook "${OPTARG}")
       ;;
     t)
-      tags="--tags \"${OPTARG}\""
+      tags=" --tags \"${OPTARG}\""
       ;;
     z)
-      skip="--skip-tags \"${OPTARG}\""
+      skip=" --skip-tags \"${OPTARG}\""
       ;;
     v)
-      verbosity="-${OPTARG}"
+      verbosity=" -${OPTARG}"
       ;;
     d)
-      diff="--diff"
+      diff=" --diff"
       ;;
     s)
-      sudo="--ask-become-pass"
+      sudo=" --ask-become-pass"
+      ;;
+    c)
+      check=" --check"
       ;;
     h)
       usage
@@ -82,7 +85,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} ${tags} ${skip} ${verbosity} ${diff} ${sudo}"
+exe="ansible-playbook ${playbook}${tags}${skip}${verbosity}${diff}${check}${sudo}"
 echo "${exe}"
 eval "${exe}"
 
