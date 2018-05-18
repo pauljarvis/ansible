@@ -108,9 +108,15 @@ if [ -n "$(which aws)" ]; then
 fi
 
 ## Path
+{% if java is defined %}
   export JAVA_HOME="{{ java.home }}/java"
+{% endif %}
+{% if gradle is defined %}
   export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
+{% endif %}
+{% if terraform is defined %}
   export TERRAFORM_HOME="{{ terraform.home }}"
+{% endif %}
 
 if [ -n "${TERRAFORM_HOME}" ]; then
   export PATH="${TERRAFORM_HOME}/bin:${PATH}"

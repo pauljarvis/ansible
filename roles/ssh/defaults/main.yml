@@ -26,6 +26,6 @@ ssh_config:
       psuedo_names: [ "bastion-onprem" ]
     - proxy       : "stest@ssh-bastion.shared.devops.indev01.aws.travisperkins.cloud"
       psuedo_names: [ "*.indev01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.indev01.aws.travisperkins.cloud" ]
-    - proxy       : "stest@sh-bastion.shared.devops.intest01.aws.travisperkins.cloud"
+    - proxy       : "stest@ssh-bastion.shared.devops.intest01.aws.travisperkins.cloud"
       psuedo_names: [ "*.intest01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.intest01.aws.travisperkins.cloud" ]
 
