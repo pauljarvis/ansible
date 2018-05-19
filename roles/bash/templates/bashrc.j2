@@ -100,6 +100,10 @@ fi
 #####################################################################
 # Exports
 
+## VIM always default editor
+export VISUAL=vim
+export EDITOR="${VISUAL}"
+
 ## AWS
 if [ -n "$(which aws)" ]; then
   export AWS_ACCT_ID="847108765099"
@@ -109,13 +113,13 @@ fi
 
 ## Path
 {% if java is defined %}
-  export JAVA_HOME="{{ java.home }}/java"
+export JAVA_HOME="{{ java.home }}/java"
 {% endif %}
 {% if gradle is defined %}
-  export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
+export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
 {% endif %}
 {% if terraform is defined %}
-  export TERRAFORM_HOME="{{ terraform.home }}"
+export TERRAFORM_HOME="{{ terraform.home }}"
 {% endif %}
 
 if [ -n "${TERRAFORM_HOME}" ]; then
