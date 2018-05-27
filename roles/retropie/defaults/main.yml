@@ -2,10 +2,17 @@
 
 libraries_apt:
 
+retropie_install_dir: "/home/pi/RetroPie"
+
 retropie_dirs:
-#  - "/sys/module/bluetooth/parameters"
 
 retropie_files:
+  - src  : "BIOS/SCPH7502.BIN"
+    dest : "{{ retropie_install_dir }}"
+    user : "pi"
+  - src  : "splashscreens/retropie.mov"
+    dest : "{{ retropie_install_dir }}"
+    user : "pi"
 
 retropie_templates:
 

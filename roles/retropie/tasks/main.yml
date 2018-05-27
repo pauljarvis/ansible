@@ -36,7 +36,7 @@
     - item is iterable
   with_items:
     - "{{ retropie_files }}"
-  file:
+  copy:
     src     : "{{ item.src  }}"
     dest    : "{{ item.dest }}/{{ item.src }}"
     owner   : "{{ item.user }}"
@@ -52,8 +52,6 @@
     - item is iterable
   with_items:
     - "{{ retropie_templates }}"
-  become: yes
-  become_user: root
   template:
     src     : "{{ item.src  }}.j2"
     dest    : "{{ item.dest }}/{{ item.src }}"
@@ -62,7 +60,6 @@
     mode    : "0664"
   tags:
     - retropie
-    - retropie1
 
 #################################################################
 
