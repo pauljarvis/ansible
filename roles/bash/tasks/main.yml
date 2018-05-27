@@ -35,5 +35,17 @@
   tags:
     - bash
 
+- name: "copy | config | .bash_welcome"
+  when      : bash_welcome != ""
+  with_items: "{{ all_users }}"
+  copy:
+    src   : "welcome_{{ bash_welcome }}"
+    dest  : "{{ item.home }}/.bash_welcome"
+    owner : "{{ item.id }}"
+    group : "{{ item.id }}"
+    mode  : 0644
+  tags:
+    - bash
+
 #################################################################
 

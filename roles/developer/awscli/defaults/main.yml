@@ -2,3 +2,9 @@
 libraries_pip:
   - awscli
 
+aws:
+  account     : "847108765099"
+  region      : "eu-west-1"
+  access_key  : "AKIAJVGSPHBWLLGQGGFQ"
+  access_pass : "---"
+
