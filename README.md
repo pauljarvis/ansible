@@ -18,8 +18,8 @@ sudo apt-get install -y python-pip git \
 ```
 
 ## Run
-`./go.sh -p ubuntu -s -d`  
-`./go.sh -p retropie -s -d`
+`./go.sh -p ubuntu -s`
+`./go.sh -p retropie`
 
 ## Help
 `./go.sh -h`

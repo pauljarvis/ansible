@@ -7,14 +7,13 @@ source ./scripts/setup.sh
 
 usage () {
   PRG=$(basename $0)
-  echo "$PRG -p PLAYBOOK [-t TAGS] [-v VERBOSITY] [-k KEY] [-s] [-d] [-h]"
-  echo "     -a PLAYBBOOK     path to playbook"
+  echo "$PRG -p PLAYBOOK [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-h]"
+  echo "     -p PLAYBOOK      path to playbook"
   echo "     -t TAGS          run only tasks with provided tags"
   echo "     -z SKIP          skips tasks with provided tags"
   echo "     -v VERBOSITY     v, vv, vvv, vvvv"
   echo "     -k KEY           use private key"
   echo "     -s               run as sudo"
-  echo "     -d               show diffs"
   echo "     -h               show help"
   exit 0
 }
@@ -27,7 +26,7 @@ get_playbook () {
 #######################################################################
 # Get Input
 
-while getopts ":p:t:z:v:k:dsh" arg; do
+while getopts ":p:t:z:v:k:sh" arg; do
   case $arg in
     p)
       playbook=$(get_playbook "${OPTARG}")
@@ -43,9 +42,6 @@ while getopts ":p:t:z:v:k:dsh" arg; do
       ;;
     k)
       key="--private-key \"${OPTARG}\""
-      ;;
-    d)
-      diff="--diff"
       ;;
     s)
       sudo="--ask-become-pass"
@@ -86,7 +82,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} ${tags} ${skip} ${verbosity} ${diff} ${sudo} ${key}"
+exe="ansible-playbook ${playbook} --diff ${tags} ${skip} ${verbosity} ${sudo} ${key}"
 echo "${exe}"
 eval "${exe}"
 

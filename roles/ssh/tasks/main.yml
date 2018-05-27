@@ -43,3 +43,18 @@
 
 #################################################################
 
+- name: "copy | hushlogin"
+  with_items:
+    - "{{ all_users }}"
+  copy:
+    content : ""
+    dest    : "{{ item.home }}/.hushlogin"
+    owner   : "{{ item.id }}"
+    group   : "{{ item.id }}"
+    mode    : "0664"
+    force   : no
+  tags:
+    - ssh
+
+#################################################################
+

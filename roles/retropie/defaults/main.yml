@@ -3,14 +3,9 @@
 libraries_apt:
 
 retropie_dirs:
-  - "/sys/module/bluetooth/parameters"
+#  - "/sys/module/bluetooth/parameters"
 
 retropie_files:
 
 retropie_templates:
-#  - src   : "disable_ertm"
-#    dest  : "/sys/module/bluetooth/parameters"
-#    user  : "{{ root_user.id }}"
-
-# for some reason, i dont have permissions to write to /sys.....
 
