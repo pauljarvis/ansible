@@ -63,3 +63,35 @@
 
 #################################################################
 
+- name: "pi user | apply bios"
+  unarchive:
+    src     : "bios.zip"
+    dest    : "/home/pi/RetroPie/BIOS"
+    owner   : "pi"
+    group   : "pi"
+  tags:
+    - retropie
+
+- name: "pi user | apply splashscreens"
+  unarchive:
+    src     : "splashscreens.zip"
+    dest    : "/home/pi/RetroPie/splashscreens"
+    owner   : "pi"
+    group   : "pi"
+  tags:
+    - retropie
+
+#################################################################
+
+- name: "emulationstation | apply themes"
+  unarchive:
+    src     : "themes.zip"
+    dest    : "/etc/emulationstation/themes"
+    owner   : "root"
+    group   : "root"
+  tags:
+    - retropie
+#    - retropie1
+
+#################################################################
+
