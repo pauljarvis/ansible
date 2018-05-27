@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<systemList>
+{% for emu in retropie_emus %}
+  <system>
+    <name>{{ emu.name }}</name>
+    <fullname>{{ emu.desc }}</fullname>
+{% if emu.path is defined %}
+    <path>{{ emu.path }}</path>
+{% else %}
+    <path>/home/pi/RetroPie/roms/{{ emu.name }}</path>
+{% endif %}
+    <extension>{% for ext in emu.extension %}{{ ext }}{% if not loop.last %} {% endif %}{% endfor %}</extension>
+{% if emu.cmd is defined %}
+    <command>{{ emu.cmd }}</command>
+{% else %}
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ {{ emu.name }} %ROM%</command>
+{% endif %}
+    <platform>{{ emu.name }}</platform>
+    <theme>{{ emu.name }}</theme>
+  </system>
+{% endfor %}
+</systemList>
+

@@ -10,3 +10,36 @@ retropie_files:
 
 retropie_templates:
 
+retropie_emus:
+  - name        : "retropie"
+    desc        : "RetroPie"
+    extension   : [ ".rp", ".sh" ]
+    path        : "/home/pi/RetroPie/retropiemenu"
+    cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
+  - name        : "snes"
+    desc        : "Super Nintendo"
+    extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
+  - name        : "megadrive"
+    desc        : "Sega Mega Drive"
+    extension   : [ ".smd", ".bin", ".gen", ".md", ".sg", ".zip", ".SMD", ".BIN", ".GEN", ".MD", ".SG", ".ZIP" ]
+  - name        : "gba"
+    desc        : "Game Boy Advance"
+    extension   : [ ".gba", ".zip", ".GBA", ".ZIP" ]
+  - name        : "n64"
+    desc        : "Nintendo 64"
+    extension   : [ ".z64", ".n64", ".v64", ".Z64", ".N64", ".V64" ]
+  - name        : "psx"
+    desc        : "PlayStation"
+    extension   : [ ".cue", ".cbn", ".iso", ".m3u", ".mdf", ".pbp", ".toc", ".z", ".znx", ".CUE", ".CBN", ".ISO", ".M3U", ".MDF", ".PBP", ".TOC", ".Z", ".ZNX" ]
+  - name        : "fba"
+    desc        : "Final Burn Alpha"
+    extension   : [ ".fba", ".zip", ".FBA", ".ZIP" ]
+  - name        : "ports"
+    desc        : "Ports"
+    extension   : [ ".sh", ".SH" ]
+    cmd : "bash %ROM%"
+  - name        : "python"
+    desc        : "Python Scripts"
+    extension   : [ ".py", ".PY" ]
+    cmd : "sudo python %ROM%"
+

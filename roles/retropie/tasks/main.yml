@@ -91,7 +91,16 @@
     group   : "root"
   tags:
     - retropie
-#    - retropie1
+
+- name: "emulationstation | apply emulated systems config"
+  template:
+    src     : "es_systems.cfg.j2"
+    dest    : "/etc/emulationstation/es_systems.cfg"
+    owner   : "root"
+    group   : "root"
+    mode    : "0664"
+  tags:
+    - retropie
 
 #################################################################
 
