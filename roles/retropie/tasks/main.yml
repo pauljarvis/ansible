@@ -2,7 +2,7 @@
 
 #################################################################
 
-- name: "pi user | bios | apply"
+- name: "pi user | bios | binary | apply"
   unarchive:
     src     : "bios.zip"
     dest    : "/home/pi/RetroPie/BIOS"
@@ -12,7 +12,7 @@
   tags:
     - retropie
 
-- name: "pi user | splashscreens | apply"
+- name: "pi user | splashscreens | binary | apply"
   unarchive:
     src     : "splashscreens.zip"
     dest    : "/home/pi/RetroPie/splashscreens"
@@ -22,9 +22,19 @@
   tags:
     - retropie
 
+- name: "pi user | splashscreens | config | apply"
+  template:
+    src     : "splashscreen.list.j2"
+    dest    : "/etc/splashscreen.list"
+    owner   : "root"
+    group   : "root"
+    mode    : "0664"
+  tags:
+    - retropie
+
 #################################################################
 
-- name: "emulationstation | themes | apply"
+- name: "emulationstation | themes | binary | apply"
   unarchive:
     src     : "themes.zip"
     dest    : "/etc/emulationstation/themes"
@@ -70,6 +80,16 @@
   template:
     src     : "autostart.sh.j2"
     dest    : "/opt/retropie/configs/all/autostart.sh"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "retropie | config | scraper | apply"
+  template:
+    src     : "scraper.cfg.j2"
+    dest    : "/opt/retropie/configs/all/scraper.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"

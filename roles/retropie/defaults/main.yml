@@ -1,6 +1,7 @@
 ---
 
 retropie_theme  : "eudora"
+retropie_splash : "retropie.mov"
 
 #######################################################################
 
@@ -66,7 +67,7 @@ retropie_keyboard:
   special : "ctrl"
   load    : "q"
   save    : "e"
-    
+
 retropie_controller:
 
 #######################################################################
