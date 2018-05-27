@@ -40,10 +40,18 @@ retropie_emus:
 
 #################################################################
 
+retropie_boot:
+  hush_bootlog  : true
+  hush_rainbow  : true
+  hush_warnings : true
+  overscan      : false
+
+#################################################################
+
 retropie_runcommand:
-  use_art      : "1"
-  disable_menu : "1"
-  delay_secs   : "0"
+  use_art       : "1"
+  disable_menu  : "1"
+  delay_secs    : "0"
 
 #################################################################
 

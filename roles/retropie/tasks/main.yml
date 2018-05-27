@@ -2,6 +2,28 @@
 
 #################################################################
 
+- name: "boot | cmdline | config | apply"
+  template:
+    src     : "boot_cmdline.txt.j2"
+    dest    : "/boot/cmdline.txt"
+    owner   : "root"
+    group   : "root"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "boot | config | config | apply"
+  template:
+    src     : "boot_config.txt.j2"
+    dest    : "/boot/config.txt"
+    owner   : "root"
+    group   : "root"
+    mode    : "0664"
+  tags:
+    - retropie
+
+#################################################################
+
 - name: "pi user | bios | binary | apply"
   unarchive:
     src     : "bios.zip"
