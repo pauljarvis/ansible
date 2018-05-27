@@ -1,0 +1,151 @@
+########################################################################
+# Filesystem
+########################################################################
+
+# If set to a directory, content which is temporarily extracted  will be extracted to this directory.
+cache_directory = "/tmp/retroarch"
+
+# Path to core options config file. This config file is used to expose core-specific options. It will be written to by RetroArch.
+core_options_path = "/opt/retropie/configs/all/retroarch-core-options.cfg"
+
+# Sets the "system" directory. Implementations can query for this directory to load BIOSes, system-specific configs, etc.
+system_directory = "/home/pi/RetroPie/BIOS"
+
+# Flushes config to disk on exit. Useful for menu as settings can be modified. Overwrites the config. #include's and comments are not preserved.
+config_save_on_exit = "false"
+
+########################################################################
+# Video
+########################################################################
+
+# Use threaded video driver. Using this might improve performance at possible cost of latency and more video stuttering.
+video_threaded = "true"
+
+# Smoothens picture with bilinear filtering. Should be disabled if using pixel shaders.
+video_smooth = "false"
+
+# If this is true and video_aspect_ratio is not set, aspect ratio is decided by libretro implementation. If this is false, 1:1 PAR will always be assumed if video_aspect_ratio is not set.
+video_aspect_ratio_auto = "true"
+
+# Size of the font rendered in points.
+video_font_size = "12"
+
+# Background color for OSD messages. Red/Green/Blue values are from 0 to 255 and opacity is 0.0 to 1.0.
+video_message_bgcolor_enable = false
+video_message_bgcolor_red = 0
+video_message_bgcolor_green = 0
+video_message_bgcolor_blue = 0
+video_message_bgcolor_opacity = 1.0
+
+########################################################################
+# Input
+########################################################################
+
+# Joypad driver. (Valid: linuxraw, sdl, dinput)
+input_joypad_driver         = "udev"
+
+# Swap buttons for OK/Cancel
+menu_swap_ok_cancel_buttons = "false"
+
+# Enable input auto-detection. Will attempt to autoconfigure joypads, Plug-and-Play style.
+input_autodetect_enable     = "true"
+
+# allow any RetroPad to control the menu
+all_users_control_menu      = "true"
+
+########################################################################
+# Input - Keyboard
+########################################################################
+
+input_player1_up          = "{{ retropie_keyboard.up        }}"
+input_player1_down        = "{{ retropie_keyboard.down      }}"
+input_player1_left        = "{{ retropie_keyboard.left      }}"
+input_player1_right       = "{{ retropie_keyboard.right     }}"
+input_player1_a           = "{{ retropie_keyboard.a         }}"
+input_player1_b           = "{{ retropie_keyboard.b         }}"
+input_player1_y           = "{{ retropie_keyboard.y         }}"
+input_player1_x           = "{{ retropie_keyboard.x         }}"
+input_player1_start       = "{{ retropie_keyboard.start     }}"
+input_player1_select      = "{{ retropie_keyboard.select    }}"
+input_player1_l           = "{{ retropie_keyboard.l_1       }}"
+input_player1_r           = "{{ retropie_keyboard.r_1       }}"
+input_player1_l2          = "{{ retropie_keyboard.l_2       }}"
+input_player1_r2          = "{{ retropie_keyboard.r_2       }}"
+input_player1_l3          = "{{ retropie_keyboard.l_button  }}"
+input_player1_r3          = "{{ retropie_keyboard.r_button  }}"
+
+########################################################################
+# Input - Keyboard Special [{{ retropie_keyboard.special }} + key]
+########################################################################
+
+# Keyboard Input []
+input_enable_hotkey       = "{{ retropie_keyboard.special   }}"
+
+# +/- State Slot
+input_state_slot_decrease = "{{ retropie_keyboard.left      }}"
+input_state_slot_increase = "{{ retropie_keyboard.right     }}"
+
+# Load and Save States
+input_load_state          = "{{ retropie_keyboard.l_1       }}"
+input_save_state          = "{{ retropie_keyboard.r_1       }}"
+
+# [] Key to exit RetroArch cleanly.
+input_exit_emulator       = "{{ retropie_keyboard.start     }}"
+
+# Applies next and previous shader in directory.
+input_shader_next         = "{{ retropie_keyboard.a         }}"
+input_shader_prev         = "{{ retropie_keyboard.b         }}"
+
+# Hold button down to rewind. Rewinding must be enabled.
+input_rewind              = "r"
+
+# Reset the content.
+input_reset               = "m"
+
+# Toggles menu.
+input_menu_toggle         = "h"
+
+########################################################################
+# Menu
+########################################################################
+
+# Menu driver to use. "rgui", "lakka", etc.
+menu_driver = "rgui"
+
+# If disabled, will hide 'Online Updater' inside the menu.
+menu_show_online_updater = "false"
+
+# If disabled, will hide the ability to update cores (and core info files) inside the menu.
+menu_show_core_updater = "false"
+
+# If disabled, we use separate controls for menu operation.
+menu_unified_controls = "true"
+
+########################################################################
+# Misc
+########################################################################
+
+# Enable rewinding. This will take a performance hit when playing, so it is disabled by default.
+rewind_enable = "false"
+
+# Rewinding buffer size in megabytes. Bigger rewinding buffer means you can rewind longer.
+# The buffer should be approx. 20MB per minute of buffer time.
+rewind_buffer_size = "10"
+
+# Rewind granularity. When rewinding defined number of frames, you can rewind several frames at a time, increasing the rewinding speed.
+rewind_granularity = "2"
+
+# Screenshots output of GPU shaded material if available.
+video_gpu_screenshot = "true"
+
+# Enable stdin/network command interface.
+# network_cmd_enable = false
+# network_cmd_port = 55355
+# stdin_cmd_enable = false
+auto_remaps_enable = "true"
+xmb_show_add = "false"
+xmb_show_history = "false"
+xmb_show_images = "false"
+xmb_show_music = "false"
+xmb_shadows_enable = "false"
+

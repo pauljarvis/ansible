@@ -50,7 +50,7 @@ local bfgcyn="${bld}$(tput setaf 6)"
 local bfgwht="${bld}$(tput setaf 7)"
 
 local fg="${fgred}"
-local bg="${fgcyn}"
+local bg="${fgwht}"
 
 # Set Logo
 local logo=(
@@ -76,7 +76,7 @@ for i in "${!logo[@]}"; do
       out+="${fggrn}$(date +"%A, %e %B %Y, %r")"
       ;;
     1)
-      out+="${fggrn}$(uname -srmo)"
+      out+="${fggrn}$(lsb_release -d | awk '{$1=""; print $0}')"
       ;;
     3)
       out+="${fgylw}${df_out[0]}"

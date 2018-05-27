@@ -1,14 +1,8 @@
 ---
 
-libraries_apt:
+retropie_theme  : "eudora"
 
-retropie_install_dir: "/home/pi/RetroPie"
-
-retropie_dirs:
-
-retropie_files:
-
-retropie_templates:
+#######################################################################
 
 retropie_emus:
   - name        : "retropie"
@@ -42,4 +36,38 @@ retropie_emus:
     desc        : "Python Scripts"
     extension   : [ ".py", ".PY" ]
     cmd : "sudo python %ROM%"
+
+#################################################################
+
+retropie_runcommand:
+  use_art      : "1"
+  disable_menu : "1"
+  delay_secs   : "0"
+
+#################################################################
+
+retropie_keyboard:
+  up      : "w"
+  down    : "s"
+  left    : "a"
+  right   : "d"
+  a       : "n"
+  b       : "m"
+  y       : "h"
+  x       : "j"
+  start   : "enter"
+  select  : "backspace"
+  l_1     : "q"
+  r_1     : "e"
+  l_2     : "y"
+  r_2     : "u"
+  l_button: "t"
+  r_button: "i"
+  special : "ctrl"
+  load    : "q"
+  save    : "e"
+    
+retropie_controller:
+
+#######################################################################
 

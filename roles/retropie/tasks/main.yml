@@ -2,102 +2,86 @@
 
 #################################################################
 
-- name: "apt | install"
-  when:
-    - item is iterable
-  with_items:
-    - "{{ libraries_apt }}"
-  apt:
-    name    : "{{ item }}"
-    state   : "latest"
-  tags:
-    - retropie
-
-#################################################################
-
-- name: "mkdirs"
-  when:
-    - item is iterable
-  with_items:
-    - "{{ retropie_dirs }}"
-  file:
-    name    : "{{ item         }}"
-    owner   : "{{ root_user.id }}"
-    group   : "{{ root_user.id }}"
-    mode    : "0755"
-    state   : "directory"
-  tags:
-    - retropie
-
-#################################################################
-
-- name: "copy | files"
-  when:
-    - item is iterable
-  with_items:
-    - "{{ retropie_files }}"
-  copy:
-    src     : "{{ item.src  }}"
-    dest    : "{{ item.dest }}/{{ item.src }}"
-    owner   : "{{ item.user }}"
-    group   : "{{ item.user }}"
-    mode    : "0664"
-  tags:
-    - retropie
-
-#################################################################
-
-- name: "copy | templates"
-  when:
-    - item is iterable
-  with_items:
-    - "{{ retropie_templates }}"
-  template:
-    src     : "{{ item.src  }}.j2"
-    dest    : "{{ item.dest }}/{{ item.src }}"
-    owner   : "{{ item.user }}"
-    group   : "{{ item.user }}"
-    mode    : "0664"
-  tags:
-    - retropie
-
-#################################################################
-
-- name: "pi user | apply bios"
+- name: "pi user | bios | apply"
   unarchive:
     src     : "bios.zip"
     dest    : "/home/pi/RetroPie/BIOS"
     owner   : "pi"
     group   : "pi"
+    mode    : "0775"
   tags:
     - retropie
 
-- name: "pi user | apply splashscreens"
+- name: "pi user | splashscreens | apply"
   unarchive:
     src     : "splashscreens.zip"
     dest    : "/home/pi/RetroPie/splashscreens"
     owner   : "pi"
     group   : "pi"
+    mode    : "0775"
   tags:
     - retropie
 
 #################################################################
 
-- name: "emulationstation | apply themes"
+- name: "emulationstation | themes | apply"
   unarchive:
     src     : "themes.zip"
     dest    : "/etc/emulationstation/themes"
     owner   : "root"
     group   : "root"
+    mode    : "0775"
   tags:
     - retropie
 
-- name: "emulationstation | apply emulated systems config"
+- name: "emulationstation | emulated systems config | apply"
   template:
     src     : "es_systems.cfg.j2"
     dest    : "/etc/emulationstation/es_systems.cfg"
     owner   : "root"
     group   : "root"
+    mode    : "0664"
+  tags:
+    - retropie
+
+#################################################################
+
+- name: "retropie | config | retroarch | apply"
+  template:
+    src     : "retroarch.cfg.j2"
+    dest    : "/opt/retropie/configs/all/retroarch.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "retropie | config | runcommand | apply"
+  template:
+    src     : "runcommand.cfg.j2"
+    dest    : "/opt/retropie/configs/all/runcommand.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "retropie | config | autostart | apply"
+  template:
+    src     : "autostart.sh.j2"
+    dest    : "/opt/retropie/configs/all/autostart.sh"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "retropie | config | es settings | apply"
+  template:
+    src     : "es_settings.cfg.j2"
+    dest    : "/opt/retropie/configs/all/emulationstation/es_settings.cfg"
+    owner   : "pi"
+    group   : "pi"
     mode    : "0664"
   tags:
     - retropie
