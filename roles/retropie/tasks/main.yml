@@ -66,7 +66,7 @@
   tags:
     - retropie
 
-- name: "emulationstation | emulated systems config | apply"
+- name: "emulationstation | es emulated system | config | apply"
   template:
     src     : "es_systems.cfg.j2"
     dest    : "/etc/emulationstation/es_systems.cfg"
@@ -118,10 +118,30 @@
   tags:
     - retropie
 
+- name: "retropie | config | controller | apply"
+  template:
+    src     : "controller.cfg.j2"
+    dest    : "/opt/retropie/configs/all/retroarch/autoconfig/Xbox Wireless Controller.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
 - name: "retropie | config | es settings | apply"
   template:
     src     : "es_settings.cfg.j2"
     dest    : "/opt/retropie/configs/all/emulationstation/es_settings.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+
+- name: "retropie | config | es input | apply"
+  template:
+    src     : "es_input.cfg.j2"
+    dest    : "/opt/retropie/configs/all/emulationstation/es_input.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
