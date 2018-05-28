@@ -42,7 +42,7 @@ video_message_bgcolor_opacity = 1.0
 ########################################################################
 
 # Joypad driver. (Valid: linuxraw, sdl, dinput)
-input_joypad_driver         = "udev"
+input_joypad_driver         = "sdl"
 
 # Swap buttons for OK/Cancel
 menu_swap_ok_cancel_buttons = "false"
@@ -148,4 +148,13 @@ xmb_show_history = "false"
 xmb_show_images = "false"
 xmb_show_music = "false"
 xmb_shadows_enable = "false"
+{% if retropie_achievements is defined %}
+########################################################################
+# RetroAchievements
+########################################################################
+
+cheevos_enable    = true
+cheevos_username  = "{{ retropie_achievements.user }}"
+cheevos_password  = "{{ retropie_achievements.pass }}"
+{% endif %}
 

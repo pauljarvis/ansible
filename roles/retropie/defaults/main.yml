@@ -1,7 +1,35 @@
 ---
+#######################################################################
+
+retropie_shortcuts:
+  - src   : "/opt/retropie/configs/all/emulationstation/"
+    dest  : "/home/pi/.emulationstation"
+  - src   : "/etc/emulationstation/"
+    dest  : "/home/pi/.emulationstation_other"
+  - src   : "/opt/retropie/configs/all/retroarch/"
+    dest  : "/home/pi/.retroarch"
+  - src   : "/opt/retropie/configs/all/"
+    dest  : "/home/pi/.retropie"
+
+#######################################################################
 
 retropie_theme  : "eudora"
 retropie_splash : "retropie.mov"
+
+#######################################################################
+
+retropie_boot:
+  hush_bootlog  : true
+  hush_rainbow  : true
+  hush_warnings : true
+  borderless    : true
+
+#######################################################################
+
+retropie_runcommand:
+  use_art       : "1"
+  disable_menu  : "1"
+  delay_secs    : "2"   # If == 0, crashes rom launch
 
 #######################################################################
 
@@ -38,22 +66,7 @@ retropie_emus:
     extension   : [ ".py", ".PY" ]
     cmd : "sudo python %ROM%"
 
-#################################################################
-
-retropie_boot:
-  hush_bootlog  : true
-  hush_rainbow  : true
-  hush_warnings : true
-  overscan      : false
-
-#################################################################
-
-retropie_runcommand:
-  use_art       : "1"
-  disable_menu  : "1"
-  delay_secs    : "0"
-
-#################################################################
+#######################################################################
 
 retropie_keyboard:
   up      : "w"
@@ -100,6 +113,18 @@ retropie_controller:
   r_down  : "+3"
   r_left  : "-2"
   r_right : "-3"
+
+#######################################################################
+
+retropie_achievements:
+  user    : "OurFriendIrony"
+  pass    : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
+
+#######################################################################
+
+retropie_python:
+  git_url : "https://github.com/OurFriendIrony/RetroPie-Python.git"
+  home    : "/home/pi/RetroPie/roms/python"
 
 #######################################################################
 

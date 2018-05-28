@@ -2,6 +2,21 @@
 
 #################################################################
 
+- name: "symlinks"
+  with_items:
+    - "{{ retropie_shortcuts }}"
+  file:
+    src     : "{{ item.src  }}"
+    dest    : "{{ item.dest }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "link"
+  tags:
+    - retropie
+
+#################################################################
+
 - name: "boot | cmdline | config | apply"
   template:
     src     : "boot_cmdline.txt.j2"
@@ -147,6 +162,35 @@
     mode    : "0664"
   tags:
     - retropie
+
+#################################################################
+
+- name: "python scripts | mkdir"
+  file:
+    dest    : "{{ retropie_python.home }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - python
+
+- name: "python scripts | git clone"
+  git:
+    repo    : "{{ retropie_python.git_url }}"
+    dest    : "{{ retropie_python.home    }}"
+    version : "master"
+  tags:
+    - retropie
+    - python
+
+- name: "python scripts | resolve dependancies"
+  pip:
+    requirements : "{{ retropie_python.home }}/requirements.txt"
+  tags:
+    - retropie
+    - python1
 
 #################################################################
 

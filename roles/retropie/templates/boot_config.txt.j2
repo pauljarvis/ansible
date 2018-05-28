@@ -7,7 +7,7 @@
 
 # uncomment this if your display has a black border of unused pixels visible
 # and your display can output without overscan
-{% if not retropie_boot.overscan %}
+{% if retropie_boot.borderless %}
 disable_overscan=1
 {% endif %}
 
