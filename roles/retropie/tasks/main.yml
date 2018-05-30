@@ -41,7 +41,7 @@
 
 - name: "pi user | bios | binary | apply"
   unarchive:
-    src     : "bios.zip"
+    src     : "bios_general.zip"
     dest    : "/home/pi/RetroPie/BIOS"
     owner   : "pi"
     group   : "pi"
@@ -220,6 +220,16 @@
   tags:
     - retropie
     - python
+
+#################################################################
+
+- name: "fba | install bios"
+  unarchive:
+    src     : "bios_fba.zip"
+    dest    : "{{ retropie_fba.home }}"
+  tags:
+    - retropie
+    - fba
 
 #################################################################
 

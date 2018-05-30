@@ -39,6 +39,7 @@ retropie_emus:
     extension   : [ ".rp", ".sh" ]
     path        : "/home/pi/RetroPie/retropiemenu"
     cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
+    platform    : ""
   - name        : "snes"
     desc        : "Super Nintendo"
     extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
@@ -57,14 +58,17 @@ retropie_emus:
   - name        : "fba"
     desc        : "Final Burn Alpha"
     extension   : [ ".fba", ".zip", ".FBA", ".ZIP" ]
+    platform    : "arcade"
   - name        : "ports"
     desc        : "Ports"
     extension   : [ ".sh", ".SH" ]
-    cmd : "bash %ROM%"
+    cmd         : "bash %ROM%"
+    platform    : "pc"
   - name        : "python"
     desc        : "Python Scripts"
     extension   : [ ".py", ".PY" ]
-    cmd : "sudo python %ROM%"
+    cmd         : "sudo python %ROM%"
+    platform    : ""
 
 #######################################################################
 
@@ -127,6 +131,11 @@ retropie_python:
   home      : "/home/pi/RetroPie/roms/python"
   bgm_home  : "/home/pi/bgm"
   apt       : [ "python-pygame" ]
+
+#######################################################################
+
+retropie_fba:
+  home      : "/home/pi/RetroPie/roms/fba"
 
 #######################################################################
 

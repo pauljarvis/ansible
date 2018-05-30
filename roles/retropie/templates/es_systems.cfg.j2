@@ -15,7 +15,11 @@
 {% else %}
     <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ {{ emu.name }} %ROM%</command>
 {% endif %}
+{% if emu.platform is defined %}
+    <platform>{{ emu.platform }}</platform>
+{% else %}
     <platform>{{ emu.name }}</platform>
+{% endif %}
     <theme>{{ emu.name }}</theme>
   </system>
 {% endfor %}
