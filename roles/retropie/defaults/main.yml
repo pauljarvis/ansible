@@ -69,6 +69,11 @@ retropie_emus:
     extension   : [ ".py", ".PY" ]
     cmd         : "sudo python %ROM%"
     platform    : ""
+  - name        : "steam"
+    desc        : "Steam"
+    extension   : [ ".sh", ".SH" ]
+    cmd         : "%ROM%"
+    platform    : ""
 
 #######################################################################
 
@@ -136,6 +141,22 @@ retropie_python:
 
 retropie_fba:
   home      : "/home/pi/RetroPie/roms/fba"
+
+#######################################################################
+
+retropie_steam:
+  home      : "/home/pi/RetroPie/roms/steam"
+  config    : "/opt/retropie/configs/steam"
+  pc_ip     : "192.168.1.109"
+  modes:
+    - res : "720"
+      fps : "30"
+    - res : "720"
+      fps : "60"
+    - res : "1080"
+      fps : "30"
+    - res : "1080"
+      fps : "60"
 
 #######################################################################
 

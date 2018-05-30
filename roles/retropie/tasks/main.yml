@@ -14,6 +14,7 @@
     state   : "link"
   tags:
     - retropie
+    - retropie-links
 
 #################################################################
 
@@ -26,6 +27,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-boot
 
 - name: "boot | config | config | apply"
   template:
@@ -36,6 +38,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-boot
 
 #################################################################
 
@@ -48,6 +51,7 @@
     mode    : "0775"
   tags:
     - retropie
+    - retropie-pi
 
 - name: "pi user | splashscreens | binary | apply"
   unarchive:
@@ -58,6 +62,7 @@
     mode    : "0775"
   tags:
     - retropie
+    - retropie-pi
 
 - name: "pi user | splashscreens | config | apply"
   template:
@@ -68,6 +73,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-pi
 
 #################################################################
 
@@ -80,6 +86,7 @@
     mode    : "0775"
   tags:
     - retropie
+    - retropie-es
 
 - name: "emulationstation | es emulated system | config | apply"
   template:
@@ -90,6 +97,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-es
 
 #################################################################
 
@@ -102,6 +110,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | runcommand | apply"
   template:
@@ -112,6 +121,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | autostart | apply"
   template:
@@ -122,6 +132,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | scraper | apply"
   template:
@@ -132,6 +143,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | controller | apply"
   template:
@@ -142,6 +154,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | es settings | apply"
   template:
@@ -152,6 +165,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 - name: "retropie | config | es input | apply"
   template:
@@ -162,6 +176,7 @@
     mode    : "0664"
   tags:
     - retropie
+    - retropie-cfg
 
 #################################################################
 
@@ -177,7 +192,7 @@
     state   : "directory"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 - name: "python scripts | apt"
   with_items:
@@ -187,7 +202,7 @@
     state   : "latest"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 - name: "python scripts | git clone"
   git:
@@ -196,14 +211,14 @@
     version : "master"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 - name: "python scripts | resolve dependancies"
   pip:
     requirements : "{{ retropie_python.home }}/requirements.txt"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 - name: "python scripts | install background music"
   unarchive:
@@ -211,7 +226,7 @@
     dest    : "{{ retropie_python.bgm_home }}"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 - name: "python scripts | set bgm, restart and lightshow scripts on start"
   template:
@@ -219,7 +234,7 @@
     dest    : "/etc/rc.local"
   tags:
     - retropie
-    - python
+    - retropie-python
 
 #################################################################
 
@@ -229,7 +244,61 @@
     dest    : "{{ retropie_fba.home }}"
   tags:
     - retropie
-    - fba
+    - retropie-fba
+
+#################################################################
+
+- name: "steam | apt key"
+  apt_key:
+    url     : "http://archive.itimmer.nl/itimmer.gpg"
+    state   : "present"
+  tags:
+    - retropie
+    - retropie-steam
+
+- name: "steam | apt source"
+  apt_repository:
+    repo    : "deb http://archive.itimmer.nl/raspbian/moonlight stretch main"
+    state   : "present"
+  tags:
+    - retropie
+    - retropie-steam
+
+- name: "steam | apt install"
+  apt:
+    name    : "moonlight-embedded"
+    state   : "present"
+    update_cache: "yes"
+  tags:
+    - retropie
+    - retropie-steam
+
+- name: "steam  | mkdir"
+  with_items:
+    - "{{ retropie_steam.home   }}"
+    - "{{ retropie_steam.config }}"
+  file:
+    dest    : "{{ item }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - retropie-steam
+
+- name: "steam | 'roms'"
+  with_items:
+    - "{{ retropie_steam.modes }}"
+  template:
+    src     : "steam.j2"
+    dest    : "{{ retropie_steam.home }}/{{ item.res }}_{{ item.fps }}fps.sh"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+  tags:
+    - retropie
+    - retropie-steam
 
 #################################################################
 
