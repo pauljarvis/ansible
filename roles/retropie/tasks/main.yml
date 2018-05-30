@@ -166,21 +166,15 @@
 #################################################################
 
 - name: "python scripts | mkdir"
+  with_items:
+    - "{{ retropie_python.home }}"
+    - "{{ retropie_python.bgm_home }}"
   file:
-    dest    : "{{ retropie_python.home }}"
+    dest    : "{{ item }}"
     owner   : "pi"
     group   : "pi"
     mode    : "0775"
     state   : "directory"
-  tags:
-    - retropie
-    - python
-
-- name: "python scripts | git clone"
-  git:
-    repo    : "{{ retropie_python.git_url }}"
-    dest    : "{{ retropie_python.home    }}"
-    version : "master"
   tags:
     - retropie
     - python
@@ -195,9 +189,34 @@
     - retropie
     - python
 
+- name: "python scripts | git clone"
+  git:
+    repo    : "{{ retropie_python.git_url }}"
+    dest    : "{{ retropie_python.home    }}"
+    version : "master"
+  tags:
+    - retropie
+    - python
+
 - name: "python scripts | resolve dependancies"
   pip:
     requirements : "{{ retropie_python.home }}/requirements.txt"
+  tags:
+    - retropie
+    - python
+
+- name: "python scripts | install background music"
+  unarchive:
+    src     : "bgm.zip"
+    dest    : "{{ retropie_python.bgm_home }}"
+  tags:
+    - retropie
+    - python
+
+- name: "python scripts | set bgm, restart and lightshow scripts on start"
+  template:
+    src     : "rc.local.j2"
+    dest    : "/etc/rc.local"
   tags:
     - retropie
     - python
