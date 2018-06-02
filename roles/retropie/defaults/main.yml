@@ -132,7 +132,7 @@ retropie_achievements:
 #######################################################################
 
 retropie_python:
-  git_url   : "https://github.com/OurFriendIrony/RetroPie-Python.git"
+  git_url   : "https://github.com/OurFriendIrony/python-retropie.git"
   home      : "/home/pi/RetroPie/roms/python"
   bgm_home  : "/home/pi/bgm"
   apt       : [ "python-pygame" ]
