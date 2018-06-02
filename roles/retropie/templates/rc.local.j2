@@ -19,13 +19,13 @@ fi
 
 {% if retropie_python is defined %}
 # Start lightshow
-nohup python {{ retropie_python.src }}/gpio_led_continuous.py &
+nohup python {{ retropie_python.home }}/gpio_led_continuous.py &
 
 # Prep shutdown button
-nohup python {{ retropie_python.src }}/gpio_shutdown.py &
+nohup python {{ retropie_python.home }}/gpio_shutdown.py &
 
 # Start background music
-nohup python {{ retropie_python.src }}/bgm.py &
+nohup python {{ retropie_python.home }}/bgm.py &
 {% endif %}
 exit 0
 
