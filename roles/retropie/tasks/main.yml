@@ -157,6 +157,17 @@
     - retropie
     - retropie-cfg
 
+- name: "retropie | config | autoconf | apply"
+  template:
+    src     : "autoconf.cfg.j2"
+    dest    : "/opt/retropie/configs/all/autoconf.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+    - retropie-cfg
+
 - name: "retropie | config | runcommand | apply"
   template:
     src     : "runcommand.cfg.j2"

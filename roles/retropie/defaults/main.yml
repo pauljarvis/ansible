@@ -29,6 +29,14 @@ retropie_boot:
   hush_rainbow  : true
   hush_warnings : true
   borderless    : true
+  force_turbo   : true
+  avoid_pwm     : true
+  over_volt     : true
+  cpu_freq      : 1350
+  gpu_freq      : 525
+  core_freq     : 525
+  v3d_freq      : 525
+  ram_freq      : 500
 
 #######################################################################
 
@@ -177,6 +185,11 @@ retropie_steam:
       fps : "30"
     - res : "1080"
       fps : "60"
+
+#######################################################################
+
+retropie_n64:
+  home      : "/home/pi/RetroPie/roms/steam"
 
 #######################################################################
 

@@ -41,9 +41,6 @@ disable_overscan=1
 # uncomment for composite PAL
 #sdtv_mode=2
 
-#uncomment to overclock the arm. 700 MHz is the default.
-#arm_freq=800
-
 # Uncomment some or all of these to enable the optional hardware interfaces
 #dtparam=i2c_arm=on
 #dtparam=i2s=on
@@ -62,9 +59,43 @@ gpu_mem_1024=256
 overscan_scale=1
 
 {% if retropie_boot.hush_rainbow %}
+# Turn off rainbow splash screen
 disable_splash=1
 {% endif %}
 {% if retropie_boot.hush_warnings %}
+# Hide power/lightning warnings
 avoid_warnings=2
+{% endif %}
+{% if retropie_boot.force_turbo %}
+# ?
+force_turbo=1
+{% endif %}
+{% if retropie_boot.cpu_freq is defined %}
+# Overclock CPU frequency (default=700)
+arm_freq={{ retropie_boot.cpu_freq }}
+{% endif %}
+{% if retropie_boot.gpu_freq is defined %}
+# Overclock GPU frequency
+gpu_freq={{ retropie_boot.gpu_freq }}
+{% endif %}
+{% if retropie_boot.core_freq is defined %}
+# Overclock Core frequency
+core_freq={{ retropie_boot.core_freq }}
+{% endif %}
+{% if retropie_boot.ram_freq is defined %}
+# Overclock RAM frequency
+sdram_freq={{ retropie_boot.ram_freq }}
+{% endif %}
+{% if retropie_boot.v3d_freq is defined %}
+# Overclock V3D frequency
+v3d_freq={{ retropie_boot.v3d_freq }}
+{% endif %}
+{% if retropie_boot.avoid_pwm %}
+# ?
+avoid_pwm_pll=1
+{% endif %}
+{% if retropie_boot.over_volt %}
+# ?
+over_voltage=6
 {% endif %}
 
