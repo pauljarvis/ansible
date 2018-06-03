@@ -14,7 +14,21 @@
     state   : "link"
   tags:
     - retropie
-    - retropie-links
+    - retropie-dirs
+
+- name: "mkdirs"
+  with_items:
+    - "{{ retropie_dirs.save_dir }}"
+    - "{{ retropie_dirs.state_dir }}"
+  file:
+    path    : "{{ item  }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - retropie-dirs
 
 #################################################################
 

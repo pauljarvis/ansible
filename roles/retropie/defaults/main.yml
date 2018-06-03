@@ -11,6 +11,10 @@ retropie_shortcuts:
   - src   : "/opt/retropie/configs/all/"
     dest  : "/home/pi/.retropie"
 
+retropie_dirs:
+  save_dir  : "/home/pi/RetroPie/saves"
+  state_dir : "/home/pi/RetroPie/states"
+
 #######################################################################
 
 retropie_theme  : "eudora"
