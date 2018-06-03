@@ -140,8 +140,8 @@
     - item.has_saves
   lineinfile:
     path    : "/opt/retropie/configs/{{ item.name }}/retroarch.cfg"
-    regexp  : "^statefile_directory"
-    line    : 'statefile_directory  = "{{ retropie_home }}/states/{{ item.name }}"'
+    regexp  : "^savestate_directory"
+    line    : 'savestate_directory = "{{ retropie_home }}/states/{{ item.name }}"'
   tags:
     - retropie
     - retropie-cfg
