@@ -17,11 +17,14 @@
     - retropie-dirs
 
 - name: "mkdirs"
-  with_items:
-    - "{{ retropie_dirs.save_dir }}"
-    - "{{ retropie_dirs.state_dir }}"
+  with_nested:
+    - "{{ retropie_emus }}"
+    - [ "states", "saves" ]
+  when:
+    - item[0].has_saves is defined
+    - item[0].has_saves
   file:
-    path    : "{{ item  }}"
+    path    : "{{ retropie_home }}/{{ item[1] }}/{{ item[0].name }}"
     owner   : "pi"
     group   : "pi"
     mode    : "0775"
@@ -114,6 +117,34 @@
     - retropie-es
 
 #################################################################
+
+- name: "retroarch.cfg | save locations | updates"
+  with_items:
+    - "{{ retropie_emus }}"
+  when:
+    - item.has_saves is defined
+    - item.has_saves
+  lineinfile:
+    path    : "/opt/retropie/configs/{{ item.name }}/retroarch.cfg"
+    regexp  : "^savefile_directory"
+    line    : 'savefile_directory  = "{{ retropie_home }}/saves/{{ item.name }}"'
+  tags:
+    - retropie
+    - retropie-cfg
+
+- name: "retroarch.cfg | state locations | updates"
+  with_items:
+    - "{{ retropie_emus }}"
+  when:
+    - item.has_saves is defined
+    - item.has_saves
+  lineinfile:
+    path    : "/opt/retropie/configs/{{ item.name }}/retroarch.cfg"
+    regexp  : "^statefile_directory"
+    line    : 'statefile_directory  = "{{ retropie_home }}/states/{{ item.name }}"'
+  tags:
+    - retropie
+    - retropie-cfg
 
 - name: "retropie | config | retroarch | apply"
   template:

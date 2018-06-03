@@ -10,6 +10,8 @@ retropie_shortcuts:
     dest  : "/home/pi/.retroarch"
   - src   : "/opt/retropie/configs/all/"
     dest  : "/home/pi/.retropie"
+  - src   : "/opt/retropie/configs/"
+    dest  : "/home/pi/.retroarch_config"
 
 retropie_dirs:
   save_dir  : "/home/pi/RetroPie/saves"
@@ -37,6 +39,8 @@ retropie_runcommand:
 
 #######################################################################
 
+retropie_home: "/home/pi/RetroPie"
+
 retropie_emus:
   - name        : "retropie"
     desc        : "RetroPie"
@@ -47,22 +51,28 @@ retropie_emus:
   - name        : "snes"
     desc        : "Super Nintendo"
     extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
+    has_saves   : True
   - name        : "megadrive"
     desc        : "Sega Mega Drive"
     extension   : [ ".smd", ".bin", ".gen", ".md", ".sg", ".zip", ".SMD", ".BIN", ".GEN", ".MD", ".SG", ".ZIP" ]
+    has_saves   : True
   - name        : "gba"
     desc        : "Game Boy Advance"
     extension   : [ ".gba", ".zip", ".GBA", ".ZIP" ]
+    has_saves   : True
   - name        : "n64"
     desc        : "Nintendo 64"
     extension   : [ ".z64", ".n64", ".v64", ".Z64", ".N64", ".V64" ]
+    has_saves   : True
   - name        : "psx"
     desc        : "PlayStation"
     extension   : [ ".cue", ".cbn", ".iso", ".m3u", ".mdf", ".pbp", ".toc", ".z", ".znx", ".CUE", ".CBN", ".ISO", ".M3U", ".MDF", ".PBP", ".TOC", ".Z", ".ZNX" ]
+    has_saves   : True
   - name        : "fba"
     desc        : "Final Burn Alpha"
     extension   : [ ".fba", ".zip", ".FBA", ".ZIP" ]
     platform    : "arcade"
+    has_saves   : True
   - name        : "ports"
     desc        : "Ports"
     extension   : [ ".sh", ".SH" ]
