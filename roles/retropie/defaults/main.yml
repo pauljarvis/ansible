@@ -1,0 +1,192 @@
+---
+#######################################################################
+
+retropie_shortcuts:
+  - src   : "/opt/retropie/configs/all/emulationstation/"
+    dest  : "/home/pi/.emulationstation"
+  - src   : "/etc/emulationstation/"
+    dest  : "/home/pi/.emulationstation_other"
+  - src   : "/opt/retropie/configs/all/retroarch/"
+    dest  : "/home/pi/.retroarch"
+  - src   : "/opt/retropie/configs/all/"
+    dest  : "/home/pi/.retropie"
+  - src   : "/opt/retropie/configs/"
+    dest  : "/home/pi/.retroarch_config"
+
+#######################################################################
+
+retropie_theme  : "eudora"
+retropie_splash : "retropie.mov"
+
+#######################################################################
+
+retropie_boot:
+  hush_bootlog  : true
+  hush_rainbow  : true
+  hush_warnings : true
+  borderless    : true
+  force_turbo   : true
+  avoid_pwm     : true
+  over_volt     : true
+  cpu_freq      : 1350
+  gpu_freq      : 525
+  core_freq     : 525
+  v3d_freq      : 525
+  ram_freq      : 500
+
+#######################################################################
+
+retropie_runcommand:
+  use_art       : "1"
+  disable_menu  : "1"
+  delay_secs    : "2"   # If == 0, crashes rom launch
+
+#######################################################################
+
+retropie_home: "/home/pi/RetroPie"
+
+retropie_emus:
+  - name        : "retropie"
+    desc        : "RetroPie"
+    extension   : [ ".rp", ".sh" ]
+    path        : "/home/pi/RetroPie/retropiemenu"
+    cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
+    platform    : ""
+  - name        : "snes"
+    desc        : "Super Nintendo"
+    extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
+    has_saves   : True
+  - name        : "megadrive"
+    desc        : "Sega Mega Drive"
+    extension   : [ ".smd", ".bin", ".gen", ".md", ".sg", ".zip", ".SMD", ".BIN", ".GEN", ".MD", ".SG", ".ZIP" ]
+    has_saves   : True
+  - name        : "gba"
+    desc        : "Game Boy Advance"
+    extension   : [ ".gba", ".zip", ".GBA", ".ZIP" ]
+    has_saves   : True
+  - name        : "n64"
+    desc        : "Nintendo 64"
+    extension   : [ ".z64", ".n64", ".v64", ".Z64", ".N64", ".V64" ]
+    has_saves   : True
+  - name        : "psx"
+    desc        : "PlayStation"
+    extension   : [ ".cue", ".cbn", ".iso", ".m3u", ".mdf", ".pbp", ".toc", ".z", ".znx", ".CUE", ".CBN", ".ISO", ".M3U", ".MDF", ".PBP", ".TOC", ".Z", ".ZNX" ]
+    has_saves   : True
+  - name        : "fba"
+    desc        : "Final Burn Alpha"
+    extension   : [ ".fba", ".zip", ".FBA", ".ZIP" ]
+    platform    : "arcade"
+    has_saves   : True
+  - name        : "ports"
+    desc        : "Ports"
+    extension   : [ ".sh", ".SH" ]
+    cmd         : "bash %ROM%"
+    platform    : "pc"
+  - name        : "python"
+    desc        : "Python Scripts"
+    extension   : [ ".py", ".PY" ]
+    cmd         : "sudo python %ROM%"
+    platform    : ""
+  - name        : "steam"
+    desc        : "Steam"
+    extension   : [ ".sh", ".SH" ]
+    cmd         : "%ROM%"
+    platform    : ""
+
+#######################################################################
+
+retropie_keyboard:
+  up      : "w"
+  down    : "s"
+  left    : "a"
+  right   : "d"
+  a       : "n"
+  b       : "m"
+  y       : "h"
+  x       : "j"
+  start   : "enter"
+  select  : "backspace"
+  l_1     : "q"
+  r_1     : "e"
+  l_2     : "y"
+  r_2     : "u"
+  l_button: "t"
+  r_button: "i"
+  special : "ctrl"
+
+retropie_controller:
+  up      : "h0up"
+  down    : "h0down"
+  left    : "h0left"
+  right   : "h0right"
+  a       : "0"
+  b       : "1"
+  y       : "4"
+  x       : "3"
+  start   : "11"
+  select  : "15"
+  l_1     : "6"
+  r_1     : "7"
+  l_2     : "+5"
+  r_2     : "+4"
+  l_button: "13"
+  r_button: "14"
+  special : "16"
+  l_up    : "+0"
+  l_down  : "+1"
+  l_left  : "-0"
+  l_right : "-1"
+  r_up    : "+2"
+  r_down  : "+3"
+  r_left  : "-2"
+  r_right : "-3"
+
+#######################################################################
+
+retropie_achievements:
+  user    : "OurFriendIrony"
+  pass    : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
+
+#######################################################################
+
+retropie_git:
+  url     : "https://github.com/OurFriendIrony/python-retropie.git"
+  dest    : "/home/pi/git/python-retropie/"
+  src     : "/home/pi/git/python-retropie/src/"
+
+#######################################################################
+
+retropie_python:
+  home      : "/home/pi/RetroPie/roms/python"
+  bgm_home  : "/home/pi/bgm"
+  apt       : [ "python-pygame" ]
+
+#######################################################################
+
+retropie_fba:
+  home      : "/home/pi/RetroPie/roms/fba"
+
+#######################################################################
+
+retropie_n64:
+  state_dir : "{{ retropie_home }}/states/n64"
+  save_dir  : "{{ retropie_home }}/saves/n64"
+
+#######################################################################
+
+retropie_steam:
+  home      : "/home/pi/RetroPie/roms/steam"
+  config    : "/opt/retropie/configs/steam"
+  pc_ip     : "192.168.1.109"
+  modes:
+    - res : "720"
+      fps : "30"
+    - res : "720"
+      fps : "60"
+    - res : "1080"
+      fps : "30"
+    - res : "1080"
+      fps : "60"
+
+#######################################################################
+

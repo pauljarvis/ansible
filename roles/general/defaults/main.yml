@@ -5,8 +5,11 @@ libraries_apt:
   - wget
   - tree
   - git
-  - vlc
   - jq
   - xclip
+
+libraries_apt_gui:
+  - vlc
   - baobab            # Disk Usage
+  - gedit
 

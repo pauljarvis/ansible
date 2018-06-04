@@ -100,33 +100,40 @@ fi
 #####################################################################
 # Exports
 
+## VIM always default editor
+export VISUAL=vim
+export EDITOR="${VISUAL}"
+
+{% if aws is defined %}
 ## AWS
-if [ -n "$(which aws)" ]; then
-  export AWS_ACCT_ID="847108765099"
-  export AWS_ACCESS_KEY="AKIAIPBHHX3MTYMQPPRA"
+if [[ -n "$(which aws)" ]]; then
+  if [[ -f ~/.aws_settings ]]; then
+    source ~/.aws_settings
+  fi
   complete -C '/usr/local/bin/aws_completer' aws
 fi
+{% endif %}
 
 ## Path
 {% if java is defined %}
-  export JAVA_HOME="{{ java.home }}/java"
+export JAVA_HOME="{{ java.home }}/java"
+export PATH="${JAVA_HOME}/bin:${PATH}"
 {% endif %}
 {% if gradle is defined %}
-  export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
+export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
+export PATH="${GRADLE_HOME}/bin:${PATH}"
 {% endif %}
 {% if terraform is defined %}
-  export TERRAFORM_HOME="{{ terraform.home }}"
+export TERRAFORM_HOME="{{ terraform.home }}"
+export PATH="${TERRAFORM_HOME}/bin:${PATH}"
 {% endif %}
-
-if [ -n "${TERRAFORM_HOME}" ]; then
-  export PATH="${TERRAFORM_HOME}/bin:${PATH}"
+{% if bash_welcome %}
+#####################################################################
+# Welcome
+if [[ -f ~/.bash_welcome ]]; then
+  source ~/.bash_welcome
 fi
-if [ -n "${JAVA_HOME}" ]; then
-  export PATH="${JAVA_HOME}/bin:${PATH}"
-fi
-if [ -n "${GRADLE_HOME}" ]; then
-  export PATH="${GRADLE_HOME}/bin:${PATH}"
-fi
+{% endif %}
 
 #####################################################################
 
