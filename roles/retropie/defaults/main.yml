@@ -168,6 +168,12 @@ retropie_fba:
 
 #######################################################################
 
+retropie_n64:
+  state_dir : "{{ retropie_home }}/states/n64"
+  save_dir  : "{{ retropie_home }}/saves/n64"
+
+#######################################################################
+
 retropie_steam:
   home      : "/home/pi/RetroPie/roms/steam"
   config    : "/opt/retropie/configs/steam"
@@ -181,11 +187,6 @@ retropie_steam:
       fps : "30"
     - res : "1080"
       fps : "60"
-
-#######################################################################
-
-retropie_n64:
-  home      : "/home/pi/RetroPie/roms/steam"
 
 #######################################################################
 

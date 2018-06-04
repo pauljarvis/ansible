@@ -236,6 +236,19 @@
 
 #################################################################
 
+- name: "retropie | config | n64 | apply"
+  template:
+    src     : "mupen64plus.cfg.j2"
+    dest    : "/opt/retropie/configs/n64/mupen64plus.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+    - retropie-n64
+
+#################################################################
+
 - name: "python scripts | git clone"
   git:
     repo    : "{{ retropie_git.url  }}"
