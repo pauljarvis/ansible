@@ -7,13 +7,14 @@ source ./scripts/setup.sh
 
 usage () {
   PRG=$(basename $0)
-  echo "$PRG -p PLAYBOOK [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-h]"
+  echo "$PRG -p PLAYBOOK [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-c] [-h]"
   echo "     -p PLAYBOOK      path to playbook"
   echo "     -t TAGS          run only tasks with provided tags"
   echo "     -z SKIP          skips tasks with provided tags"
   echo "     -v VERBOSITY     v, vv, vvv, vvvv"
   echo "     -k KEY           use private key"
   echo "     -s               run as sudo"
+  echo "     -c               run in check mode"
   echo "     -h               show help"
   exit 0
 }
@@ -26,25 +27,28 @@ get_playbook () {
 #######################################################################
 # Get Input
 
-while getopts ":p:t:z:v:k:sh" arg; do
+while getopts ":p:t:z:v:k:sch" arg; do
   case $arg in
     p)
       playbook=$(get_playbook "${OPTARG}")
       ;;
     t)
-      tags="--tags \"${OPTARG}\""
+      tags=" --tags \"${OPTARG}\""
       ;;
     z)
-      skip="--skip-tags \"${OPTARG}\""
+      skip=" --skip-tags \"${OPTARG}\""
       ;;
     v)
-      verbosity="-${OPTARG}"
+      verbosity=" -${OPTARG}"
       ;;
     k)
-      key="--private-key \"${OPTARG}\""
+      key=" --private-key \"${OPTARG}\""
       ;;
     s)
-      sudo="--ask-become-pass"
+      sudo=" --ask-become-pass"
+      ;;
+    c)
+      check=" --check"
       ;;
     h)
       usage
@@ -82,7 +86,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} --diff ${tags} ${skip} ${verbosity} ${sudo} ${key}"
+exe="ansible-playbook ${playbook} --diff ${tags} ${skip} ${verbosity} ${sudo} ${check} ${key}"
 echo "${exe}"
 eval "${exe}"
 
