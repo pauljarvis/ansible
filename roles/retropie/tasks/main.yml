@@ -238,13 +238,20 @@
 
 #################################################################
 
-- name: "retropie | config | n64 | apply"
-  template:
-    src     : "mupen64plus.cfg.j2"
-    dest    : "/opt/retropie/configs/n64/mupen64plus.cfg"
-    owner   : "pi"
-    group   : "pi"
-    mode    : "0664"
+- name: "retroarch.cfg | save locations | updates"
+  lineinfile:
+    path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
+    regexp  : "^SaveStatePath"
+    line    : 'SaveStatePath   = "{{ retropie_n64.state_dir }}"'
+  tags:
+    - retropie
+    - retropie-n64
+
+- name: "retroarch.cfg | state locations | updates"
+  lineinfile:
+    path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
+    regexp  : "^SaveSRAMPath"
+    line    : 'SaveSRAMPath    = "{{ retropie_n64.save_dir  }}"'
   tags:
     - retropie
     - retropie-n64
