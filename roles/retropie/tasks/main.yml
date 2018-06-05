@@ -202,9 +202,11 @@
     - retropie-cfg
 
 - name: "retropie | config | controller | apply"
+  with_items:
+    - "{{ retropie_controllers }}"
   template:
     src     : "controller.cfg.j2"
-    dest    : "/opt/retropie/configs/all/retroarch/autoconfig/Xbox Wireless Controller.cfg"
+    dest    : "/opt/retropie/configs/all/retroarch/autoconfig/{{ item.name }}.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
