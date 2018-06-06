@@ -201,6 +201,11 @@ retropie_n64:
 
 #######################################################################
 
+retropie_psx:
+  video_smoothing : true
+
+#######################################################################
+
 retropie_steam:
   home      : "/home/pi/RetroPie/roms/steam"
   config    : "/opt/retropie/configs/steam"

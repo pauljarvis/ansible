@@ -238,7 +238,7 @@
 
 #################################################################
 
-- name: "retroarch.cfg | save locations | updates"
+- name: "mupen64plus.cfg | n64 | save locations | updates"
   lineinfile:
     path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
     regexp  : "^SaveStatePath"
@@ -247,7 +247,7 @@
     - retropie
     - retropie-n64
 
-- name: "retroarch.cfg | state locations | updates"
+- name: "mupen64plus.cfg | n64 | state locations | updates"
   lineinfile:
     path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
     regexp  : "^SaveSRAMPath"
@@ -255,6 +255,33 @@
   tags:
     - retropie
     - retropie-n64
+
+#################################################################
+
+- name: "retroarch.cfg | psx | video smoothing"
+  when      :
+    - retropie_psx.video_smoothing
+  lineinfile:
+    path    : "/opt/retropie/configs/psx/retroarch.cfg"
+    regexp  : '^video_smooth'
+    line    : 'video_smooth        = "true"'
+  tags:
+    - retropie
+    - retropie-psx
+
+- name: "retroarch.cfg | psx | video smoothing"
+  with_items:
+    - "pcsx_rearmed_neon_enhancement_enable"
+    - "pcsx_rearmed_neon_enhancement_no_main"
+  when      :
+    - retropie_psx.video_smoothing
+  lineinfile:
+    path    : "/opt/retropie/configs/all/retroarch.cfg"
+    regexp  : '^{{ item }}'
+    line    : '{{ item }} = "enabled"'
+  tags:
+    - retropie
+    - retropie-psx
 
 #################################################################
 
