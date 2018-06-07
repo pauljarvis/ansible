@@ -3,15 +3,15 @@
 
 retropie_shortcuts:
   - src   : "/opt/retropie/configs/all/emulationstation/"
-    dest  : "/home/pi/.emulationstation"
-  - src   : "/etc/emulationstation/"
-    dest  : "/home/pi/.emulationstation_other"
+    dest  : "/home/pi/.cfg_all_emulationstation"
   - src   : "/opt/retropie/configs/all/retroarch/"
-    dest  : "/home/pi/.retroarch"
-  - src   : "/opt/retropie/configs/all/"
-    dest  : "/home/pi/.retropie"
+    dest  : "/home/pi/.cfg_all_retroarch"
+  - src   : "/etc/emulationstation/"
+    dest  : "/home/pi/.cfg_emulationstation"
   - src   : "/opt/retropie/configs/"
-    dest  : "/home/pi/.retroarch_config"
+    dest  : "/home/pi/.cfg_retroarch"
+  - src   : "/opt/retropie/configs/all/"
+    dest  : "/home/pi/.cfg_all"
 
 #######################################################################
 
