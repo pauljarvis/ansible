@@ -1,5 +1,4 @@
 ---
-
 #################################################################
 
 - name: "symlinks"
@@ -212,19 +211,6 @@
     - retropie
     - retropie-cfg
 
-- name: "retropie | config | controller | apply"
-  with_items:
-    - "{{ retropie_controllers }}"
-  template:
-    src     : "controller.cfg.j2"
-    dest    : "{{ retropie_cfg }}/all/retroarch/autoconfig/{{ item.name }}.cfg"
-    owner   : "pi"
-    group   : "pi"
-    mode    : "0664"
-  tags:
-    - retropie
-    - retropie-cfg
-
 - name: "retropie | config | es settings | apply"
   template:
     src     : "es_settings.cfg.j2"
@@ -236,20 +222,35 @@
     - retropie
     - retropie-cfg
 
-- name: "retropie | config | es input | apply"
+#################################################################
+
+- name: "controller | emulators"
+  with_items:
+    - "{{ retropie_controllers }}"
   template:
-    src     : "es_input.cfg.j2"
+    src     : "controller.j2"
+    dest    : "{{ retropie_cfg }}/all/retroarch/autoconfig/{{ item.name }}.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+    - retropie-controllers
+
+- name: "controller | emulationstation"
+  template:
+    src     : "controller_emulationstation.j2"
     dest    : "{{ retropie_cfg }}/all/emulationstation/es_input.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
   tags:
     - retropie
-    - retropie-cfg
+    - retropie-controllers
 
 #################################################################
 
-- name: "mupen64plus.cfg | n64 | save locations | updates"
+- name: "n64 | save locations | mupen64plus.cfg"
   lineinfile:
     path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
     regexp  : "^SaveStatePath"
@@ -258,7 +259,7 @@
     - retropie
     - retropie-n64
 
-- name: "mupen64plus.cfg | n64 | state locations | updates"
+- name: "n64 | state locations | mupen64plus.cfg"
   lineinfile:
     path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
     regexp  : "^SaveSRAMPath"
@@ -269,7 +270,7 @@
 
 #################################################################
 
-- name: "retroarch.cfg | psx | video smoothing"
+- name: "psx | video smoothing"
   lineinfile:
     path    : "{{ retropie_cfg }}/psx/retroarch.cfg"
     regexp  : '^video_smooth'
@@ -278,7 +279,7 @@
     - retropie
     - retropie-psx
 
-- name: "mkdirs | psx"
+- name: "psx | mkdirs"
   file:
     path    : "{{ retropie_cfg }}/psx/{{ retropie_psx.emu }}"
     owner   : "pi"
@@ -289,13 +290,14 @@
     - retropie
     - retropie-psx
 
-- name: "retroarch.cfg | psx | controller remap"
+- name: "psx | controller remap"
   template:
     src     : "controller_psx.j2"
     dest    : "{{ retropie_cfg }}/psx/{{ retropie_psx.emu }}/{{ retropie_psx.emu }}.rmp"
   tags:
     - retropie
     - retropie-psx
+    - retropie-controller
 
 #################################################################
 
