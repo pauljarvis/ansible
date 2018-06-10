@@ -27,6 +27,8 @@ retropie_boot:
   hush_rainbow  : true
   hush_warnings : true
   borderless    : true
+
+retropie_overclock:
   force_turbo   : true
   avoid_pwm     : true
   over_volt     : true

@@ -35,7 +35,7 @@
 
 #################################################################
 
-- name: "boot | cmdline | config | apply"
+- name: "boot | cmdline.txt"
   template:
     src     : "boot_cmdline.txt.j2"
     dest    : "/boot/cmdline.txt"
@@ -46,7 +46,7 @@
     - retropie
     - retropie-boot
 
-- name: "boot | config | config | apply"
+- name: "boot | config.txt"
   template:
     src     : "boot_config.txt.j2"
     dest    : "/boot/config.txt"

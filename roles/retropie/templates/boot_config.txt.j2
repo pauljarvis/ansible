@@ -66,35 +66,35 @@ disable_splash=1
 # Hide power/lightning warnings
 avoid_warnings=2
 {% endif %}
-{% if retropie_boot.force_turbo %}
+{% if retropie_overclock.force_turbo %}
 # ?
 force_turbo=1
 {% endif %}
-{% if retropie_boot.cpu_freq is defined %}
+{% if retropie_overclock.cpu_freq is defined %}
 # Overclock CPU frequency (default=700)
-arm_freq={{ retropie_boot.cpu_freq }}
+arm_freq={{ retropie_overclock.cpu_freq }}
 {% endif %}
-{% if retropie_boot.gpu_freq is defined %}
+{% if retropie_overclock.gpu_freq is defined %}
 # Overclock GPU frequency
-gpu_freq={{ retropie_boot.gpu_freq }}
+gpu_freq={{ retropie_overclock.gpu_freq }}
 {% endif %}
-{% if retropie_boot.core_freq is defined %}
+{% if retropie_overclock.core_freq is defined %}
 # Overclock Core frequency
-core_freq={{ retropie_boot.core_freq }}
+core_freq={{ retropie_overclock.core_freq }}
 {% endif %}
-{% if retropie_boot.ram_freq is defined %}
+{% if retropie_overclock.ram_freq is defined %}
 # Overclock RAM frequency
-sdram_freq={{ retropie_boot.ram_freq }}
+sdram_freq={{ retropie_overclock.ram_freq }}
 {% endif %}
-{% if retropie_boot.v3d_freq is defined %}
+{% if retropie_overclock.v3d_freq is defined %}
 # Overclock V3D frequency
-v3d_freq={{ retropie_boot.v3d_freq }}
+v3d_freq={{ retropie_overclock.v3d_freq }}
 {% endif %}
-{% if retropie_boot.avoid_pwm %}
+{% if retropie_overclock.avoid_pwm %}
 # ?
 avoid_pwm_pll=1
 {% endif %}
-{% if retropie_boot.over_volt %}
+{% if retropie_overclock.over_volt %}
 # ?
 over_voltage=6
 {% endif %}
