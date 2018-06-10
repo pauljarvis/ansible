@@ -69,7 +69,9 @@
     - retropie
     - retropie-pi
 
-- name: "pi user | splashscreens | binary | apply"
+#################################################################
+
+- name: "personalisation | splashscreens | binary"
   unarchive:
     src     : "splashscreens.zip"
     dest    : "{{ retropie_home }}/splashscreens"
@@ -78,9 +80,9 @@
     mode    : "0775"
   tags:
     - retropie
-    - retropie-pi
+    - retropie-personalise
 
-- name: "pi user | splashscreens | config | apply"
+- name: "personalisation | splashscreens | config"
   template:
     src     : "splashscreen.list.j2"
     dest    : "/etc/splashscreen.list"
@@ -89,11 +91,9 @@
     mode    : "0664"
   tags:
     - retropie
-    - retropie-pi
+    - retropie-personalise
 
-#################################################################
-
-- name: "emulationstation | themes | binary | apply"
+- name: "personalisation | themes | binary"
   unarchive:
     src     : "themes.zip"
     dest    : "/etc/emulationstation/themes"
@@ -102,7 +102,9 @@
     mode    : "0775"
   tags:
     - retropie
-    - retropie-es
+    - retropie-personalise
+
+#################################################################
 
 - name: "emulationstation | es emulated system | config | apply"
   template:
