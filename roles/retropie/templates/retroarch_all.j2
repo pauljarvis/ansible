@@ -3,13 +3,13 @@
 ########################################################################
 
 # If set to a directory, content which is temporarily extracted  will be extracted to this directory.
-cache_directory = "/tmp/retroarch"
+cache_directory     = "/tmp/retroarch"
 
 # Path to core options config file. This config file is used to expose core-specific options. It will be written to by RetroArch.
-core_options_path = "/opt/retropie/configs/all/retroarch-core-options.cfg"
+core_options_path   = "{{ retropie_cfg  }}/all/retroarch-core-options.cfg"
 
 # Sets the "system" directory. Implementations can query for this directory to load BIOSes, system-specific configs, etc.
-system_directory = "/home/pi/RetroPie/BIOS"
+system_directory    = "{{ retropie_home }}/BIOS"
 
 # Flushes config to disk on exit. Useful for menu as settings can be modified. Overwrites the config. #include's and comments are not preserved.
 config_save_on_exit = "false"
@@ -149,6 +149,7 @@ xmb_show_images = "false"
 xmb_show_music = "false"
 xmb_shadows_enable = "false"
 {% if retropie_achievements is defined %}
+
 ########################################################################
 # RetroAchievements
 ########################################################################

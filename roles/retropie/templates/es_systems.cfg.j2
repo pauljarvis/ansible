@@ -7,7 +7,7 @@
 {% if emu.path is defined %}
     <path>{{ emu.path }}</path>
 {% else %}
-    <path>/home/pi/RetroPie/roms/{{ emu.name }}</path>
+    <path>{{ retropie_home }}/roms/{{ emu.name }}</path>
 {% endif %}
     <extension>{% for ext in emu.extension %}{{ ext }}{% if not loop.last %} {% endif %}{% endfor %}</extension>
 {% if emu.cmd is defined %}

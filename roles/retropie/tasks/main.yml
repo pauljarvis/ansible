@@ -16,7 +16,7 @@
     - retropie
     - retropie-dirs
 
-- name: "mkdirs"
+- name: "mkdirs | save and state dirs"
   with_nested:
     - "{{ retropie_emus }}"
     - [ "states", "saves" ]
@@ -62,7 +62,7 @@
 - name: "pi user | bios | binary | apply"
   unarchive:
     src     : "bios_general.zip"
-    dest    : "/home/pi/RetroPie/BIOS"
+    dest    : "{{ retropie_home }}/BIOS"
     owner   : "pi"
     group   : "pi"
     mode    : "0775"
@@ -73,7 +73,7 @@
 - name: "pi user | splashscreens | binary | apply"
   unarchive:
     src     : "splashscreens.zip"
-    dest    : "/home/pi/RetroPie/splashscreens"
+    dest    : "{{ retropie_home }}/splashscreens"
     owner   : "pi"
     group   : "pi"
     mode    : "0775"
@@ -125,7 +125,7 @@
     - item.has_saves is defined
     - item.has_saves
   lineinfile:
-    path    : "/opt/retropie/configs/{{ item.name }}/retroarch.cfg"
+    path    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"
     regexp  : "^savefile_directory"
     line    : 'savefile_directory  = "{{ retropie_home }}/saves/{{ item.name }}"'
   tags:
@@ -139,17 +139,28 @@
     - item.has_saves is defined
     - item.has_saves
   lineinfile:
-    path    : "/opt/retropie/configs/{{ item.name }}/retroarch.cfg"
+    path    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"
     regexp  : "^savestate_directory"
     line    : 'savestate_directory = "{{ retropie_home }}/states/{{ item.name }}"'
   tags:
     - retropie
     - retropie-cfg
 
-- name: "retropie | config | retroarch | apply"
+- name: "retropie | config | all | retroarch.cfg"
   template:
-    src     : "retroarch.cfg.j2"
-    dest    : "/opt/retropie/configs/all/retroarch.cfg"
+    src     : "retroarch_all.j2"
+    dest    : "{{ retropie_cfg }}/all/retroarch.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
+  tags:
+    - retropie
+    - retropie-cfg
+
+- name: "retropie | config | all | retroarch-core-options.cfg"
+  template:
+    src     : "retroarch_core.j2"
+    dest    : "{{ retropie_cfg }}/all/retroarch-core-options.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -160,7 +171,7 @@
 - name: "retropie | config | autoconf | apply"
   template:
     src     : "autoconf.cfg.j2"
-    dest    : "/opt/retropie/configs/all/autoconf.cfg"
+    dest    : "{{ retropie_cfg }}/all/autoconf.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -171,7 +182,7 @@
 - name: "retropie | config | runcommand | apply"
   template:
     src     : "runcommand.cfg.j2"
-    dest    : "/opt/retropie/configs/all/runcommand.cfg"
+    dest    : "{{ retropie_cfg }}/all/runcommand.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -182,7 +193,7 @@
 - name: "retropie | config | autostart | apply"
   template:
     src     : "autostart.sh.j2"
-    dest    : "/opt/retropie/configs/all/autostart.sh"
+    dest    : "{{ retropie_cfg }}/all/autostart.sh"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -193,7 +204,7 @@
 - name: "retropie | config | scraper | apply"
   template:
     src     : "scraper.cfg.j2"
-    dest    : "/opt/retropie/configs/all/scraper.cfg"
+    dest    : "{{ retropie_cfg }}/all/scraper.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -206,7 +217,7 @@
     - "{{ retropie_controllers }}"
   template:
     src     : "controller.cfg.j2"
-    dest    : "/opt/retropie/configs/all/retroarch/autoconfig/{{ item.name }}.cfg"
+    dest    : "{{ retropie_cfg }}/all/retroarch/autoconfig/{{ item.name }}.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -217,7 +228,7 @@
 - name: "retropie | config | es settings | apply"
   template:
     src     : "es_settings.cfg.j2"
-    dest    : "/opt/retropie/configs/all/emulationstation/es_settings.cfg"
+    dest    : "{{ retropie_cfg }}/all/emulationstation/es_settings.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -228,7 +239,7 @@
 - name: "retropie | config | es input | apply"
   template:
     src     : "es_input.cfg.j2"
-    dest    : "/opt/retropie/configs/all/emulationstation/es_input.cfg"
+    dest    : "{{ retropie_cfg }}/all/emulationstation/es_input.cfg"
     owner   : "pi"
     group   : "pi"
     mode    : "0664"
@@ -240,18 +251,18 @@
 
 - name: "mupen64plus.cfg | n64 | save locations | updates"
   lineinfile:
-    path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
+    path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
     regexp  : "^SaveStatePath"
-    line    : 'SaveStatePath   = "{{ retropie_n64.state_dir }}"'
+    line    : 'SaveStatePath   = "{{ retropie_n64.state }}"'
   tags:
     - retropie
     - retropie-n64
 
 - name: "mupen64plus.cfg | n64 | state locations | updates"
   lineinfile:
-    path    : "/opt/retropie/configs/n64/mupen64plus.cfg"
+    path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
     regexp  : "^SaveSRAMPath"
-    line    : 'SaveSRAMPath    = "{{ retropie_n64.save_dir  }}"'
+    line    : 'SaveSRAMPath    = "{{ retropie_n64.save  }}"'
   tags:
     - retropie
     - retropie-n64
@@ -259,26 +270,29 @@
 #################################################################
 
 - name: "retroarch.cfg | psx | video smoothing"
-  when      :
-    - retropie_psx.video_smoothing
   lineinfile:
-    path    : "/opt/retropie/configs/psx/retroarch.cfg"
+    path    : "{{ retropie_cfg }}/psx/retroarch.cfg"
     regexp  : '^video_smooth'
-    line    : 'video_smooth        = "true"'
+    line    : 'video_smooth        = "{{ retropie_psx.video_smoothing | lower }}"'
   tags:
     - retropie
     - retropie-psx
 
-- name: "retroarch.cfg | psx | video smoothing"
-  with_items:
-    - "pcsx_rearmed_neon_enhancement_enable"
-    - "pcsx_rearmed_neon_enhancement_no_main"
-  when      :
-    - retropie_psx.video_smoothing
-  lineinfile:
-    path    : "/opt/retropie/configs/all/retroarch.cfg"
-    regexp  : '^{{ item }}'
-    line    : '{{ item }} = "enabled"'
+- name: "mkdirs | psx"
+  file:
+    path    : "{{ retropie_cfg }}/psx/{{ retropie_psx.emu }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - retropie-psx
+
+- name: "retroarch.cfg | psx | controller remap"
+  template:
+    src     : "controller_psx.j2"
+    dest    : "{{ retropie_cfg }}/psx/{{ retropie_psx.emu }}/{{ retropie_psx.emu }}.rmp"
   tags:
     - retropie
     - retropie-psx
@@ -365,6 +379,20 @@
 
 #################################################################
 
+- name: "steam | mkdir"
+  with_items:
+    - "{{ retropie_steam.home }}"
+    - "{{ retropie_steam.cfg  }}"
+  file:
+    dest    : "{{ item }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - retropie-steam
+
 - name: "steam | apt key"
   apt_key:
     url     : "http://archive.itimmer.nl/itimmer.gpg"
@@ -386,20 +414,6 @@
     name    : "moonlight-embedded"
     state   : "present"
     update_cache: "yes"
-  tags:
-    - retropie
-    - retropie-steam
-
-- name: "steam  | mkdir"
-  with_items:
-    - "{{ retropie_steam.home   }}"
-    - "{{ retropie_steam.config }}"
-  file:
-    dest    : "{{ item }}"
-    owner   : "pi"
-    group   : "pi"
-    mode    : "0775"
-    state   : "directory"
   tags:
     - retropie
     - retropie-steam

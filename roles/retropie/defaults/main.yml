@@ -1,22 +1,24 @@
 ---
 #######################################################################
 
-retropie_shortcuts:
-  - src   : "/opt/retropie/configs/all/emulationstation/"
-    dest  : "/home/pi/.cfg_all_emulationstation"
-  - src   : "/opt/retropie/configs/all/retroarch/"
-    dest  : "/home/pi/.cfg_all_retroarch"
-  - src   : "/etc/emulationstation/"
-    dest  : "/home/pi/.cfg_emulationstation"
-  - src   : "/opt/retropie/configs/"
-    dest  : "/home/pi/.cfg_retroarch"
-  - src   : "/opt/retropie/configs/all/"
-    dest  : "/home/pi/.cfg_all"
+retropie_home   : "/home/pi/RetroPie"
+retropie_cfg    : "/opt/retropie/configs"
+retropie_theme  : "eudora"
+retropie_splash : "retropie.mov"
 
 #######################################################################
 
-retropie_theme  : "eudora"
-retropie_splash : "retropie.mov"
+retropie_shortcuts:
+  - src   : "{{ retropie_cfg }}"
+    dest  : "/home/pi/.cfg_emus"
+  - src   : "{{ retropie_cfg }}/all"
+    dest  : "/home/pi/.cfg_core"
+  - src   : "{{ retropie_cfg }}/all/retroarch"
+    dest  : "/home/pi/.cfg_retroarch"
+  - src   : "{{ retropie_cfg }}/all/emulationstation"
+    dest  : "/home/pi/.cfg_es"
+  - src   : "/etc/emulationstation"
+    dest  : "/home/pi/.cfg_es_2"
 
 #######################################################################
 
@@ -43,13 +45,11 @@ retropie_runcommand:
 
 #######################################################################
 
-retropie_home: "/home/pi/RetroPie"
-
 retropie_emus:
   - name        : "retropie"
     desc        : "RetroPie"
     extension   : [ ".rp", ".sh" ]
-    path        : "/home/pi/RetroPie/retropiemenu"
+    path        : "{{ retropie_home }}/retropiemenu"
     cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
     platform    : ""
   - name        : "snes"
@@ -96,77 +96,33 @@ retropie_emus:
 #######################################################################
 
 retropie_keyboard:
-  up      : "w"
-  down    : "s"
-  left    : "a"
-  right   : "d"
-  a       : "n"
-  b       : "m"
-  y       : "h"
-  x       : "j"
-  start   : "enter"
-  select  : "backspace"
-  l_1     : "q"
-  r_1     : "e"
-  l_2     : "y"
-  r_2     : "u"
-  l_button: "t"
-  r_button: "i"
-  special : "ctrl"
+    { up      : "w",       down    : "s",         left    : "a",         right   : "d",
+      a       : "n",       b       : "m",         y       : "h",         x       : "j",
+      l_1     : "q",       r_1     : "e",         l_2     : "y",         r_2     : "u",
+      l_button: "t",                              r_button: "i",
+      start   : "enter",                          select  : "backspace",
+      special : "ctrl"                                                                  }
 
 retropie_controllers:
-  - name    : "Xbox Wireless Controller"
-    up      : "h0up"
-    down    : "h0down"
-    left    : "h0left"
-    right   : "h0right"
-    a       : "0"
-    b       : "1"
-    y       : "4"
-    x       : "3"
-    start   : "11"
-    select  : "15"
-    l_1     : "6"
-    r_1     : "7"
-    l_2     : "+5"
-    r_2     : "+4"
-    l_button: "13"
-    r_button: "14"
-    special : "16"
-    l_up    : "+0"
-    l_down  : "+1"
-    l_left  : "-0"
-    l_right : "-1"
-    r_up    : "+2"
-    r_down  : "+3"
-    r_left  : "-2"
-    r_right : "-3"
-  - name    : "Microsoft X-Box 360 pad"
-    up      : "h0up"
-    down    : "h0down"
-    left    : "h0left"
-    right   : "h0right"
-    a       : "0"
-    b       : "1"
-    y       : "3"
-    x       : "2"
-    start   : "9"
-    select  : "8"
-    l_1     : "4"
-    r_1     : "5"
-    l_2     : "6"
-    r_2     : "7"
-    l_button: "11"
-    r_button: "12"
-    special : "10"
-    l_up    : "+0"
-    l_down  : "+1"
-    l_left  : "-0"
-    l_right : "-1"
-    r_up    : "+2"
-    r_down  : "+3"
-    r_left  : "-2"
-    r_right : "-3"
+  - { name    : "Xbox Wireless Controller",
+      up      : "h0up",    down    : "h0down",    left    : "h0left",    right   : "h0right",
+      a       : "0",       b       : "1",         y       : "4",         x       : "3",
+      l_1     : "6",       r_1     : "7",         l_2     : "+5",        r_2     : "+4",
+      l_up    : "+0",      l_down  : "+1",        l_left  : "-0",        l_right : "-1",
+      r_up    : "+2",      r_down  : "+3",        r_left  : "-2",        r_right : "-3",
+      l_button: "13",                             r_button: "14",
+      start   : "11",                             select  : "15",
+      special : "16"                                                                    }
+
+  - { name    : "Microsoft X-Box 360 pad",
+      up      : "h0up",    down    : "h0down",    left    : "h0left",    right   : "h0right",
+      a       : "0",       b       : "1",         y       : "3",         x       : "2",
+      l_1     : "4",       r_1     : "5",         l_2     : "6",         r_2     : "7",
+      l_up    : "+0",      l_down  : "+1",        l_left  : "-0",        l_right : "-1",
+      r_up    : "+2",      r_down  : "+3",        r_left  : "-2",        r_right : "-3",
+      l_button: "11",                             r_button: "12",
+      start   : "9",                              select  : "8",
+      special : "10"                                                                    }
 
 #######################################################################
 
@@ -184,41 +140,40 @@ retropie_git:
 #######################################################################
 
 retropie_python:
-  home      : "/home/pi/RetroPie/roms/python"
-  bgm_home  : "/home/pi/bgm"
+  home      : "{{ retropie_home }}/roms/python"
+  bgm_home  : "{{ retropie_home }}/bgm"
   apt       : [ "python-pygame" ]
 
 #######################################################################
 
 retropie_fba:
-  home      : "/home/pi/RetroPie/roms/fba"
+  home      : "{{ retropie_home }}/roms/fba"
 
 #######################################################################
 
 retropie_n64:
-  state_dir : "{{ retropie_home }}/states/n64"
-  save_dir  : "{{ retropie_home }}/saves/n64"
+  home      : "{{ retropie_home }}/roms/n64"
+  state     : "{{ retropie_home }}/states/n64"
+  save      : "{{ retropie_home }}/saves/n64"
+  cfg       : "{{ retropie_cfg  }}/n64"
 
 #######################################################################
 
 retropie_psx:
   video_smoothing : true
+  emu   : "PCSX-ReARMed"
 
 #######################################################################
 
 retropie_steam:
-  home      : "/home/pi/RetroPie/roms/steam"
-  config    : "/opt/retropie/configs/steam"
+  home      : "{{ retropie_home }}/roms/steam"
+  cfg       : "{{ retropie_cfg  }}/steam"
   pc_ip     : "192.168.1.109"
   modes:
-    - res : "720"
-      fps : "30"
-    - res : "720"
-      fps : "60"
-    - res : "1080"
-      fps : "30"
-    - res : "1080"
-      fps : "60"
+    - { res : "720",  fps : "30" }
+    - { res : "720",  fps : "60" }
+    - { res : "1080", fps : "30" }
+    - { res : "1080", fps : "60" }
 
 #######################################################################
 
