@@ -5,11 +5,9 @@
 - name: "mkdirs"
   file:
     name    : "{{ item }}"
-    state   : "directory"
-    recurse : "yes"
     owner   : "{{ primary_user.id }}"
     group   : "{{ primary_user.id }}"
-    mode    : "0755"
+    state   : "directory"
   with_items:
     - "{{ gradle.home }}"
   tags:
@@ -29,21 +27,14 @@
 
 #################################################################
 
-- name: "wget"
-  get_url:
-    url     : "{{ gradle.url }}{{ gradle.zip }}"
-    dest    : "/tmp/{{ gradle.zip }}"
-  tags:
-    - developer
-    - gradle
-
 - name: "unpack"
   unarchive:
-    src     : "/tmp/{{ gradle.zip }}"
-    dest    : "{{ gradle.home }}"
-    owner   : "{{ primary_user.id }}"
-    group   : "{{ primary_user.id }}"
-    creates : "{{ gradle.home }}/gradle/"
+    src         : "{{ gradle.url }}{{ gradle.zip }}"
+    dest        : "{{ gradle.home }}"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    creates     : "{{ gradle.home }}/gradle-{{ gradle_version }}/"
+    remote_src  : "yes"
   tags:
     - developer
     - gradle

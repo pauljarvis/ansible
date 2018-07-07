@@ -86,7 +86,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} --diff ${tags} ${skip} ${verbosity} ${sudo} ${check} ${key}"
+exe="ansible-playbook ${playbook} --diff${tags}${skip}${verbosity}${sudo}${check}${key}"
 echo "${exe}"
 eval "${exe}"
 

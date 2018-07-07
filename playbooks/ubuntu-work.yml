@@ -59,7 +59,8 @@
     - { role: developer/android               ,
           android_version     : "3.0.1.0"     ,
           android_build       : "171.4443003" }
-    - { role: developer/gradle                }
+    - { role: developer/gradle                ,
+          gradle_version      : "4.1"         }
     - { role: developer/terraform             }
     - { role: developer/docker                }
     - { role: developer/awscli                }

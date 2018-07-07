@@ -6,6 +6,7 @@ Host *
   ForwardX11            no
   ServerAliveInterval   120
   LogLevel              QUIET
+#  LogLevel              INFO
 {% for host in ssh_config.hosts %}
 
 Host {% for psuedo in host.psuedo_names -%}{{ psuedo }} {% endfor %}

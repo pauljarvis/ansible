@@ -25,7 +25,7 @@ ssh_config:
     - name        : "lc0hymgt01.tpplc.local"
       psuedo_names: [ "bastion-onprem" ]
     - proxy       : "stest@ssh-bastion.shared.devops.indev01.aws.travisperkins.cloud"
-      psuedo_names: [ "*.midw.indev01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.indev01.aws.travisperkins.cloud" ]
+      psuedo_names: [ "*.indev01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.indev01.aws.travisperkins.cloud" ]
     - proxy       : "stest@ssh-bastion.shared.devops.intest01.aws.travisperkins.cloud"
-      psuedo_names: [ "*.midw.intest01.aws.travisperkins.cloud", "*.core.intest01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.intest01.aws.travisperkins.cloud" ]
+      psuedo_names: [ "*.intest01.aws.travisperkins.cloud", "!ssh-bastion.shared.devops.intest01.aws.travisperkins.cloud" ]
 

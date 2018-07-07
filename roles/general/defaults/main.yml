@@ -9,7 +9,8 @@ libraries_apt:
   - xclip
 
 libraries_apt_gui:
-  - vlc
   - baobab            # Disk Usage
+  - shutter           # Snipping Tool 
+  - vlc
   - gedit
 
