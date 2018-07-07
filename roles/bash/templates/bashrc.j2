@@ -120,12 +120,12 @@ export JAVA_HOME="{{ java.home }}/java"
 export PATH="${JAVA_HOME}/bin:${PATH}"
 {% endif %}
 {% if gradle is defined %}
-export GRADLE_HOME="{{ gradle.home }}/gradle-4.1"
+export GRADLE_HOME="{{ gradle.home }}/gradle-{{ gradle_version }}"
 export PATH="${GRADLE_HOME}/bin:${PATH}"
 {% endif %}
 {% if terraform is defined %}
-export TERRAFORM_HOME="{{ terraform.home }}"
-export PATH="${TERRAFORM_HOME}/bin:${PATH}"
+export TERRAFORM_HOME="{{ terraform.home }}/{{ terraform_version }}"
+export PATH="${TERRAFORM_HOME}:${PATH}"
 {% endif %}
 {% if bash_welcome %}
 #####################################################################
