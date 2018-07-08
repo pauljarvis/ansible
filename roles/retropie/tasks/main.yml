@@ -338,19 +338,19 @@
     - retropie
     - retropie-python
 
-- name: "python scripts | resolve dependancies"
-  pip:
-    requirements : "{{ retropie_git.dest }}/requirements.txt"
-  tags:
-    - retropie
-    - retropie-python
-
 - name: "python scripts | apt"
   with_items:
     - "{{ retropie_python.apt }}"
   apt:
     name    : "{{ item }}"
     state   : "latest"
+  tags:
+    - retropie
+    - retropie-python
+
+- name: "python scripts | resolve dependancies"
+  pip:
+    requirements : "{{ retropie_git.dest }}/requirements.txt"
   tags:
     - retropie
     - retropie-python
