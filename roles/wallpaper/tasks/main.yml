@@ -32,7 +32,7 @@
     owner: "{{ root_user.id }}"
     group: "{{ root_user.id }}"
     mode: 0755
-  notify: "service | start"
+  notify: "wallpaper service | start"
   tags:
     - wallpaper
 
