@@ -7,8 +7,9 @@ source ./scripts/setup.sh
 
 usage () {
   PRG=$(basename $0)
-  echo "$PRG -p PLAYBOOK [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-c] [-h]"
+  echo "$PRG -p PLAYBOOK [-l LIMIT] [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-c] [-h]"
   echo "     -p PLAYBOOK      path to playbook"
+  echo "     -l LIMIT         limit to host"
   echo "     -t TAGS          run only tasks with provided tags"
   echo "     -z SKIP          skips tasks with provided tags"
   echo "     -v VERBOSITY     v, vv, vvv, vvvv"
@@ -27,10 +28,13 @@ get_playbook () {
 #######################################################################
 # Get Input
 
-while getopts ":p:t:z:v:k:sch" arg; do
+while getopts ":p:l:t:z:v:k:sch" arg; do
   case $arg in
     p)
       playbook=$(get_playbook "${OPTARG}")
+      ;;
+    l)
+      limit=" --limit \"${OPTARG}\""
       ;;
     t)
       tags=" --tags \"${OPTARG}\""
@@ -86,7 +90,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} --diff${tags}${skip}${verbosity}${sudo}${check}${key}"
+exe="ansible-playbook ${playbook} --diff${limit}${tags}${skip}${verbosity}${sudo}${check}${key}"
 echo "${exe}"
 eval "${exe}"
 
