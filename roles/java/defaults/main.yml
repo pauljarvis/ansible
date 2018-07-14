@@ -1,7 +1,6 @@
 ---
 
 libraries_apt:
-  - openjdk-7-jdk
   - openjdk-8-jdk
 
 java:
