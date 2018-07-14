@@ -104,6 +104,43 @@
     - retropie
     - retropie-personalise
 
+- name: "personalisation | game images | binary"
+  unarchive:
+    src     : "bin/game_images.zip"
+    dest    : "/opt/retropie/configs/all/emulationstation"
+    owner   : "pi"
+    group   : "pi"
+  tags:
+    - retropie
+    - retropie-personalise
+
+- name: "personalisation | gamelists | makedirs"
+  with_items:
+    - "{{ retropie_emus }}"
+  file:
+    path    : "/opt/retropie/configs/all/emulationstation/gamelists/{{ item.name }}"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0775"
+    state   : "directory"
+  tags:
+    - retropie
+    - retropie-personalise
+    - demo
+
+- name: "personalisation | gamelists | config"
+  with_items:
+    - "{{ retropie_emus }}"
+  copy:
+    src     : "{{ item.name }}_gamelist.xml"
+    dest    : "/opt/retropie/configs/all/emulationstation/gamelists/{{ item.name }}/gamelist.xml"
+    owner   : "pi"
+    group   : "pi"
+  tags:
+    - retropie
+    - retropie-personalise
+    - demo
+
 #################################################################
 
 - name: "emulationstation | es emulated system | config | apply"

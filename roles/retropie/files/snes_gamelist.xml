@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Chrono Trigger.smc</path>
+		<name>Chrono Trigger</name>
+		<desc>The 32-Meg quest begins.
+The millennium. A portal is opened. The chain of time is broken. A young man is transported into the past, altering the course of history and the outcome of the future. He has to find his way home, but first he must travel to the outer edges of time to repair the world's chronology. On the way he encounters strange friends and foes, utilizes incredible devices and vehicles, and penetrates and neutralizes the fortresses of the past, present, and future. A paradox has been created. If he does not restore the order of time, nothing will ever be the same. He is the one who will become a hero. He is Crono.
+*FROM THE CREATORS OF THE ACCLAIMED FINAL FANTASY SERIES
+*CHARACTER DESIGNS BY AKIRA TORIYAMA</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Chrono Trigger-image.jpg</image>
+		<releasedate>19950311T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Aladdin.smc</path>
+		<name>Disney's Aladdin</name>
+		<desc>Discover a Whole New World of Adventure... For years, Jafar, the Sultan's evil advisor has sought a magic treasure - a single lamp that holds the key to the greatest power in the world. With this goal in sight, Jafar learns that only one person in the world can claim the magic lamp from the dreaded Cave of Wonders - one whose rags hide a heart that is pure - a diamond in the rough! Join Aladdin and his pet monkey Abu, as they race through the marketplace toward their date with destiny. Watch as Jafar tricks our hero and his friend into retrieving the lamp from the dangerous Cave of Wonders. But Aladdin and Abu outwit Jafar, releasing the power of a wacky blue Genie! Now Aladdin will have the chance to spoil Jafar's devious plans and win the hand of the beautiful princess Jasmine. But it will take more than magic to make his wishes come true...</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Aladdin-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Breath of Fire 2.smc</path>
+		<name>Breath of Fire II</name>
+		<desc>The incredible sequel to the best-selling RPG hit Breath of Fire is here! You are the last member of the Dragon clan, fighting to rid the world of a growing evil. A cast of unusual and exciting companions joins you in your adventures across a wondrous land full of magic and mystery. You'll find strange mystic items, memorable monsters and exotic locations in your quest to conquer evil. There's strategy and spellcasting galore in the hours of compelling action and adventure that awaits you. Breath of Fire II is the ultimate in RPG excitement!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Breath of Fire 2-image.jpg</image>
+		<releasedate>19951203T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Donkey Kong Country 1.smc</path>
+		<name>Donkey Kong Country</name>
+		<desc>Madness and Mayhem in this 3-D Gorilla Thriller!
+
+Donkey Kong is back with a new sidekick, Diddy Kong, in a crazy island adventure! Challenged by the crazed tribe of reptilian Kremlings, they endeavor to get back their stolen banana horde! Armed with lightning-quick moves, chest-pounding muscle and awesome aerial acrobatics, our duo is ready to face their cunning adversaries. With the help of Donkey Kong's quirky family and his wild animal mounts, they squabble and scamper their way through the unending monkey mayhem!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Donkey Kong Country 1-image.jpg</image>
+		<releasedate>19941121T000000</releasedate>
+		<developer>Rare</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Donkey Kong Country 2 - Diddy's Kong Quest.smc</path>
+		<name>Donkey Kong Country 2: Diddy's Kong Quest</name>
+		<desc>O.K. KID, WIPE THAT DROOL OFF YOUR CHIN AND LISTEN UP IF YOU REALLY WANT TO LEARN SOMETHING ABOUT THIS GAME. Sure, it's got NEWFANGLED COMPUTER GRAPHICS and what Diddy calls stereo sound that rocks heavily and with little resistance! BUT, the game play Well, they FINALLY added some proper challenge to the game - a snap for me of course. AND THE STORY You sure ask a lot of questions, kid! Kaptain K. Rool and his cruelest cut-throat Kremlings have kidnapped that flea-bitten ape Donkey Kong. I figured I'd rescue him when the little pip-squeak DIDDY pops up along with his girlfriend, and they head off fixin' to prove themselves heroes or something. Come to think of it, I haven't laid eyes on those two for quite a while. I just may have to help them out after all!
+
+*PLAY AS DIDDY OR DIXIE KONG, EACH WITH UNIQUE ABILITIES!
+*EIGHT EXCITING WORLDS WITH ALL-NEW LEVELS AND KREMLINGS!
+*BRAND NEW KONG FAMILY MEMBERS AND FRIENDS!
+*TONS OF NEW MOVES AND SPECIAL ABILITIES!
+*MORE SECRETS AND CHALLENGES THAN DONKEY KONG COUNTRY!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Donkey Kong Country 2 - Diddy's Kong Quest-image.jpg</image>
+		<releasedate>19951120T000000</releasedate>
+		<developer>Rare</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Donkey Kong Country 3 - Dixie Kong's Double Trouble.smc</path>
+		<name>Donkey Kong Country 3: Dixie Kong's Double Trouble!</name>
+		<desc>Monkey Mayhem Lives On!
+
+Kiddy Kong is a portly primate toddler with incredible power and agility! He teams up with Dixie Kong to stop the ever-present army of Kremlings. The game play and ACM graphics just keep getting better in this visually stunning installment in one of the most popular video game series of all time!
+
+Combining their unique abilities as they throw each other into action, Dixie Kong and Kiddy Kong set off to rescue Diddy Kong and Donkey Kong. Collect tons of treasure, grab billions of bananas and find more secret stuff than you've ever seen (or not seen) as you set off on the greatest DKC adventure yet! The final showdown with KAOS takes place in a cliff-top laboratory at the End of the World. It could get seriously ugly. Monkey mayhem lives on in this exotic island adventure!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Donkey Kong Country 3 - Dixie Kong's Double Trouble-image.jpg</image>
+		<releasedate>19961122T000000</releasedate>
+		<developer>Rare</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Earthbound.smc</path>
+		<name>EarthBound</name>
+		<desc>Intergalactic terror stikes the small town of Onett as a blazing extraterrestrial object crashes in the night! The earth now faces imminent destruction by the universal evil threat known as Giygas! Armed with a cracked baseball bat, a cookie and an ATM card, a courageous boy named Ness vows to save the planet from hideous destruction. He must first find his heroic companions, Paula, Jeff and Poo. Will Ness succeed in his attempts to ambush countless frightening monsters as he travels? The ultimate test lies in the impending encounter with the all powerful Giygas!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Earthbound-image.png</image>
+		<releasedate>19940827T000000</releasedate>
+		<developer>Ape Studios</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./F-ZERO.smc</path>
+		<name>F-Zero</name>
+		<desc>F-Zero is set in the year 2560, when humanity's multiple encounters with alien life forms had resulted in the expansion of Earth's social framework. This led to commercial, technological and cultural interchanges between planets. The multi-billionaires who earned their wealth through intergalactic trade were mainly satisfied with their lifestyles, although most coveted more entertainment in their lives. This resulted in a new entertainment based on the Formula One races to be founded with vehicles that could hover one foot above the track. These Grand Prix races were soon named "F-Zero" after a rise in popularity of the races. The game introduced the first set of F-Zero racers: Captain Falcon, Dr. Stewart, Pico, and Samurai Goroh.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/F-ZERO-image.jpg</image>
+		<releasedate>19910823T000000</releasedate>
+		<developer>Nintendo EAD</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Racing</genre>
+	</game>
+	<game>
+		<path>./Final Fantasy 4.smc</path>
+		<name>Final Fantasy IV</name>
+		<desc>In the kingdom of Baron, powerful airships rule the skies. At the head of this elite fighting force is Cecil, Captain of the Red Wings, As our adventure begins, Cecil and his squadron are ordered to steal a powerful crystal from a rival kingdom. Upon their return, Cecil questions the King's orders and is stripped of his command. To prove his loyalty, he must slay a dreadful monster and deliver a mysterious package to a neighboring town. But when the package explodes, destroying everyone, Cecil and his friend Kain vow to fight the King's dark forces. Will you be able to save the world from their evil plan to control the crystals? Get ready for the most challenging role-playing adventure ever.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Final Fantasy 4-image.jpg</image>
+		<releasedate>19910719T000000</releasedate>
+		<developer>Square</developer>
+		<publisher>Square</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Final Fantasy 5.smc</path>
+		<name>Final Fantasy V</name>
+		<desc>The Elemental Crystals...the life source of the planet. With them, gentle winds blow, the seas are active, fire burns bright, and the earth is full of life. All seems well in the world, until the wind suddenly stops, the sea begin to grow stagnant, the heat of fire becomes scarce, and the earth begins to wither. King Tycoon, sensing a premonition of evil, hurries off to check on the Wind Crystal, only to witness it destroy itself.
+
+Meanwhile, a young traveler named Butz is camping in a field when a giant meteor strikes the planet. When he heads out to examine the meteor, he is shocked to find a young girl named Lenna, who is the princess of Tycoon, and a old man named Galuf, who is on a critical mission. Later, joined by Faris, a pirate captain, the foursome must travel the land in search of the destructor of the Crystals, and save the planet at any cost!
+
+Final Fantasy V featured many new gameplay options and tactics, including an improved Job/Ability system (like in Final Fantasy Tactics), the return of the ATB (Active Time Battle) turn system, and all of the classic FF gameplay you've come to know and love!
+
+Final Fantasy V was released as a stand-alone game in Japan, and again in Final Fantasy Collection. Its U.S. debut was as part of Final Fantasy Anthology. It was also later ported to the Gameboy Advance, adding 4 new Jobs, a new 30-floor dungeon, a bestiary, a music player, the ability to quick save anywhere, a few extra pieces of equipment, and a newly update translation.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Final Fantasy 5-image.jpg</image>
+		<releasedate>19921206T000000</releasedate>
+		<developer>SquareSoft</developer>
+		<publisher>SquareSoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Final Fantasy 6.smc</path>
+		<name>Final Fantasy VI</name>
+		<desc>Ages ago, evil beings created powerful creatures called Espers, and unleashed them against each other. The resulting battles left their world a smoldering rubble. Legend has it, the Espers destroyed themselves and most of humanity. Magic disappeared forever. Centuries have passed and a rational world now exists with Espers living only in myths, until one frozen solid since the ancient wars is unearthed. Suddenly, there are reports of magical attacks on civilians. Imperial Commandos launch raids using magic-powered MagiTek weapons. Magic is obviously alive and the world is in danger again. Who or what is behind the rediscovery and redeployment of this legendary power? What chaotic plans exists that will wreak havoc on this orderly world?</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Final Fantasy 6-image.jpg</image>
+		<releasedate>19940402T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Harvest Moon.smc</path>
+		<name>Harvest Moon</name>
+		<desc>Getting Back to the Basics
+City kids of all ages will want to take in the natural beauty and breathe the fresh country air in this fascinating farming simulation game. Harvest Moon gives you a chance to experience first-hand the down-to-earth goodness of life on a farm. Instead of zapping zombies from Mars, your goal is to get by on old-fashioned hard work and dedication. Success in this game is measured by the fruits of your labor, so strap on the suspenders, roll up your shirt sleeves and dig in!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Harvest Moon-image.jpg</image>
+		<releasedate>19960809T000000</releasedate>
+		<developer>Natsume</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Secret of Evermore.smc</path>
+		<name>Secret of Evermore</name>
+		<desc>Secret of Evermore is another famous RPG developed and released by Square in 1995. A day at the movies for a young boy &amp; his dog turns into an adventure that spans across several different time periods and locations, on their journey they discover the Secret of Evermore and find their way home. Produced by the North American branch of Square, Evermore's soundtrack would be the first major work by Jeremy Soule, the famed Elder Scrolls composer.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Secret of Evermore-image.jpg</image>
+		<releasedate>19951001T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Secret of Mana.smc</path>
+		<name>Secret of Mana</name>
+		<desc>GOOD AND EVIL BATTLE FOR A YOUNG WARRIOR’S HEART.
+There is one force in the universe that keeps good and evil in perfect balance. It is called the tree of Mana. But a magic sword has tricked a young warrior into upsetting this balance, spreading evil throughout the land.
+
+Thus, the warrior must undertake a dangerous journey to find the seeds of the Mana tree which have been hidden for centuries. Only then can perfect harmony be restored.
+
+In this incredible adventure, things are not as they seem. Magic swords release evil as well as fight it. Treasure chests hold booby traps. Monsters are friends and friends are enemies. Potions give power, black magic takes it away. Dragons fly, weapons change.
+
+It’s a world turned upside down that you must help the warrior make right. And the only way to succeed is to solve the Secret of Mana.
+
+Brought to you from the makers of the Final Fantasy series.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Secret of Mana-image.jpg</image>
+		<releasedate>19930806T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Action</genre>
+		<players>3</players>
+	</game>
+	<game>
+		<path>./Sim City.smc</path>
+		<name>SimCity</name>
+		<desc>SimCity sets you as the mayor of a new municipality, with the responsibility of building and maintaining a place where citizens can move to and work and be happy. The first task is to place essentials such as housing, transport links, schools, factories and shops. There are 50 types of these, allowing for homes of all standards and different types of businesses. Make sure to consider which sites are effective for which tasks. Some power sources pollute, others don't but are more expensive. Taxes must be raised to ensure an income, and then portions allocated to public services such as policing and roads. Earthquakes, floods and fires are all emergency situations that must be dealt to contain any damage.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Sim City-image.jpg</image>
+		<releasedate>19910813T000000</releasedate>
+		<developer>Intelligent Systems</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Construction and Management Simulation</genre>
+	</game>
+	<game>
+		<path>./Sim City 2000.smc</path>
+		<name>SimCity 2000</name>
+		<desc>SimCity 2000 is the successor to the ground breaking city simulation game Sim City. You are once again the mayor, but this time you can fully customize the terrain before building your city. The graphics are isometric, whereas the original had graphics displayed in a top-down fashion.
+
+This title adds numerous features over the original such as the ability of building "light" zones, subways, hospitals, colleges, zoos, and arcos which are actually cities in cities. You can now give names to places, and your city is surrounded by neighboring towns with which you can make trade. Finally, instead of the poll in the first game you now have the option of reading several newspapers to get an idea of your progress.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Sim City 2000-image.jpg</image>
+		<releasedate>19961101T000000</releasedate>
+		<developer>Imagineer</developer>
+		<publisher>Konami</publisher>
+		<genre>Construction and Management Simulation</genre>
+	</game>
+	<game>
+		<path>./Star Fox.smc</path>
+		<name>Star Fox</name>
+		<desc>Lead the Star Fox Team to Victory!
+
+In the distant Lylat star system, imagine yourself at the controls of a futuristic, heavily armed, space fighter - Arwing.
+
+Lead the counter-attack on an invasion force of hundreds of alien tanks, fighter ships, laser gun emplacements and super battleships.  Maneuver at warp speed through fog-enshrouded canyons, dense asteroid belts and waves of the enemy's best defense.  You must use skill and cunning to bring the fight to the enemy's home planet Venom and smash the Core Brain for victory!
+
+* The Super FX micro chip is on-board for fluid game control and special effects previously unavailable in home video games!  The action explodes from all directions in realistic, real-time, three dimensions.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Star Fox-image.jpg</image>
+		<releasedate>19930221T000000</releasedate>
+		<developer>Argonaut</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Shooter</genre>
+	</game>
+	<game>
+		<path>./Street Fighter II Turbo - Hyper Fighting.smc</path>
+		<name>Street Fighter II Turbo</name>
+		<desc>Feel the Need for Speed!
+
+They're back and they're badder than ever! Faster, stronger and with all new moves, twelve of the greatest fighters from across the globe are ready to do battle! Choose your champion and get ready for the big brawl as they try to earn the right to battle M. Bison for the title. And just when you think you've mastered it all, crank it up a notch and go TURBO!
+
+Cover your head as Blanka dives at you from above and hear your neck crack as Zangief hits you with the Turbo Spinning Clothesline. Stare in disbelief as Dhalsim disappears before your eyes and Chun Li unleashes her blazing fireball! Watch in awe as Sagat fights Sagat and Ryu does a Hurricane Kick in mid-air! Survive all this and you may live long enough to become the greatest Street Fighter ever!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Street Fighter II Turbo - Hyper Fighting-image.jpg</image>
+		<releasedate>19930710T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Fighting</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario All-Stars.smc</path>
+		<name>Super Mario All-Stars</name>
+		<desc>Revisit the magic and fun of the classic Super Mario Bros. series on your Super NES!  All the great Super Mario Bros. games for the NES have been powered up with 16-bit graphics and sound and collected on one super game pak.  As an added bonus, the previously unreleased “Lost Levels” are included.  These super challenging courses have never been available in this country until now!
+
+* Four great games in one game pak!
+* Battery backed memory saves up to 4 players’ progress through every game!
+* Play alone or 2 players can alternate play!
+* New 16-bit graphics, sound, and other surprises!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Mario All-Stars-image.jpg</image>
+		<releasedate>19930801T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platform</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario Kart.smc</path>
+		<name>Super Mario Kart</name>
+		<desc>The Super Mario GoKart Park is open for tons of racing fun!  Hit the track with Mario, Luigi, Yoshi and the Princess.  Get tough and lock fenders with Donkey Kong, Jr. and Bowser.  Even Toad and Koopa Troopa will mix it up in an all-out quest for the Gold Cup!  Race head-to-head with a friend or challenge the computer in great, split-screen, Mode 7 graphics.
+
+Feel like a bit less speed and a lot more strategy?  Take a crack at the Battle Mode!  In four different maze-like courses you’ll use Koopa Shells, Banana Peels, Super Stars and other wacky weapons to burst your opponent's target balloons and triumph!
+
+* 2 games in 1 - Mario Grand Prix and Battle Mode
+* 8  Familiar Characters
+* 20 Different Tracks
+* 3 Different Skill Levels
+* Battery-backed memory saves your best times!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Mario Kart-image.jpg</image>
+		<releasedate>19920901T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Racing</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario RPG - Legend of the Seven Stars.smc</path>
+		<name>Super Mario RPG: Legend of the Seven Stars</name>
+		<desc>Mario returns in this incredible new role-playing adventure! His latest rival is Smithy, a menacing creature who causes fear and treachery in the Mushroom Kingdom. Mario must recover seven stars and repair the Star Road before he can make his way to Bowser's castle for a final confrontation with Smithy. Powerful weapons, sinister spells and other useful items help Mario to complete his harrowing journey. New friends and old allies support him along the way. Even Bowser lends a hand!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Mario RPG - Legend of the Seven Stars-image.jpg</image>
+		<releasedate>19960513T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Super Mario World 1.smc</path>
+		<name>Super Mario World</name>
+		<desc>Mario’s off on his biggest adventure ever, and this time he’s brought along a friend.  Yoshi the dinosaur teams up with Mario to battle Bowser, who has kidnapped Princess Toadstool once again.  Guide Mario and Yoshi through nine peril-filled worlds to the final showdown in Bowser’s castle.
+
+Use Mario’s new powers and Yoshi’s voracious monster-gobbling appetite as you explore 96 levels filled with dangerous new monsters and traps.  Climb mountains and cross rivers, and descend into subterranean depths.  Destroy the seven Koopa castles and find keys to gain entrance to hidden levels.  Discover more warps and thrilling bonus worlds than ever before!
+
+Mario’s back, and this time he’s better than ever!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Mario World 1-image.jpg</image>
+		<releasedate>19910813T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platform</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario World 2 - Yoshi's Island.smc</path>
+		<name>Super Mario World 2: Yoshi's Island</name>
+		<desc>Yoshi Returns to Save Baby Mario in this Sequel to Super Mario World!
+The Evil Magikoopa, Kamek, is out to kidnap Baby Mario!  In this sequel to Super Mario World, you play as Yoshi.  Your goal is to successfully carry Baby Mario back to his parents in the Mushroom Kingdom while avoiding all of Kamek’s clever traps and evil minions.  Enjoy the various backgrounds of the rich and vibrant locales of Yoshi’s Island as you race to complete your quest.
+
+Is Yoshi up to the momentous task at hand?  Help him toss his eggs, manipulate unique objects and solve puzzling situations!  When in doubt, don’t be afraid to try EVERYTHING!!
+
+* 16 megs of memory provide 6 worlds - each with 8 stages!
+* Morphmation delivers powerful special effects - scaling, rotating, and 360 degree scrolling.
+* Huge characters and even bigger bosses require quick thinking!
+* Battery back-up to save your progress.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Mario World 2 - Yoshi's Island-image.jpg</image>
+		<releasedate>19951004T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Super Metroid.smc</path>
+		<name>Super Metroid</name>
+		<desc>Take on a legion of Space Pirates and a new Metroid force as you forge into the covert underworld of Planet Zebes!  It’s up to you and Samus to recapture the long-surviving Metroid hatchling before evil hands unleash its energy.
+
+An army of ominous creatures are poised for battle at every turn of Zebes’ twisted, threatening passageways… including the menacing Ridley and the great lizard Kraid.  Knock down enemies with a killer somersault and swing on an electric beam through narrow passageways!  They’re no match for you and Samus… but wait!  It seems the Mother Brain has returned…</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Metroid-image.jpg</image>
+		<releasedate>19940418T000000</releasedate>
+		<developer>Intelligent Systems</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Super Smash T.V..smc</path>
+		<name>Super Smash T.V.</name>
+		<desc>The year is 1999. The world's most popular television show is Smash T.V., an ultra-violent contest between two armed-to-the-teeth combatants, set loose in a series of deadly arenas that are filled to bursting with hordes of mindless beasts and killer robots. The aim of the game is to blast everything in sight and try to grab more cash and prizes than the other guy. Toaster ovens, VCRs, fancy cars and luxury holidays are there for the taking... for anyone who can survive long enough to enjoy them.
+
+Smash T.V. is an insane shoot-em-up from the brain of Eugene Jarvis, creator of Robotron: 2084. It retains that game's frantic style of play and two-joystick control method, but adds plenty of gore, violence, a hint of satire and that all-important two player mode.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Super Smash T.V.-image.jpg</image>
+		<releasedate>19920201T000000</releasedate>
+		<developer>Beam Software</developer>
+		<publisher>Acclaim</publisher>
+		<genre>Shooter</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Terranigma.smc</path>
+		<name>Terranigma</name>
+		<desc>A boy’s curiosity triggers events that lead to the resurrection of life on this planet.
+In the distant past, a calamitous struggle between light and dark took place on this planet. The clash of the two opposing powers scoured the planet’s surface entirely of life, and the two forces fell into a deep sleep...
+
+ln the world on the inside of the planet, there exists just one small village of Crysta. Ark, a mischievous teenage boy, somehow causes a crisis in the village that makes it necessary for him to leave. His trip to save his fellow villagers eventually becomes a journey across time to resurrect the planet.
+
+On his epic journey, Ark must resurrect continents, revive all forms of life, and re-establish civilization. What fate awaits Ark at the end of his journey?</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Terranigma-image.jpg</image>
+		<releasedate>19961219T000000</releasedate>
+		<developer>Quintet</developer>
+		<publisher>Enix</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./The Firemen.smc</path>
+		<name>The Firemen</name>
+		<desc>The fire is alive - and it's racing straight towards you!
+A fire has broken out in a high-tech chemical factory, where a highly explosive chemical, MDL, is being developed. It's up to you and your fire-fighting team to save the people trapped in the building, and stop the fire from reaching the MDL. Because if it does, the whole building is going to blow...
+
+-An action shooting game with a gripping storyline and 2D overhead perspective.
+-Evade sudden hazards and save survivors.
+-Multi-level action - crawl along the ground to advance, and hose the fire from both high and low levels.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/The Firemen-image.jpg</image>
+		<releasedate>19950315T000000</releasedate>
+		<developer>HUMAN</developer>
+		<publisher>HUMAN</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./The Legend of Zelda - A Link to the Past.smc</path>
+		<name>The Legend of Zelda: A Link to the Past</name>
+		<desc>Venture back to Hyrule and an age of magic and heroes.  The predecessors of Link and Zelda face monsters on the march when a menacing magician takes over the kingdom.  Only you can prevent his evil plot from shattering the land of Hyrule.
+
+In your quest, you’ll venture into twisting mazes, dungeons, palaces and shadowy forests.  Test your mettle with mighty swords and magical weapons.  Or heft a boulder and hurl it at your enemies.  If the going gets tough, dive into a river--you can swing to escape!  Learn powerful spells, locate magical artifacts and solve the mysteries of the evil magician and the hidden realm of Hyrule.
+
+This exciting Super NES sequel to the Legend of Zelda and The Adventure of Link uses 16-bit power to create a quest so colorful and detailed you don’t just play it, you live it!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/The Legend of Zelda - A Link to the Past-image.jpg</image>
+		<releasedate>19920413T000000</releasedate>
+		<developer>Nintendo EAD</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./The Lion King.smc</path>
+		<name>The Lion King</name>
+		<desc>You think you want to be King? Get real. You're starting life as Simba, the cub. To survive and grow into a powerful adult lion, you must perfect your savage pounce, reckless roar and master fighting with all four paws. If you survive the challenge, you'll grow into a strong, ferocious adult lion.
+
+So prepare to scrap with hyenas. Blast through an elephant graveyard. Battle an in-your-face stampede of trampling wildebeests. And you'd better quit hanging with slackers like Timon and Pumbaa, unless you want to be scarfing bugs the rest of your life!
+
+Are you sure you want to be King? Then it's time to cut loose in the deadliest one-on-brawl ever. Defeat your evil Uncle Scar. Recapture the Pridelands. And reclaim your rightful place in the Circle of Life.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/The Lion King-image.jpg</image>
+		<releasedate>19941208T000000</releasedate>
+		<developer>Westwood Studios</developer>
+		<publisher>Virgin Interactive</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Breath of Fire 1.smc</path>
+		<name>Breath of Fire</name>
+		<desc>NOW YOU'RE PLAYING WITH FIRE!
+In a distant land, peace was maintained for thousands of years by a fearful dragon clan who could transform into powerful monsters. One day they discovered a goddess who could fulfill their every wish. Greed split the clan into Dark and Light Dragons, each battling the other to win her magic.
+
+One member of the Light Dragons, along with seven of his companions, emerged to keep the opposing forces from destroying their world. Using six magical keys, they sealed the goddess into another realm.
+
+Centuries have passed. The Dark Dragons are destroying the land in search of the keys. When they find the keys, they will once again release the magic goddess. Light Dragon... the time has come to draw your sword and fight for the future of your people.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/snes/Breath of Fire 1-image.jpg</image>
+		<releasedate>19940801T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+</gameList>

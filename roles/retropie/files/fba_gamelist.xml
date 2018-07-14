@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./mslug2.zip</path>
+		<name>Metal Slug 2</name>
+		<desc>As Marco, Eri, Tarma, or Fio, you must defeat the evil General Morden and his henchman. To do this, you must defeat various enemies that get in your way. Throughout the game, you can collect new weapons including the Heavy Machine Gun, Shot Gun, Rocket Launcher, Flame Shot, Laser Shot, Flame Bottles, and Armor Piercer. Also scattered throughout the game, you can ride in four different vehicles (aka: Slugs) such as the Metal Slug, Slug Flyer, Camel Slug, and SlugNoid. By using these vehicles, you can cause awesome destruction against Morden's evil army. Other items such as energy, extra ammunition, and food (eat too much and your player will gain weight) are also found throughout the game.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslug2-image.jpg</image>
+		<releasedate>19980101T000000</releasedate>
+		<developer>SNK</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./mslug3.zip</path>
+		<name>Metal Slug 3</name>
+		<desc>The rebellion orchestrated by General Morden to bring about a new global regime is now ancient history, and order and peace has begun to return to the world. Morden, brought back into power, was attempting another coup d'état, but government forces got wind of the plot beforehand and pre-empted the impending assault.
+Instrumental in squashing Morden's rebel forces, Marco and Tarma of the Peregrine Falcon Strike Force are ordered to lead the team after their earlier requests for resignation were denied. Although General Morden has been written off as "missing" by his followers, they have hidden themselves throughout the world, and Marco and Tarma's abilities and experience are seen as a necessity to destroy remaining rebel strongholds, one by one. Throughout the furious fighting against the holdouts, Marco and Tarma cannot help but suspect Morden's involvement in this new evil plan for world domination.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslug3-image.jpg</image>
+		<releasedate>20000601T000000</releasedate>
+		<developer>SNK</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./mslug4.zip</path>
+		<name>Metal Slug 4</name>
+		<desc>One year after the events of Metal Slug 3, the world is trembling under the new threat of a mysterious but deadly cyber virus that threatens to attack and destroy any nation's military computer system. With Tarma and Eri unable to help due to their own assignments in the matter, Marco and Fio are called in to investigate the situation and are joined by two newcomers, Nadia and Trevor. In their investigation, the group discovers that a terrorist organization known as Amadeus is behind the nefarious plot and that they head into battle against Amadeus' forces, hoping to destroy the cyber virus before it gets the chance to wipe out the entire world's military computer system</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslug4-image.png</image>
+		<releasedate>20020719T000000</releasedate>
+		<developer>Mega Enterprise</developer>
+		<publisher>Mega Enterprise</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./mslugx.zip</path>
+		<name>Metal Slug X</name>
+		<desc>Metal Slug X is a modified version of Metal Slug 2 released in 1999 for the Neo-Geo console/arcade platform by SNK. It introduces some new features like new weapons, rearranged enemy replacement and greater difficulty.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslugx-image.png</image>
+		<releasedate>19990101T000000</releasedate>
+		<developer>Nazca</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./missile.zip</path>
+		<name>Missile Command</name>
+		<desc>Missile Command is a 1980 arcade game by Atari, Inc. that was also licensed to Sega for European release. It is considered one of the most notable games from the Golden Age of Video Arcade Games. The plot of Missile Command is simple: the player's six cities are being attacked by an endless hail of ballistic missiles, some of them even splitting like multiple independently targetable reentry vehicles (MIRVs), and in later levels smart bombs which can evade a less than perfectly targeted missile. As a regional commander of three anti-missile batteries, the player must defend six cities in their zone from being destroyed.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/missile-image.jpg</image>
+		<releasedate>19800101T000000</releasedate>
+		<developer>Atari</developer>
+		<publisher>Atari</publisher>
+		<genre>Shooter</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./preisle2.zip</path>
+		<name>Prehistoric Isle 2</name>
+		<desc>Prehistoric Isle 2 is a horizontally scrolling shoot 'em up released by Yumekobo in 1999 and published by SNK.
+
+The player controls one of two types of helicopters. The main difference between them is in the type of weaponry. Both are re-powered by a series of power-ups which are obtained by eliminating the enemies. During the stages several civilian survivors must be rescued, which will give bonus points and power ups before the boss encounters.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/preisle2-image.jpg</image>
+		<releasedate>19990101T000000</releasedate>
+		<developer>Yumekobo</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./prehisle.zip</path>
+		<name>Prehistoric Isle</name>
+		<desc>Ships are disappearing in the Bermuda Triangle. Two planes are sent to an unexplored island, the so named "Hell Island", to investigate the disappearances. They discover an land forgotten by time, filled with hundreds of hostile dinosaurs.
+
+The player's plane in Prehistoric Isle only has a single, straight ahead shot. By picking up a power-up icon from floating dinosaur eggs, however, the ship gains an option. The option rotates around the ship when the secondary button is pressed, and unleashes different attacks based on its positioning: straight ahead powers up the primary weapon, at an angle above fires reflecting orbs, at an angle below drops bombs, straight above or below fires a reflecting wave, and straight behind drops floating bombs. The option and the ship's speed can both be upgraded from icons dropped by dino eggs. Enemies come from all sides of the screen, and the screen will occasionally scroll up and down as well as forward.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/prehisle-image.png</image>
+		<releasedate>19890101T000000</releasedate>
+		<developer>SNK Corporation</developer>
+		<publisher>SNK Corporation</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./mslug.zip</path>
+		<name>Metal Slug</name>
+		<desc>Players control Marco and Tarma, both members of the special-ops force Team Peregrine Falcon (commonly known as Team PF), and battle their way through stage after stage of intense action. The goal is to try to overthrow General Morden and win back the stolen weapon, the Metal Slug. Players must blast through waves of enemies and machines (while also jumping over any obstacles in the way) to advance through the stages. It's not as hopeless as it might sound, though - weapons such as heavy machine guns, shotguns, rocket launchers and flamethrowers, as well as the Metal Slug itself (which appears frequently in the game), will make the battle easier.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslug-image.jpg</image>
+		<releasedate>19960418T000000</releasedate>
+		<developer>Nazca</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./mslug5.zip</path>
+		<name>Metal Slug 5</name>
+		<desc>A special disc that contains deep and intricate secrets about the Metal Slug project is stolen by a mysterious group called the Ptolemaic Army, whose specialty lies from within archaeological excavation and espionage. Marco and Tarma of the Peregrine Falcon Strike Force follow in hot pursuit against the group and in the process are joined by Eri and Fio of SPARROWS. Together once more, the quartet investigate the shrouded objective of the Ptolemaic Army.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/mslug5-image.jpg</image>
+		<releasedate>20031101T000000</releasedate>
+		<developer>Noise Factory</developer>
+		<publisher>SNK</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./neogeo.zip</path>
+		<name>_bios_</name>
+		<desc>This is the arcade BIOS. Don't run this.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/neogeo-image.jpg</image>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>n/a</players>
+	</game>
+</gameList>

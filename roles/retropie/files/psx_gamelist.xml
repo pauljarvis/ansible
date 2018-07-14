@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Crash Bandicoot 2.cue</path>
+		<name>Crash Bandicoot 2: Cortex Strikes Back</name>
+		<desc>The evil Dr. Neo Cortex is back with a vengeance .. this time ... to save the world? And he's asking for helo from his arch-nemesis, Crash Bandicoot? Or is it just some conniving plan to lure Crash into a deadly trap for his own evil bidding? Find out as Crash takes on a whole new adventure that's out of this world!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Crash Bandicoot 2-image.jpg</image>
+		<releasedate>19971031T000000</releasedate>
+		<developer>Naughty Dog</developer>
+		<publisher>Sony Computer Entertainment</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Crash Bandicoot 3.cue</path>
+		<name>Crash Bandicoot 3: Warped</name>
+		<desc>After defeating Dr. Neo Cortex, Crash and his sister, Coco, take a well-deserved vacation. However, their friend, Aku Aku, has a bad feeling, and as usual, he is right. Aku's evil twin, Uka Uka, was the person behind all of Dr. Cortex's schemes. Now Uka and Cortex have hatched a plot to gain control of the powerful crystals they desire. The have hired Dr. N. Tropy to create a time machine, which will allow Uka and Cortex to go back and take the crystals without interference. Take control of Crash and Coco as they travel through 30 levels across five time periods in an effort to stop Uka and Cortex. Use a motorcycle, plane, bazooka, and a baby T-rex to help Crash survive, or destroy the bad guys by using new moves like the super belly flop or the double jump. Will Crash and Coco be able to save the world? Play CRASH BANDICOOT: Warped and find out.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Crash Bandicoot 3-image.jpg</image>
+		<releasedate>19981031T000000</releasedate>
+		<developer>Naughty Dog</developer>
+		<publisher>Sony</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Oddworld Abes Oddysee.cue</path>
+		<name>Oddworld: Abe's Oddysee</name>
+		<desc>In a lush of diabolical danger where everyone wants to eat you, you're the skinny guy with no weapons. Run, jump, hide, scramble and talk your way past the ugliest bunch of carnivorous crustaceans ever created. Unlock Abe's special powers then figure out your foes, and you might save your race. Don't, and you're dinner! Enter Oddworld's surreal, sensory overload of pure gaming and claim your destiny.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Oddworld Abes Oddysee-image.jpg</image>
+		<releasedate>19970901T000000</releasedate>
+		<developer>Oddworld Inhabitants</developer>
+		<publisher>GT Interactive Software</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Spyro 2 - Ripto's Rage!.cue</path>
+		<name>Spyro 2: Ripto's Rage!</name>
+		<desc>Ripto's Rage is the second game in the Spyro the Dragon series, which started with Spyro the Dragon in 1998. The protagonist of the series, Spyro, is placed in the land of Avalar, rather than the Dragon Worlds, where the previous installment was set. A dinosaur-riding sorcerer, known as Ripto, has invaded the world of Avalar, and is wreaking havoc on its citizens with his magic. The player, as Spyro, must travel through the world of Avalar and undo the damage done by Ripto.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Spyro 2 - Ripto's Rage!-image.jpg</image>
+		<releasedate>19991031T000000</releasedate>
+		<developer>Insomniac Games</developer>
+		<publisher>Sony</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Chrono Cross (Disk 1).cue</path>
+		<name>Chrono Cross [1]</name>
+		<desc>Chrono Cross features standard RPG gameplay with some differences. Players advance the game by controlling the protagonist Serge through the game's world, primarily by foot and boat. Navigation between areas is conducted via an overworld map, much like Chrono Trigger's, depicting the landscape from a scaled down overhead view. Around the island world are villages, outdoor areas, and dungeons, through which the player moves in three dimensions. Locations such as cities and forests are represented by more realistically scaled field maps, in which players can converse with locals to procure items and services, solve puzzles and challenges, or encounter enemies. Like Chrono Trigger, the game features no random encounters; enemies are openly visible on field maps or lie in wait to ambush the party</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Chrono Cross (Disk 1)-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19991118T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Chrono Cross (Disk 2).cue</path>
+		<name>Chrono Cross [2]</name>
+		<desc>Chrono Cross features standard RPG gameplay with some differences. Players advance the game by controlling the protagonist Serge through the game's world, primarily by foot and boat. Navigation between areas is conducted via an overworld map, much like Chrono Trigger's, depicting the landscape from a scaled down overhead view. Around the island world are villages, outdoor areas, and dungeons, through which the player moves in three dimensions. Locations such as cities and forests are represented by more realistically scaled field maps, in which players can converse with locals to procure items and services, solve puzzles and challenges, or encounter enemies. Like Chrono Trigger, the game features no random encounters; enemies are openly visible on field maps or lie in wait to ambush the party</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Chrono Cross (Disk 2)-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19991118T000000</releasedate>
+		<developer>Squaresoft</developer>
+		<publisher>Squaresoft</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Metal Gear Solid (Disc 2).cue</path>
+		<name>Metal Gear Solid [2]</name>
+		<desc>Metal Gear Solid follows Solid Snake, a soldier who infiltrates a nuclear weapons facility to neutralize the terrorist threat from FOXHOUND, a renegade special forces unit. Snake must liberate two hostages, the head of DARPA and the president of a major arms manufacturer, confront the terrorists, and stop them from launching a nuclear strike.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Metal Gear Solid (Disc 2)-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19980903T000000</releasedate>
+		<developer>Konami Computer</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Command &amp; Conquer - Red Alert [Allies].cue</path>
+		<name>Command &amp; Conquer: Red Alert [Allied]</name>
+		<desc>Command &amp; Conquer: Red Alert can be considered a prequel to Command &amp; Conquer. Like its predecessor, it is a real-time strategy with an isometric semi-top-down perspective using 2D sprite graphics engine. The player takes control of either the Allies or the Soviets, as he battles for destiny of the planet. Gameplay features are similar to those of the previous game, including building a base with some defenses, massing units, harvesting resources, etc. The game has a variety of environments in its missions, adding some indoor missions that use only infantry units.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Command &amp; Conquer - Red Alert [Allies]-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19971031T000000</releasedate>
+		<developer>Westwood</developer>
+		<publisher>Virgin Games</publisher>
+		<genre>Strategy</genre>
+	</game>
+	<game>
+		<path>./Command &amp; Conquer - Red Alert [Soviet].cue</path>
+		<name>Command &amp; Conquer: Red Alert [Soviet]</name>
+		<desc>Command &amp; Conquer: Red Alert can be considered a prequel to Command &amp; Conquer. Like its predecessor, it is a real-time strategy with an isometric semi-top-down perspective using 2D sprite graphics engine. The player takes control of either the Allies or the Soviets, as he battles for destiny of the planet. Gameplay features are similar to those of the previous game, including building a base with some defenses, massing units, harvesting resources, etc. The game has a variety of environments in its missions, adding some indoor missions that use only infantry units.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Command &amp; Conquer - Red Alert [Soviet]-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19971031T000000</releasedate>
+		<developer>Westwood</developer>
+		<publisher>Virgin Games</publisher>
+		<genre>Strategy</genre>
+	</game>
+	<game>
+		<path>./Die Hard Trilogy.cue</path>
+		<name>Die Hard Trilogy</name>
+		<desc>You're at the center of three totally different, thrill-packed adventures. Every adventure you choose delivers amazing depth, palm-sweating realism and fully-rendered detail over thirty incredible levels.
+
+* Die Hard - Full screen 3-D action as you fight to rescue innocent hostages in a skyscraper wired to explode!
+
+* Die Hard 2: Die Harder - Arcade shooting at its fastest and finest as you eliminate terrorists at Dulles Airport.
+
+* Die Hard With A Vengeance - Heart-accelerating, simulated driving adventure as you race through New York City to find hidden bombs!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Die Hard Trilogy-image.jpg</image>
+		<releasedate>19960820T000000</releasedate>
+		<developer>Probe Entertainment</developer>
+		<publisher>Fox Interactive</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Dino Crisis.cue</path>
+		<name>Dino Crisis</name>
+		<desc>Dino Crisis is a survival horror game that is very similar in both control and gameplay to its sister series, Resident Evil. As in that series, protagonist Regina will have limited supplies and ammo with which to fight deadly enemies while searching rooms for keys (some figurative, some literal) to open locked areas. Unlike Resident Evil games, Regina will find very few actual supplies laying around, and will instead find "plugs" that are used to open caches of emergency supplies located around the complex. There are only enough plugs to open some of these caches, however, so care must be taken to decide what items are really needed. In another change from Resident Evil, the game is rendered in 3D, allowing the camera to rotate or pan, although camera angles are still out of the control of the player. Even the dumbest dinosaur is smarter than the undead, and enemies can chase and disarm Regina, and even occasionally follow her through doors.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Dino Crisis-image.jpg</image>
+		<releasedate>19990701T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Horror</genre>
+	</game>
+	<game>
+		<path>./Dino Crisis 2.cue</path>
+		<name>Dino Crisis 2</name>
+		<desc>One year has passed since Regina’s fight for survival against prehistoric dinosaurs, and the capture of the rogue Dr. Kirk. Third Energy research continued recklessly.
+
+Another "accident" was imminent. Suddenly, Edward City, an entire town devoted to Third Energy research completely vanished, mysteriously replaced by prehistoric jungle. Now, a search and rescue to recover survivors and locate the missing research data begins. Armed with heavy artillery, only Regina has any idea of what to expect when the team arrives…pure terror.
+
+Features: Sequel to the popular horror-survival game
+Fight off vicious man-eating dinosaurs
+Use 2 weapons simultaneously
+Spin-and-shoot feature allows you to cover more area
+Several weapons to choose from, including automatic rifles and tasers</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Dino Crisis 2-image.png</image>
+		<releasedate>20001102T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Resident Evil 2 [Claire].cue</path>
+		<name>Resident Evil 2 - Claire</name>
+		<desc>If the Suspense Doesn't Kill You, Something Else Will
+
+Face your fears in the ultimate test for survival. Something is desperately wrong in Raccoon City. A muta-genic virus has broken loose and the entire town is infested. Blood-thirsty zombies, hideous mutations now overwhelm the community. When Leon and Claire arrive in town, their nightmare is just beginning...Now, you control their destiny.
+2 Separate Adventures. Play as Leon Kennedy or Claire Redfield in an all out struggle for survival
+Loaded with hidden items that contain vital information relating to the entire Resident Evil series
+Hidden game modes -- play the panic struck '4th Survivor' mode or as the hidden character, Tofu
+Special settings to adjust the intensity of the game according to players skill and experience</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Resident Evil 2 [Claire]-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19980121T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Horror</genre>
+	</game>
+	<game>
+		<path>./Resident Evil 3 - Nemesis.cue</path>
+		<name>Resident Evil 3: Nemesis</name>
+		<desc>Join Jill Valentine, the heroine and amazing survivor of the notorious disaster at the mansion, as her nightmare continues. After resigning from S.T.A.R.S. Jill now prepares to head out of Raccoon City...but it's not going to be easy. Caught in a town crawling with flesh eating zombies, more than ever she must rely on brute force and cunning to find a way to escape alive. This unique adventure intricately reveals more of Umbrella Corporation's nightmarish plot and picks up just hours before the events from Resident Evil 2.
+
+More zombies, more terror, and even more evil.
+More challenging enemies that come back to life at any time.
+Face off against the most terrifying mutations stalking the streets of Raccoon City.
+More detailed character actions: Try the dodge move to avoid an enemy's attack.
+Interact with the environment like never before: Use background objects defensively.
+A unique new drama which reveals more details of Umbrella Corporation's devious activities from the Resident Evil series.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Resident Evil 3 - Nemesis-image.jpg</image>
+		<releasedate>19990922T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Spyro 3 - Year of the Dragon.cue</path>
+		<name>Spyro 3: Year of the Dragon</name>
+		<desc>Spyro: Year of the Dragon is the third installment in the Spyro series and the last Spyro game to be released for the PlayStation. The game was the last Spyro game Insomniac developed; their next title would be Ratchet &amp; Clank for the PlayStation 2. This is the only Spyro game in the PlayStation library to not get released in Japan.
+
+Named after the animal of the Chinese zodiac, which was the symbol at the time of the game's release, Year of the Dragon follows the titular purple character Spyro as he travels to the "Forgotten Worlds" after 150 magical dragon eggs are stolen from the land of the dragons by an evil sorceress. Players travel across thirty different worlds gathering gems and eggs. Year of the Dragon introduced new characters and minigames to the series, as well as offering improved graphics and music.
+
+Upon release, the game sold more than two million units in the United States,and received positive critical response. Reviewers noted the game built on the successful formula of its predecessors by adding more games and expansive environments. At Game Rankings, Year of the Dragon is one of the top twenty highest-rated PlayStation games of all time.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Spyro 3 - Year of the Dragon-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>20001023T000000</releasedate>
+		<developer>Insomniac Games</developer>
+		<publisher>Sony</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Tomb Raider.cue</path>
+		<name>Tomb Raider</name>
+		<desc>In Tomb Raider, the player controls the female archaeologist Lara Croft, in search for the three mysterious Scion artefacts across the world. The game is presented in third person perspective. Lara is always visible and the camera follows the action from behind or over her shoulder. The world she inhabits is fully drawn in three dimensions and characterized by its cubic nature. Ledges, walls and ceilings mostly sit at 90 degrees to each other, but sometimes feature sloping planes.
+The object of Tomb Raider is to guide Lara through a series of tombs and other locations in search of treasures and artefacts. On the way, she must kill dangerous animals and other creatures, while collecting objects and solving puzzles to gain access to an ultimate prize, usually a powerful artefact. Gunplay is restricted to the killing of various animals that appear throughout each stage, although occasionally Lara may be faced with a human opponent. Instead the emphasis lies on solving puzzles and performing trick jumps to complete each level.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Tomb Raider-image.jpg</image>
+		<releasedate>19961114T000000</releasedate>
+		<developer>Core Design</developer>
+		<publisher>Eidos Interactive</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Tomb Raider II.cue</path>
+		<name>Tomb Raider II</name>
+		<desc>The story of Tomb Raider II surrounds the mythical Dagger of Xian, a weapon which was used by an Emperor of China to command his army. By plunging the weapon into its owner's heart, the weapon has the power to turn its bearer into a dragon. A flashback reveals that the last battle which was fought with the Dagger ended in defeat when the warrior monks of Tibet succeeded in removing the knife from the Emperor's heart. The Dagger was then returned to its resting place within the Great Wall.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Tomb Raider II-image.jpg</image>
+		<releasedate>19971031T000000</releasedate>
+		<developer>Core Design</developer>
+		<publisher>Eidos Interactive</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Resident Evil 2 [Leon].cue</path>
+		<name>Resident Evil 2 - Leon</name>
+		<desc>If the Suspense Doesn't Kill You, Something Else Will
+
+Face your fears in the ultimate test for survival. Something is desperately wrong in Raccoon City. A muta-genic virus has broken loose and the entire town is infested. Blood-thirsty zombies, hideous mutations now overwhelm the community. When Leon and Claire arrive in town, their nightmare is just beginning...Now, you control their destiny.
+2 Separate Adventures. Play as Leon Kennedy or Claire Redfield in an all out struggle for survival
+Loaded with hidden items that contain vital information relating to the entire Resident Evil series
+Hidden game modes -- play the panic struck '4th Survivor' mode or as the hidden character, Tofu
+Special settings to adjust the intensity of the game according to players skill and experience</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Resident Evil 2 [Leon]-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19980121T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Horror</genre>
+	</game>
+	<game>
+		<path>./Ape Escape.cue</path>
+		<name>Ape Escape</name>
+		<desc>Ape Escape is arguably one of PlayStation's most original platform titles. The game exclusively used Sony's Dual Shock controller and required the player to use both analog sticks to control the game's hero. Ape Escape is the story of a band of rogue monkeys that escape from the amusement park and mistakenly break into a genius professor's laboratory. They find the inventions called the Peak Point Helmets and instantly become intelligent, with a particularly ingenious simian named Specter running the others. In a theme reminiscent of Planet of the Apes, these little creeps plan on changing history so that apes rule the world and humankind becomes the special attraction at amusement parks. The premise was damn cool...and more importantly, it had monkeys!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Ape Escape-image.jpg</image>
+		<releasedate>19990618T000000</releasedate>
+		<developer>Sony Japan Studio</developer>
+		<publisher>Sony</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Crash Bandicoot.cue</path>
+		<name>Crash Bandicoot</name>
+		<desc>Crash Bandicoot, a heroic, agile and mutated marsupial who must save his girlfriend Tawna. The main antagonist is Doctor Neo Cortex, a mad scientist who was often ridiculed by the scientific community for his outlandish (but nearly workable) theories and is now motivated to prove his tormentors wrong by creating a mutated army of beasts to conquer the world. Cortex's henchman is Doctor Nitrus Brio, the insecure creator of the Evolvo-Ray. Crash's love interest is Tawna, a female bandicoot about to undergo experimentation by the Doctors. Helping Crash in his journey is an ancient witch doctor spirit named Aku Aku, who has scattered masks of himself throughout the islands to grant Crash special powers. The boss characters of the game include Papu Papu, the obese and short-tempered chief of the native village; Ripper Roo, a demented kangaroo with razor-sharp toenails; Koala Kong, a muscular but unintelligent koala; and Pinstripe Potoroo, the tommy gun-wielding bodyguard of Doctor Cortex.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Crash Bandicoot-image.jpg</image>
+		<releasedate>19960831T000000</releasedate>
+		<developer>Naughty Dog</developer>
+		<publisher>Sony Computer Entertainment</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Metal Gear Solid (Disc 1).cue</path>
+		<name>Metal Gear Solid [1]</name>
+		<desc>Metal Gear Solid follows Solid Snake, a soldier who infiltrates a nuclear weapons facility to neutralize the terrorist threat from FOXHOUND, a renegade special forces unit. Snake must liberate two hostages, the head of DARPA and the president of a major arms manufacturer, confront the terrorists, and stop them from launching a nuclear strike.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Metal Gear Solid (Disc 1)-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19980903T000000</releasedate>
+		<developer>Konami Computer</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Wild Arms.cue</path>
+		<name>Wild Arms</name>
+		<desc>A warrior, a princess and a rogue cross the wastelands of Filgaia on a quest for ancient relics that may save this brave new world - a world where legends become reality. With a story that spans centuries, breathtaking 3D combat arenas and fully customisable options, Wild Arms is the role-playing adventure you've been waiting for.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Wild Arms-image.jpg</image>
+		<releasedate>19970430T000000</releasedate>
+		<developer>Media.Vision</developer>
+		<publisher>Sony Computer Entertainment</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Spyro the Dragon.cue</path>
+		<name>Spyro 1: Spyro the Dragon</name>
+		<desc>Spyro the Dragon is a platform game developed by Insomniac Games for the PlayStation. It stars the title character, a young purple dragon named Spyro and his dragonfly friend, Sparx, and is the first game in the Spyro the Dragon series. The first game was massively popular at its initial release and Spyro would later become one of the most recognizable, popular and respected gaming icons for the PlayStation gaming console. Spyro's best friend, Sparx the dragonfly, acts like the player's health meter and assists in gathering gems. The various dragons Spyro unfreezes along the way are also key characters in Spyro's progression through the game. Gnasty Gnorc is the main antagonist, who froze all the dragons of the land in crystal.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Spyro the Dragon-image.jpg</image>
+		<rating>0</rating>
+		<releasedate>19980910T000000</releasedate>
+		<developer>Insomniac Games</developer>
+		<publisher>Sony</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Time Crisis.cue</path>
+		<name>Time Crisis</name>
+		<desc>Time Crisis is a rail shooter, originally released for the arcades, similar to Virtua Cop in gameplay style. The player moves automatically, using the light gun to eliminate appearing enemies, after which he can proceed to the next screen. The stages typically culminate in boss battles. The player can also press a button to make Richard dive for cover. However, using this feature too much might result in expiration of the time limit imposed on each screen.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Time Crisis-image.jpg</image>
+		<releasedate>19971031T000000</releasedate>
+		<developer>Namco</developer>
+		<publisher>Namco</publisher>
+		<genre>Shooter</genre>
+	</game>
+	<game>
+		<path>./Castlevania Symphony of the Night.cue</path>
+		<name>Castlevania: Symphony of the Night</name>
+		<desc>Five years ago, Richter Belmont, the latest in the Belmont lineage and the one destined to be a Vampire Hunter, defeated Dracula in a brutal battle which nearly cost him the love of his life, Annette, and her sister, Maria. Now, Richter has suddenly vanished, CastleVania has mysteriously reappeared, and Maria, now a young woman, sets off to find Richter. Alucard, the son of Dracula, is awakened from his eternal slumber after this large shift in power, and enters into Castlevania to find some answers and perhaps destroy the castle once again.
+
+Symphony of the Night is a direct sequel to Dracula X: Rondo of Blood. The game is set in a castle which you can explore freely with many different paths, although often items in certain areas need to be found that will allow passage to others. The action-based gameplay incorporates now strong RPG elements. The hero receives experience points for defeating enemies, gains levels and becomes more powerful. There is also money to be found in the game, and various accessories to buy. In a separate screen, players need to equip attack weapons, shields and other items. Magic plays an important role, as well as secondary weapons and a large amount of "special moves" that are executed similar to advanced one-on-one fighting games.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Castlevania Symphony of the Night-image.jpg</image>
+		<releasedate>19970320T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Future Cop - L.A.P.D..cue</path>
+		<name>Future Cop L.A.P.D</name>
+		<desc>The city of Los Angeles has a few more problems than usual in 2100 A.D. You see, the future hasn't been exactly kind to urban life and now gangs have overrun the already bleak neighborhoods. Is there any hope? There is as long as you enforce the law!
+
+Command a powerful Tactical Assault &amp; Combat X-1 mech walker (that can also transform into a sleek hovercraft) and battle through 12 levels, each culminating in a showdown with a large boss character. Fortunately for you, fourteen different weapons are available to help you teach "crime doesn't pay." Feeling a little lonely? If so, a friend can join the action in cooperative play!
+
+An additional game mode, Precinct Assault, has also been included. Precinct Assault is a strategy game that involves two teams (red versus blue) in an all-out battle for supremacy. This mode can be played against the computer or another human. Future Cop: L.A.P.D. supports the Dual Shock Analog Controller to make you feel the gunfire, and progress can be saved using either one block of memory card space or a password.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/psx/Future Cop - L.A.P.D.-image.jpg</image>
+		<releasedate>19980831T000000</releasedate>
+		<developer>EA Redwood Shores</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+</gameList>
