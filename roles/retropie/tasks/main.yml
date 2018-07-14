@@ -60,7 +60,7 @@
 
 - name: "pi user | bios | binary | apply"
   unarchive:
-    src     : "bios_general.zip"
+    src     : "bin/bios_general.zip"
     dest    : "{{ retropie_home }}/BIOS"
     owner   : "pi"
     group   : "pi"
@@ -73,7 +73,7 @@
 
 - name: "personalisation | splashscreens | binary"
   unarchive:
-    src     : "splashscreens.zip"
+    src     : "bin/splashscreens.zip"
     dest    : "{{ retropie_home }}/splashscreens"
     owner   : "pi"
     group   : "pi"
@@ -95,7 +95,7 @@
 
 - name: "personalisation | themes | binary"
   unarchive:
-    src     : "themes.zip"
+    src     : "bin/themes.zip"
     dest    : "/etc/emulationstation/themes"
     owner   : "root"
     group   : "root"
@@ -357,7 +357,7 @@
 
 - name: "python scripts | install background music"
   unarchive:
-    src     : "bgm.zip"
+    src     : "bin/bgm.zip"
     dest    : "{{ retropie_python.bgm_home }}"
   tags:
     - retropie
@@ -375,7 +375,7 @@
 
 - name: "fba | install bios"
   unarchive:
-    src     : "bios_fba.zip"
+    src     : "bin/bios_fba.zip"
     dest    : "{{ retropie_fba.home }}"
   tags:
     - retropie
