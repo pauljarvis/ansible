@@ -9,7 +9,7 @@
     name    : "{{ item }}"
     state   : "latest"
   tags:
-    - ssh
+    - "ssh"
 
 #################################################################
 
@@ -24,11 +24,11 @@
     mode    : "0755"
     state   : "directory"
   tags:
-    - ssh
+    - "ssh"
 
 #################################################################
 
-- name: "copy | config"
+- name: "config | templates"
   with_nested:
     - "{{ all_users }}"
     - "{{ ssh_templates }}"
@@ -39,7 +39,22 @@
     group   : "{{ item[0].id }}"
     mode    : "0664"
   tags:
-    - ssh
+    - "ssh"
+
+#################################################################
+
+- name: "config | pub keys"
+  with_nested:
+    - "{{ all_users }}"
+    - "{{ ssh_keys }}"
+  template:
+    src     : "pub.j2"
+    dest    : "{{ item[0].home }}/.ssh/{{ item[1].name }}.pub"
+    owner   : "{{ item[0].id }}"
+    group   : "{{ item[0].id }}"
+    mode    : "0664"
+  tags:
+    - "ssh"
 
 #################################################################
 
@@ -52,9 +67,9 @@
     owner   : "{{ item.id }}"
     group   : "{{ item.id }}"
     mode    : "0664"
-    force   : no
+    force   : "no"
   tags:
-    - ssh
+    - "ssh"
 
 #################################################################
 
