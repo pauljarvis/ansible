@@ -1,0 +1,9 @@
+---
+
+primary_user:
+  id      : 'steve'
+  home    : '/home/steve'
+  name    : 'Steve Stevens'
+  email   : 'steve.h.i.stevens@gmail.com'
+  
+

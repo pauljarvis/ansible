@@ -7,8 +7,9 @@ source ./scripts/setup.sh
 
 usage () {
   PRG=$(basename $0)
-  echo "$PRG -p PLAYBOOK [-l LIMIT] [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-c] [-h]"
+  echo "$PRG -p PLAYBOOK -u USER [-l LIMIT] [-t TAGS] [-z SKIP] [-v VERBOSITY] [-k KEY] [-s] [-c] [-h]"
   echo "     -p PLAYBOOK      path to playbook"
+  echo "     -u USER          user profile to load"
   echo "     -l LIMIT         limit to host"
   echo "     -t TAGS          run only tasks with provided tags"
   echo "     -z SKIP          skips tasks with provided tags"
@@ -28,10 +29,14 @@ get_playbook () {
 #######################################################################
 # Get Input
 
-while getopts ":p:l:t:z:v:k:sch" arg; do
+while getopts ":p:u:l:t:z:v:k:sch" arg; do
   case $arg in
     p)
       playbook=$(get_playbook "${OPTARG}")
+      ;;
+    u)
+      user="${OPTARG}"
+      extravars=" --extra-vars \"@profiles/${user}.yml\""
       ;;
     l)
       limit=" --limit \"${OPTARG}\""
@@ -69,7 +74,7 @@ while getopts ":p:l:t:z:v:k:sch" arg; do
 done
 
 # Check mandatory fields
-mandatory_fields=( "playbook" )
+mandatory_fields=( "playbook" "user" )
 mandatory_fields_set=true
 for arg in ${mandatory_fields[@]}; do
   if [ -z "${!arg}" ]; then
@@ -90,7 +95,7 @@ fi
 
 #######################################################################
 
-exe="ansible-playbook ${playbook} --diff${limit}${tags}${skip}${verbosity}${sudo}${check}${key}"
+exe="ansible-playbook ${playbook} --diff${limit}${tags}${skip}${verbosity}${sudo}${check}${key}${extravars}"
 echo "${exe}"
 eval "${exe}"
 

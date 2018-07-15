@@ -5,26 +5,17 @@
   become_method : sudo
   gather_facts  : yes
 
-
   vars:
     - gui       : False
       proxy     : False
 
-      root_user:
-        id      : 'root'
-        home    : '/root'
-        name    : 'root'
-        email   : 'root@root.com'
-
-      primary_user:
-        id      : 'pi'
-        home    : '/home/pi'
-        name    : 'Steve Stevens'
-        email   : 'steve.h.i.stevens@gmail.com'
+      root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
+      pi_user:   { id : 'pi',     home : '/pi',      name : 'pi',    email : 'pi@pi.com'     }
 
       all_users:
-        - '{{ root_user }}'
-        - '{{ primary_user }}'
+        - "{{ root_user     }}"
+        - "{{ pi_user       }}"
+        - "{{ primary_user  }}"
 
   pre_tasks:
     - debug:
