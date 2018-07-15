@@ -18,7 +18,7 @@
   when: proxy
   template:
     src     : "cntlm.j2"
-    dest    : "/etc/cntlm"
+    dest    : "/etc/cntlm.conf"
     owner   : "{{ root_user.id }}"
     group   : "{{ root_user.id }}"
   tags:
