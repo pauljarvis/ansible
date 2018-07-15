@@ -5,24 +5,47 @@
 - name: "apt | update cache"
   apt:
     update_cache: yes
-
-- name: "apt | install | ubuntu"
-  when: ansible_distribution | lower  == 'ubuntu'
-  with_items: "{{ libraries_apt.ubuntu }}"
-  apt:
-    name: "{{ item }}"
-    state: "latest"
+  tags:
+    - "prereq"
 
 - name: "apt | install"
-  with_items: "{{ libraries_apt.all }}"
+  with_items:
+    - "{{ libraries_apt.all }}"
   apt:
     name: "{{ item }}"
     state: "latest"
+  tags:
+    - "prereq"
+
+- name: "apt | install | ubuntu"
+  when:
+    - ansible_distribution      | lower == "ubuntu"
+  with_items:
+    - "{{ libraries_apt.ubuntu }}"
+  apt:
+    name: "{{ item }}"
+    state: "latest"
+  tags:
+    - "prereq"
+
+- name: "apt | install | ubuntu | gnome"
+  when:
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  with_items:
+    - "{{ libraries_apt.ubuntu_18 }}"
+  apt:
+    name: "{{ item }}"
+    state: "latest"
+  tags:
+    - "prereq"
 
 - name: "apt | autoclean"
   apt:
     autoclean: yes
     autoremove: yes
+  tags:
+    - "prereq"
 
 #################################################################
 
