@@ -3,39 +3,42 @@
 #################################################################
 
 - name: "mkdirs"
+  with_items:
+    - "{{ git.home }}"
   file:
     name    : "{{ item }}"
     state   : "directory"
     owner   : "{{ primary_user.id }}"
     group   : "{{ primary_user.id }}"
     mode    : "0755"
-  with_items:
-    - "{{ git.home }}"
   tags:
-    - git
+    - "git"
 
 #################################################################
 
 - name: "apt | install"
+  with_items:
+    - "{{ libraries_apt }}"
   apt:
     name    : "{{ item }}"
     state   : "latest"
-  with_items: "{{ libraries_apt }}"
   tags:
-    - git
+    - "git"
 
 #################################################################
 
 - name: "copy | config"
+  with_items:
+    - "{{ all_users }}"
   template:
     src     : "gitconfig.j2"
     dest    : "{{ item.home }}/.gitconfig"
     owner   : "{{ item.id }}"
     group   : "{{ item.id }}"
     mode    : "0644"
-  with_items: "{{ all_users }}"
   tags:
-    - git
+    - "git"
+    - "proxy"
 
 #################################################################
 

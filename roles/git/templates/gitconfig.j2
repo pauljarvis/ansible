@@ -48,8 +48,8 @@
 
 {% if proxy == True %}
 [http]
-  proxy       = http://127.0.0.1:3128
+  proxy       = http://{{ proxy_through.host }}:{{ proxy_through.port }}
 [https]
-  proxy       = https://127.0.0.1:3128
+  proxy       = https://{{ proxy_through.host }}:{{ proxy_through.port }}
 {% endif %}
 
