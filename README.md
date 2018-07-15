@@ -27,7 +27,7 @@ ___
 #### Bootstap
 ```
 export https_proxy="http://10.0.20.196:8080" \
-&& echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tree /etc/apt/apt.conf.d/01proxy > /dev/null \
+&& echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tee /etc/apt/apt.conf.d/01proxy > /dev/null \
 && echo -e "[http]\n  ${https_proxy}" > ~/.gitconfig \
 && sudo apt-get install -y python-pip git cntlm \
 && sudo -E pip install ansible \
