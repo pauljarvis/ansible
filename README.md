@@ -17,20 +17,20 @@ ___
 ## ubuntu-work
 #### Prereqs
 - Install Guest Additions
-- Manually configure direct proxy for:
-  - apt
-  - pip
-  - git
 
 #### Bootstap
 ```
-sudo apt-get install -y python-pip git \
-&& sudo pip install ansible \
+export https_proxy="http://10.0.20.196:8080" \
+&& echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tree /etc/apt/apt.conf.d/01proxy > /dev/null \
+&& echo -e "[http]\n  ${https_proxy}" > ~/.gitconfig \
+&& sudo apt-get install -y python-pip git \
+&& sudo -E pip install ansible \
 && git clone https://github.com/OurFriendIrony/ansible.git /tmp/ansible \
 && cd /tmp/ansible
 ```
 
 #### Run
+`./go.sh -s -p ubuntu-work -u steve -t proxy`  
 `./go.sh -s -p ubuntu-work -u steve`  
 
 ___
