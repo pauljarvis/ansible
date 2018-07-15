@@ -51,8 +51,8 @@
     - { role: developer/general               }
     - { role: developer/tomcat                }
     - { role: developer/intellij              ,
-          intellij_year       : "2017.3"      ,
-          intellij_subversion : "2"           }
+          intellij_year       : "2018.1"      ,
+          intellij_subversion : "6"           }
     - { role: developer/pycharm               ,
           pycharm_year        : "2018.1"      ,
           pycharm_subversion  : "2"           }
