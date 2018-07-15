@@ -1,6 +1,6 @@
-Username   {{ primary_user.id }}
-Domain     tpplc
-PassNTLMv2 {{ ntlm_pass }}
+Username    {{ primary_user.id }}
+Domain      tpplc
+PassNTLMv2  {{ ntlm_pass }}
 
 {% for p in proxy_hosts %}
 Proxy       {{ p.host }}:{{ p.port }}
