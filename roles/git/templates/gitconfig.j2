@@ -42,8 +42,9 @@
   s           = status -s -b
   r           = remote -v
   l           = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
-  l1          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short -1
-  l5          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short -5
+{% for x in [ 1,2,3,4,5,6,7,8,9,10 ]  %}
+  l{{x}}          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short -{{x}}
+{% endfor %}
 
 {% if proxy == True %}
 [http]
