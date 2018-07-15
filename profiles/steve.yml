@@ -1,10 +1,14 @@
 ---
 
+#######################################################################
+
 primary_user:
   id          : 'steve'
   home        : '/home/steve'
   name        : 'Steve Stevens'
   email       : 'steve.h.i.stevens@gmail.com'
+
+#######################################################################
 
 ssh_keys:
   - name      : "ourfriendirony"
@@ -14,9 +18,19 @@ ssh_keys:
     type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3uS7b1q3YsLd39YbothqR8Z5eVWUIJj5uk/gcMN7nVgJrES3qhhtu4RTR9fMQ8+uT91E0NKEXPbmRcCY/pebR6R+2ZEoP00pJDuMfv5FJGMEKmOUHi20zpGJDWsUhO+Cw4WYcEaYlikZksgx5vJLH+MMUnV8nSSqsNPibnO8g+bGAqfF5NZrjvfub+kxxwGh/sXONNhpEd+KgWQFSNmSoFAOopG/bUsW6ELmGwPDw4IN3/lzpcdBZdW3Qk6TZK8bF8HOyLWPyW3qUtMiLd45B3a7UbBGzEEEUGC1yiFWcL1KsSbKMhqb77IIAOovT"
 
+#######################################################################
+
 aws:
   region      : "eu-west-1"
   account     : "847108765099"
   access_key  : "AKIAJVGSPHBWLLGQGGFQ"
   access_pass : ""
+
+#######################################################################
+
+retropie_achievements:
+  user    : "OurFriendIrony"
+  pass    : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
+
+#######################################################################
 

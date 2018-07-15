@@ -138,12 +138,6 @@ retropie_controllers:
 
 #######################################################################
 
-retropie_achievements:
-  user    : "OurFriendIrony"
-  pass    : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
-
-#######################################################################
-
 retropie_git:
   url     : "https://github.com/OurFriendIrony/python-retropie.git"
   dest    : "/home/pi/git/python-retropie/"
