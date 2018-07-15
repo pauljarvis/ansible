@@ -28,7 +28,7 @@ ___
 ```
 export https_proxy="http://10.0.20.196:8080" \
 && echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tee /etc/apt/apt.conf.d/01proxy > /dev/null \
-&& echo -e "[http]\n  ${https_proxy}" > ~/.gitconfig \
+&& echo -e "[http]\n  proxy = ${https_proxy}" > ~/.gitconfig \
 && sudo apt-get update \
 && sudo apt-get install -y python-pip git cntlm \
 && sudo -E pip install ansible \
@@ -43,8 +43,8 @@ export https_proxy="http://10.0.20.196:8080" \
 - Note that you should run the proxy tag first to make sure all settings are applied before running the rest of the playbook.  
 
 #### Run
-`./go.sh -s -p ubuntu-tp -u stest -t proxy`  
-`./go.sh -s -p ubuntu-tp -u stest`  
+`./go.sh -s -p ubuntu-tp -u stest-tp -t proxy`  
+`./go.sh -s -p ubuntu-tp -u stest-tp`  
 
 ___
 ## retropie
