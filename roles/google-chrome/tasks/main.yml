@@ -4,21 +4,33 @@
 
 - name: "wget | deb"
   get_url:
-    url: "{{ chrome.url }}{{ chrome.file }}"
-    dest: "/tmp/{{ chrome.file }}"
+    url   : "{{ chrome.url }}{{ chrome.file }}"
+    dest  : "/tmp/{{ chrome.file }}"
   tags:
-    - google
-    - chrome
+    - "google"
+    - "chrome"
 
 - name: "apt | install"
   apt:
-    deb: "/tmp/{{ chrome.file }}"
-    state: present
+    deb   : "/tmp/{{ chrome.file }}"
+    state : "present"
   tags:
-    - google
-    - chrome
+    - "google"
+    - "chrome"
 
 #################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src   : "google-chrome.desktop.j2"
+    dest  : "/usr/share/applications/google-chrome.desktop"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : "0644"
+  tags:
+    - "media"
+    - "chrome"
+    - "proxy"
 
 - name    : "cmd | unity | add to launcher"
   when    :
