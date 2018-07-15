@@ -3,8 +3,8 @@
 - hosts         : localhost
   become        : yes
   become_method : sudo
-  connection    : local
   gather_facts  : yes
+  connection    : local
 
   vars:
     - gui       : True
@@ -35,8 +35,10 @@
       tags: [ "always" ]
 
   roles:
+    - { role: users                           }
     - { role: prereq                          }
     - { role: git                             }
+    - { role: ssh                             }
     - { role: bash                            }
     - { role: vim                             }
     - { role: powerline-shell                 }

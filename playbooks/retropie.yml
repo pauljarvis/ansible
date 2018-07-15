@@ -5,6 +5,7 @@
   become_method : sudo
   gather_facts  : yes
 
+
   vars:
     - gui       : False
       proxy     : False
@@ -34,6 +35,7 @@
       tags: [ "always" ]
 
   roles:
+    - { role: users                           }
     - { role: prereq                          }
     - { role: git                             }
     - { role: ssh                             }

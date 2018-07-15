@@ -4,6 +4,7 @@
   become        : yes
   become_method : sudo
   gather_facts  : yes
+  connection    : local
 
   vars:
     - gui       : True
@@ -16,8 +17,8 @@
         email   : 'root@root.com'
 
       primary_user:
-        id      : 'steve'
-        home    : '/home/steve'
+        id      : 'ourfriendirony'
+        home    : '/home/ourfriendirony'
         name    : 'Steve Stevens'
         email   : 'steve.h.i.stevens@gmail.com'
 
@@ -34,6 +35,7 @@
       tags: [ "always" ]
 
   roles:
+    - { role: users                           }
     - { role: prereq                          }
     - { role: git                             }
     - { role: ssh                             }
