@@ -26,14 +26,13 @@
       tags: [ "always" ]
 
   roles:
-    - { role: users                           }
-    - { role: prereq                          }
-    - { role: git                             }
-    - { role: ssh                             }
-    - { role: bash                            ,
-          bash_welcome        : "retropie"    }
-    - { role: vim                             }
-    - { role: powerline-shell                 }
-    - { role: general                         }
-    - { role: retropie                        }
+    - { role: users                                                         }
+    - { role: prereq                                                        }
+    - { role: git                                                           }
+    - { role: ssh                                                           }
+    - { role: bash,                     bash_welcome        : "retropie"    }
+    - { role: vim                                                           }
+    - { role: powerline-shell                                               }
+    - { role: general                                                       }
+    - { role: retropie                                                      }
 
