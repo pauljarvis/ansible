@@ -18,8 +18,8 @@ sudo apt-get install -y python-pip git \
 ```
 
 ## Run
-`./go.sh -p ubuntu -s`
-`./go.sh -p retropie`
+`./go.sh -s -p ubuntu -u steve`  
+`./go.sh -s -p retropie -u steve`  
 
 ## Help
 `./go.sh -h`
@@ -27,4 +27,3 @@ sudo apt-get install -y python-pip git \
 ___
 ## Module index
 All Modules are documented [**here**](http://docs.ansible.com/ansible/latest/list_of_all_modules.html)
-
