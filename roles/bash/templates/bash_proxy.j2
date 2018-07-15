@@ -1,0 +1,7 @@
+export HTTP_PROXY="http://{{ proxy_through.host }}:{{ proxy_through.port }}"
+export http_proxy="http://{{ proxy_through.host }}:{{ proxy_through.port }}"
+export HTTPS_PROXY="http://{{ proxy_through.host }}:{{ proxy_through.port }}"
+export https_proxy="http://{{ proxy_through.host }}:{{ proxy_through.port }}"
+export NO_PROXY="{% for np in no_proxy -%}{{ np }}{% if not loop.last %}, {% endif %}{% endfor %}"
+export no_proxy="{% for np in no_proxy -%}{{ np }}{% if not loop.last %}, {% endif %}{% endfor %}"
+
