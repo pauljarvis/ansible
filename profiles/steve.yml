@@ -3,10 +3,17 @@
 #######################################################################
 
 primary_user:
-  id          : 'steve'
-  home        : '/home/steve'
-  name        : 'Steve Stevens'
-  email       : 'steve.h.i.stevens@gmail.com'
+  name        : "Steve Stevens"
+  home        : "/home/steve"
+  id          : "steve"
+  email       : "steve.h.i.stevens@gmail.com"
+
+primary_work_user:
+  name        : "Steve Stevens"
+  home        : "/home/stest"
+  id          : "stest"
+  email       : "steven.stevens@travisperkins.co.uk"
+  password    : ""
 
 #######################################################################
 

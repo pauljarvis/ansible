@@ -14,7 +14,7 @@
 
       all_users:
         - "{{ root_user     }}"
-        - "{{ primary_user  }}"
+        - "{{ primary_work_user  }}"
 
   pre_tasks:
     - debug:
@@ -54,8 +54,9 @@
     - { role: developer/awscli                                              }
 
     - { role: work/forticlient                                              }
+    - { role: work/proxy                                                    }
 
-  environment:
-    http_proxy  : http://127.0.1.1:3128
-    https_proxy : http://127.0.1.1:3128
+#  environment:
+#    http_proxy  : http://127.0.1.1:3128
+#    https_proxy : http://127.0.1.1:3128
 

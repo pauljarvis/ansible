@@ -1,0 +1,28 @@
+---
+
+#################################################################
+
+- name: "apt | install"
+  when: proxy
+  with_items:
+    - "{{ libraries_apt }}"
+  apt:
+    name    : "{{ item }}"
+    state   : "latest"
+  tags:
+    - "proxy"
+
+#################################################################
+#
+- name: "cntlm | config"
+  when: proxy
+  template:
+    src     : "cntlm.j2"
+    dest    : "/etc/cntlm"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  tags:
+    - "proxy"
+
+#################################################################
+
