@@ -1,0 +1,59 @@
+---
+
+#######################################################################
+## MANDATORY ##
+# Alot of the setup requires you provide valid information here.
+# Ensure the user id reflects that of the primary linux user.
+
+primary_user:
+  name        : "Steve Stevens"
+  home        : "/home/steve"
+  id          : "steve"
+  email       : "steve.h.i.stevens@gmail.com"
+
+#######################################################################
+## OPTIONAL ##
+# If working behind TP firewall, this is very important to get you out
+#   through the proxy.
+# If not, this field is not relevant
+
+ntlm_pass     : ""
+
+#######################################################################
+## OPTIONAL ##
+# If you have any private keys you like to use, put the .pem in the
+#   ~/.ssh and then place the .pub details in here.
+# This will auto load the keys in every bash session as well as grant
+#   you ssh access to your account from elsewhere using those keys.
+# Ensure the keynames match exactly.
+
+ssh_keys:
+  - name      : "key_name_1"
+    type      : "ssh-rsa"
+    value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQCVe/JrnVSiRlrzHJHW4N1Knhb3"
+  - name      : "key_name_2"
+    type      : "ssh-rsa"
+    value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3"
+
+#######################################################################
+## OPTIONAL ##
+# If you want quick easy access to AWS, you can configure it here. It
+#   adds the details as default in your bash session
+
+aws:
+  region      : "eu-west-1"
+  account     : "your_acct_here"
+  access_key  : "your_key_here"
+  access_pass : "your_secret_here"
+
+#######################################################################
+## OPTIONAL ##
+# Only relevant if you are setting up retropie and you want to enable
+#   in game achievements
+
+retropie_achievements:
+  user    : "my_user"
+  pass    : "my_password"
+
+#######################################################################
+
