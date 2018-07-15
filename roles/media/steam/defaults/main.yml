@@ -16,5 +16,5 @@ binme:  # without destroying these steam wont start up [after installation]
   - "{{ primary_user.home }}/.local/share/Steam/ubuntu12_32/steam-runtime/i386/lib/i386-linux-gnu/libgcc_s.so.1"
 
 unity_launcher:
-  script  : "../../scripts/add_launcher.sh steam"
+  script  : "../../scripts/add_unity_launcher.sh steam"
 

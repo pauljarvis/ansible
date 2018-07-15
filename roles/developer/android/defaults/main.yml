@@ -13,5 +13,5 @@ android:
   home    : "/usr/lib/android-studio"
 
 unity_launcher:
-  script  : "../../scripts/add_launcher.sh jetbrains-android-studio"
+  script  : "../../scripts/add_unity_launcher.sh jetbrains-android-studio"
 

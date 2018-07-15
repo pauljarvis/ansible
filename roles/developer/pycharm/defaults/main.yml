@@ -13,5 +13,5 @@ pycharm:
   home    : "/usr/lib/pycharm"
 
 unity_launcher:
-  script  : "../../scripts/add_launcher.sh jetbrains-pycharm-ce"
+  script  : "../../scripts/add_unity_launcher.sh jetbrains-pycharm-ce"
 

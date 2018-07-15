@@ -13,5 +13,5 @@ intellij:
   home    : "/usr/lib/intellij"
 
 unity_launcher:
-  script  : "../../scripts/add_launcher.sh jetbrains-idea-ce"
+  script  : "../../scripts/add_unity_launcher.sh jetbrains-idea-ce"
 

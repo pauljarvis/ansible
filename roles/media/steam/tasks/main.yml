@@ -3,11 +3,12 @@
 #################################################################
 
 - name: "apt | repo | prereq"
+  with_items:
+    - "{{ repositories_apt }}"
   apt_repository:
     repo          : "{{ item }}"
     state         : "present"
     update_cache  : "yes"
-  with_items: "{{ repositories_apt }}"
   tags:
     - media
     - steam
@@ -15,16 +16,17 @@
 - name: "apt | upgrade"
   apt:
     update_cache  : "yes"
-    upgrade       : "yes"
+    upgrade       : "dist"
   tags:
     - media
     - steam
 
 - name: "apt | install | prereq"
+  with_items:
+    - "{{ libraries_apt }}"
   apt:
     name          : "{{ item }}"
     state         : "latest"
-  with_items: "{{ libraries_apt }}"
   tags:
     - media
     - steam
@@ -41,17 +43,21 @@
 #################################################################
 
 - name: "file | destroy files"
+  with_items:
+    - "{{ binme }}"
   file:
     path          : "{{ item }}"
     state         : "absent"
-  with_items: "{{ binme }}"
   tags:
     - media
     - steam
 
 #################################################################
 
-- name    : "cmd | add to launcher"
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
   script  : "{{ unity_launcher.script }}"
   become  : "{{ primary_user.id }}"
   tags:

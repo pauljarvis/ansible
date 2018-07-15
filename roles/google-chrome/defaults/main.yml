@@ -5,5 +5,5 @@ chrome:
   file: "google-chrome-stable_current_amd64.deb"
 
 unity_launcher:
-  script  : "../scripts/add_launcher.sh google-chrome"
+  script  : "../scripts/add_unity_launcher.sh google-chrome"
 

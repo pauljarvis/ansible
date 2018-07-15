@@ -54,7 +54,10 @@
     - developer
     - pycharm
 
-- name    : "cmd | add to launcher"
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
   script  : "{{ unity_launcher.script }}"
   become  : "{{ primary_user.id }}"
   tags:

@@ -4,5 +4,5 @@ libraries_apt:
   - terminator
 
 unity_launcher:
-  script  : "../scripts/add_launcher.sh terminator"
+  script  : "../scripts/add_unity_launcher.sh terminator"
 
