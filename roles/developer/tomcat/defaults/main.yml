@@ -1,6 +1,6 @@
 ---
 
-tomcat     : "tomcat7"
+tomcat     : "tomcat8"
 
 tomcat_ports:
   server   : "8005"
