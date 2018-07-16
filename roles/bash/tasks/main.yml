@@ -55,7 +55,7 @@
   with_items:
     - "{{ all_users }}"
   when    : proxy
-  copy:
+  template:
     src   : "bash_proxy.j2"
     dest  : "{{ item.home }}/.bash_proxy"
     owner : "{{ item.id }}"
