@@ -15,8 +15,18 @@
 #################################################################
 
 - name: "apt | repositories"
+  when: not proxy
   apt_repository:
-    repo: "{{ java.ppa }}"
+    repo  : "{{ java.ppa }}"
+    state : "present"
+  tags:
+    - java
+
+- name: "apt | repositories"
+  become: yes
+  become_user: "{{ primary_user.id }}"
+  when: proxy
+  shell: "sudo -E add-apt-repository {{ java.ppa }} -y"
   tags:
     - java
 
