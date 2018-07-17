@@ -13,14 +13,6 @@ primary_user:
 
 #######################################################################
 ## OPTIONAL ##
-# If working behind TP firewall, this is very important to get you out
-#   through the proxy.
-# If not, this field is not relevant
-
-ntlm_pass     : ""
-
-#######################################################################
-## OPTIONAL ##
 # If you have any private keys you like to use, put the .pem in the
 #   ~/.ssh and then place the .pub details in here.
 # This will auto load the keys in every bash session as well as grant
@@ -34,6 +26,14 @@ ssh_keys:
   - name      : "key_name_2"
     type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3"
+
+#######################################################################
+## OPTIONAL ##
+# If working behind TP firewall, this is very important to get you out
+#   through the proxy.
+# If not, this field is not relevant
+
+ntlm_pass     : ""
 
 #######################################################################
 ## OPTIONAL ##

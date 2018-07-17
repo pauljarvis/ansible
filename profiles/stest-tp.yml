@@ -10,10 +10,6 @@ primary_user:
 
 #######################################################################
 
-ntlm_pass     : ""
-
-#######################################################################
-
 ssh_keys:
   - name      : "ourfriendirony"
     type      : "ssh-rsa"
@@ -21,6 +17,10 @@ ssh_keys:
   - name      : "devops"
     type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3uS7b1q3YsLd39YbothqR8Z5eVWUIJj5uk/gcMN7nVgJrES3qhhtu4RTR9fMQ8+uT91E0NKEXPbmRcCY/pebR6R+2ZEoP00pJDuMfv5FJGMEKmOUHi20zpGJDWsUhO+Cw4WYcEaYlikZksgx5vJLH+MMUnV8nSSqsNPibnO8g+bGAqfF5NZrjvfub+kxxwGh/sXONNhpEd+KgWQFSNmSoFAOopG/bUsW6ELmGwPDw4IN3/lzpcdBZdW3Qk6TZK8bF8HOyLWPyW3qUtMiLd45B3a7UbBGzEEEUGC1yiFWcL1KsSbKMhqb77IIAOovT"
+
+#######################################################################
+
+ntlm_pass     : ""
 
 #######################################################################
 

@@ -5,13 +5,13 @@
   become_method : sudo
   gather_facts  : yes
 
+
   vars:
     - gui       : False
       proxy     : False
 
       root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
       pi_user:   { id : 'pi',     home : '/home/pi', name : 'pi',    email : 'pi@pi.com'     }
-
       all_users:
         - "{{ root_user     }}"
         - "{{ pi_user       }}"
@@ -26,13 +26,18 @@
       tags: [ "always" ]
 
   roles:
-    - { role: users                                                         }
-    - { role: prereq                                                        }
-    - { role: git                                                           }
-    - { role: ssh                                                           }
-    - { role: bash,                     bash_welcome        : "retropie"    }
-    - { role: vim                                                           }
-    - { role: powerline-shell                                               }
-    - { role: general                                                       }
-    - { role: retropie                                                      }
+    - { role: users                                                                                             }
+    - { role: prereq                                                                                            }
+
+
+
+
+    - { role: git                                                                                               }
+    - { role: ssh                                                                                               }
+    - { role: bash,                     bash_welcome        : "retropie"                                        }
+    - { role: vim                                                                                               }
+    - { role: powerline-shell                                                                                   }
+    - { role: general                                                                                           }
+
+    - { role: retropie                                                                                          }
 

@@ -12,11 +12,10 @@
 
       root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
 
-      primary_user: "{{ primary_tp_user }}"
-
       all_users:
         - "{{ root_user     }}"
         - "{{ primary_user  }}"
+
 
   pre_tasks:
     - debug:
@@ -27,34 +26,32 @@
       tags: [ "always" ]
 
   roles:
-    - { role: users                                                         }
-    - { role: prereq                                                        }
-    - { role: work/proxy                                                    }
-    - { role: git                                                           }
-    - { role: ssh                                                           }
-    - { role: bash                                                          }
-    - { role: vim                                                           }
-    - { role: powerline-shell                                               }
-    - { role: java                                                          }
-    - { role: general                                                       }
-    - { role: keychain                                                      }
-    - { role: wallpaper                                                     }
-    - { role: system-monitor                                                }
-    - { role: google-chrome                                                 }
-    - { role: terminator                                                    }
+    - { role: users                                                                                             }
+    - { role: prereq                                                                                            }
 
-    - { role: developer/general                                             }
-    - { role: developer/tomcat                                              }
-    - { role: developer/intellij,       intellij_year       : "2018.1"      ,
-                                        intellij_subversion : "6"           }
-    - { role: developer/pycharm,        pycharm_year        : "2018.1"      ,
-                                        pycharm_subversion  : "2"           }
-    - { role: developer/android,        android_version     : "3.0.1.0"     ,
-                                        android_build       : "171.4443003" }
-    - { role: developer/gradle,         gradle_version      : "4.1"         }
-    - { role: developer/terraform,      terraform_version   : "0.11.7"      }
-    - { role: developer/docker                                              }
-    - { role: developer/awscli                                              }
+    - { role: work/proxy                                                                                        }
+    - { role: work/forticlient                                                                                  }
 
-    - { role: work/forticlient                                              }
+    - { role: git                                                                                               }
+    - { role: ssh                                                                                               }
+    - { role: bash                                                                                              }
+    - { role: vim                                                                                               }
+    - { role: powerline-shell                                                                                   }
+    - { role: general                                                                                           }
+    - { role: java                                                                                              }
+    - { role: keychain                                                                                          }
+    - { role: wallpaper                                                                                         }
+    - { role: system-monitor                                                                                    }
+    - { role: google-chrome                                                                                     }
+    - { role: terminator                                                                                        }
+
+    - { role: developer/general                                                                                 }
+    - { role: developer/tomcat                                                                                  }
+    - { role: developer/intellij,       intellij_year       : "2018.1",     intellij_subversion : "6"           }
+    - { role: developer/pycharm,        pycharm_year        : "2018.1",     pycharm_subversion  : "2"           }
+    - { role: developer/android,        android_version     : "3.0.1.0",    android_build       : "171.4443003" }
+    - { role: developer/gradle,         gradle_version      : "4.1"                                             }
+    - { role: developer/terraform,      terraform_version   : "0.11.7"                                          }
+    - { role: developer/docker                                                                                  }
+    - { role: developer/awscli                                                                                  }
 
