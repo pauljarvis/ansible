@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Pokemon - Black Version.nds</path>
+		<name>Pokemon - Black Version</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/pokemon-black-version-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+</gameList>

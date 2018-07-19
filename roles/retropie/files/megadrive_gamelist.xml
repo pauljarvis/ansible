@@ -83,7 +83,7 @@ Unlike the previous game, Bubsy can enter any of the six worlds he wants to at a
 		<players>1</players>
 	</game>
 	<game>
-		<path>./Columns 1.gen</path>
+		<path>./Columns.gen</path>
 		<name>Columns</name>
 		<desc>The game takes place inside a tall, rectangular playing area, as in Tetris. Columns of three different symbols (such as differently-colored jewels) appear, one at a time, at the top of the well and fall to the bottom, landing either on the floor or on top of previously-fallen "Columns".
 

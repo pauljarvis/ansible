@@ -1,0 +1,14 @@
+# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
+
+input_remapping_directory = "/opt/retropie/configs/{{ item.name }}/"
+{% if item.has_saves %}
+
+savefile_directory  = "{{ retropie_home }}/saves/{{ item.name }}"
+savestate_directory = "{{ retropie_home }}/states/{{ item.name }}"
+{% endif %}
+{% if item.name == "psx" %}
+video_smooth        = "{{ retropie_psx.video_smoothing | lower }}"'
+{% endif %}
+
+#include "/opt/retropie/configs/all/retroarch.cfg"
+

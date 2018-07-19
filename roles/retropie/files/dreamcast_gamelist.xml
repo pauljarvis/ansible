@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Bust-A-Move 4.cdi</path>
+		<name>Bust-A-Move 4</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/bust-a-move-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./ChuChu Rocket.cdi</path>
+		<name>ChuChu Rocket</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/chuchu-rocket-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Crazy Taxi 1.cdi</path>
+		<name>Crazy Taxi</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/crazy-taxi-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Crazy Taxi 2.cdi</path>
+		<name>Crazy Taxi 2</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/crazy-taxi-2-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Jet Set Radio.cdi</path>
+		<name>Jet Set Radio</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/jet-set-radio-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mr. Driller.cdi</path>
+		<name>Mr. Driller</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/mr-driller-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Power Stone 1.cdi</path>
+		<name>Power Stone</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/power-stone-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Power Stone 2.cdi</path>
+		<name>Power Stone 2</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/power-stone-2-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Sonic Adventure 1.cdi</path>
+		<name>Sonic Adventure</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/sonic-adventure-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Sonic Adventure 2.cdi</path>
+		<name>Sonic Adventure 2</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/dreamcast/sonic-adventure-2-image.jpg</image>
+		<releasedate>19700101T000000</releasedate>
+		<developer>n/a</developer>
+		<publisher>n/a</publisher>
+		<genre>n/a</genre>
+		<players>1</players>
+	</game>
+</gameList>

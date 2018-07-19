@@ -119,7 +119,7 @@ The player's plane in Prehistoric Isle only has a single, straight ahead shot. B
 		<path>./neogeo.zip</path>
 		<name>_bios_</name>
 		<desc>This is the arcade BIOS. Don't run this.</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/fba/neogeo-image.jpg</image>
+		<image>/home/pi/.emulationstation/downloaded_images/fba/neogeo-image.png</image>
 		<developer>n/a</developer>
 		<publisher>n/a</publisher>
 		<genre>n/a</genre>

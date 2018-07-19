@@ -70,9 +70,17 @@ retropie_emus:
     desc        : "Nintendo 64"
     extension   : [ ".z64", ".n64", ".v64", ".Z64", ".N64", ".V64" ]
     has_saves   : True
+  - name        : "dreamcast"
+    desc        : "Sega Dreamcast"
+    extension   : [ ".cdi", ".chd", ".gdi", ".CDI", ".CHD", ".GHI" ]
+    has_saves   : True
   - name        : "psx"
     desc        : "PlayStation"
     extension   : [ ".cue", ".cbn", ".iso", ".m3u", ".mdf", ".pbp", ".toc", ".z", ".znx", ".CUE", ".CBN", ".ISO", ".M3U", ".MDF", ".PBP", ".TOC", ".Z", ".ZNX" ]
+    has_saves   : True
+  - name        : "nds"
+    desc        : "Nintendo DS"
+    extension   : [ ".nds", ".zip", ".NDS", ".ZIP" ]
     has_saves   : True
   - name        : "fba"
     desc        : "Final Burn Alpha"

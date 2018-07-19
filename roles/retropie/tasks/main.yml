@@ -18,7 +18,7 @@
 - name: "mkdirs | save and state dirs"
   with_nested:
     - "{{ retropie_emus }}"
-    - [ "states", "saves" ]
+    - [ "states", "saves", "roms" ]
   when:
     - item[0].has_saves is defined
     - item[0].has_saves
@@ -126,7 +126,6 @@
   tags:
     - retropie
     - retropie-personalise
-    - demo
 
 - name: "personalisation | gamelists | config"
   with_items:
@@ -139,7 +138,6 @@
   tags:
     - retropie
     - retropie-personalise
-    - demo
 
 #################################################################
 
@@ -156,30 +154,31 @@
 
 #################################################################
 
-- name: "retroarch.cfg | save locations | updates"
+- name: "retropie | config | mkdirs"
   with_items:
     - "{{ retropie_emus }}"
   when:
     - item.has_saves is defined
     - item.has_saves
-  lineinfile:
-    path    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"
-    regexp  : "^savefile_directory"
-    line    : 'savefile_directory  = "{{ retropie_home }}/saves/{{ item.name }}"'
+  file:
+    path    : "{{ retropie_cfg }}/{{ item.name }}"
+    state   : "directory"
   tags:
     - retropie
     - retropie-cfg
 
-- name: "retroarch.cfg | state locations | updates"
+- name: "retropie | config | emu | retroarch.cfg"
   with_items:
     - "{{ retropie_emus }}"
   when:
     - item.has_saves is defined
     - item.has_saves
-  lineinfile:
-    path    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"
-    regexp  : "^savestate_directory"
-    line    : 'savestate_directory = "{{ retropie_home }}/states/{{ item.name }}"'
+  template:
+    src     : "retroarch_emu.j2"
+    dest    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"
+    owner   : "pi"
+    group   : "pi"
+    mode    : "0664"
   tags:
     - retropie
     - retropie-cfg
@@ -308,15 +307,6 @@
     - retropie-n64
 
 #################################################################
-
-- name: "psx | video smoothing"
-  lineinfile:
-    path    : "{{ retropie_cfg }}/psx/retroarch.cfg"
-    regexp  : '^video_smooth'
-    line    : 'video_smooth        = "{{ retropie_psx.video_smoothing | lower }}"'
-  tags:
-    - retropie
-    - retropie-psx
 
 - name: "psx | mkdirs"
   file:
