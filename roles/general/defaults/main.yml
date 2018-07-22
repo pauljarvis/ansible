@@ -1,16 +1,18 @@
 ---
 
 libraries_apt:
-  - curl
-  - wget
-  - tree
-  - git
-  - jq
-  - xclip
+  - git               # Source Control
+  - curl              # Api Tool
+  - wget              # Remote resource pull
+  - tree              # Dir Structure tree
+  - jq                # Json Parser
+  - xclip             # Store to Clipboard
 
 libraries_apt_gui:
   - baobab            # Disk Usage
-  - shutter           # Snipping Tool 
-  - vlc
-  - gedit
+  - shutter           # Snipping Tool
+  - vlc               # Media Player
+  - gedit             # Text Editor
 
+libraries_snap:
+  - yq                # Yaml Parser
