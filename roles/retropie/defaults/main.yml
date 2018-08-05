@@ -185,6 +185,12 @@ retropie_dreamcast:
 
 #######################################################################
 
+retropie_nds:
+  home      : "{{ retropie_home }}/roms/nds"
+  cfg       : "{{ retropie_cfg }}/nds/drastic/config"
+
+#######################################################################
+
 retropie_steam:
   home      : "{{ retropie_home }}/roms/steam"
   cfg       : "{{ retropie_cfg  }}/steam"

@@ -11,4 +11,15 @@
 		<genre>Role-playing</genre>
 		<players>1</players>
 	</game>
+	<game>
+		<path>./WarioWare - Touched!.nds</path>
+		<name>WarioWare - Touched!</name>
+		<desc>Wario is walking down a street after having proudly stolen a Game Boy Advance and Game Boy Advance SP, but then he suddenly trips and drops both systems down a manhole. The Sewer Guru then flies up from the hole holding not only the two handheld systems but also a Nintendo DS, and he asks Wario which one he dropped. Wario replies, "Gimme all of 'em!" and lunges at the Sewer Guru, knocking both of them down the manhole. After a brief scuffle Wario emerges with the Nintendo DS. Wario immediately notices that the handheld has two screens, but finds it more peculiar that there are no buttons. Not knowing how to play it, Wario loses a Whack-a-Mole minigame and shakes it angrily, thinking that the device does not work. However, the stylus flies out into his hand, and Wario suddenly realizes that he must use it to tap the bottom screen. He wins the minigame and then realizes he could make double the profit out of this double-screened apparatus, and so he uses it to make touch-style microgames</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/warioware.jpg</image>
+		<releasedate>20050311T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Puzzle</genre>
+		<players>1</players>
+	</game>
 </gameList>
