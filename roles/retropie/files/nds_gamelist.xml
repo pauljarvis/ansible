@@ -2,13 +2,13 @@
 <gameList>
 	<game>
 		<path>./Pokemon - Black Version.nds</path>
-		<name>Pokemon - Black Version</name>
-		<desc></desc>
+		<name>Pokémon - Black Version</name>
+		<desc>What are the true motives of Team Plasma and the mysterious N? What is the secret  of the Legendary Pokémon? Adventure across the Unova region and discover all-new Pokémon</desc>
 		<image>/home/pi/.emulationstation/downloaded_images/nds/pokemon-black-version-image.jpg</image>
-		<releasedate>19700101T000000</releasedate>
-		<developer>n/a</developer>
-		<publisher>n/a</publisher>
-		<genre>n/a</genre>
+		<releasedate>20100918T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>The Pokémon Company</publisher>
+		<genre>Role-playing</genre>
 		<players>1</players>
 	</game>
 </gameList>
