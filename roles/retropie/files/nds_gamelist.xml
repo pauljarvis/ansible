@@ -1,6 +1,116 @@
 <?xml version="1.0"?>
 <gameList>
 	<game>
+		<path>./Castlevania - Dawn of Sorrow.nds</path>
+		<name>Castlevania - Dawn of Sorrow</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/castlevania-dawn-of-sorrow-image.jpg</image>
+		<releasedate>20051030T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Castlevania - Order of Ecclesia.nds</path>
+		<name>Castlevania - Order of Ecclesia</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/castlevania-order-of-ecclesia-image.jpg</image>
+		<releasedate>20080206T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Legend of Zelda - Phantom Hourglass, The.nds</path>
+		<name>The Legend of Zelda - Phantom Hourglass</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/zelda-phantom-hourglass-image.jpg</image>
+		<releasedate>20070623T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Legend of Zelda - Spirit Tracks, The.nds</path>
+		<name>The Legend of Zelda - Spirit Tracks</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/zelda-spirit-tracks-image.jpg</image>
+		<releasedate>20091207T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mario Kart DS.nds</path>
+		<name>Mario Kart DS</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/mario-kart-ds-image.png</image>
+		<releasedate>20051105T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Racing</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mario & Luigi - Bowser's Inside Story.nds</path>
+		<name>Mario & Luigi - Bowser's Inside Story</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/mario-bowsers-inside-story-image.jpg</image>
+		<releasedate>20091009T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>RPG</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mario & Luigi - Partners in Time.nds</path>
+		<name>Mario & Luigi - Partners in Time</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/mario-partners-in-time-image.jpg</image>
+		<releasedate>20051128T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>RPG</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./New Super Mario Bros.nds</path>
+		<name>New Super Mario Bros</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/new-super-mario-bros-image.jpg</image>
+		<releasedate>20060515T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Picross DS.nds</path>
+		<name>Picross DS</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/picross-ds-image.jpg</image>
+		<releasedate>20070511T000000</releasedate>
+		<developer>Jupiter</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Puzzle</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Picross 3D.nds</path>
+		<name>Picross 3D</name>
+		<desc></desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/picross-3d-image.png</image>
+		<releasedate>20100305T000000</releasedate>
+		<developer>HAL Laboratory</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Puzzle</genre>
+		<players>1</players>
+	</game>
+	<game>
 		<path>./Pokemon - Black Version.nds</path>
 		<name>Pokémon - Black Version</name>
 		<desc>What are the true motives of Team Plasma and the mysterious N? What is the secret  of the Legendary Pokémon? Adventure across the Unova region and discover all-new Pokémon</desc>
@@ -15,7 +125,7 @@
 		<path>./WarioWare - Touched!.nds</path>
 		<name>WarioWare - Touched!</name>
 		<desc>Wario is walking down a street after having proudly stolen a Game Boy Advance and Game Boy Advance SP, but then he suddenly trips and drops both systems down a manhole. The Sewer Guru then flies up from the hole holding not only the two handheld systems but also a Nintendo DS, and he asks Wario which one he dropped. Wario replies, "Gimme all of 'em!" and lunges at the Sewer Guru, knocking both of them down the manhole. After a brief scuffle Wario emerges with the Nintendo DS. Wario immediately notices that the handheld has two screens, but finds it more peculiar that there are no buttons. Not knowing how to play it, Wario loses a Whack-a-Mole minigame and shakes it angrily, thinking that the device does not work. However, the stylus flies out into his hand, and Wario suddenly realizes that he must use it to tap the bottom screen. He wins the minigame and then realizes he could make double the profit out of this double-screened apparatus, and so he uses it to make touch-style microgames</desc>
-		<image>/home/pi/.emulationstation/downloaded_images/nds/warioware.jpg</image>
+		<image>/home/pi/.emulationstation/downloaded_images/nds/warioware-image.png</image>
 		<releasedate>20050311T000000</releasedate>
 		<developer>Nintendo</developer>
 		<publisher>Nintendo</publisher>

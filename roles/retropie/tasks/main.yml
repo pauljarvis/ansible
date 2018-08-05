@@ -78,6 +78,7 @@
     owner   : "pi"
     group   : "pi"
     mode    : "0775"
+    creates : "{{ retropie_home }}/splashscreens/retropie.mov"
   tags:
     - retropie
     - retropie-personalise
