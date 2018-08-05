@@ -330,6 +330,25 @@
 
 #################################################################
 
+- name: "Check for VMUs"
+  stat:
+    path: "{{ retropie_dreamcast.cfg }}/vmu_save_A1.bin"
+  register: dreamcast_vmu
+  tags:
+    - retropie
+    - retropie-dreamcast
+
+- name: "dreamcast | controller memory cards"
+  when: dreamcast_vmu.stat.exists == false
+  unarchive:
+    src     : "bin/dreamcast_vmu.zip"
+    dest    : "{{ retropie_dreamcast.cfg }}"
+  tags:
+    - retropie
+    - retropie-dreamcast
+
+#################################################################
+
 - name: "python scripts | git clone"
   git:
     repo    : "{{ retropie_git.url  }}"

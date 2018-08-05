@@ -179,6 +179,12 @@ retropie_psx:
 
 #######################################################################
 
+retropie_dreamcast:
+  home      : "{{ retropie_home }}/roms/dreamcast"
+  cfg       : "{{ retropie_cfg }}/dreamcast"
+
+#######################################################################
+
 retropie_steam:
   home      : "{{ retropie_home }}/roms/steam"
   cfg       : "{{ retropie_cfg  }}/steam"
