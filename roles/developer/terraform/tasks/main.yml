@@ -4,14 +4,14 @@
 
 - name: "mkdirs"
   file:
-    name    : "{{ item }}"
+    name    : "{{ terraform.home }}/{{ item }}"
     state   : "directory"
     recurse : "yes"
     owner   : "{{ primary_user.id }}"
     group   : "{{ primary_user.id }}"
     mode    : "0755"
   with_items:
-    - "{{ terraform.home }}/{{ terraform_version }}"
+    - "{{ terraform.versions }}"
   tags:
     - developer
     - terraform
@@ -32,9 +32,26 @@
 - name: "unpack | application"
   unarchive:
     src         : "{{ terraform.url }}{{ terraform.zip }}"
-    dest        : "{{ terraform.home }}/{{ terraform_version }}"
+    dest        : "{{ terraform.home }}/{{ item }}"
     remote_src  : "yes"
-    creates     : "{{ terraform.home }}/{{ terraform_version }}/terraform"
+    creates     : "{{ terraform.home }}/{{ item }}/terraform"
+  with_items:
+    - "{{ terraform.versions }}"
+  tags:
+    - developer
+    - terraform
+
+#################################################################
+
+- name: "symlink"
+  file:
+    src     : "{{ terraform.home }}/{{ terraform_version }}/terraform"
+    dest    : "{{ terraform.home }}/terraform"
+    owner   : "{{ primary_user.id }}"
+    group   : "{{ primary_user.id }}"
+    mode    : "0755"
+    state   : "link"
+    force   : "yes"
   tags:
     - developer
     - terraform

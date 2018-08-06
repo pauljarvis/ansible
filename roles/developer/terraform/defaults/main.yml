@@ -7,5 +7,10 @@ terraform_version : "0.11.7"
 terraform:
   url             : "https://releases.hashicorp.com/terraform/{{ terraform_version }}/"
   zip             : "terraform_{{ terraform_version }}_linux_amd64.zip"
-  home            : "/usr/lib/tfenv"
+  home            : "/usr/lib/terraform"
+  versions        :
+    - "{{ terraform_version }}"
+    - "0.11.7"
+    - "0.9.6"
+    - "0.7.4"
 
