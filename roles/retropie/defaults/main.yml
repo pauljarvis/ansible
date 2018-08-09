@@ -54,6 +54,14 @@ retropie_emus:
     path        : "{{ retropie_home }}/retropiemenu"
     cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
     platform    : ""
+  - name        : "atari2600"
+    desc        : "Atari 2600"
+    extension   : [ ".7z", ".a78", ".bin", ".zip", ".7Z", ".A78", ".BIN", ".ZIP" ]
+    has_saves   : True
+  - name        : "atari7800"
+    desc        : "Atari 7800"
+    extension   : [ ".7z", ".a78", ".bin", ".zip", ".7Z", ".A78", ".BIN", ".ZIP" ]
+    has_saves   : True
   - name        : "snes"
     desc        : "Super Nintendo"
     extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
