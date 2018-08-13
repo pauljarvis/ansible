@@ -327,7 +327,7 @@
   tags:
     - retropie
     - retropie-psx
-    - retropie-controller
+    - retropie-controllers
 
 #################################################################
 
@@ -353,8 +353,9 @@
 
 - name: "dreamcast | controller"
   with_items:
-    - { src: "xbox1",     dest: "controller_xpad"     }
-    - { src: "xbox2",     dest: "controller_generic"  }
+    - { src: "xbox360",   dest: "controller_xpad"     }
+    - { src: "xboxone",   dest: "controller_generic"  }
+    - { src: "ps3",       dest: "controller_ps3"  }
     - { src: "keyboard",  dest: "keyboard"            }
   template:
     src     : "controller_dreamcast_{{ item.src }}.j2"
@@ -365,7 +366,7 @@
   tags:
     - retropie
     - retropie-dreamcast
-    - retropie-controller
+    - retropie-controllers
 
 #################################################################
 
