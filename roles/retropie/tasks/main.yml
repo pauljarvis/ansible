@@ -355,7 +355,6 @@
   with_items:
     - { src: "xbox360",   dest: "controller_xpad"     }
     - { src: "xboxone",   dest: "controller_generic"  }
-    - { src: "ps3",       dest: "controller_ps3"  }
     - { src: "keyboard",  dest: "keyboard"            }
   template:
     src     : "controller_dreamcast_{{ item.src }}.j2"
