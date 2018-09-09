@@ -5,7 +5,7 @@
     "cwd",
     "git"
   ],
-{% if gui == False %}
+{% if not gui | bool %}
   "mode": "flat",
 {% endif %}
   "cwd": {
