@@ -1,6 +1,8 @@
 ---
 
 libraries_apt:
+  - python-pip        # Package Manager - Python
+  - snapd             # Package Manager - Unified Linux
   - git               # Source Control
   - curl              # Api Tool
   - wget              # Remote resource pull
