@@ -1,6 +1,7 @@
 ---
 libraries_apt:
   - ruby
+  - multitail
 
 libraries_pip:
   - ansible
