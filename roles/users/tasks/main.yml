@@ -14,9 +14,9 @@
 #################################################################
 
 - name: "users | add"
-  ignore_errors: "yes"
   with_items:
     - "{{ all_users }}"
+  ignore_errors: "yes"
   user:
     name  : "{{ item.id   }}"
     group : "{{ item.id   }}"

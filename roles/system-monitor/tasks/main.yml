@@ -3,26 +3,26 @@
 #################################################################
 
 - name: "apt | add repository"
+  when: not proxy
   with_items:
     - "{{ repos_apt }}"
-  when: not proxy
   apt_repository:
     repo  : "{{ item }}"
     state : "present"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 - name: "apt | add repository"
+  when: proxy
   become: yes
   become_user: "{{ primary_user.id }}"
   with_items:
     - "{{ repos_apt }}"
-  when: proxy
   shell: "sudo -E add-apt-repository {{ item }} -y"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 #################################################################
 
@@ -34,7 +34,7 @@
     state : "latest"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 #################################################################
 
@@ -47,7 +47,7 @@
     mode  : "0755"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 - name: "copy | config"
   template:
@@ -58,7 +58,7 @@
     mode  : "0644"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 - name: "copy | autostart"
   template:
@@ -69,7 +69,7 @@
     mode  : "0644"
   notify: "application | start"
   tags:
-    - system-monitor
+    - "system-monitor"
 
 #################################################################
 

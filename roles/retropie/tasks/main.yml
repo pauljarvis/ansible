@@ -16,12 +16,12 @@
     - retropie-dirs
 
 - name: "mkdirs | save and state dirs"
-  with_nested:
-    - "{{ retropie_emus }}"
-    - [ "states", "saves", "roms" ]
   when:
     - item[0].has_saves is defined
     - item[0].has_saves
+  with_nested:
+    - "{{ retropie_emus }}"
+    - [ "states", "saves", "roms" ]
   file:
     path    : "{{ retropie_home }}/{{ item[1] }}/{{ item[0].name }}"
     owner   : "pi"
@@ -156,11 +156,11 @@
 #################################################################
 
 - name: "retropie | config | mkdirs"
-  with_items:
-    - "{{ retropie_emus }}"
   when:
     - item.has_saves is defined
     - item.has_saves
+  with_items:
+    - "{{ retropie_emus }}"
   file:
     path    : "{{ retropie_cfg }}/{{ item.name }}"
     state   : "directory"
@@ -169,11 +169,11 @@
     - retropie-cfg
 
 - name: "retropie | config | emu | retroarch.cfg"
-  with_items:
-    - "{{ retropie_emus }}"
   when:
     - item.has_saves is defined
     - item.has_saves
+  with_items:
+    - "{{ retropie_emus }}"
   template:
     src     : "retroarch_emu.j2"
     dest    : "{{ retropie_cfg }}/{{ item.name }}/retroarch.cfg"

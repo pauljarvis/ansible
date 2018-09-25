@@ -12,8 +12,8 @@
   with_items:
     - "{{ libraries_apt.all }}"
   apt:
-    name: "{{ item }}"
-    state: "latest"
+    name  : "{{ item }}"
+    state : "latest"
   tags:
     - "prereq"
 
@@ -23,8 +23,8 @@
   with_items:
     - "{{ libraries_apt.ubuntu }}"
   apt:
-    name: "{{ item }}"
-    state: "latest"
+    name  : "{{ item }}"
+    state : "latest"
   tags:
     - "prereq"
 
@@ -35,14 +35,14 @@
   with_items:
     - "{{ libraries_apt.ubuntu_18 }}"
   apt:
-    name: "{{ item }}"
-    state: "latest"
+    name  : "{{ item }}"
+    state : "latest"
   tags:
     - "prereq"
 
 - name: "apt | autoclean"
   apt:
-    autoclean: yes
+    autoclean : yes
     autoremove: yes
   tags:
     - "prereq"

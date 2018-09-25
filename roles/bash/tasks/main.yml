@@ -52,9 +52,9 @@
     - "bash"
 
 - name: "copy | config | .bash_proxy"
+  when    : proxy
   with_items:
     - "{{ all_users }}"
-  when    : proxy
   template:
     src   : "bash_proxy.j2"
     dest  : "{{ item.home }}/.bash_proxy"

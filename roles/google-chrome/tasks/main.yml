@@ -7,7 +7,7 @@
     url   : "{{ chrome.url }}{{ chrome.file }}"
     dest  : "/tmp/{{ chrome.file }}"
   tags:
-    - "google"
+    - "media"
     - "chrome"
 
 - name: "apt | install"
@@ -15,7 +15,7 @@
     deb   : "/tmp/{{ chrome.file }}"
     state : "present"
   tags:
-    - "google"
+    - "media"
     - "chrome"
 
 #################################################################
@@ -36,11 +36,11 @@
   when    :
     - ansible_distribution      | lower == "ubuntu"
     - ansible_lsb.major_release | int   <  18
-  script  : "{{ unity_launcher.script }}"
   become  : "{{ primary_user.id }}"
+  script  : "{{ unity_launcher.script }}"
   tags:
-    - media
-    - chrome
+    - "media"
+    - "chrome"
 
 #################################################################
 
