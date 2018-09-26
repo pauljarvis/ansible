@@ -1,0 +1,36 @@
+---
+
+#################################################################
+
+- name: "apt | install"
+  with_items:
+    - "{{ libraries_apt }}"
+  apt:
+    name    : "{{ item }}"
+    state   : "latest"
+  tags:
+    - "mysql-workbench"
+
+#################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src         : "mysql-workbench.desktop.j2"
+    dest        : "/usr/share/applications/mysql-workbench.desktop"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    mode        : "0644"
+  tags:
+    - "mysql-workbench"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  script  : "{{ unity_launcher.script }}"
+  become  : "{{ primary_user.id }}"
+  tags:
+    - "mysql-workbench"
+
+#################################################################
+

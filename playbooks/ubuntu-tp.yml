@@ -44,6 +44,7 @@
     - { role: system-monitor                                                                                    }
     - { role: google-chrome                                                                                     }
     - { role: terminator                                                                                        }
+    - { role: mysql-workbench                                                                                   }
 
     - { role: developer/general                                                                                 }
     - { role: developer/tomcat                                                                                  }
