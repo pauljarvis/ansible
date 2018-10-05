@@ -1,0 +1,9 @@
+---
+- debug:
+    msg: "Distribution: {{ ansible_distribution_version }} {{ ansible_distribution | lower }}-{{ ansible_distribution_release | lower }}"
+  tags: [ "always" ]
+
+- debug:
+    msg: "VM Status   : {{ ansible_virtualization_role }} [{{ ansible_virtualization_type }}]"
+  tags: [ "always" ]
+
