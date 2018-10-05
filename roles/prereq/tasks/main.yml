@@ -9,10 +9,8 @@
     - "prereq"
 
 - name: "apt | install"
-  with_items:
-    - "{{ libraries_apt.all }}"
   apt:
-    name  : "{{ item }}"
+    name  : "{{ libraries_apt.all }}"
     state : "latest"
   tags:
     - "prereq"
@@ -20,10 +18,8 @@
 - name: "apt | install | ubuntu"
   when:
     - ansible_distribution      | lower == "ubuntu"
-  with_items:
-    - "{{ libraries_apt.ubuntu }}"
   apt:
-    name  : "{{ item }}"
+    name  : "{{ libraries_apt.ubuntu }}"
     state : "latest"
   tags:
     - "prereq"
@@ -32,10 +28,8 @@
   when:
     - ansible_distribution      | lower == "ubuntu"
     - ansible_lsb.major_release | int   >= 18
-  with_items:
-    - "{{ libraries_apt.ubuntu_18 }}"
   apt:
-    name  : "{{ item }}"
+    name  : "{{ libraries_apt.ubuntu_18 }}"
     state : "latest"
   tags:
     - "prereq"

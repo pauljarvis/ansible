@@ -33,10 +33,8 @@
 #################################################################
 
 - name: "apt | install packages"
-  with_items:
-    - "{{ libraries_apt }}"
   apt:
-    name: "{{ item }}"
+    name: "{{ libraries_apt }}"
     state: latest
   tags:
     - "java"

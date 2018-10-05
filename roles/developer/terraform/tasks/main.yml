@@ -3,6 +3,8 @@
 #################################################################
 
 - name: "mkdirs"
+  with_items:
+    - "{{ terraform.versions }}"
   file:
     name    : "{{ terraform.home }}/{{ item }}"
     state   : "directory"
@@ -10,8 +12,6 @@
     owner   : "{{ primary_user.id }}"
     group   : "{{ primary_user.id }}"
     mode    : "0755"
-  with_items:
-    - "{{ terraform.versions }}"
   tags:
     - developer
     - terraform
@@ -20,9 +20,8 @@
 
 - name: "apt | install"
   apt:
-    name    : "{{ item }}"
+    name    : "{{ libraries_apt }}"
     state   : "latest"
-  with_items: "{{ libraries_apt }}"
   tags:
     - developer
     - terraform
@@ -30,13 +29,13 @@
 #################################################################
 
 - name: "unpack | application"
+  with_items:
+    - "{{ terraform.versions }}"
   unarchive:
     src         : "{{ terraform.url }}{{ terraform.zip }}"
     dest        : "{{ terraform.home }}/{{ item }}"
     remote_src  : "yes"
     creates     : "{{ terraform.home }}/{{ item }}/terraform"
-  with_items:
-    - "{{ terraform.versions }}"
   tags:
     - developer
     - terraform

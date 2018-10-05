@@ -2,17 +2,17 @@
 
 #################################################################
 
-- name: "install"
-  with_items: "{{ libraries_pip }}"
+- name: "pip | install"
   pip :
-    name    : "{{ item }}"
+    name    : "{{ libraries_pip }}"
     state   : "latest"
   tags:
     - developer
     - awscli
 
 - name: "copy | config"
-  with_items: "{{ all_users }}"
+  with_items:
+    - "{{ all_users }}"
   template:
     src   : "aws_settings.j2"
     dest  : "{{ item.home }}/.aws_settings"

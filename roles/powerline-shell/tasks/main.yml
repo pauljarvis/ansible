@@ -3,10 +3,8 @@
 #################################################################
 
 - name: "pip | install packages"
-  with_items:
-    - "{{ libraries_pip }}"
   pip:
-    name  : "{{ item }}"
+    name  : "{{ libraries_pip }}"
     state : "latest"
   tags:
     - "powerline-shell"

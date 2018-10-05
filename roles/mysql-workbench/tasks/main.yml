@@ -3,10 +3,8 @@
 #################################################################
 
 - name: "apt | install"
-  with_items:
-    - "{{ libraries_apt }}"
   apt:
-    name    : "{{ item }}"
+    name    : "{{ libraries_apt }}"
     state   : "latest"
   tags:
     - "mysql-workbench"
@@ -27,8 +25,8 @@
   when    :
     - ansible_distribution      | lower == "ubuntu"
     - ansible_lsb.major_release | int   <  18
-  script  : "{{ unity_launcher.script }}"
   become  : "{{ primary_user.id }}"
+  script  : "{{ unity_launcher.script }}"
   tags:
     - "mysql-workbench"
 
