@@ -4,6 +4,7 @@ chrome:
   url: "https://dl.google.com/linux/direct/"
   file: "google-chrome-stable_current_amd64.deb"
 
-unity_launcher:
-  script  : "../scripts/add_unity_launcher.sh google-chrome"
+launcher_favourite:
+  unity  : "../../scripts/add_unity_launcher.sh google-chrome"
+  gnome  : "../../scripts/add_gnome_launcher.sh google-chrome"
 

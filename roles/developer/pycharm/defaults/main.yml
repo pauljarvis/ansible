@@ -12,6 +12,7 @@ pycharm:
   zip     : "pycharm-community-{{ pycharm_version }}.tar.gz"
   home    : "/usr/lib/pycharm"
 
-unity_launcher:
-  script  : "../../scripts/add_unity_launcher.sh jetbrains-pycharm-ce"
+launcher_favourite:
+  unity  : "../../scripts/add_unity_launcher.sh jetbrains-pycharm-ce"
+  gnome  : "../../scripts/add_gnome_launcher.sh jetbrains-pycharm-ce"
 

@@ -69,7 +69,17 @@
     - ansible_distribution      | lower == "ubuntu"
     - ansible_lsb.major_release | int   <  18
   become  : "{{ primary_user.id }}"
-  script  : "{{ unity_launcher.script }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - developer
+    - intellij
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
   tags:
     - developer
     - intellij
