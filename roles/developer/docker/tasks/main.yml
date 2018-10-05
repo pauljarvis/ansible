@@ -130,6 +130,20 @@
 
 #################################################################
 
+- name: "insecure registries"
+  template:
+    src     : "daemon.json.j2"
+    dest    : "/etc/docker/daemon.json"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  register: docker_config
+  tags:
+    - "developer"
+    - "docker"
+    - "docker-test"
+
+#################################################################
+
 - name: "service | restart"
   when:
     - proxy
