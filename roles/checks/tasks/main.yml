@@ -10,6 +10,11 @@
     msg: "{{ ansible_virtualization_role }} [{{ ansible_virtualization_type }}]"
   tags: [ "always" ]
 
+- name: "Desktop Environment"
+  debug:
+    msg: "{{ lookup('env', 'XDG_CURRENT_DESKTOP') }}"
+  tags: [ "always" ]
+
 - name: "Check Ansible Version >= {{ min_ansible_version }}"
   assert:
     that: "ansible_version.full is version_compare('{{ min_ansible_version }}', '>=')"
