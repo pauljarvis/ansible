@@ -2,8 +2,8 @@
 # ===============================================
 
 [defaults]
-inventory          = /home/steve/git/ansible/.ansible-sys/hosts
-roles_path         = /home/steve/git/ansible/roles/
+inventory          = 
+roles_path         = 
 host_key_checking  = False
 
 [privilege_escalation]
