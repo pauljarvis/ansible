@@ -4,11 +4,11 @@
 
 - name: "mkdir structure"
   file:
-    path: "{{ java.home }}"
-    state: directory
-    owner: "{{ primary_user.id }}"
-    group: "{{ primary_user.id }}"
-    mode: 0755
+    path  : "{{ java.home }}"
+    state : directory
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : 0755
   tags:
     - "java"
 
@@ -34,20 +34,23 @@
 
 - name: "apt | install packages"
   apt:
-    name: "{{ libraries_apt }}"
-    state: latest
+    name  : "{{ libraries_apt }}"
+    state : latest
   tags:
     - "java"
 
 #################################################################
 
 - name: "symlink | set version"
+  with_items:
+    - java
+    - default-java
   file:
-    src: "{{ java.home }}/{{ java.default }}"
-    dest: "{{ java.home }}/java"
-    owner: "{{ primary_user.id }}"
-    group: "{{ primary_user.id }}"
-    state: link
+    src   : "{{ java.home }}/{{ java.default }}"
+    dest  : "{{ java.home }}/{{ item }}"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    state : link
   tags:
     - "java"
 
