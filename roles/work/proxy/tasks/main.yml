@@ -36,6 +36,18 @@
 
 #################################################################
 
+- name: "environment | config"
+  when: proxy
+  template:
+    src     : "environment.j2"
+    dest    : "/etc/environment"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  tags:
+    - "proxy"
+
+#################################################################
+
 - name: "apt | config"
   when: proxy
   with_items:

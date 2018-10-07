@@ -37,7 +37,7 @@ while getopts ":p:u:l:t:z:v:e:k:sch" arg; do
       ;;
     u)
       user="${OPTARG}"
-      uservars=" --extra-vars \"@profiles/${user}.yml\""
+      uservars=" --extra-vars \"@user_profiles/${user}.yml\""
       ;;
     l)
       limit=" --limit \"${OPTARG}\""

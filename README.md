@@ -3,29 +3,43 @@ The sections below cover the requirements and build steps to get a full function
 ___
 ## ubuntu
 #### Pre-Req
-- Install Guest Additions
+- [If on VM] Install Guest Additions
+- Run Bootstrap
+- Create a user profile in `user_profiles/` from `user_profile/__DEMO__.yml`. 
+  It is referenced with `-u` below.  
 
-#### Bootstap
-```
+#### Run
+`./go.sh -s -p ubuntu -u {user_profile} -t proxy`  
+
+##### Bootstrap
+```bash
 sudo apt-get install -y python-pip git \
 && sudo pip install ansible \
 && git clone https://github.com/OurFriendIrony/ansible.git /tmp/ansible \
 && cd /tmp/ansible
 ```
-#### Pre-Run
-- Create yourself a profile if you haven't done already in "./profiles/". It is referenced with `-u` below.  
-
-#### Run
-`./go.sh -s -p ubuntu -u steve`  
 
 ___
 ## ubuntu-tp
-#### Prereqs
-- Install Guest Additions
-- When running the bootstap you will be prompter to enter your windows ntlm password. This is used to get through the rest of the proxies
+#### Pre-Req
+- [If on VM] Install Guest Additions
+- Run Bootstrap
+- When running the bootstap you will be prompted to enter your windows ntlm password. This is used to get through the rest of the proxies
+- Create a user profile in `user_profiles/` from `user_profile/__DEMO__.yml`. 
+  It is referenced with `-u` below.  
+- Add the generated `PassNTLMv2` to your user profile as `ntlm_pass`
 
-#### Bootstap
-```
+#### First Run
+To ensure successful executions, first run the following:
+`./go.sh -s -p ubuntu-tp -u {user_profile} -t proxy`  
+and then restart you machine before attempting to run the main rollout
+
+#### Run
+`./go.sh -s -p ubuntu-tp -u {user_profile}`  
+
+
+#### Bootstrap
+```bash
 export https_proxy="http://10.0.20.196:8080" \
 && echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tee /etc/apt/apt.conf.d/01proxy > /dev/null \
 && echo -e "[http]\n  proxy = ${https_proxy}" > ~/.gitconfig \
@@ -37,36 +51,28 @@ export https_proxy="http://10.0.20.196:8080" \
 && cntlm -H -u ${LOGNAME}@tpplc
 ```
 
-#### Pre-Run
-- Create yourself a profile if you haven't done already in "./profiles/". It is referenced with `-u` below.  
-- Take the PassNTLMv2 you received after running bootstrap and ensure it is put into your profile config.  
-- Note that you should run the proxy tag first to make sure all settings are applied before running the rest of the playbook.  
-
-#### Run
-`./go.sh -s -p ubuntu-tp -u stest-tp -t proxy`  
-`./go.sh -s -p ubuntu-tp -u stest-tp`  
-
 ___
 ## retropie
-#### Prereqs
+#### Pre-Req
 - Connect Wifi
 - sudo raspi-config
   - 5 --> 2 [Turn on SSH client]
   - 7 --> 1 [Expand FileSystem]
-  
-#### Bootstap
-```
+
+#### Pre-Req [2]
+- Create a user profile in `user_profiles/` from `user_profile/__DEMO__.yml`. 
+  It is referenced with `-u` below.  
+
+#### Run
+`./go.sh -s -p retropie -u {user_profile}`  
+
+#### Bootstrap
+```bash
 sudo apt-get install -y python-pip git \
 && sudo pip install ansible \
 && git clone https://github.com/OurFriendIrony/ansible.git /tmp/ansible \
 && cd /tmp/ansible
 ```
-
-#### Pre-Run
-- Create yourself a profile if you haven't done already in "./profiles/". It is referenced with `-u` below.  
-
-#### Run
-`./go.sh -s -p retropie -u steve`  
 
 ___
 ## Help
@@ -75,3 +81,4 @@ ___
 ___
 ## Module index
 All Modules are documented [**here**](http://docs.ansible.com/ansible/latest/list_of_all_modules.html)
+
