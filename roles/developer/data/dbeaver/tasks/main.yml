@@ -4,41 +4,58 @@
 
 - name: "apt | install"
   apt:
-    name    : "{{ item }}"
+    name    : "{{ libraries_apt }}"
     state   : "latest"
-  with_items: "{{ libraries_apt }}"
   tags:
-    - developer
-    - dbeaver
+    - "developer"
+    - "data"
+    - "dbeaver"
 
 #################################################################
 
-- name: "apt | download and install dev"
+- name: "apt | download and install deb"
   apt:
-    devb        : "{{ dbeaver.url }}"
+    deb     : "{{ dbeaver.url }}"
   tags:
-    - developer
-    - dbeaver
+    - "developer"
+    - "data"
+    - "dbeaver"
 
 #################################################################
 
-#- name: "copy | desktop icon"
-#  template:
-#    src         : "jetbrains-dbeaver-ce.desktop.j2"
-#    dest        : "/usr/share/applications/jetbrains-dbeaver-ce.desktop"
-#    owner       : "{{ primary_user.id }}"
-#    group       : "{{ primary_user.id }}"
-#    mode        : "0644"
-#  tags:
-#    - developer
-#    - dbeaver
-#
-#- name    : "cmd | add to launcher"
-#  script  : "{{ unity_launcher.script }}"
-#  become  : "{{ primary_user.id }}"
-#  tags:
-#    - developer
-#    - dbeaver
+- name: "copy | desktop icon"
+  template:
+    src         : "{{ dbeaver.desktop }}.desktop.j2"
+    dest        : "/usr/share/applications/{{ dbeaver.desktop }}.desktop"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    mode        : "0644"
+  tags:
+    - "developer"
+    - "data"
+    - "dbeaver"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "developer"
+    - "data"
+    - "dbeaver"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "developer"
+    - "data"
+    - "dbeaver"
 
 #################################################################
 

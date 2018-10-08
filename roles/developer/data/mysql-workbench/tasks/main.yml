@@ -7,6 +7,8 @@
     name    : "{{ libraries_apt }}"
     state   : "latest"
   tags:
+    - "developer"
+    - "data"
     - "mysql-workbench"
 
 #################################################################
@@ -19,6 +21,8 @@
     group       : "{{ primary_user.id }}"
     mode        : "0644"
   tags:
+    - "developer"
+    - "data"
     - "mysql-workbench"
 
 - name    : "cmd | unity | add to launcher"
@@ -28,6 +32,8 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.unity }}"
   tags:
+    - "developer"
+    - "data"
     - "mysql-workbench"
 
 - name    : "cmd | gnome | add to launcher"
@@ -37,6 +43,8 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.gnome }}"
   tags:
+    - "developer"
+    - "data"
     - "mysql-workbench"
 
 #################################################################
