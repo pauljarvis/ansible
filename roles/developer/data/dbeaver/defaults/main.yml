@@ -1,0 +1,15 @@
+---
+
+libraries_apt:
+  - unzip
+
+dbeaver_version    : "5.0.4"
+
+dbeaver:
+  url     : "https://dbeaver.jkiss.org/files/{{ dbeaver_version }}/dbeaver-ce_{{ dbeaver_version }}_amd64.deb"
+  desktop : "dbeaver"
+
+launcher_favourite:
+  unity  : "../../../scripts/add_unity_launcher.sh {{ dbeaver.desktop }}"
+  gnome  : "../../../scripts/add_gnome_launcher.sh {{ dbeaver.desktop }}"
+

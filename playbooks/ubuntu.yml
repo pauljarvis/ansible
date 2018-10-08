@@ -47,6 +47,9 @@
     - { role: developer/docker                                                                                  }
     - { role: developer/awscli                                                                                  }
 
+    
+   
+
     - { role: developer/ide/intellij                                                                            }
     - { role: developer/ide/pycharm                                                                             }
     - { role: developer/ide/android                                                                             }

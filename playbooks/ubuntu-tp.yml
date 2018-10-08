@@ -37,7 +37,6 @@
     - { role: system-monitor                                                                                    }
     - { role: browsers/chrome                                                                                   }
     - { role: terminator                                                                                        }
-    - { role: mysql-workbench                                                                                   }
 
     - { role: developer/general                                                                                 }
     - { role: developer/gradle                                                                                  }
@@ -46,6 +45,9 @@
     - { role: developer/terraform,      terraform_version   : "0.11.7"                                          }
     - { role: developer/docker                                                                                  }
     - { role: developer/awscli                                                                                  }
+
+    - { role: developer/data/mysql-workbench                                                                    }
+    - { role: developer/data/dbeaver,   dbeaver_version     : "5.0.4"                                           }
 
     - { role: developer/ide/intellij                                                                            }
     - { role: developer/ide/pycharm                                                                             }
