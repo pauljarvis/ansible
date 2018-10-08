@@ -56,3 +56,12 @@
 
 #################################################################
 
+- name: correct java version selected
+  alternatives:
+    name  : "java"
+    path  : "{{ java.home }}/{{ java.default }}/bin/java"
+  tags:
+    - "java"
+
+#################################################################
+
