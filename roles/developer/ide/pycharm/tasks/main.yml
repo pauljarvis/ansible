@@ -13,8 +13,9 @@
     group   : "{{ primary_user.id }}"
     mode    : "0755"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 #################################################################
 
@@ -23,8 +24,9 @@
     name    : "{{ libraries_apt }}"
     state   : "latest"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 #################################################################
 
@@ -37,8 +39,9 @@
     extra_opts  : [--strip-components=1]
     creates     : "{{ pycharm.home }}/{{ pycharm_version }}/bin/"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 #################################################################
 
@@ -50,8 +53,9 @@
     group       : "{{ primary_user.id }}"
     mode        : "0644"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -60,8 +64,9 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.unity }}"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -70,8 +75,9 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.gnome }}"
   tags:
-    - developer
-    - pycharm
+    - "developer"
+    - "ide"
+    - "pycharm"
 
 #################################################################
 
