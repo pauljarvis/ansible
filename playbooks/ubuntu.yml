@@ -38,14 +38,18 @@
     - { role: browsers/chrome                                                                                   }
     - { role: terminator                                                                                        }
 
+
     - { role: developer/general                                                                                 }
-    - { role: developer/intellij,       intellij_year       : "2018.1",     intellij_subversion : "6"           }
-    - { role: developer/pycharm,        pycharm_year        : "2018.1",     pycharm_subversion  : "2"           }
-    - { role: developer/android,        android_version     : "3.0.1.0",    android_build       : "171.4443003" }
-    - { role: developer/gradle,         gradle_version      : "4.1"                                             }
+    - { role: developer/gradle                                                                                  }
+    - { role: developer/maven                                                                                   }
+
     - { role: developer/terraform,      terraform_version   : "0.11.7"                                          }
     - { role: developer/docker                                                                                  }
     - { role: developer/awscli                                                                                  }
+
+    - { role: developer/ide/intellij                                                                            }
+    - { role: developer/ide/pycharm                                                                             }
+    - { role: developer/ide/android                                                                             }
 
     - { role: media/steam                                                                                       }
 

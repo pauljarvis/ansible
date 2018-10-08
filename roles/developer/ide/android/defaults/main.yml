@@ -13,6 +13,6 @@ android:
   home    : "/usr/lib/android-studio"
 
 launcher_favourite:
-  unity  : "../../scripts/add_unity_launcher.sh jetbrains-android-studio"
-  gnome  : "../../scripts/add_gnome_launcher.sh jetbrains-android-studio"
+  unity  : "../../../scripts/add_unity_launcher.sh jetbrains-android-studio"
+  gnome  : "../../../scripts/add_gnome_launcher.sh jetbrains-android-studio"
 
