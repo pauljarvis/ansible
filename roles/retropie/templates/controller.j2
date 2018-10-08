@@ -1,0 +1,58 @@
+input_device                  = "{{ item.name      }}"
+input_driver                  = "sdl"
+
+input_up_btn                  = "{{ item.up        }}"
+input_down_btn                = "{{ item.down      }}"
+input_left_btn                = "{{ item.left      }}"
+input_right_btn               = "{{ item.right     }}"
+
+{% if item.up_j is defined %}
+input_up_axis                 = "{{ item.up_j      }}"
+{% endif %}
+{% if item.down_j is defined %}
+input_down_axis               = "{{ item.down_j    }}"
+{% endif %}
+{% if item.left_j is defined %}
+input_left_axis               = "{{ item.left_j    }}"
+{% endif %}
+{% if item.right_j is defined %}
+input_right_axis              = "{{ item.right_j   }}"
+{% endif %}
+
+input_a_btn                   = "{{ item.a         }}"
+input_b_btn                   = "{{ item.b         }}"
+input_y_btn                   = "{{ item.y         }}"
+input_x_btn                   = "{{ item.x         }}"
+
+input_start_btn               = "{{ item.start     }}"
+input_select_btn              = "{{ item.select    }}"
+
+input_l_btn                   = "{{ item.l_1       }}"
+input_r_btn                   = "{{ item.r_1       }}"
+input_l2_btn                  = "{{ item.l_2       }}"
+input_r2_btn                  = "{{ item.r_2       }}"
+input_l3_btn                  = "{{ item.l_button  }}"
+input_r3_btn                  = "{{ item.r_button  }}"
+
+input_l_x_plus_axis           = "{{ item.l_up      }}"
+input_l_y_plus_axis           = "{{ item.l_down    }}"
+input_l_x_minus_axis          = "{{ item.l_left    }}"
+input_l_y_minus_axis          = "{{ item.l_right   }}"
+
+input_r_x_plus_axis           = "{{ item.r_up      }}"
+input_r_y_plus_axis           = "{{ item.r_down    }}"
+input_r_x_minus_axis          = "{{ item.r_left    }}"
+input_r_y_minus_axis          = "{{ item.r_right   }}"
+
+input_enable_hotkey_btn       = "{{ item.special   }}"
+
+input_reset_btn               = "{{ item.b         }}"
+input_menu_toggle_btn         = "{{ item.x         }}"
+input_exit_emulator_btn       = "{{ item.start     }}"
+
+input_state_slot_decrease_btn = "{{ item.left      }}"
+input_state_slot_increase_btn = "{{ item.right     }}"
+
+input_load_state_btn          = "{{ item.l_1       }}"
+input_save_state_btn          = "{{ item.r_1       }}"
+

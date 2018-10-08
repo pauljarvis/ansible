@@ -2,11 +2,27 @@
 
 #################################################################
 
-- name: "apt | install"
+- name: "apt | install | no gui"
   apt:
-    name: "{{ item }}"
-    state: "latest"
-  with_items: "{{ libraries_apt }}"
+    name  : "{{ libraries_apt }}"
+    state : "latest"
+  tags:
+    - "general"
+
+- name: "apt | install | gui"
+  when: gui
+  apt:
+    name  : "{{ libraries_apt_gui }}"
+    state : "latest"
+  tags:
+    - "general"
+
+- name: "snap | install"
+  with_items:
+    - "{{ libraries_snap }}"
+  shell: "snap install {{ item }}"
+  tags:
+    - "general"
 
 #################################################################
 

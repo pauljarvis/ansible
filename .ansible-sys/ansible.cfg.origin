@@ -1,0 +1,27 @@
+# config file for ansible -- https://ansible.com/
+# ===============================================
+
+[defaults]
+inventory          = 
+roles_path         = 
+host_key_checking  = False
+
+[privilege_escalation]
+
+[paramiko_connection]
+
+[ssh_connection]
+
+[persistent_connection]
+connect_timeout    = 30
+connect_retries    = 30
+connect_interval   = 1
+
+[accelerate]
+
+[selinux]
+
+[colors]
+
+[diff]
+

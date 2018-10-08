@@ -4,49 +4,50 @@
 
 - name: "pip | install packages"
   pip:
-    name: "{{ item }}"
-    state: "latest"
-  with_items: "{{ libraries_pip }}"
+    name  : "{{ libraries_pip }}"
+    state : "latest"
   tags:
-    - powerline-shell
+    - "powerline-shell"
 
 #################################################################
 
 - name: "copy | .powerline-shell.json"
+  with_items:
+    - "{{ all_users }}"
   template:
-    src: "powerline-shell.json.j2"
-    dest: "{{ item.home }}/.powerline-shell.json"
-    owner: "{{ item.id }}"
-    group: "{{ item.id }}"
-    mode: 0644
-  with_items: "{{ all_users }}"
+    src   : "powerline-shell.json.j2"
+    dest  : "{{ item.home }}/.powerline-shell.json"
+    owner : "{{ item.id }}"
+    group : "{{ item.id }}"
+    mode  : 0644
   tags:
-    - powerline-shell
+    - "powerline-shell"
 
 #################################################################
 
 - name: "copy | fonts"
-  copy:
-    src: "PowerlineSymbols.otf"
-    dest: "/usr/local/share/fonts/"
-    owner: root
-    group: root
-    mode: 0644
   when: gui
+  copy:
+    src   : "PowerlineSymbols.otf"
+    dest  : "/usr/local/share/fonts/"
+    owner : root
+    group : root
+    mode  : 0644
   tags:
-    - powerline-shell
+    - "powerline-shell"
 
 - name: "copy | font config"
-  copy:
-    src: "10-powerline-symbols.conf"
-    dest: "{{ item.home }}/.config/fontconfig/fonts.conf/"
-    owner: "{{ item.id }}"
-    group: "{{ item.id }}"
-    mode: 0644
-  with_items: "{{ all_users }}"
   when: gui
+  with_items:
+    - "{{ all_users }}"
+  copy:
+    src   : "10-powerline-symbols.conf"
+    dest  : "{{ item.home }}/.config/fontconfig/fonts.conf/"
+    owner : "{{ item.id }}"
+    group : "{{ item.id }}"
+    mode  : 0644
   tags:
-    - powerline-shell
+    - "powerline-shell"
 
 #################################################################
 

@@ -1,0 +1,58 @@
+---
+
+#################################################################
+
+- name: "wget | deb"
+  get_url:
+    url   : "{{ chrome.url }}{{ chrome.file }}"
+    dest  : "/tmp/{{ chrome.file }}"
+  tags:
+    - "browsers"
+    - "chrome"
+
+- name: "apt | install"
+  apt:
+    deb   : "/tmp/{{ chrome.file }}"
+    state : "present"
+  tags:
+    - "browsers"
+    - "chrome"
+
+#################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src   : "google-chrome.desktop.j2"
+    dest  : "/usr/share/applications/google-chrome.desktop"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : "0644"
+  tags:
+    - "browsers"
+    - "chrome"
+    - "launcher"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "browsers"
+    - "chrome"
+    - "launcher"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "browsers"
+    - "chrome"
+    - "launcher"
+
+#################################################################
+

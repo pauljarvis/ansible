@@ -1,10 +1,14 @@
 ---
 
 libraries_apt:
-- libc6-i386
-- lib32z1
-- lib32ncurses5
-- lib32stdc++6
-- python-pip
-- python3-pip
+  ubuntu:
+    - "libc6-i386"
+    - "lib32z1"
+    - "lib32ncurses5"
+    - "lib32stdc++6"
+  ubuntu_18:
+    - "gnome-panel"
+  all:
+    - "python-pip"
+    - "python3-pip"
 

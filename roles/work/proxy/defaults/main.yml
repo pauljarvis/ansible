@@ -1,0 +1,31 @@
+---
+
+#################################################################
+
+libraries_apt:
+  - "cntlm"
+
+#################################################################
+
+proxy_through:
+  host: "127.0.0.1"
+  port: "3128"
+
+proxy_hosts:
+  - { host: "10.0.20.196", port: "8080" }
+  - { host: "10.0.20.197", port: "8080" }
+
+no_proxy:
+  - "locahost"
+  - "127.0.0.*"
+  - "10.*"
+  - "192.168.*"
+  - "*.tpplc.local"
+  - "*.travisperkins.*"
+
+#################################################################
+
+# THIS IS A MANUAL EFFORT AT THIS TIME
+proxy_network:
+  automatic: "http://proxyconfig.tpplc.local/proxy.pac"
+

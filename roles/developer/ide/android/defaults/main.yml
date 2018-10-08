@@ -1,0 +1,18 @@
+---
+
+libraries_apt:
+  - unzip
+  - android-tools-adb
+
+android_version   : "3.0.1.0"
+android_build     : "171.4443003"
+
+android:
+  url     : "https://dl.google.com/dl/android/studio/ide-zips/"
+  zip     : "{{ android_version }}/android-studio-ide-{{ android_build }}-linux.zip"
+  home    : "/usr/lib/android-studio"
+
+launcher_favourite:
+  unity  : "../../../scripts/add_unity_launcher.sh jetbrains-android-studio"
+  gnome  : "../../../scripts/add_gnome_launcher.sh jetbrains-android-studio"
+

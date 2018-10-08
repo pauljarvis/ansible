@@ -4,51 +4,62 @@
 
 - name: "apt | install"
   apt:
-    name: "{{ item }}"
-    state: "latest"
-  with_items: "{{ libraries_apt }}"
+    name  : "{{ libraries_apt }}"
+    state : "latest"
   tags:
-    - terminator
+    - "terminator"
 
 #################################################################
 
 - name: "mkdir"
   file:
-    path: "{{ primary_user.home }}/.config/terminator"
-    state: directory
-    owner: "{{ primary_user.id }}"
-    group: "{{ primary_user.id }}"
-    mode: 0755
+    path  : "{{ primary_user.home }}/.config/terminator"
+    state : directory
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : 0755
   tags:
-    - terminator
+    - "terminator"
 
 - name: "copy | config"
   template:
-    src: "config.j2"
-    dest: "{{ primary_user.home }}/.config/terminator/config"
-    owner: "{{ primary_user.id }}"
-    group: "{{ primary_user.id }}"
-    mode: 0644
+    src   : "config.j2"
+    dest  : "{{ primary_user.home }}/.config/terminator/config"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : 0644
   tags:
-    - terminator
+    - "terminator"
 
 #################################################################
 
 - name    : "copy | desktop icon"
   template:
-    src         : "terminator.desktop.j2"
-    dest        : "/usr/share/applications/terminator.desktop"
-    owner       : "{{ primary_user.id }}"
-    group       : "{{ primary_user.id }}"
-    mode        : "0644"
-  tags    :
-    - terminator
-
-- name    : "cmd | add to launcher"
-  script  : "{{ unity_launcher.script }}"
-  become  : "{{ primary_user.id }}"
+    src   : "terminator.desktop.j2"
+    dest  : "/usr/share/applications/terminator.desktop"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : "0644"
   tags:
-    - terminator
+    - "terminator"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "terminator"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "terminator"
 
 #################################################################
 

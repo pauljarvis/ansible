@@ -1,0 +1,77 @@
+---
+
+#################################################################
+
+- name: "apt | install"
+  when: proxy
+  apt:
+    name    : "{{ libraries_apt }}"
+    state   : "latest"
+  tags:
+    - "proxy"
+
+#################################################################
+
+- name: "cntlm | config"
+  when: proxy
+  template:
+    src     : "cntlm.j2"
+    dest    : "/etc/cntlm.conf"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  register: cntlm_config
+  tags:
+    - "proxy"
+
+- name: "cntlm | restart"
+  when:
+    - proxy
+    - cntlm_config is defined
+    - cntlm_config.changed
+  service:
+    name    : "cntlm"
+    state   : "restarted"
+  tags:
+    - "proxy"
+
+#################################################################
+
+- name: "environment | config"
+  when: proxy
+  template:
+    src     : "environment.j2"
+    dest    : "/etc/environment"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  tags:
+    - "proxy"
+
+#################################################################
+
+- name: "apt | config"
+  when: proxy
+  with_items:
+    - { src: "apt",     dest: "01proxy"       }
+    - { src: "apt_fix", dest: "99fixbadproxy" }
+  template:
+    src     : "{{ item.src }}.j2"
+    dest    : "/etc/apt/apt.conf.d/{{ item.dest }}"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  tags:
+    - "proxy"
+
+#################################################################
+
+- name: "pip | config"
+  when: proxy
+  template:
+    src     : "pip.j2"
+    dest    : "/etc/pip.conf"
+    owner   : "{{ root_user.id }}"
+    group   : "{{ root_user.id }}"
+  tags:
+    - "proxy"
+
+#################################################################
+

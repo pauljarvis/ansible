@@ -1,0 +1,82 @@
+---
+
+#################################################################
+
+- name: "mkdirs"
+  with_items:
+    - "{{ android.home }}/{{ android_version }}"
+  file:
+    name    : "{{ item }}"
+    state   : "directory"
+    recurse : "yes"
+    owner   : "{{ primary_user.id }}"
+    group   : "{{ primary_user.id }}"
+    mode    : "0755"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+#################################################################
+
+- name: "apt | install"
+  apt:
+    name    : "{{ libraries_apt }}"
+    state   : "latest"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+#################################################################
+
+- name: "unpack"
+  become : "{{ primary_user.id }}"
+  unarchive:
+    src         : "{{ android.url }}{{ android.zip }}"
+    dest        : "{{ android.home }}/{{ android_version }}"
+    remote_src  : "yes"
+    creates     : "{{ android.home }}/{{ android_version }}/android-studio/bin/"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+#################################################################
+
+- name: "copy | config"
+  template:
+    src         : "jetbrains-android-studio.desktop.j2"
+    dest        : "/usr/share/applications/jetbrains-android-studio.desktop"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    mode        : "0644"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "developer"
+    - "ide"
+    - "android"
+
+#################################################################
+

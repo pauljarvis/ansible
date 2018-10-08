@@ -3,11 +3,12 @@
 #################################################################
 
 - name: "apt | repo | prereq"
+  with_items:
+    - "{{ repositories_apt }}"
   apt_repository:
     repo          : "{{ item }}"
     state         : "present"
     update_cache  : "yes"
-  with_items: "{{ repositories_apt }}"
   tags:
     - media
     - steam
@@ -15,16 +16,15 @@
 - name: "apt | upgrade"
   apt:
     update_cache  : "yes"
-    upgrade       : "yes"
+    upgrade       : "dist"
   tags:
     - media
     - steam
 
 - name: "apt | install | prereq"
   apt:
-    name          : "{{ item }}"
+    name          : "{{ libraries_apt }}"
     state         : "latest"
-  with_items: "{{ libraries_apt }}"
   tags:
     - media
     - steam
@@ -41,19 +41,33 @@
 #################################################################
 
 - name: "file | destroy files"
+  with_items:
+    - "{{ binme }}"
   file:
     path          : "{{ item }}"
     state         : "absent"
-  with_items: "{{ binme }}"
   tags:
     - media
     - steam
 
 #################################################################
 
-- name    : "cmd | add to launcher"
-  script  : "{{ unity_launcher.script }}"
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
   become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - media
+    - steam
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
   tags:
     - media
     - steam

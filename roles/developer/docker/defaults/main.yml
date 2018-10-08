@@ -1,13 +1,14 @@
 ---
 
 libraries_apt:
-  - apt-transport-https
-  - ca-certificates
-  - curl
-  - software-properties-common
+  - "apt-transport-https"
+  - "ca-certificates"
+  - "curl"
+  - "software-properties-common"
 
 libraries_pip:
-  - docker-py
+  - "docker-py"
+  - "docker-compose==1.9.0"     # This version avoids a bug with Ansible's 'docker_image' module
 
 docker:
   key_server  : "https://download.docker.com/linux/{{ ansible_distribution | lower }}/gpg"
@@ -15,6 +16,11 @@ docker:
   repo        : "deb [arch=amd64] https://download.docker.com/linux/{{ ansible_distribution | lower }} {{ ansible_distribution_release | lower }} stable"
   apts:
     - "docker-ce"
+
+docker_registries:
+  - "10.228.3.55:443"
+  - "http://artifactory1.shared.devops.shared01.aws.travisperkins.cloud:443"
+  - "https://artifactory1.shared.devops.shared01.aws.travisperkins.cloud:443"
 
 docker_images:
   - name      : "mysql"

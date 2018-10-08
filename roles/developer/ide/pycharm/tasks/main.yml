@@ -1,0 +1,83 @@
+---
+
+#################################################################
+
+- name: "mkdirs"
+  with_items:
+    - "{{ pycharm.home }}/{{ pycharm_version }}"
+  file:
+    name    : "{{ item }}"
+    state   : "directory"
+    recurse : "yes"
+    owner   : "{{ primary_user.id }}"
+    group   : "{{ primary_user.id }}"
+    mode    : "0755"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+#################################################################
+
+- name: "apt | install"
+  apt:
+    name    : "{{ libraries_apt }}"
+    state   : "latest"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+#################################################################
+
+- name: "unpack | application"
+  become : "{{ primary_user.id }}"
+  unarchive:
+    src         : "{{ pycharm.url }}{{ pycharm.zip }}"
+    dest        : "{{ pycharm.home }}/{{ pycharm_version }}"
+    remote_src  : "yes"
+    extra_opts  : [--strip-components=1]
+    creates     : "{{ pycharm.home }}/{{ pycharm_version }}/bin/"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+#################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src         : "jetbrains-pycharm-ce.desktop.j2"
+    dest        : "/usr/share/applications/jetbrains-pycharm-ce.desktop"
+    owner       : "{{ primary_user.id }}"
+    group       : "{{ primary_user.id }}"
+    mode        : "0644"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "developer"
+    - "ide"
+    - "pycharm"
+
+#################################################################
+

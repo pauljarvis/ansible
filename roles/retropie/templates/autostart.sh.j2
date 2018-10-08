@@ -1,0 +1,5 @@
+{% if retropie_controllers is defined %}
+sudo bash -c 'echo 1 > /sys/module/bluetooth/parameters/disable_ertm'
+{% endif %}
+emulationstation #auto
+

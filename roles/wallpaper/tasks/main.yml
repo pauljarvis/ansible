@@ -3,59 +3,59 @@
 #################################################################
 
 - name: "mkdir"
-  file:
-    path: '{{ item }}'
-    state: directory
-    owner: "{{ root_user.id }}"
-    group: "{{ root_user.id }}"
-    mode: 0755
   with_items:
-    - '/{{ systemd_dir}}'
-    - '/{{ service_dir }}'
-    - '/{{ wallpapers_dir }}'
+    - "/{{ systemd_dir}}"
+    - "/{{ service_dir }}"
+    - "/{{ wallpapers_dir }}"
+  file:
+    path  : "{{ item }}"
+    state : directory
+    owner : "{{ root_user.id }}"
+    group : "{{ root_user.id }}"
+    mode  : 0755
   tags:
-    - wallpaper
+    - "wallpaper"
 
 #################################################################
 
 - name: "copy | wallpaper resources"
   copy:
-    src: '.'
-    dest: '/{{ wallpapers_dir }}/'
+    src   : "."
+    dest  : "/{{ wallpapers_dir }}/"
   tags:
-    - wallpaper
+    - "wallpaper"
 
 - name: "copy | wallpaper service"
   template:
-    src: "{{ service_dir }}/{{ service_name }}.sh.j2"
-    dest: "/{{ service_dir }}/{{ service_name }}.sh"
-    owner: "{{ root_user.id }}"
-    group: "{{ root_user.id }}"
-    mode: 0755
-  notify: "service | start"
+    src   : "{{ service_dir }}/{{ service_name }}.sh.j2"
+    dest  : "/{{ service_dir }}/{{ service_name }}.sh"
+    owner : "{{ root_user.id }}"
+    group : "{{ root_user.id }}"
+    mode  : 0755
+  notify: "wallpaper service | start"
   tags:
-    - wallpaper
+    - "wallpaper"
 
 - name: "copy | systemd service"
   template:
-    src: '{{ systemd_dir }}/{{ service_name }}.service.j2'
-    dest: '/{{ systemd_dir }}/{{ service_name }}.service'
-    owner: "{{ root_user.id }}"
-    group: "{{ root_user.id }}"
+    src   : "{{ systemd_dir }}/{{ service_name }}.service.j2"
+    dest  : "/{{ systemd_dir }}/{{ service_name }}.service"
+    owner : "{{ root_user.id }}"
+    group : "{{ root_user.id }}"
     mode: 0755
   notify: "wallpaper service | start"
   tags:
-    - wallpaper
+    - "wallpaper"
 
 #################################################################
 
 - name: "service | start"
   service:
-    name: '{{ service_name }}'
-    enabled: yes
-    state: started
+    name    : "{{ service_name }}"
+    enabled : yes
+    state   : started
   tags:
-    - wallpaper
+    - "wallpaper"
 
 #################################################################
 

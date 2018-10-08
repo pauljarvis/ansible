@@ -1,10 +1,16 @@
 ---
 
+libraries_apt:
+  - unzip
+
+terraform_version : "0.11.7"
 terraform:
-  git             : "https://github.com/kamatama41/tfenv.git"
-  home            : "{{ primary_user.home }}/.tfenv"
-  version_use     : "0.10.7"
-  version_install :
-    - "0.10.7"
-    - "0.7.0"
+  url             : "https://releases.hashicorp.com/terraform/{{ terraform_version }}/"
+  zip             : "terraform_{{ terraform_version }}_linux_amd64.zip"
+  home            : "/usr/lib/terraform"
+  versions        :
+    - "{{ terraform_version }}"
+    - "0.11.7"
+    - "0.9.6"
+    - "0.7.4"
 

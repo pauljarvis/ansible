@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <gameList>
+      <game id="2570" source="theGamesDB.net">
+          <path>./Adventure.bin</path>
+          <name>Adventure</name>
+          <desc>Adventure was the first action-adventure game on a video console, the first to contain a widely-known Easter egg, and the first to allow a player to have a stash of items, which required the player to select which one to use at any given moment, usually through keyboard or joystick input. Adventure allowed the player to drop one item and pick up another without having to type in any commands. The graphics, on the other hand, were not that great, and Robinett even described the dragons as looking like ducks.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Adventure-image.jpg</image>
+          <rating>0.775</rating>
+          <releasedate>19780101T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Adventure</genre>
+          <players>1</players>
+      </game>
+      <game id="5299" source="theGamesDB.net">
+          <path>./Breakout - Breakaway IV.bin</path>
+          <name>Breakout - Breakaway IV</name>
+          <desc>In the game, a layer of bricks lines the top third of the screen. A ball travels across the screen, bouncing off the top and side walls of the screen. When a brick is hit, the ball bounces away and the brick is destroyed. The player loses a turn when the ball touches the bottom of the screen. To prevent this from happening, the player has a movable paddle to bounce the ball upward, keeping it in play.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Breakout - Breakaway IV-image.jpg</image>
+          <releasedate>19780101T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Action</genre>
+          <players>4</players>
+      </game>
+      <game id="1342" source="theGamesDB.net">
+          <path>./Asteroids.bin</path>
+          <name>Asteroids</name>
+          <desc>The objective of Asteroids is to score as many points as possible by destroying asteroids and flying saucers. The player controls a triangular-shaped ship that can rotate left and right, fire shots straight forward, and thrust forward. As the ship moves, momentum is not conserved — the ship eventually comes to a stop again when not thrusting. The player can also send their ship into hyperspace, causing it to disappear and reappear in a random location on the screen (with the risk of self-destructing or appearing on top of an asteroid).</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Asteroids-image.jpg</image>
+          <rating>0.78</rating>
+          <releasedate>19790801T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Shooter</genre>
+          <players>2</players>
+      </game>
+      <game id="1346" source="theGamesDB.net">
+          <path>./Centipede.bin</path>
+          <name>Centipede</name>
+          <desc>The player moves the character about the bottom area of the screen and fires laser shots at a centipede advancing from the top of the screen down through a field of mushrooms. Shooting any section of the centipede creates a mushroom; shooting one of the middle segments splits the centipede into two pieces at that point. Each piece then continues independently on its way down the board, with the first section of the rear piece becoming a new head. If the head is destroyed, the section behind it becomes the next head.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Centipede-image.jpg</image>
+          <releasedate>19820101T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Shooter</genre>
+          <players>1</players>
+      </game>
+      <game id="8355" source="theGamesDB.net">
+          <path>./Frogger II - Threeedeep!.bin</path>
+          <name>Frogger II - Threeedeep!</name>
+          <desc>In Frogger II, you need to guide your frog to safety in three different locations. Starting out underwater, reach the top of the pond while avoiding dangerous alligators and fish (you can ride a turtle for safety!). Once on top of the pond, hop across logs, birds, and even a whale to the life preserver trailing behind a tugboat. In the third location you have to hop across a flock of birds to reach a cloud at the top of the screen. Each frog has a time limit to safely reach one of the homes on each of the three screens. You move on to the next level when a frog has safely reached each of the homes on all screens.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Frogger II - Threeedeep!-image.jpg</image>
+          <releasedate>19840101T000000</releasedate>
+          <developer>Parker Brothers</developer>
+          <publisher>Parker Brothers</publisher>
+          <genre>Action</genre>
+      </game>
+      <game id="1369" source="theGamesDB.net">
+          <path>./Frogger.bin</path>
+          <name>Frogger</name>
+          <desc>Your task in this arcade conversion is to guide a frog across a treacherous road and river, and to safety at the top of the screen. Both these sections are fraught with a variety of hazards, each of which will kill the frog and cost you a life if contact is made.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Frogger-image.jpg</image>
+          <releasedate>19820101T000000</releasedate>
+          <developer>Konami</developer>
+          <publisher>Sega</publisher>
+          <genre>Strategy</genre>
+          <players>1</players>
+      </game>
+      <game id="4889" source="theGamesDB.net">
+          <path>./Pac-Man.bin</path>
+          <name>Pac-Man</name>
+          <desc>It&#39;s your job to keep PAC-MAN as happy as possible. You must guide him around the maze so that he can eat video wafers and power pills. Protect him from the ghosts unless he has the super strength of a power pill. If he does have the super strength, help him chase the ghosts and gobble them up before they gobble him.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Pac-Man-image.jpg</image>
+          <rating>0.65</rating>
+          <releasedate>19820101T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Puzzle</genre>
+          <players>2</players>
+      </game>
+      <game id="17529" source="theGamesDB.net">
+          <path>./Pitfall II - Lost Caverns.bin</path>
+          <name>Pitfall II - Lost Caverns</name>
+          <desc>Here I am, Pitfall Harry, plummeting toward the dark thunder of rushing water below... and thinking of the night David Crane called. &#34;I hope you&#39;re well rested,&#34; he had said. Too rested, I said. I was ready for action. He asked if I&#39;d heard tales of the legendary lost caverns of Machu Picchu in Peru. Or of a roaring, uncharted underground tributary of the Urubamba River replete with waterfalls and deadly electric eels. &#34;Yes,&#34; I said. He asked if I knew of the infamous, cursed Raj Diamond. Or of the recent robbery of gold bars from the U.S. Gold Bullion Depository in Fort Knox. And had I heard of vampire bats? Poisonous frogs? Albino scorpions? The dreaded Andean condor? &#34;Yes,&#34; I said. And could I still run? Climb? Jump? Could I... swim? &#34;Yes. Yes. Yes. Yes.&#34; &#34;Good,&#34; said Crane. &#34;Then you&#39;ll do it?&#34; &#34;Of course,&#34; I said. If only I had known...</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Pitfall II - Lost Caverns-image.jpg</image>
+          <releasedate>19830916T000000</releasedate>
+          <developer>Activision</developer>
+          <publisher>Activision</publisher>
+          <genre>Platform</genre>
+          <players>1</players>
+      </game>
+      <game id="5313" source="theGamesDB.net">
+          <path>./Missile Command.bin</path>
+          <name>Missile Command</name>
+          <desc>The game is played by moving a crosshair across the sky background  and launch a counter-missile from the appropriate battery. Counter-missiles explode upon reaching the crosshair, leaving a fireball that persists for several seconds and destroys any enemy missiles that enter it. There are three batteries, each with ten missiles; a missile battery becomes useless when all its missiles are fired, or if the battery is destroyed by enemy fire. The missiles of the central battery fly to their targets at much greater speed; only these missiles can effectively kill a smart bomb at a distance.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Missile Command-image.jpg</image>
+          <releasedate>19801008T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Shooter</genre>
+          <players>2</players>
+      </game>
+      <game id="5314" source="theGamesDB.net">
+          <path>./Ms. Pac-Man.bin</path>
+          <name>Ms. Pac-Man</name>
+          <desc>Meet the queen of video games - Ms. PAC-MAN! She&#39;s all dressed up - and hungry as ever! Score points as MS. PAC-MAN gobbles up dots, energy pills. fruit. pretzels. and of course, those grumpy ghosts.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Ms. Pac-Man-image.jpg</image>
+          <releasedate>19830101T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Puzzle</genre>
+          <players>1</players>
+      </game>
+      <game id="5571" source="theGamesDB.net">
+          <path>./Pole Position.bin</path>
+          <name>Pole Position</name>
+          <desc>In this game, the player controls a Formula One race car. The player completes a time trial lap within a certain amount of time to qualify for an F1 race at the Fuji Racetrack. After qualifying, the player races against other cars in a championship race.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Pole Position-image.jpg</image>
+          <releasedate>19830101T000000</releasedate>
+          <developer>Namco</developer>
+          <publisher>Atari</publisher>
+          <genre>Racing</genre>
+          <players>1</players>
+      </game>
+      <game id="5317" source="theGamesDB.net">
+          <path>./Pitfall! - Pitfall Harry&#39;s Jungle Adventure.bin</path>
+          <name>Pitfall - Pitfall Harry&#39;s Jungle Adventure</name>
+          <desc>Let me introduce myself. I&#39;m Pitfall Harry, veteran jungle explorer. Fortune hunting&#39;s my game, and yours, too, if you&#39;re daring enough to take this trip with me. Don&#39;t be nervous; I&#39;ll be your guide through the jungle, and I&#39;m one of the best. Untold riches are waiting for us in there, but so are dangers a dozen times over. We&#39;ll be swinging on vines over bottomless tarpits. We&#39;ll be hopping across swamps, using crocodile heads like stepping stones. We&#39;ll be searching underground through dark passageways crawling with killer scorpions. So pack up your backpack and meet me at the jungle at dawn - and we&#39;ll be off to seek a king&#39;s ransom in gold, diamonds and lost treasures - in Pitfall Harry&#39;s Jungle Adventure.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Pitfall! - Pitfall Harry&#39;s Jungle Adventure-image.jpg</image>
+          <rating>0.9</rating>
+          <releasedate>19820420T000000</releasedate>
+          <developer>Activision</developer>
+          <publisher>Activision</publisher>
+          <genre>Action</genre>
+          <players>1</players>
+      </game>
+      <game id="17534" source="theGamesDB.net">
+          <path>./River Raid II.bin</path>
+          <name>River Raid II</name>
+          <desc>River Raid II continues the fast-paced shooting action of the 1982 original while adding new features such as varying altitude (the original only featured left and right movement), flying over oceans and firing torpedoes. Now instead of shooting enemy helicopters and planes, you&#39;ll also get to bomb destroyers, tanks, buildings, landing strips and water towers in your mission to destroy the enemy bridge.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/River Raid II-image.jpg</image>
+          <releasedate>19880503T000000</releasedate>
+          <developer>Imagineering</developer>
+          <publisher>Activision</publisher>
+          <genre>Shooter</genre>
+      </game>
+      <game id="1365" source="theGamesDB.net">
+          <path>./River Raid.bin</path>
+          <name>River Raid</name>
+          <desc>Mission: Code Name River Raid. Jet down the river. Break the enemy blockade and blast the bridges to halt enemy troop advances. Terrain: Code Name River of No Return. An ever-changing, ever-challenging waterway. Expect huge islands, narrow channels and treacherous bays crawling with enemy choppers, tankers and jets. Weaponry: Code Name StratoStrafer. Your B1 StratoWing Assault Jet has been retrofitted with sophisticated, rapid-fire guided missiles. Your craft is super-sensitive to the stick. Accelerate, slow or bank radically with only a touch. Tactics: Jet low to the river to avoid radar. Stop periodically at depots to refuel. A warning claxxon will alert you. Top speed! Best of luck!</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/River Raid-image.jpg</image>
+          <rating>1</rating>
+          <releasedate>19820101T000000</releasedate>
+          <developer>Activision</developer>
+          <publisher>Activision</publisher>
+          <genre>Shooter</genre>
+          <players>2</players>
+      </game>
+      <game id="4890" source="theGamesDB.net">
+          <path>./Space Invaders.bin</path>
+          <name>Space Invaders</name>
+          <desc>Space Invaders is a game in which the player controls a laser cannon by moving it horizontally across the bottom of the screen and firing at descending aliens. &#xA;The aim is to defeat five rows of eleven aliens—some versions feature different numbers—that move horizontally back and forth across the screen as they advance towards the bottom of the screen. The player defeats an alien, and earns points, by shooting it with the laser cannon. As more aliens are defeated, the aliens&#39; movement and the game&#39;s music both speed up.</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Space Invaders-image.jpg</image>
+          <releasedate>19780101T000000</releasedate>
+          <developer>Taito</developer>
+          <publisher>Bally Midway</publisher>
+          <genre>Shooter</genre>
+          <players>2</players>
+      </game>
+      <game id="3598" source="theGamesDB.net">
+          <path>./Yars&#39; Revenge.bin</path>
+          <name>Yars&#39; Revenge</name>
+          <desc>Journey to the Razak Solar System and help the Yars battle an evil enemy! Super flies fight for their lives!</desc>
+          <image>~/.emulationstation/downloaded_images/atari2600/Yars&#39; Revenge-image.jpg</image>
+          <rating>1</rating>
+          <releasedate>19820503T000000</releasedate>
+          <developer>Atari</developer>
+          <publisher>Atari</publisher>
+          <genre>Shooter</genre>
+          <players>2</players>
+      </game>
+  </gameList>

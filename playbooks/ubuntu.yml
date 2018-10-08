@@ -3,68 +3,56 @@
 - hosts         : localhost
   become        : yes
   become_method : sudo
-  connection    : local
   gather_facts  : yes
+  connection    : local
 
   vars:
     - gui       : True
       proxy     : False
 
-      root_user:
-        id      : 'root'
-        home    : '/root'
-        name    : 'root'
-        email   : 'root@root.com'
-
-      primary_user:
-        id      : 'steve'
-        home    : '/home/steve'
-        name    : 'Steve Stevens'
-        email   : 'steve.h.i.stevens@gmail.com'
+      root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
 
       all_users:
-        - '{{ root_user }}'
-        - '{{ primary_user }}'
+        - "{{ root_user     }}"
+        - "{{ primary_user  }}"
 
-  pre_tasks:
-    - debug:
-        msg: "Distribution: {{ ansible_distribution | lower }}-{{ ansible_distribution_release | lower }}"
-    - debug:
-        msg: "VM Status   : {{ ansible_virtualization_role }} [{{ ansible_virtualization_type }}]"
 
   roles:
-    - { role: prereq                          }
-    - { role: git                             }
-    - { role: bash                            }
-    - { role: vim                             }
-    - { role: powerline-shell                 }
-    - { role: java                            }
-    - { role: general                         }
-    - { role: keychain                        }
-    - { role: wallpaper                       }
-    - { role: system-monitor                  }
-    - { role: google-chrome                   }
-    - { role: terminator                      }
+    - { role: checks                                                                                            }
+    - { role: users                                                                                             }
+    - { role: prereq                                                                                            }
 
-    - { role: developer/general               }
-    - { role: developer/tomcat                }
-    - { role: developer/intellij              ,
-          intellij_year       : "2017.3"      ,
-          intellij_subversion : "2"           }
-    - { role: developer/pycharm               ,
-          pycharm_year        : "2018.1"      ,
-          pycharm_subversion  : "2"           }
-    - { role: developer/android               ,
-          android_version     : "3.0.1.0"     ,
-          android_build       : "171.4443003" }
-    - { role: developer/dbeaver               ,
-          dbeaver_version     : "5.0.4"       }
-    - { role: developer/gradle                }
-    - { role: developer/terraform             }
-    - { role: developer/docker                }
-    - { role: developer/awscli                }
 
-    - { role: media/steam                     }
+    - { role: work/forticlient                                                                                  }
 
-    - { role: work/forticlient                }
+    - { role: git                                                                                               }
+    - { role: ssh                                                                                               }
+    - { role: bash                                                                                              }
+    - { role: vim                                                                                               }
+    - { role: powerline-shell                                                                                   }
+    - { role: general                                                                                           }
+    - { role: java                                                                                              }
+    - { role: keychain                                                                                          }
+    - { role: wallpaper                                                                                         }
+    - { role: system-monitor                                                                                    }
+    - { role: browsers/chrome                                                                                   }
+    - { role: terminator                                                                                        }
+
+
+    - { role: developer/general                                                                                 }
+    - { role: developer/gradle                                                                                  }
+    - { role: developer/maven                                                                                   }
+
+    - { role: developer/terraform,      terraform_version   : "0.11.7"                                          }
+    - { role: developer/docker                                                                                  }
+    - { role: developer/awscli                                                                                  }
+
+    
+   
+
+    - { role: developer/ide/intellij                                                                            }
+    - { role: developer/ide/pycharm                                                                             }
+    - { role: developer/ide/android                                                                             }
+
+    - { role: media/steam                                                                                       }
 

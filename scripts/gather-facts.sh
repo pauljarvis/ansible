@@ -1,22 +1,37 @@
 #!/bin/bash
 
+fact_dir="$(pwd)/.ansible-sys/facts/"
+
 source $(pwd)/scripts/setup.sh
 
 #######################################################################
 
 hosts=$( ansible all --list-hosts | awk '{if (NR!=1) {print $1}}' )
 for host in ${hosts}; do
-  if [ ${host} == "127.0.0.1" ]; then
-    connection="-c local"
-  else
-    connection=""
+
+  # ALL
+  resp=$( ansible ${host} -m setup )
+  if ! [[ "$( cut -d ' ' -f3 <<< $resp )" =~ "SUCCESS" ]]; then
+    echo "${host} - Can't Reach"
+    continue
   fi
-  ansible ${host} ${connection} -m setup --tree $(pwd)/ansible-sys/facts/dist/ -a "filter=*dist*" >> /dev/null
-  ansible ${host} ${connection} -m setup --tree $(pwd)/ansible-sys/facts/all/                     >> /dev/null
+  echo "${host} - Recording Facts: All"
+  json="$( cut -d ' ' -f5- <<< $resp )"
+  mkdir -p "${fact_dir}/all/"
+  echo "$json" | jq -r '.' > "${fact_dir}/all/${host}"
+
+
+  # dist
+  resp=$( ansible ${host} -m setup -a filter=*dist* )
+  if ! [[ "$( cut -d ' ' -f3 <<< $resp )" =~ "SUCCESS" ]]; then
+    echo "${host} - Can't Reach"
+    continue
+  fi
+  echo "${host} - Recording Facts: Distribution"
+  json="$( cut -d ' ' -f5- <<< $resp )"
+  mkdir -p "${fact_dir}/dist/"
+  echo "$json" | jq -r '.' > "${fact_dir}/dist/${host}"
 done
 
-for fact in $(find $(pwd)/ansible-sys/facts/ -name "*" -type f); do
-  cat "${fact}" | python -m json.tool > "${fact}.bak"
-  mv "${fact}.bak" "${fact}"
-done
+#######################################################################
 

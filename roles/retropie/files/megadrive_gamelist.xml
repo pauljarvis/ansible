@@ -1,0 +1,785 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Comix Zone.gen</path>
+		<name>Comix Zone</name>
+		<desc>Comix Zone is a side-scrolling fighting game with a difference, you're inside of a comic book and you yourself know it. Smash enemies into the sides of frames, rip through the paper to unleash a super move and otherwise wreak havoc throughout the limitations of the graphic novel. Sketch himself can jump, attack and use various items that he finds along the comic book, including his rat friend, Roadkill. Button combinations can be used to unleash powerful techniques.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Comix Zone-image.jpg</image>
+		<releasedate>19950101T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Fighting</genre>
+	</game>
+	<game>
+		<path>./Alien Storm.gen</path>
+		<name>Alien Storm</name>
+		<desc>A homicidal alien race is invading Earth, and the only thing that stands between them and world domination are a special forces team known as the "Alien Busters", composed of Karen (absent in the Master System version, named "Karla" in some versions), Garth (named "Gordon" in some versions) and Scooter (the robot, named "Slammer" in Master System and PAL versions).</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Alien Storm-image.jpg</image>
+		<releasedate>19910628T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Altered Beast.gen</path>
+		<name>Altered Beast</name>
+		<desc>Altered Beast is a side scrolling, platform, beat 'em up game that puts the player in control of a centurion who had died in battle. The centurion has been raised from the dead to rescue Zeus' daughter Athena from the demon Neff. The player battles undead and demonic hordes, controlling the shapeshifting hero. He must fight through several levels in order to save the kidnapped goddess. Although 'Centurion' was a rank in the Roman Army, the game takes place in a setting resembling Ancient Greece, complete with gods, temples and ruined Ionic columns.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Altered Beast-image.jpg</image>
+		<releasedate>19871125T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Bubsy 1.gen</path>
+		<name>Bubsy</name>
+		<desc>In this 15-level action game the player is Bubsy the bobcat, who has to defeat the Woolies the aliens, which steal balls of yarn. There are five different locations such as jungle, wild west, etc., where the player has to jump and land on their enemies to kill them. Each time to finish the level the player has to defeat the boss, who sits in an alien ship.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Bubsy 1-image.png</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Accolade</developer>
+		<publisher>Accolade</publisher>
+		<genre>Platform</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Bubsy 2.gen</path>
+		<name>Bubsy 2</name>
+		<desc>Bubsy 2 is a platform video game, the sequel to Bubsy in Claws Encounters of the Furred Kind, and the second game in the Bubsy series.[4] It was released in 1994 for the Sega Genesis, Super Nintendo, and Game Boy.
+
+In his second platformer, Bubsy the Bobcat must explore a mysterious museum filled with portals leading to different worlds! What could possibly go wrong?
+
+Overview:
+Bubsy II is a 2D platformer developed and published by Accolade for the Super Nintendo Entertainment System and Sega Genesis in 1994. The sequel to Bubsy: Claws Encounters of the Furred Kind, Bubsy II puts players back in the role of Bubsy, the wise-cracking anthropomorphic bobcat, as he sets off through the Amazatorium (a museum full of portals to different worlds) to defeat the tyrannical anthropomorphic pig leader, Oinkton P. Hamm.
+
+Unlike the previous game, Bubsy can enter any of the six worlds he wants to at any time (with the exception of the last world, which must be unlocked by completing the other five). He also now has a health system (in which he can take up to three hits from normal enemies before he dies, unless he finds a special healing item) and multiple gadgets that can be purchased by collecting trading cards (such as a "smart bomb", a diving suit, a cartoonish black hole to hide in, and ammo for his toy weapon). Score-giving yarnballs are now replaced with marbles, and the "Woolies" are replaced with various baddies.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Bubsy 2-image.jpg</image>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Accolade, Inc.</developer>
+		<publisher>Accolade, Inc.</publisher>
+		<genre>Platform</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Castle of Illusion.gen</path>
+		<name>Castle of Illusion Starring Mickey Mouse</name>
+		<desc>Each level exists within the large titular castle and the player must defeat enemies and bosses by jumping on them, or collecting apples and marbles to use as projectiles. The player can also collect icons to increase health, collect extra lives, or gain bonus points. After defeating a boss, the player is given a gem. When all seven gems are collected, the player can build a rainbow bridge that allows him/her to walk into the castle's tower for a final battle against the witch (who in her youthful form resembles the Queen Grimhilde).</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Castle of Illusion-image.jpg</image>
+		<releasedate>19901122T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Castlevania - Bloodlines.gen</path>
+		<name>Castlevania: Bloodlines</name>
+		<desc>In 1897, the long war between humanity and Dracula came to an end, as Dracula was laid to eternal rest by Quincey Morris, a distant descendant of the Belmont family. Peace was restored to Europe, until the outbreak of the First World War, which transformed the continent into a dark world filled with massacre and violence. At the beginning of the war, in June 1914 at Sarajevo, the Crown Prince of Austria was assassinated. It was said that a strange beautiful woman was involved, within the shadows. The woman was Elizabeth Bartley, who, in order to revive her uncle, Count Dracula, had conducted an unholy ceremony which caused the war, giving her possession of human souls from Europe.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Castlevania Bloodlines-image.jpg</image>
+		<releasedate>19940317T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Platform</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Columns.gen</path>
+		<name>Columns</name>
+		<desc>The game takes place inside a tall, rectangular playing area, as in Tetris. Columns of three different symbols (such as differently-colored jewels) appear, one at a time, at the top of the well and fall to the bottom, landing either on the floor or on top of previously-fallen "Columns".
+
+While a column is falling, the player can move it left and right, and can also cycle the positions of the symbols within it.
+
+If, after a column has fallen, there are three or more of the same symbols connected in a straight line horizontally, vertically, or diagonally, those symbols disappear. The pile of columns then settles under gravity. If this causes three or more other symbols to become aligned, they also disappear and the pile settles again. This process repeats as many times as necessary. It is not uncommon for this to happen three or four times in a row - it often happens by accident when the well is becoming crowded. If the well fills beyond the top of the screen, the game ends.
+
+Occasionally, a special column called the Magic Jewel appears. The Magic Jewel flashes with different colors and when it lands, it destroys all the jewels with the same color as the one underneath it.
+
+Like Tetris, the columns fall at a faster rate as the player progresses. The goal of the game is to play for as long as possible before the well fills up with symbols.
+
+Some ports of the game offer alternate game modes as well. "Flash columns" involves mining their way through a set number of lines to get to a flashing jewel at the bottom. "Doubles" allows two players work together in the same well. "Time trial" involves racking up as many points as possible within the time limit.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Columns-image.jpg</image>
+		<releasedate>19900630T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Puzzle</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Columns 3.gen</path>
+		<name>Columns III</name>
+		<desc>Third game in the Columns series. In this fast-paced puzzle mayhem, your goal is to arrange three or more jewels of the same colour horizontally, vertically or diagonally to remove them from the playing screen. While the jewels are falling, you can change the order of their colours. In the Arcade, Versus, and Time Trial modes, you can test your skills against an opponent, a clock, or a specific task such as removing a particular jewel. New features include a rising bar that can be used to annoy opponents and magical items that have strategic value to alter the outcome mid-game.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Columns 3-image.png</image>
+		<releasedate>19931217T000000</releasedate>
+		<developer>Vic Tokai</developer>
+		<publisher>Sega</publisher>
+		<genre>Puzzle</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Contra - Hard Corps.gen</path>
+		<name>Contra: The Hard Corps</name>
+		<desc>Kickin' cyborg butt... That's what it's all about, dude. Jack into this game of genetic engineering gone bad. Real bad. It's five years after the mother of all wars ended - and things still aren't right. Your job is to fix it. The ever-popular Contra series makes its Sega Genesis debut with a pulse-pounding new storyline. At 16 megs, HARD CORPS pushes the technology to bring you over ten gut-wrenching levels with huge boss characters, great graphics and dynamic sound. Find high powered weapons such as the homing gun, crush gun, needle laser or mine setter. Do you think you can handle it? Trust me, you can't. You still here? Okay, then get ready for the fight of your life. Pick one of the four heroes and begin your search across many dark levels of doom. The ending changes, depending on the paths you choose - but every pass crosses boss characters that will blow you away. Literally!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Contra - Hard Corps-image.jpg</image>
+		<releasedate>19940914T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Cool Spot.gen</path>
+		<name>Cool Spot</name>
+		<desc>Cool Spot is a solid, colorful platform game featuring the 7-up mascot in the hero position. The game objective is fairly simple; you have to collect enough number of bonuses throughout each level in order to find the trapped Spots.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Cool Spot-image.jpg</image>
+		<releasedate>19940218T000000</releasedate>
+		<developer>Virgin Games</developer>
+		<publisher>Virgin Interactive</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Dynamite Headdy.gen</path>
+		<name>Dynamite Headdy</name>
+		<desc>Dynamite Headdy is a platformer... with a difference. You control a little character whose main attack comes from his disembodied head. Yes, years before Rayman appeared, we already had a hero who used detachable appendages to attack his enemies.
+
+Rather than the traditional power-ups, Dynamite Headdy enables you to swap your head for different kinds – such as heads that heal you or heads that stick on to walls. You use your head in order to climb up on platforms as well, as you can grab hold of things with it, and on certain stages of the Mega Drive/Genesis version it is used to turn the game into a side-scrolling shooter, as you gain a propeller, jet, or bird head. Basically, Dynamite Headdy is just a traditional platformer at heart.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Dynamite Headdy-image.jpg</image>
+		<releasedate>19940804T000000</releasedate>
+		<developer>Treasure Co., Ltd.</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Earthworm Jim 1.gen</path>
+		<name>Earthworm Jim</name>
+		<desc>The storyline involves many colorful characters. Jim (voiced by TenNapel) was at first an ordinary earthworm who did very earthworm-like things such as flee from crows and eat dirt. One day, in the space above Earth, the evil Psy-Crow had cornered a rebel spaceship pilot who had stolen an "Ultra-high-tech-indestructible-super-space-cyber-suit" built by Professor Monkey-for-a-Head. The suit had been commissioned by the evil Queen Pulsating, Bloated, Festering, Sweaty, Pus-filled, Malformed, Slug-for-a-Butt so that she could further conquer the galaxy. In the ensuing space fight, the suit was dropped to Earth, and fell on Jim. By a stroke of luck, Jim managed to land within the collar of the suit, and it ended up mutating him into the large and intelligent (at least by earthworm standards) superhero he is today.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Earthworm Jim 1-image.jpg</image>
+		<releasedate>19940609T000000</releasedate>
+		<developer>Shiny Entertainment</developer>
+		<publisher>Playmates</publisher>
+		<genre>Adventure</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Earthworm Jim 2.gen</path>
+		<name>Earthworm Jim 2</name>
+		<desc>An ordinary average earthworm named Jim goes about his normal daily life, cruising around avoiding crows and doing other general worm-like things. Jim is suddenly struck by a very large ultra- high- tech- indestructible- super- space- cyber- suit. Through sheer luck, Jim rests safely in the neck ring of the suit.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Earthworm Jim 2-image.png</image>
+		<releasedate>19951222T000000</releasedate>
+		<developer>Shiny Entertainment</developer>
+		<publisher>Playmates</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./ECCO 1 - The Dolphin.gen</path>
+		<name>Ecco the Dolphin</name>
+		<desc>Travel through time along with Ecco the dolphin, in the only game that could call itself a "dolphin simulator". Indeed, you can do pretty much everything a typical dolphin does, including eating fish, surfacing in order to breathe, using your biological sonar and of course, jumping out of the water to amaze your friends.
+
+The storyline is actually deeper that one may think by looking at the box illustration. As Ecco, you are the only dolphin who managed to escape from a giant whirlpool which sucked down your entire pod. The five shining stars on your forehead show that you are the chosen one to save them. But that task will be not be an easy one, as you will have to travel through time and space with the Atlantean time machine, and meet the mystical Asterite in order to defeat the Vortex Queen.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/ECCO 1 - The Dolphin-image.jpg</image>
+		<releasedate>19930730T000000</releasedate>
+		<developer>Novotrade</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./ECCO 2 - The Tides of Time.gen</path>
+		<name>Ecco: The Tides of Time</name>
+		<desc>The followup to Ecco the Dolphin, in which Ecco successfully destroyed the Vortex. Unfortunately, it turns out that the Vortex Queen followed it to the Earth and eventually destroyed the Asterite. All the world's oceans are threatened, and actually already doomed.
+
+In order to restore the Asterite and finally defeat the Vortex Queen, Ecco will have to confront once again the tides of time, which have split into two possible futures, the regular one and the dark one dominated by the Vortex Queen.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/ECCO 2 - The Tides of Time-image.jpg</image>
+		<releasedate>19940825T000000</releasedate>
+		<developer>Novotrade</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./ESWAT Cyber Police - City Under Siege.gen</path>
+		<name>ESWAT: City under Siege</name>
+		<desc>ESWAT: City under Siege, released in Japan as Cyber Police ESWAT, is a 1990 side scrolling platform video game for the Sega Mega Drive and Genesis video game consoles.
+
+City under Siege was based on the arcade game Cyber Police ESWAT released a year earlier in 1989. The console game maintains the main characters, plot and some of its enemies from the arcade game, but features some different levels, weapons, and bonuses.
+
+The game is a sidescrolling platformer similar to Shinobi. The game is set in the near future, where the player controls a blonde police officer named Duke Oda who, over a series of levels, turns into the cyborg E.S.W.A.T. At first, as a rookie member of the Cyber Police force in the city of Liberty, the player has to clean the streets of an overwhelming crime wave and terminate the most wanted criminals. In the first and second levels of the game, the completely human Duke Oda can only utilize a single shot weapon and can only survive one hit. A second hit will kill him.
+
+A mysterious and high-tech organization, named "E.Y.E.", quickly threatens to take over the entire city and, after being promoted at the end of the second level, Duke Oda is given power armor called the "ICE Combat Suit". With this suit the player can use new and more lethal weapons; "Super Shot", a plasma rifle, rockets, and a devastating fire attack if he finds them. The player also has access to a jet pack with limited fuel that replenishes over time. Finally, this armor will allow the player to take more damage before being defeated. Unfortunately, because the suit makes him larger, it is harder for him to dodge enemy attacks. The final boss of the game, the leader of E.Y.E., is revealed to be a robot with artificial intelligence that is attempting to replicate its own ICE Combat Suits to take over Liberty.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/ESWAT Cyber Police - City Under Siege-image.jpg</image>
+		<releasedate>19900601T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Golden Axe 1.gen</path>
+		<name>Golden Axe</name>
+		<desc>The game takes place in the fictional land of Yuria, a Conan the Barbarian-style high fantasy medieval world. An evil entity known as Death Adder has captured the King and his daughter, and holds them captive in their castle. He also finds the Golden Axe, the magical emblem of Yuria, and threatens to destroy both the axe and the royal family unless the people of Yuria accept him as their ruler. The character of Death Adder and the stolen Golden Axe could well be traced to the historical event of the Acquisition of the True Cross during the Sassanid-Byzantine wars, as the Norse mythology is heavily influenced by Greek and Middle Eastern mythologies.
+The player controls one of three Warriors. The first is a battle axe-wielding dwarf, Gilius Thunderhead, from the mines of Wolud, whose twin brother was killed by the soldiers of Death Adder. Another is a male barbarian, Ax Battler, wielding a two handed broadsword looking for revenge for the murder of his mother. The last is a long-sword-wielding Tyris Flare, an amazon, whose parents were both killed by Death Adder.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Golden Axe 1-image.jpg</image>
+		<releasedate>19891222T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Golden Axe 2.gen</path>
+		<name>Golden Axe II</name>
+		<desc>The three playable characters from the first Golden Axe, Ax Battler, Tyris Flare, and Gilius Thunderhead, return in Golden Axe II to fight the new evil forces led by Dark Guild. The game features a total of seven levels: six scrolling levels and a final end of game boss battle against Dark Guild.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Golden Axe 2-image.jpg</image>
+		<releasedate>19911226T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./James Pond 1 - Underwater Agent.gen</path>
+		<name>James Pond 1: Underwater Agent</name>
+		<desc>James Pond has to solve puzzles to defeat the enemy and the gameplay revolves around finding objects to perform specific tasks, such as keys to rescue captured lobsters, or sponges to bung up the holes in leaking oil tankers. James must also fire bubbles at his enemies to trap them, before popping them to finish them off.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/James Pond 1 - Underwater Agent-image.jpg</image>
+		<releasedate>19900101T000000</releasedate>
+		<developer>Millennium Interactive</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./James Pond 2 - Codename RoboCod.gen</path>
+		<name>James Pond 2: Codename RoboCod</name>
+		<desc>The game takes place immediately after its predecessor, James Pond. Although Acme Oil Co. has been destroyed by James Pond, Pond's arch enemy Dr Maybe survived and has retreated to the North Pole where he has taken over Santa's workshop. Dr Maybe is holding Santa's workers hostage (in most versions of the game they are penguins, in some they are elves), and has turned many of Santa's helpers into his own twisted and dangerous assistants. James Pond is recruited to infiltrate Santa's grotto, free the captive penguins, retrieve the stolen toys for the children of the world, and defeat Dr Maybe once and for all. This time, however, due to the greater risks involved in this mission, Pond is given a robotic suit and the code name "RoboCod" (a pun on RoboCop). This suit gives Pond superhuman strength and agility as well as enabling him to stretch his midsection almost indefinitely and reach otherwise impossibly high areas.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/James Pond 2 - Codename RoboCod-image.jpg</image>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Millennium Interactive</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./James Pond 3 - Operation Starfish.gen</path>
+		<name>James Pond 3: Operation Starfish</name>
+		<desc>Unlike the first game of the series, that was a mission-based game, and the second one, where your character had unique abilities such as observing the whole level and growing to unlimited height, "James Pond 3" is a standard jump and run platform game. Pond can run very quickly (by holding down the A button) through large levels, which often contain steep mountain sides and other tricky areas. Once again, he has to oppose the evil scientist Maybe and his minions.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/James Pond 3 - Operation Starfish-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Vectordean Ltd</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Lemmings 1.gen</path>
+		<name>Lemmings</name>
+		<desc>Lemmings is divided into a number of levels, grouped into four difficulty levels. Each level comprises both destructible landscape elements such as rocks, indestructible sections such as steel plates, and numerous obstacles including chasms, high walls, large drops, pools of water or lava, and booby traps. Each level also includes one or more entrance points and one or more exits. The goal is to guide a certain percentage of the green-haired, blue-shirted lemmings from the entrance to the exit by clearing or creating a safe passage through the landscape for the lemmings to use.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Lemmings 1-image.jpg</image>
+		<releasedate>19920101T000000</releasedate>
+		<developer>DMA Designs</developer>
+		<publisher>Psygnosis</publisher>
+		<genre>Puzzle</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Lemmings 2 - The Tribes.gen</path>
+		<name>Lemmings 2: The Tribes</name>
+		<desc>The Lemmings have split into 12 distinct tribes, each of which has their own landscape and their own cultural identity - they include Egyptian, Circus and Highland. However, Lemming Island is now in danger, and you must complete 10 levels for each tribe in order for them to reunite and reassemble the Talisman from the 12 pieces.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Lemmings 2 - The Tribes-image.jpg</image>
+		<releasedate>19940101T000000</releasedate>
+		<developer>DMA Design</developer>
+		<publisher>Psygnosis</publisher>
+		<genre>Puzzle</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Man Overboard! - S.S. Lucifer.gen</path>
+		<name>S.S. Lucifer: Man Overboard!</name>
+		<desc>S.S. Lucifer: Man Overboard! is a platform game released for the Sega Mega Drive and Sega Game Gear in 1994. Originally developed by Zeppelin Games for the Commodore Amiga, it was ported to Sega's consoles by Odysseus Software and published by Codemasters. Non-Sega versions of the game are called Sink or Swim, and the working title for the Sega versions was simply Man Overboard!.
+
+The game has you play as Kevin Codner, rescue mariner extraordinaire tasked with saving passengers from the S.S. Lucifer. Similar to Lemmings, this requires guiding the passengers to an exit by interacting with the environment. If the player takes too long the room will be flooded.
+
+Neither the Mega Drive or Game Gear versions of S.S. Lucifer: Man Overboard! were released in North America or Japan. They remained exclusives for Europe and Australia.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Man Overboard! - S.S. Lucifer-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Odysseus</developer>
+		<publisher>Codemasters</publisher>
+		<genre>Puzzle</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mega Bomberman.gen</path>
+		<name>Mega Bomberman</name>
+		<desc>The inhabitants of Bomber Planet lived in peace, protected by five spirits, until the evil Bagular and his robot army invaded. The Spirit Pictures, the source of the Spirits' magical power, were destroyed, splitting Bomber Planet into five pieces. Bomberman arrives to restore the Spirit Pictures and reassemble Bomber Planet.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Mega Bomberman-image.jpg</image>
+		<releasedate>19941001T000000</releasedate>
+		<developer>Hudson Soft</developer>
+		<publisher>Hudson Soft</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Mercs.gen</path>
+		<name>MERCS</name>
+		<desc>As a member of an elite Special Forces group, you're constantly traveling around the world to various hotspots of terrorist activity. So far, you've always come home relatively unscathed, but this mission is the most dangerous and potentially deadly you've ever faced, so stay sharp and get ready for a fight of epic proportions.
+
+A former President has been kidnapped, and it's your job to bring him home safely! With the help of your machine guns, bazookas, and other heavy artillery, the terrorists will be no match for your superior skills and sharpshooting ability. So stay frosty, and remember your mantra: shoot first, ask questions later.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Mercs-image.jpg</image>
+		<releasedate>19910927T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Micro Machines 1.gen</path>
+		<name>Micro Machines</name>
+		<desc>If you're bored of racing Formula 1 cars, rally cars or MotoGP bikes in their natural habitats, the Micro Machines series could be for you. It involves racing miniatures representing particular vehicle types across a particular terrain found around the house. The Sports Cars race on the desktop, 4x4s in the sandpit, Formula 1 cars on a snooker table, and so on.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Micro Machines 1-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Codemasters</developer>
+		<publisher>Codemasters</publisher>
+		<genre>Racing</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Micro Machines 2 - Turbo Tournament.gen</path>
+		<name>Micro Machines 2 - Turbo Tournament</name>
+		<desc>Micro Machines 2 is a Driving game, developed by Supersonic Software and published by Codemasters, which was released in Europe in 1994.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Micro Machines 2 - Turbo Tournament-image.jpg</image>
+		<releasedate>19941114T000000</releasedate>
+		<developer>Supersonic Software</developer>
+		<publisher>Codemasters</publisher>
+		<genre>Racing</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Micro Machines 3 - Turbo Tournament '96.gen</path>
+		<name>Micro Machines 96: Turbo Tournament</name>
+		<desc>Micro Machines 2: Turbo Tournament was released in 1994[5] and featured vehicles which required different handling techniques for each course, including hovercraft and helicopters. There are different playing modes including "head-to-head", in which each player earns points by driving a full screen ahead of the opponent. TV presenter Violet Berlin features as a playable driver. The MS-DOS version featured a track editor which allowed players to create their own custom vehicles, backgrounds and obstacles and export and import tracks.
+
+A selling point for the Sega Genesis/Mega Drive version was the J-Cart, a cartridge including two control ports, thus eliminating the need for a 4-player adaptor.[6] It also included a 'pad-sharing' feature which allowed 2 players to share a single joypad; thus it enabled 8 players to compete simultaneously, on certain tracks.
+
+An updated version of Micro Machines 2: Turbo Tournament was only released in PAL regions for the Mega Drive entitled Micro Machines Turbo Tournament '96. The updated version featured new tracks combined with some updated tracks from Micro Machines 2. It also featured a track construction kit previously included in the MS-DOS version.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Micro Machines 3 - Turbo Tournament '96-image.jpg</image>
+		<releasedate>19950601T000000</releasedate>
+		<developer>Supersonic Software</developer>
+		<publisher>Codemasters</publisher>
+		<genre>Racing</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Mortal Kombat 1.gen</path>
+		<name>Mortal Kombat</name>
+		<desc>The series takes place in a fictional universe that consists of six surviving realms which, according to in-game backstories, were created by the Elder Gods. The Mortal Kombat: Deception manual described the six realms as: "Earthrealm, home to such legendary heroes as Johnny Cage, Sonya Blade, Liu Kang, and Jax, and also under the protection of the Thunder God Raiden; Netherrealm, which fiery depths are inhospitable to but the most vile, a realm of demons and shadowy warriors; Outworld, a realm of constant strife and where Emperor Shao Kahn claims this realm as his own; Seido, The Realm of Order, whose inhabitants prize structure and order above all else; The Realm of Chaos, whose inhabitants do not abide by any rules whatsoever, where constant turmoil and change are worshipped here; and Edenia, which is known for its beauty, artistic expression, and longevity of its inhabitants."</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Mortal Kombat 1-image.jpg</image>
+		<releasedate>19920913T000000</releasedate>
+		<developer>Midway</developer>
+		<publisher>Midway</publisher>
+		<genre>Fighting</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Mortal Kombat 2.gen</path>
+		<name>Mortal Kombat 2</name>
+		<desc>Following his failure to defeat Liu Kang in the first Mortal Kombat game, the evil sorcerer Shang Tsung begs his master, Shao Kahn, to spare his life. He tells Shao Kahn that the invitation for Mortal Kombat cannot be turned down, and if they hold it in Outworld, the Earthrealm warriors must attend. Kahn agrees to this plan, and even restores Tsung's youth. He then extends the invitation to Raiden, who gathers his warriors and takes them into Outworld. The new tournament is much more dangerous, as Shao Kahn has the home field advantage, and an Outworld victory will allow him to subdue Earthrealm.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Mortal Kombat 2-image.jpg</image>
+		<releasedate>19930625T000000</releasedate>
+		<developer>Midway</developer>
+		<publisher>Acclaim</publisher>
+		<genre>Fighting</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Mortal Kombat 3.gen</path>
+		<name>Mortal Kombat 3</name>
+		<desc>Fed up with continuous losses in tournament battle, Shao Kahn, who had lost to Liu Kang in the Outworld tournament, enacts a 10,000 year-old plan. He would have his Shadow Priests, led by Shang Tsung, revive his former Queen Sindel, who unexpectedly died at a young age. However, she wouldn't be revived in the Outworld. She would be resurrected in the Earthrealm. This would allow Shao Kahn to cross the boundary lines and reclaim his queen.
+When Sindel is reincarnated in Earthrealm, Shao Kahn reaches across the dimensions to reclaim her. As a consequence of his action, the Earthrealm becomes a part of the Outworld, instantly stripping billions of their souls. Only a few are spared, as Raiden protects their souls. He tells them that Shao Kahn must be stopped, but he cannot interfere; due to his status, he has no power in Outworld, and Earthrealm is partially merged with Outworld.
+Shao Kahn has unleashed extermination squads to roam throughout the Earthrealm and kill any survivors. Also, Raiden's protection only extends to the soul, not to the body, so his chosen warriors have to fight the extermination squads and repel Shao Kahn. Eventually with his final defeat, every human on Earthrealm comes back.
+Mortal Kombat 3 follows Mortal Kombat II and shares continuity with both Ultimate Mortal Kombat 3 and Mortal Kombat Trilogy which were both updates of this game. The next new game in the series was Mortal Kombat 4.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Mortal Kombat 3-image.jpg</image>
+		<releasedate>19950415T000000</releasedate>
+		<developer>Midway</developer>
+		<publisher>Midway</publisher>
+		<genre>Fighting</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./OutRun 1.gen</path>
+		<name>OutRun</name>
+		<desc>Barrel down the straightaway and bank your way into turns as you master the world's most challenging raceway. Race at top speed towards the finish line. Enjoy such realistic features as acceleration, lane changes, diversified terrain, sudden curves, and much more. Outrun is not just a test of who can drive the fastest, it's also a matter of who can plan the best race strategy and execute it flawlessly. Each race is different and demands a new strategy.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/OutRun 1-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Sanritsu</developer>
+		<publisher>Sega</publisher>
+		<genre>Racing</genre>
+	</game>
+	<game>
+		<path>./OutRun 2 - 2019.gen</path>
+		<name>OutRun 2019</name>
+		<desc>The basic Outrun game structure is reused in this, with the main difference being that a futuristic setting has been used. The circuits have some spectacular inclines, and the cars do nearly 700km/h. There are four different track sequences on offer, and your aim is to complete each section of track within the time limit. As in the original OutRun game, near the end of each stage there are forks in the road, allowing you to choose different routes within the track sequences. There are other cars on the road to avoid as well.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/OutRun 2 - 2019-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Hertz</developer>
+		<publisher>Sega</publisher>
+		<genre>Racing</genre>
+	</game>
+	<game>
+		<path>./Paperboy 1.gen</path>
+		<name>Paperboy</name>
+		<desc>Paperboy (and very rarely: Papergirl) was an iconic role of youngsters, often their first job, in Western nations during the heyday of printed newspapers. A paperboy's task was to distribute printed newspapers to homes or offices of subscribers on a regular route, usually by bicycle or automobile. This has often been a before-school or after-school job for adolescents. (Contrast with the newsboy or newspaper hawker, now extremely rare in Western nations, who would sell newspapers to passersby on the street, often with very vocal promotion. They were common when multiple daily papers in every city --as many as 50 in New York City --competed for sales each day.) Other phases of the newspaper distribution networks that developed--such as the siting of printing plants and the management of truck distribution networks--were typically not seen and not romanticized.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Paperboy 1-image.jpg</image>
+		<releasedate>19901101T000000</releasedate>
+		<developer>Atari Games</developer>
+		<publisher>Atari Games</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Paperboy 2.gen</path>
+		<name>Paperboy 2</name>
+		<desc>Rise and shine, bud! A great day's ahead, just waiting for you to become the neighborhood's terror of a paperboy. but it's a whole new job with double the fun and twice the excitement! That's right, you've now got houses on both sides of the street - which means even more customers' homes to deliver papers to and non subscribers' homes to damage. It also means you've got to watch out for lots more obstacles and meanies that are out to knock you off your bike! Wreak mischief across the town or do good deeds like saving the baby and stopping the burglar. At the end of the day, hone your skills on the all-new BMX-style test course. Add the new awesome graphics, and you're in for a rip roaring time on your bike!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Paperboy 2-image.png</image>
+		<releasedate>19920701T000000</releasedate>
+		<developer>Tengen</developer>
+		<publisher>Mindscape</publisher>
+		<genre>Action</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Phantasy Star 2 - The End of the Lost Age.gen</path>
+		<name>Phantasy Star II</name>
+		<desc>The time: Space Century 3240. The place: The Algol Star System. It began when King Lassic turned evil and let hordes of hideous, magical creatures run amok on the three planets. When her brother was killed, Alis vowed to avenge his death and put an end to Lassic forever.
+
+Join her in a journey across time and space to worlds where creatures speak...where magic and science combine to take you on the ultimate video quest.
+
+The battle system is turn-based, allowing the player to choose commands for up to four characters. Each of the eight characters has a different set of preferred weapons and armor, as well as techniques, suited to the character's job. The player must defeat enemies in the overworld and in dungeons to advance in the game.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Phantasy Star 2 - The End of the Lost Age-image.jpg</image>
+		<releasedate>19890321T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Role-Playing</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Phantasy Star 3 - Generations of Doom.gen</path>
+		<name>Phantasy Star III: Generations of Doom</name>
+		<desc>Phantasy Star III is a sequel to the previous game in the series, Phantasy Star II, although the connections to other games in the Phantasy Star series are not immediately evident. Gameplay is similar to the games before it in the series, with combat still being turn-based and battles randomly occurring. Players must explore both overworld maps and dungeons in order to progress through the game.
+
+Phantasy Star III mostly follows the traditional roleplaying game formula seen throughout the series, with exploration of several 2-D worlds, character recruitment, and random enemy encounters using a turn-based battle system. Unlike previous games, the series staple of "techniques" play a diminished role in combat, which is ironic considering the role they play in differentiating the game's two major factions - with techniques being exclusive to Layans, and viewed as "evil magic" by the Orakians.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Phantasy Star 3 - Generations of Doom-image.jpg</image>
+		<releasedate>19900421T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Phantasy Star 4 - The End of the Millenium.gen</path>
+		<name>Phantasy Star IV</name>
+		<desc>Launch into the biggest RPG ever on Genesis! This is the explosive magic-and-monster packed FINALE to the incredible Phantasy Star saga. An ancient, hideous Dark Force stalks the Algol star system. You, a young hunter, are destined to become Motavia's greatest warrior and strike the death-blow that destroys evil FOREVER!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Phantasy Star 4 - The End of the Millenium-image.jpg</image>
+		<releasedate>19931217T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Road Rash 1.gen</path>
+		<name>Road Rash</name>
+		<desc>Road Rash is an aggressive motorcycle racing game where the player assumes the role of a biker who takes part in a series of illegal races across the U.S.A. Starting at the back of the pack the objective is always to finish first on a linear course, overtaking the other bikers. This is achieved by driving very well or by playing it dirty, knocking opponents of their bikes using clubs, crowbars or your bare hands. The other racers fight back in a similar fashion and there are also hazards. All the races take place on the regular road with normal traffic (in both directions) and the cops, as well as occasional oil slicks and stray cows.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Road Rash 1-image.jpg</image>
+		<releasedate>19921119T000000</releasedate>
+		<developer>Electronic arts</developer>
+		<publisher>Electronic arts</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Road Rash 2.gen</path>
+		<name>Road Rash 2</name>
+		<desc>The races took place in the U.S. states of Alaska, Hawaii, Tennessee, Arizona, and Vermont, on progressively longer two-lane roads. Races would be won by placing first, second, or third in each of the five tracks (as opposed to the first game, which would allow a victory by placing fourth as well). After all five tracks were won, the player would advance to the next level, where the track would be longer, the opponents faster, and much more money at stake for a victory or a loss.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Road Rash 2-image.jpg</image>
+		<releasedate>19930722T000000</releasedate>
+		<developer>Electronic arts</developer>
+		<publisher>Electronic arts</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Road Rash 3.gen</path>
+		<name>Road Rash 3</name>
+		<desc>The Rash is back in the latest, nastiest, baddest race game for your Genesis. This time there's five NEW weapons, including the cattle-prod and crow bar. NEW race tracks take you across the globe, from the Aussie Outback to nighttime urban Japan. NEW modes raise the ante with the other Rashers while the NEW digitized graphics and interactive obstacles charge NEW life into the gameplay!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Road Rash 3-image.jpg</image>
+		<releasedate>19950515T000000</releasedate>
+		<developer>Electronic Arts</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Robocop Versus The Terminator.gen</path>
+		<name>RoboCop Versus The Terminator</name>
+		<desc>Set a few years after RoboCop's invention, the story involves SAC-NORAD contracting Cyberdyne Systems on building Skynet. Cyberdyne used RoboCop's technology in creating Skynet. When activated, Skynet becomes self-aware and launches a war against mankind. In the future, Skynet sends several Terminators back to the past to cripple the Resistance. After destroying one of the Terminators, RoboCop proceeds to Delta City, where he confronts RoboCain.
+
+After RoboCain was destroyed, RoboCop battles his way to the OCP building, where he defeats all the Terminators. After defeating an ED-209 unit reprogrammed by the Terminators, RoboCop plugs himself into a console. Unknown to him, RoboCop gave Skynet information it can use. This ends up with RoboCop falling into a trap. In the future, RoboCop assembles himself, where he battled in the Terminator-infested future and destroyed Skynet.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Robocop Versus The Terminator-image.png</image>
+		<releasedate>19940519T000000</releasedate>
+		<developer>Virgin Interactive</developer>
+		<publisher>Virgin Interactive</publisher>
+		<genre>Shooter</genre>
+	</game>
+	<game>
+		<path>./Sensible Soccer.gen</path>
+		<name>Sensible Soccer</name>
+		<desc>Take charge of your favourite club or national team all over Europe in a whole host of different cup and league competitions.
+
+With all the atmosphere of European Soccer at it's highest level, you (and other friends) can take a squad of 15 players to cup glory!.
+
+There's no other football game quite like this!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sensible Soccer-image.jpg</image>
+		<releasedate>19930101T000000</releasedate>
+		<developer>Sensible Software</developer>
+		<publisher>Sony Electronic Publishing</publisher>
+		<genre>Sports</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Shining Force 1.gen</path>
+		<name>Shining Force</name>
+		<desc>Shining Force is a turn-based tactical RPG. Battles take place in square grids, and each unit occupies 1 square. Each unit can move up to a fixed amount of squares along the battlefield, determined by its Move statistic. Depending on its location relative to enemies and to allies, a unit can also perform one action: attack, cast a spell, use an item, or search the area. Some commands, such as equipping or dropping items, don't count as actions. The order of turns is determined by the unit's agility score and a random seed.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Shining Force 1-image.jpg</image>
+		<releasedate>19920320T000000</releasedate>
+		<developer>Climax Entertainment,Camelot Software Planning</developer>
+		<publisher>Sega</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Shining Force 2.gen</path>
+		<name>Shining Force II</name>
+		<desc>Shining Force II is a tactical role-playing game. The player assumes the role of the Shining Force leader, Bowie. When not in combat, the player can explore towns and other locales, talk with people, and set the members and equipment of the army. Some towns have a headquarters where the player can inspect and talk with his allies. While roaming through town or moving throughout the world, one can find both visible and hidden treasures and interact with certain objects.
+Each ally unit is represented by a character with a background and personality. Some of these characters are hidden, requiring specific events to occur before they will join the force. Each ally unit also has a class, which defines the abilities for that unit. These abilities range from what type of weapons they can use to what kind of spells they can learn. Units can become stronger by fighting enemies and performing various actions which gives them experience points (EXP), which allow them to gain levels. Once a unit reaches level 20, that character has the ability to advance to more powerful class through promotion. Some characters have two different classes they may be promoted to, one of which is only accessible using a special hidden item.
+Battles take place on a square grid, and each unit occupies a single square. Battle is turn-based. Each turn, a character can move and perform one action: either attack, cast a spell, or use an item. Some commands, such as equipping or dropping an item during the turn, do not count as actions.
+The battle is won if all enemies are defeated, or if the enemy commander is defeated. If Bowie is defeated in combat or withdraws, the battle is lost and the player is returned to the nearest town, where he can recover his allies and fight the same battle again.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Shining Force 2-image.jpg</image>
+		<releasedate>19941019T000000</releasedate>
+		<developer>Camelot Software Planning</developer>
+		<publisher>Sega</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Sonic 3D Blast.gen</path>
+		<name>Sonic 3D Blast</name>
+		<desc>Doctor Robotnik discovered that some strange birds, called Flickies, live on an island in an alternate dimension. He learned that they can travel anywhere using large rings, so he decided to exploit them by turning them into robots to help him search for the Chaos Emeralds. One day, Sonic visited Flickies' Island and saw what Robotnik had done to them. He decided to free the Flickies and stop Robotnik from finding the Emeralds.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic 3D Blast-image.jpg</image>
+		<releasedate>19961130T000000</releasedate>
+		<developer>Sonic Team</developer>
+		<publisher>Sega</publisher>
+		<genre>Adventure</genre>
+	</game>
+	<game>
+		<path>./Sonic and Knuckles.gen</path>
+		<name>Sonic &amp; Knuckles</name>
+		<desc>The story picks up from the ending of Sonic 3 - Dr. Robotnik's orbital weapon, the Death Egg, has been badly damaged in the climactic battle between himself and Sonic The Hedgehog. As the satellite falls back to the Floating Island, landing in a volcanic crater, Sonic jumps off, landing in a mushroom filled woodland.
+Sonic knows there are many Chaos Emeralds hidden on the island, including the powerful Super Emeralds and the Master Emerald, the secret to the island's levitation powers. Worried that Robotnik may try to harness this power to fuel a repaired Death Egg, he sets off to try and destroy the Death Egg once and for all, keeping an eye out for Knuckles the Echidna, still smarting from his Launch Base defeat.
+At Hidden Palace, Sonic finds Knuckles there waiting for him. They fight and Sonic seems to emerge victorious when Knuckles flees from the duel after sensing someone is trying to steal the Master Emerald. Knuckles races ahead closely followed by Sonic to find Robotnik trying to steal the Master Emerald: It had been his plan all along to snatch it while Sonic and Knuckles were too busy dealing with each other. Realizing he had been tricked, Knuckles reacts by attacking Robotnik, which fails when Robotnik electrocutes Knuckles. Sonic tries to intervene but Robotnik stills manages to escape. Knuckles now realizes his mistake and that Sonic is in fact on his side. They join forces and teleport to Sky Sanctuary.
+At Sky Sanctuary, Knuckles and Sonic watch the Death Egg launching in the background. Knuckles activates a bridge so Sonic can cross over. Sonic defeats a rebuilt Metal Sonic on the way to the Death Egg, and manages to board it before it leaves the atmosphere. Onboard the Death Egg, Sonic defeats Robotnik and destroys the ship once and for all, only for Robotnik to get away with the Master Emerald in one of his giant robots. If Sonic hasn't collected all seven Chaos Emeralds and/or Super Emeralds, the game ends here, and the ending in which the Master Emerald does not return to Angel Island occurs. After the credits, the player sees a scene with Robotnik still in possession of the Master Emerald.
+If all the seven Chaos Emeralds and/or Super Emeralds are collected, Sonic transforms into Super Sonic or Hyper Sonic and chases Robotnik into the Doomsday Zone. After failing to lose him in an asteroid belt, Robotnik's machine is destroyed, Sonic and Tails return the Master Emerald, and the Floating Island becomes airborne once again. If the player didn't collect all the Super Emeralds, a scene occurs which shows an Egg Robo emerging from a pile of metal. If all Emeralds are collected, the player sees the Sonic 3 and Knuckles logo featuring Sonic, Tails, and Knuckles.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic and Knuckles-image.jpg</image>
+		<releasedate>19941018T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Platform</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Sonic and Knuckles &amp; Sonic 1.gen</path>
+		<name>Sonic &amp; Knuckles + Sonic the Hedgehog</name>
+		<desc>'Sonic &amp; Knuckles' is locked-on to the original Sonic the Hedgehog or Sonic Compilation via Lock-On Technology, the result is a deceptive "No Way!" screen. However, by pressing the A, B and C buttons together players can access Special Stage levels, commonly known as the "Blue Sphere" levels. Levels can be accessed by inputting a twelve digit code, every number combination a different variation of a Special Stage level.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic and Knuckles &amp; Sonic 1-image.jpg</image>
+		<releasedate>19941018T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Sonic and Knuckles &amp; Sonic 2.gen</path>
+		<name>Sonic &amp; Knuckles + Sonic the Hedgehog 2</name>
+		<desc>Knuckles in Sonic 2 is the resulting game when Sonic the Hedgehog 2 is locked onto Sonic &amp; Knuckles with its passthrough port. Sonic is replaced by Knuckles and Tails is not playable whatsoever. The title screen features Knuckles also but removes the two player mode and options selections from it. This game is identical to Sonic 2 (aside from a few changes to make it more playable with Knuckles) but with Knuckles now playable instead of Sonic or Tails.
+
+Sega, though adjusting Knuckles' physics to match those of Sonic &amp; Knuckles in-game, ran into issues with those same physics in the Sonic the Hedgehog 2 pre-game demos. A fix was created to keep Knuckles' jump height consistent with that of the jump height from Sonic &amp; Knuckles but also make the demos function properly. Knuckles' jump was modified so that it reached the same height as Sonic would reach in Sonic the Hedgehog 2, but his mid-air mobility was slowed to give the gimped feeling his jumps had in Sonic &amp; Knuckles. This fix corrected most of these issues; however, the mid-air speed cap caused Emerald Hill and Aquatic Ruin Zone's demos to be left in a sub par state.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic and Knuckles &amp; Sonic 2-image.png</image>
+		<releasedate>19941018T000000</releasedate>
+		<developer>Sonic Team</developer>
+		<publisher>Sega</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Sonic and Knuckles &amp; Sonic 3.gen</path>
+		<name>Sonic &amp; Knuckles + Sonic the Hedgehog 3</name>
+		<desc>Dr. Eggmans (AKA Dr. Robotniks) Death Egg was once again blasted by Sonic, crash-landing on the peak of a volcano on the Floating Island.
+
+Dr. Eggman is still at large, and Sonic cant allow him to get his hands on the Master Emerald and repair the Death Egg. Sonic must also keep Knuckles off his back but Knuckles has problems too. As guardian of the Floating Island and all the Emeralds, Knuckles must do his part to keep the island safe. While theyre going the rounds with each other, who will stop Dr. Eggman?</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic and Knuckles &amp; Sonic 3-image.jpg</image>
+		<releasedate>19941018T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Platform</genre>
+	</game>
+	<game>
+		<path>./Sonic the Hedgehog 1.gen</path>
+		<name>Sonic the Hedgehog</name>
+		<desc>When Dr. Eggman was hatching his plans for a global takeover, there was one little thing he didn't count on - Sonic The Hedgehog! Our blue hero zips, flips, and spins through the levels at lightning speed to collect the Chaos Emerald and restore World Order.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic the Hedgehog 1-image.jpg</image>
+		<releasedate>19910623T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Sonic the Hedgehog 2.gen</path>
+		<name>Sonic the Hedgehog 2</name>
+		<desc>The gameplay of Sonic the Hedgehog 2 builds upon the basic set-up of the original Sonic the Hedgehog game. The player finishes each level, generally moving from left to right, within a time limit of 10 minutes.  Along the way, rings are collected and Badniks are defeated. Star posts serve as checkpoints, where if the player was to lose a life then he or she would return to one.  When the player has collected at least 50 rings, star posts can be run past for an optional Special Stage.  At the end of the last act of each zone (with the exception of Sky Chase Zone which does not have a boss), Sonic confronts Dr. Robotnik.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic the Hedgehog 2-image.jpg</image>
+		<releasedate>19921120T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Sonic The Hedgehog 3.gen</path>
+		<name>Sonic the Hedgehog 3</name>
+		<desc>In single player mode, the player can choose to play solo, as either Sonic or Tails, or as a team, controlling Sonic, with the AI controlling Tails, which is the default configuration. Another player may take control of Tails at any time by using a controller plugged into port 2. The object of the game is to progress through the levels. In order to completely finish the game, seven Chaos Emeralds must also be collected from the special stages.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic The Hedgehog 3-image.jpg</image>
+		<releasedate>19940202T000000</releasedate>
+		<developer>Sonic Team</developer>
+		<publisher>Sega</publisher>
+		<genre>Platform</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Streets of Rage 1.gen</path>
+		<name>Streets of Rage</name>
+		<desc>"What was once a happy, peaceful, productive city, full of life and activity, has fallen into the hands of a secret criminal syndicate. The leader of the syndicate has somehow managed to keep his identity a secret. The organization soon absorbed the city government (anyone can be had if the price is right). They even had the metropolitan police force in their back pocket. Looting, random violence and destruction are rampant. No one is safe walking the streets, day or night...
+"As the chaos continued at full strength, three young police officers tried to establish a special attack unit. They were repeatedly turned down by their superiors, most of whom had been bought by the organization or were too afraid to make a stand. One day, when they could no longer stand by and watch their city being demolished, they quit the force!'
+"Adam Hunter, Axel Stone and Blaze Fielding decided to forgo their careers in legal law enforcement and put their lives on the line. They are without weapons, but each possesses great hand-to-hand combat abilities. Take them into the heart of the city and battle the most dangerous wave of bad dudes and chicks ever assembled. Make the city a place where people no longer have to walk the Streets of Rage!"</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Streets of Rage 1-image.jpg</image>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Streets of Rage 3.gen</path>
+		<name>Streets of Rage 3</name>
+		<desc>After being defeated twice, Syndicate crime boss Mr. X has started a research company called RoboCy Corporation to act as a cover for his illegal activities. The world's best roboticist, Dr. Dahm, has been brought in to help him create an army of realistic robots to replace important officials from the city. With the replacements in place, Mr. X plans to run the city using a remote control device. His criminal organization, The Syndicate, has strategically placed bombs around the city to distract the police while the city officials are dealt with.
+
+Dr. Zan discovers what the research is really for and knows the Syndicate must be stopped. He contacts Blaze Fielding with the details of The Syndicate's plan. Blaze quickly contacts her old comrades Axel Stone and Adam Hunter for a task force to bring down The Syndicate once and for all. Axel quickly joins the task force, but Adam can't make it (due to his own assignments from within the police) and sends his young brother, Eddie "Skate" Hunter instead. The game has four endings depending on the difficulty level and if the player defeats certain levels in an alloted amount of time.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Streets of Rage 3-image.jpg</image>
+		<releasedate>19940317T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Strike 1 - Desert Strike.gen</path>
+		<name>Strike 1: Desert Strike</name>
+		<desc>The first game in the Strike series. A year after the Gulf War, a self styled General named Kilbaba (Muababa in the GBA version) takes over an Arab Emirate and threatens to start WWIII against its enemy in the West, the U.S. The whole world holds their breath as the President chooses you to destroy Kilbaba and his terrorist army before he launches a nuclear attack on the world!
+You must fly an specially designed AH-64A Apache on a series of missions from rescuing MIAs, destroying power plants, to blowing apart SCUD missles! Take out his defenses while trying to find out Kilbaba's plans. Take on the Madman and forever rid this threat....in the desert!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Strike 1 - Desert Strike-image.jpg</image>
+		<releasedate>19920604T000000</releasedate>
+		<developer>Electronic Arts</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Strike 2 - Jungle Strike.gen</path>
+		<name>Strike 2: Jungle Strike</name>
+		<desc>Some time after Operation Desert Strike, Ibn Kilbaba, son of Kilbaba S.R, threatens to annihilate America. After his father was killed, the people who were under his control, sent his son running off, along with his father's money and nuclear weapons program. Kilbaba, more ruthless than his father, longs for revenge of his father's death and decides to shed the blood of those who killed him, the Americans. Already armed, Kilbaba hires Carlos Ortega to help him set up his Nuclear Weapons program, deep in South America. Carlos Ortega, the world's most notorious druglord, also yearns to seek revenge. With his own private army, armed with the most hi-tech weapons, he's ready to fight America at all costs.
+Because of this threat, you're hired again to battle these two characters, following their paths in the jungles of South America. Armed with the Commache, numerous other vehicles, and destructive weapons, you must take out their private army. Blow up the enemy with your hellfires, hydras, chain guns. Use the watercraft to launch mines at enemy ships. Pull off a drive-by on the enemy with guns on the side. Take out the evil duo and forever rid this threat.....in the jungle!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Strike 2 - Jungle Strike-image.jpg</image>
+		<releasedate>19931216T000000</releasedate>
+		<developer>High Score</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Strike 3 - Urban Strike.gen</path>
+		<name>Strike 3: Urban Strike</name>
+		<desc>Urban Strike is a video game developed and published by Electronic Arts. It was initially released for the Sega Genesis in 1994, with ports to the Super Nintendo Entertainment System and Game Gear in 1995 and to the Game Boy in 1996. It is the third game in the Strike series, after Desert Strike: Return to the Gulf and Jungle Strike.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Strike 3 - Urban Strike-image.jpg</image>
+		<releasedate>19940304T000000</releasedate>
+		<developer>Granite Bay Software</developer>
+		<publisher>Electronic Arts</publisher>
+		<genre>Shooter</genre>
+		<players>1</players>
+	</game>
+	<game>
+		<path>./Toejam &amp; Earl 1.gen</path>
+		<name>ToeJam &amp; Earl</name>
+		<desc>Two hip aliens in a serious jam.
+
+CHECK IT OUT… We’re ToeJam and Earl. And we ran into a small problem. More specifically, a large planet (I shoulda never let Earl drive…). Help us hunt down the pieces to our rocket ship and we’ll let you jam out some tunes on our megawatt rapmaster. Deal?
+
+WHOAH!!! We’re bumpin’ into some of the weirdest creatures in the universe: Earthlings. Boogie down with bewitching hula girls. Block a nerd herd. Or hurl tomatoes at a crazed dentist with a drill.
+
+SPLIT UP and scope things out. Or hang together to share your stuff. Pick up presents you can use – like wings, rocket skates and inner tubes. Or ones you’ll wish you hadn’t opened – like bees, tomato rain and school books. So grab a friend – or join the jamminest party you’ll ever play.
+
+ALWAYS NEW: No two levels are ever the same in any game.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Toejam &amp; Earl 1-image.jpg</image>
+		<releasedate>19910101T000000</releasedate>
+		<developer>Johnson-Voorsanger Productions</developer>
+		<publisher>SEGA Enterprises Ltd.</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Toejam &amp; Earl 2 - Panic on Funkotron.gen</path>
+		<name>ToeJam &amp; Earl in Panic on Funkotron</name>
+		<desc>The game follows on the events of the first game, in which funky aliens ToeJam and Earl crash landed on Earth. After managing to rebuild their spaceship and returning safely to their home planet of Funkotron, the duo soon learn that a bunch of Earthlings had stowed away on their craft and have now invaded Funkotron. With the humans spreading panic across the planet's citizens, even scaring the source of all funk, Lamont the Funkapotomus, away to another dimension, it is up to ToeJam and Earl to clean up the mess they've made and send all the Earthlings they brought with them back to where they came from.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Toejam &amp; Earl 2 - Panic on Funkotron-image.jpg</image>
+		<releasedate>19930602T000000</releasedate>
+		<developer>ToeJam &amp; Earl Productions</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Worms.gen</path>
+		<name>Worms</name>
+		<desc>Worms (ワームス) is a critically acclaimed turn based strategy game designed for the Commodore Amiga and ported to a variety of platforms including the Sega Mega Drive and Sega Saturn. It was the first in the series of Worms games, which continue to this day and still largely share the same gameplay as the original.
+
+The game involves the player controlling a team of worms, each supplied with a variety of different weapons, and the aim is to eliminate all the enemy worms. Worms was revolutionary at the time due to the randomly generated and fully destructaile landscapes that the game employs, so an explosion will leave a huge crater and a different strategy may need to be divised.
+
+As it is turn-based, the game allows up to 16 players to take control of units (though there is only ever a maximum of four teams).</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Worms-image.jpg</image>
+		<releasedate>19960708T000000</releasedate>
+		<developer>Team 17</developer>
+		<publisher>Ocean</publisher>
+		<genre>Strategy</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Streets of Rage 2.gen</path>
+		<name>Streets of Rage 2</name>
+		<desc>A year has passed since the events of Streets of Rage. To celebrate the defeat of the mysterious "Mr. X" and his syndicate the previous year, Adam Hunter, Axel Stone, and Blaze Fielding met at their favorite nightspot in the city and spent their time reminiscing about their vigilante crusade against "Mr. X" and his organization. Axel and Blaze had moved out of the city after the adventure from last year. Axel has begun working as a part-time bodyguard and Blaze teaches dance classes. Adam has since rejoined the police force and lives in a small house with his younger brother.
+The next morning, Axel received a phone call from Eddie 'Skate' Hunter, Adam's younger brother. Skate had arrived at home from school and was shocked to find his house in ruin and his older brother missing. Attached to the front door was a picture of Adam chained to a wall at the feet of Mr. X. The criminals began to retake the streets once more. Beatings and lootings took place regularly and in broad daylight. Chaos reigned in the city, far worse than before.
+Realizing that "Mr. X" and his syndicate has returned for revenge against him, Blaze, and Adam, Axel wastes no time in telling Blaze about the unexpected situation and Blaze herself is determined to help Axel out in defeating "Mr. X" and rescuing Adam. Accompanied by Adam's young brother Skate and Axel's friend, a professional wrestler named Max Thunder, Axel and Blaze set forth on a rescue mission, which will take them from the city all the way to "Mr. X"'s hideout on a desolate island.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Streets of Rage 2-image.jpg</image>
+		<releasedate>19921220T000000</releasedate>
+		<developer>Sega</developer>
+		<publisher>Sega</publisher>
+		<genre>Action</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Zero Tolerance.gen</path>
+		<name>Zero Tolerance</name>
+		<desc>The space station Europe-1 has been overrun by aliens. During one of the fights the nuclear cooling system has been damaged, resulting in a meltdown within hours. Your mission, as a team of five of the toughest persons in the Corps, is to infiltrate and gain control of Europe-1. You must sweep the entire station clean of aliens.
+
+Zero Tolerance is a first-person shooter. It is required that you kill every single alien on each of the levels (hence the name). The five members of your team, who have different skills, start out with different weapons, and are your five chances of seeing this through.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Zero Tolerance-image.jpg</image>
+		<releasedate>19940101T000000</releasedate>
+		<developer>Technopop</developer>
+		<publisher>Accolade</publisher>
+		<genre>Shooter</genre>
+		<players>2</players>
+	</game>
+</gameList>

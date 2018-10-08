@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<gameList>
+	<game>
+		<path>./Golden Sun.gba</path>
+		<name>Golden Sun</name>
+		<desc>Golden Sun is the first original role-playing game for the Game Boy Advance to appear in the U.S. And despite perhaps a too-familiar storyline, Golden Sun's jaw-dropping graphics, deep magic system, and unique multiplayer arena mode truly show that the Game Boy Advance is capable of a serious RPG.
+
+* LAN PVP mode via GBA Game Link Cable</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Golden Sun-image.jpg</image>
+		<releasedate>20011111T000000</releasedate>
+		<developer>Camelot Software Planning</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Golden Sun 2 - The Lost Age.gba</path>
+		<name>Golden Sun: The Lost Age</name>
+		<desc>The story of Golden Sun: The Lost Age picks up right near the end of the first game. Golden Sun veterans will be surprised to learn that The Lost Age is played from the point of view of the party being chased as they try to light the remaining two lighthouses, which will unlock the power of alchemy for the world--or will it instead unlock the world's destruction?
+
+* LAN PVP mode via GBA Game Link Cable</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Golden Sun 2 - The Lost Age-image.jpg</image>
+		<releasedate>20030414T000000</releasedate>
+		<developer>Camelot Software Planning</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Harvest Moon - Friends of Mineral Town.gba</path>
+		<name>Harvest Moon: Friends of Mineral Town</name>
+		<desc>It's up to you to successfully build and maintain a farm while befriending the people of the town. In Harvest: Moon: Friends of Mineral Town, you can do anything from planting vegetables and raising different animals to marrying the woman of your dreams and starting a family. The game lets you choose which events, minigames, and adventures to complete. Through the Game Boy Advance link cable, you can connect this game with Harvest Moon: A Wonderful Life to unlock new events and surprises.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Harvest Moon - Friends of Mineral Town-image.png</image>
+		<releasedate>20031117T000000</releasedate>
+		<developer>Marvelous Interactive</developer>
+		<publisher>Natsume</publisher>
+		<genre>Life Simulation</genre>
+	</game>
+	<game>
+		<path>./Mario And Luigi Superstar Saga.gba</path>
+		<name>Mario &amp; Luigi: Superstar Saga</name>
+		<desc>An evil witch has replaced Princess Peach's fair speech with explosives! Mario and Luigi must once again come to her rescue, but this time they employ the help of Bowser, their sworn enemy. Mario and Luigi must learn new moves and combine powers to fight off enemies and move closer to the witch's castle. Guide this unlikely bunch through an abundance of minigames such as Border Jump and Mystery Carts. Combine the powers of Mario and Luigi to pull off special tag-team moves. Immerse yourself in this bright, cartoonish, and humorous world, complete with hit music featured in previous Mario games.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Mario And Luigi Superstar Saga-image.png</image>
+		<releasedate>20031117T000000</releasedate>
+		<developer>AlphaDream</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Role-Playing</genre>
+	</game>
+	<game>
+		<path>./Metroid - Fusion.gba</path>
+		<name>Metroid Fusion</name>
+		<desc>Samus Aran returns in an all-new Metroid adventure!
+
+While lending mission support on planet SR388, interstellar bounty hunter Samus Aran is attacked by an X parasite, an organism with the ability to mimic the abilities of any creature it infects. Near death, Samus is saved by a vaccine made from the DNA of the last Metroid -- the X parasite's only natural predator. When the X spread to a research station in orbit around SR388, a weakened Samus is forced to exterminate them all ... or die trying.
+
+The bonus features in Prime can be unlocked by linking between the game and Fusion via the Nintendo GameCube – Game Boy Advance link cable.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Metroid - Fusion-image.png</image>
+		<releasedate>20021117T000000</releasedate>
+		<developer>Nintendo R&amp;D1</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Pokemon Fire Red.gba</path>
+		<name>Pokémon Fire Red Version</name>
+		<desc>Set off on a grand adventure to fulfil your dreams of becoming a Pokémon Master! Explore the Kanto region and discover wild Pokémon around every corner. Build your Pokémon collection and train, and battle your way to success - earn your badges as you develop winning strategies to use against experienced Gym Leaders in every town. Explore every inch to uncover amazing secrets that will help you in your quest to be the best trainer ever!
+- Trade, battle, and chat wirelessly! All-new wireless adapter comes packed in every game, so trainers can trade, battle, and chat between their FireRed and LeafGreen versions with no cables!
+- Catch loads of Pokémon in the never-before-seen island areas!
+- Expand your collection when you trade with a friend. Link up with Pokémon Ruby & Sapphire or Pokémon Colosseum to catch them all!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Pokemon Fire Red-image.jpg</image>
+		<releasedate>20040909T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Pokemon Leaf Green.gba</path>
+		<name>Pokémon Leaf Green Version</name>
+		<desc>Set off on a grand adventure to fulfil your dreams of becoming a Pokémon Master! Explore the Kanto region and discover wild Pokémon around every corner. Build your Pokémon collection and train, and battle your way to success - earn your badges as you develop winning strategies to use against experienced Gym Leaders in every town. Explore every inch to uncover amazing secrets that will help you in your quest to be the best trainer ever!
+- Trade, battle, and chat wirelessly! All-new wireless adapter comes packed in every game, so trainers can trade, battle, and chat between their FireRed and LeafGreen versions with no cables!
+- Catch loads of Pokémon in the never-before-seen island areas!
+- Expand your collection when you trade with a friend. Link up with Pokémon Ruby & Sapphire or Pokémon Colosseum to catch them all!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Pokemon Leaf Green-image.jpg</image>
+		<releasedate>20040909T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Pokemon Emerald.gba</path>
+		<name>Pokémon Emerald Version</name>
+		<desc>The Hoenn region is unstable--Rayquaza has awakened! Your skills as a Trainer will be challenged like they've never been challenged before as you try to maintain the balance between Kyogre &amp; Groudon. Prove your skills by earning badges &amp; gaining access to Battle Frontier - the front line of Pokémon battling that offers a whole new level of competition. Never-before-experienced battles await you!
+• The third adventure with new episodes in the Hoenn region!
+• Tons of new features, including surprising plot twists and changes to where and how often you can catch certain Pokémon!
+• Use the Game Boy Advance Wireless Adapter to trade &amp; battle between Pokémon Emerald and Pokémon FireRed and LeafGreen versions.
+• Expand your collection when you trade with a friend. Using a Game Link cable, link up with Pokémon Ruby &amp; Sapphire, Pokémon FireRed &amp; LeafGreen or Pokémon Colosseum to catch them all!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Pokemon Emerald-image.jpg</image>
+		<releasedate>20040916T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Pokemon Ruby.gba</path>
+		<name>Pokémon Ruby Version</name>
+		<desc>The race to catch 'em all is on again in Pokemon Ruby. This entry in the Pokemon series features an all-new storyline, awesome new Pokemon, and addictive RPG gameplay. One of the biggest additions to Pokemon Ruby is the two-on-two battle system, which allows you to link up with three friends to battle competitively or cooperatively. You can also showcase your Pokemon's coolness, beauty, cuteness, smartness, and toughness in Pokemon contests. With new Pokemon, two-on-two battles, and an all-new region of Hoenn to explore, Pokemon Sapphire takes the Pokemon experience to the next level.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Pokemon Ruby-image.jpg</image>
+		<releasedate>20021121T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./Pokemon Sapphire.gba</path>
+		<name>Pokémon Sapphire Version</name>
+		<desc>The race to catch 'em all is on again in Pokemon Sapphire. This entry in the Pokemon series features an all-new storyline, awesome new Pokemon, and addictive RPG gameplay. One of the biggest additions to Pokemon Sapphire is the two-on-two battle system, which allows you to link up with three friends to battle competitively or cooperatively. You can also showcase your Pokemon's coolness, beauty, cuteness, smartness, and toughness in Pokemon contests. With new Pokemon, two-on-two battles, and an all-new region of Hoenn to explore, Pokemon Sapphire takes the Pokemon experience to the next level.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/Pokemon Sapphire-image.jpg</image>
+		<releasedate>20021121T000000</releasedate>
+		<developer>Game Freak</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Adventure</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./The Legend of Zelda - A Link To The Past.gba</path>
+		<name>The Legend of Zelda: A Link to the Past</name>
+		<desc>Now you have a link to one of the greatest adventures in The Legend of Zelda series. The Legend of Zelda: A Link to the Past revives the classic SNES game on the Game Boy Advance and adds a new multiplayer mode. In a Link to the Past, Link travels between the light world and the dark world, conquering fierce monsters and uncovering Hyrule's deepest secrets along the way. Also included is Four Swords, which lets you play with up to three other players, slashing through dungeons and collecting rupees. Whether you choose solo or competitive play, The Legend of Zelda will keep you occupied with its brain-bending puzzles and fun swashbuckling action.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/The Legend of Zelda - A Link To The Past-image.png</image>
+		<releasedate>20021202T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+		<players>4+</players>
+	</game>
+	<game>
+		<path>./The Legend of Zelda - The Minish Cap.gba</path>
+		<name>The Legend of Zelda: The Minish Cap</name>
+		<desc>Link returns in an all-new Game Boy Advance adventure. When the sorcerer Vaati turns Princess Zelda to stone, the king of Hyrule sends Link on a quest that takes him to all-new locations. Using the power of a mystical hat called the Minish Cap, Link must travel through a fantastic world rife with new items, puzzles, and bosses. As Link, you can shrink down to either battle large enemies from within or find secret items. You can also unlock items and solve puzzles by fusing together magic relics.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/gba/The Legend of Zelda - The Minish Cap-image.png</image>
+		<releasedate>20050110T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action</genre>
+	</game>
+</gameList>

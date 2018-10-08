@@ -36,19 +36,22 @@
   a           = add .
   ap          = add -u -p
   b           = branch
+  br          = branch -r
   c           = commit -v
   co          = checkout
   d           = diff
+  dn          = diff --name-only
   s           = status -s -b
   r           = remote -v
-  l           = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short
-  l1          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short -1
-  l5          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d %C(green)%an%C(reset), %C(cyan)%ar' --date=short -5
+  l           = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=short
+{% for x in [ 1,2,3,4,5,6,7,8,9,10 ]  %}
+  l{{x}}          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=short -{{x}}
+{% endfor %}
 
 {% if proxy == True %}
 [http]
-  proxy       = http://127.0.0.1:3128
+  proxy       = http://{{ proxy_through.host }}:{{ proxy_through.port }}
 [https]
-  proxy       = https://127.0.0.1:3128
+  proxy       = https://{{ proxy_through.host }}:{{ proxy_through.port }}
 {% endif %}
 
