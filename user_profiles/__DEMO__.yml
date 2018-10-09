@@ -6,10 +6,10 @@
 # Ensure the user id reflects that of the primary linux user.
 
 primary_user:
-  name        : "Steve Stevens"
-  home        : "/home/steve"
-  id          : "steve"
-  email       : "steve.h.i.stevens@gmail.com"
+  name        : "Freddy Kruger"
+  home        : "/home/fredi"
+  id          : "fredi"
+  email       : "tiptoe.through.the.tulips@gmail.com"
 
 #######################################################################
 ## OPTIONAL ##
@@ -31,8 +31,9 @@ ssh_keys:
 ## OPTIONAL ##
 # If working behind TP firewall, this is very important to get you out
 #   through the proxy.
-# If not, this field is not relevant
+# If not, this section can be deleted
 
+proxy         : True
 ntlm_pass     : ""
 
 #######################################################################
