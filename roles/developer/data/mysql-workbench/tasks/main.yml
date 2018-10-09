@@ -24,6 +24,7 @@
     - "developer"
     - "data"
     - "mysql-workbench"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -35,6 +36,7 @@
     - "developer"
     - "data"
     - "mysql-workbench"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -46,6 +48,7 @@
     - "developer"
     - "data"
     - "mysql-workbench"
+    - "launcher"
 
 #################################################################
 

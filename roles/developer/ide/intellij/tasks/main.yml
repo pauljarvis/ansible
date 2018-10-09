@@ -68,6 +68,7 @@
     - "developer"
     - "ide"
     - "intellij"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -79,6 +80,7 @@
     - "developer"
     - "ide"
     - "intellij"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -90,6 +92,7 @@
     - "developer"
     - "ide"
     - "intellij"
+    - "launcher"
 
 #################################################################
 

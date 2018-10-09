@@ -55,6 +55,7 @@
     - "developer"
     - "ide"
     - "android"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -66,6 +67,7 @@
     - "developer"
     - "ide"
     - "android"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -77,6 +79,7 @@
     - "developer"
     - "ide"
     - "android"
+    - "launcher"
 
 #################################################################
 

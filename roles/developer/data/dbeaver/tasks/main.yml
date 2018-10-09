@@ -34,6 +34,7 @@
     - "developer"
     - "data"
     - "dbeaver"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -45,6 +46,7 @@
     - "developer"
     - "data"
     - "dbeaver"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -56,6 +58,7 @@
     - "developer"
     - "data"
     - "dbeaver"
+    - "launcher"
 
 #################################################################
 

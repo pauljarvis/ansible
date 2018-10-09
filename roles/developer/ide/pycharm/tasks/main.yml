@@ -56,6 +56,7 @@
     - "developer"
     - "ide"
     - "pycharm"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -67,6 +68,7 @@
     - "developer"
     - "ide"
     - "pycharm"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -78,6 +80,7 @@
     - "developer"
     - "ide"
     - "pycharm"
+    - "launcher"
 
 #################################################################
 

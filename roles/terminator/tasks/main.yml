@@ -42,6 +42,7 @@
     mode  : "0644"
   tags:
     - "terminator"
+    - "launcher"
 
 - name    : "cmd | unity | add to launcher"
   when    :
@@ -51,6 +52,7 @@
   script  : "{{ launcher_favourite.unity }}"
   tags:
     - "terminator"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -60,6 +62,7 @@
   script  : "{{ launcher_favourite.gnome }}"
   tags:
     - "terminator"
+    - "launcher"
 
 #################################################################
 

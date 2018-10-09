@@ -10,24 +10,24 @@
     state         : "present"
     update_cache  : "yes"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
 
 - name: "apt | upgrade"
   apt:
     update_cache  : "yes"
     upgrade       : "dist"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
 
 - name: "apt | install | prereq"
   apt:
     name          : "{{ libraries_apt }}"
     state         : "latest"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
 
 #################################################################
 
@@ -35,8 +35,8 @@
   apt:
     deb           : "{{ steam.deb }}"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
 
 #################################################################
 
@@ -47,8 +47,8 @@
     path          : "{{ item }}"
     state         : "absent"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
 
 #################################################################
 
@@ -59,8 +59,9 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.unity }}"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
+    - "launcher"
 
 - name    : "cmd | gnome | add to launcher"
   when    :
@@ -69,8 +70,9 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.gnome }}"
   tags:
-    - media
-    - steam
+    - "media"
+    - "steam"
+    - "launcher"
 
 #################################################################
 
