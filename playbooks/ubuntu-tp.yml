@@ -35,7 +35,8 @@
     - { role: keychain                                                                                          }
     - { role: wallpaper                                                                                         }
     - { role: system-monitor                                                                                    }
-    - { role: browsers/chrome                                                                                   }
+    - { role: browser/chrome                                                                                   }
+    - { role: browser/firefox                                                                                   }
     - { role: terminator                                                                                        }
 
     - { role: developer/general                                                                                 }

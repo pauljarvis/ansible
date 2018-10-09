@@ -1,0 +1,50 @@
+---
+
+#################################################################
+
+- name: "apt | install | no gui"
+  apt:
+    name  : "{{ libraries_apt }}"
+    state : "latest"
+  tags:
+    - "browser"
+    - "firefox"
+
+#################################################################
+
+- name: "copy | desktop icon"
+  template:
+    src   : "firefox.desktop.j2"
+    dest  : "/usr/share/applications/firefox.desktop"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : "0644"
+  tags:
+    - "browser"
+    - "firefox"
+    - "launcher"
+
+- name    : "cmd | unity | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   <  18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.unity }}"
+  tags:
+    - "browser"
+    - "firefox"
+    - "launcher"
+
+- name    : "cmd | gnome | add to launcher"
+  when    :
+    - ansible_distribution      | lower == "ubuntu"
+    - ansible_lsb.major_release | int   >= 18
+  become  : "{{ primary_user.id }}"
+  script  : "{{ launcher_favourite.gnome }}"
+  tags:
+    - "browser"
+    - "firefox"
+    - "launcher"
+
+#################################################################
+

@@ -7,7 +7,7 @@
     url   : "{{ chrome.url }}{{ chrome.file }}"
     dest  : "/tmp/{{ chrome.file }}"
   tags:
-    - "browsers"
+    - "browser"
     - "chrome"
 
 - name: "apt | install"
@@ -15,7 +15,7 @@
     deb   : "/tmp/{{ chrome.file }}"
     state : "present"
   tags:
-    - "browsers"
+    - "browser"
     - "chrome"
 
 #################################################################
@@ -28,7 +28,7 @@
     group : "{{ primary_user.id }}"
     mode  : "0644"
   tags:
-    - "browsers"
+    - "browser"
     - "chrome"
     - "launcher"
 
@@ -39,7 +39,7 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.unity }}"
   tags:
-    - "browsers"
+    - "browser"
     - "chrome"
     - "launcher"
 
@@ -50,7 +50,7 @@
   become  : "{{ primary_user.id }}"
   script  : "{{ launcher_favourite.gnome }}"
   tags:
-    - "browsers"
+    - "browser"
     - "chrome"
     - "launcher"
 

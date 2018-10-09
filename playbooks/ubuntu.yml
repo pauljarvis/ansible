@@ -35,7 +35,8 @@
     - { role: keychain                                                                                          }
     - { role: wallpaper                                                                                         }
     - { role: system-monitor                                                                                    }
-    - { role: browsers/chrome                                                                                   }
+    - { role: browser/chrome                                                                                   }
+    - { role: browser/firefox                                                                                   }
     - { role: terminator                                                                                        }
 
 
@@ -47,8 +48,8 @@
     - { role: developer/docker                                                                                  }
     - { role: developer/awscli                                                                                  }
 
-    
-   
+
+
 
     - { role: developer/ide/intellij                                                                            }
     - { role: developer/ide/pycharm                                                                             }
