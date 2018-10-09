@@ -9,6 +9,13 @@
   tags:
     - "general"
 
+- name: "pip | install | no gui"
+  pip:
+    name  : "{{ libraries_pip }}"
+    state : "latest"
+  tags:
+    - "general"
+
 - name: "apt | install | gui"
   when: gui
   apt:

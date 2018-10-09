@@ -8,8 +8,10 @@ libraries_apt:
   - wget              # Remote resource pull
   - tree              # Dir Structure tree
   - jq                # Json Parser
-  - yq                # Yaml Parser
   - xclip             # Store to Clipboard
+
+libraries_pip:
+  - yq                # Yaml Parser
 
 libraries_apt_gui:
   - baobab            # Disk Usage
