@@ -17,12 +17,5 @@
   tags:
     - "general"
 
-- name: "snap | install"
-  with_items:
-    - "{{ libraries_snap }}"
-  shell: "snap install {{ item }}"
-  tags:
-    - "general"
-
 #################################################################
 

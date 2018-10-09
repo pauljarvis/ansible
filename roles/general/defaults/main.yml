@@ -8,6 +8,7 @@ libraries_apt:
   - wget              # Remote resource pull
   - tree              # Dir Structure tree
   - jq                # Json Parser
+  - yq                # Yaml Parser
   - xclip             # Store to Clipboard
 
 libraries_apt_gui:
@@ -16,5 +17,3 @@ libraries_apt_gui:
   - vlc               # Media Player
   - gedit             # Text Editor
 
-libraries_snap:
-  - yq                # Yaml Parser
