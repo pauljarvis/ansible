@@ -32,7 +32,7 @@
   with_items:
     - "{{ terraform.versions }}"
   unarchive:
-    src         : "{{ terraform.url }}{{ terraform.zip }}"
+    src         : "{{ terraform.url }}/{{ item }}/terraform_{{ item }}_linux_amd64.zip"
     dest        : "{{ terraform.home }}/{{ item }}"
     remote_src  : "yes"
     creates     : "{{ terraform.home }}/{{ item }}/terraform"

@@ -4,9 +4,9 @@ libraries_apt:
   - unzip
 
 terraform_version : "0.11.7"
+
 terraform:
-  url             : "https://releases.hashicorp.com/terraform/{{ terraform_version }}/"
-  zip             : "terraform_{{ terraform_version }}_linux_amd64.zip"
+  url             : "https://releases.hashicorp.com/terraform"
   home            : "/usr/lib/terraform"
   versions        :
     - "{{ terraform_version }}"
