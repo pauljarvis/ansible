@@ -7,7 +7,6 @@ libraries_apt:
   - "software-properties-common"
 
 libraries_pip:
-  - "docker-py"
   - "docker-compose==1.9.0"     # This version avoids a bug with Ansible's 'docker_image' module
 
 docker:
@@ -18,9 +17,7 @@ docker:
     - "docker-ce"
 
 docker_registries:
-  - "10.228.3.55:443"
-  - "http://artifactory1.shared.devops.shared01.aws.travisperkins.cloud:443"
-  - "https://artifactory1.shared.devops.shared01.aws.travisperkins.cloud:443"
+  - "artifactory1.shared.devops.shared01.aws.travisperkins.cloud"
 
 docker_images:
   - name      : "mysql"
