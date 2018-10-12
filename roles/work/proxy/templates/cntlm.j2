@@ -1,3 +1,4 @@
+{% if proxy %}
 Username    {{ primary_user.id }}
 Domain      tpplc
 PassNTLMv2  {{ ntlm_pass }}
@@ -9,4 +10,5 @@ NoProxy     {% for np in no_proxy -%}{{ np }}{% if not loop.last %}, {% endif %}
 
 Gateway     yes
 Listen      {{ proxy_through.port }}
+{% endif %}
 

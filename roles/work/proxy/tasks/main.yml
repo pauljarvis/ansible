@@ -3,17 +3,26 @@
 #################################################################
 
 - name: "apt | install"
-  when: proxy
+  when:
+    - proxy
   apt:
     name    : "{{ libraries_apt }}"
     state   : "latest"
   tags:
     - "proxy"
 
+- name: "apt | install"
+  when:
+    - not proxy
+  apt:
+    name    : "{{ libraries_apt }}"
+    state   : "absent"
+  tags:
+    - "proxy"
+
 #################################################################
 
 - name: "cntlm | config"
-  when: proxy
   template:
     src     : "cntlm.j2"
     dest    : "/etc/cntlm.conf"
@@ -25,7 +34,6 @@
 
 - name: "cntlm | restart"
   when:
-    - proxy
     - cntlm_config is defined
     - cntlm_config.changed
   service:
@@ -37,7 +45,6 @@
 #################################################################
 
 - name: "environment | config"
-  when: proxy
   template:
     src     : "environment.j2"
     dest    : "/etc/environment"
@@ -49,7 +56,6 @@
 #################################################################
 
 - name: "apt | config"
-  when: proxy
   with_items:
     - { src: "apt",     dest: "01proxy"       }
     - { src: "apt_fix", dest: "99fixbadproxy" }
@@ -64,7 +70,6 @@
 #################################################################
 
 - name: "pip | config"
-  when: proxy
   template:
     src     : "pip.j2"
     dest    : "/etc/pip.conf"
