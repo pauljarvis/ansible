@@ -7,6 +7,7 @@ GenericName=Web Browser
 # Gnome and KDE 3 uses Comment.
 Comment=Access the Internet
 Exec=/usr/bin/google-chrome-stable %U {% if proxy %}--proxy-server="{{ proxy_through.host }}:{{ proxy_through.port }}"{% endif %}
+
 Terminal=false
 Icon=google-chrome
 Type=Application
@@ -18,6 +19,9 @@ Actions=new-window;new-private-window;
 Name=New Window
 Exec=/usr/bin/google-chrome-stable {% if proxy %}--proxy-server="{{ proxy_through.host }}:{{ proxy_through.port }}"{% endif %}
 
+
 [Desktop Action new-private-window]
 Name=New Incognito Window
 Exec=/usr/bin/google-chrome-stable --incognito {% if proxy %}--proxy-server="{{ proxy_through.host }}:{{ proxy_through.port }}"{% endif %}
+
+
