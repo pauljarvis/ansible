@@ -23,37 +23,22 @@
 
 #################################################################
 
-- name: "copy | desktop icon"
+- name: "launcher | desktop icon"
   template:
-    src         : "{{ dbeaver.desktop }}.desktop.j2"
-    dest        : "/usr/share/applications/{{ dbeaver.desktop }}.desktop"
-    owner       : "{{ primary_user.id }}"
-    group       : "{{ primary_user.id }}"
-    mode        : "0644"
+    src   : "{{ desktop }}.desktop.j2"
+    dest  : "/usr/share/applications/{{ desktop }}.desktop"
+    owner : "{{ primary_user.id }}"
+    group : "{{ primary_user.id }}"
+    mode  : "0644"
   tags:
     - "developer"
     - "data"
     - "dbeaver"
     - "launcher"
 
-- name    : "cmd | unity | add to launcher"
-  when    :
-    - ansible_distribution      | lower == "ubuntu"
-    - ansible_lsb.major_release | int   <  18
+- name    : "launcher | add"
   become  : "{{ primary_user.id }}"
-  script  : "{{ launcher_favourite.unity }}"
-  tags:
-    - "developer"
-    - "data"
-    - "dbeaver"
-    - "launcher"
-
-- name    : "cmd | gnome | add to launcher"
-  when    :
-    - ansible_distribution      | lower == "ubuntu"
-    - ansible_lsb.major_release | int   >= 18
-  become  : "{{ primary_user.id }}"
-  script  : "{{ launcher_favourite.gnome }}"
+  script  : "../../../scripts/add_{{ desktop_environment }}_launcher.sh {{ desktop }}"
   tags:
     - "developer"
     - "data"

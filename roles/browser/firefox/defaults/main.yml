@@ -3,7 +3,5 @@
 libraries_apt:
   - "firefox"
 
-launcher_favourite:
-  unity  : "../../scripts/add_unity_launcher.sh firefox"
-  gnome  : "../../scripts/add_gnome_launcher.sh firefox"
+desktop : "firefox"
 

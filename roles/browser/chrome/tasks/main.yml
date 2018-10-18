@@ -20,10 +20,10 @@
 
 #################################################################
 
-- name: "copy | desktop icon"
+- name: "launcher | desktop icon"
   template:
-    src   : "google-chrome.desktop.j2"
-    dest  : "/usr/share/applications/google-chrome.desktop"
+    src   : "{{ desktop }}.desktop.j2"
+    dest  : "/usr/share/applications/{{ desktop }}.desktop"
     owner : "{{ primary_user.id }}"
     group : "{{ primary_user.id }}"
     mode  : "0644"
@@ -32,23 +32,9 @@
     - "chrome"
     - "launcher"
 
-- name    : "cmd | unity | add to launcher"
-  when    :
-    - ansible_distribution      | lower == "ubuntu"
-    - ansible_lsb.major_release | int   <  18
+- name    : "launcher | add"
   become  : "{{ primary_user.id }}"
-  script  : "{{ launcher_favourite.unity }}"
-  tags:
-    - "browser"
-    - "chrome"
-    - "launcher"
-
-- name    : "cmd | gnome | add to launcher"
-  when    :
-    - ansible_distribution      | lower == "ubuntu"
-    - ansible_lsb.major_release | int   >= 18
-  become  : "{{ primary_user.id }}"
-  script  : "{{ launcher_favourite.gnome }}"
+  script  : "../../scripts/add_{{ desktop_environment }}_launcher.sh {{ desktop }}"
   tags:
     - "browser"
     - "chrome"

@@ -26,10 +26,9 @@
 
 - name: "apt | install | ubuntu | gnome"
   when:
-    - ansible_distribution      | lower == "ubuntu"
-    - ansible_lsb.major_release | int   >= 18
+    - desktop_environment == "gnome"
   apt:
-    name  : "{{ libraries_apt.ubuntu_18 }}"
+    name  : "{{ libraries_apt.ubuntu_gnome }}"
     state : "latest"
   tags:
     - "prereq"

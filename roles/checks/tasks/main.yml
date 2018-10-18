@@ -1,18 +1,28 @@
 ---
 
+- name: "Additional Facts"
+  set_fact:
+    "{{ item.k }}": "{{ item.v }}"
+  with_items:
+    - k: "desktop_environment"
+      v: "{{ lookup('env', 'XDG_CURRENT_DESKTOP').split(':')[-1] | lower }}"
+  tags: [ "always" ]
+
 - name: "Distribution"
   debug :
     msg : "{{ ansible_distribution_version }} {{ ansible_distribution | lower }}-{{ ansible_distribution_release | lower }}"
   tags: [ "always" ]
 
 - name: "VM Status"
+  when:
+    - ansible_virtualization_role != "host"
   debug:
     msg: "{{ ansible_virtualization_role }} [{{ ansible_virtualization_type }}]"
   tags: [ "always" ]
 
 - name: "Desktop Environment"
   debug:
-    msg: "{{ lookup('env', 'XDG_CURRENT_DESKTOP') }}"
+    msg: "{{ desktop_environment }}"
   tags: [ "always" ]
 
 - name: "Check Ansible Version >= {{ min_ansible_version }}"

@@ -10,9 +10,6 @@ wso2studio:
   url         : "https://product-dist.wso2.com/products/developer-studio/{{ wso2studio_version }}/"
   zip         : "developer-studio-eclipse-jee-luna-linux-gtk-x86_64-{{ wso2studio_version }}.zip"
   home        : "/usr/lib/wso2studio"
-  desktop     : "wso2studio"
 
-launcher_favourite:
-  unity  : "../../../scripts/add_unity_launcher.sh {{ wso2studio.desktop }}"
-  gnome  : "../../../scripts/add_gnome_launcher.sh {{ wso2studio.desktop }}"
+desktop : "wso2studio"
 

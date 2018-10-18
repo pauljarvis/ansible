@@ -8,5 +8,5 @@ if [ -z "${found}" ] ; then
   dconf write ${favourites_source} \
     "$( dconf read ${favourites_source}  \
       | sed -e "s/]$/, '${application}']/" )"
-fi 
+fi
 
