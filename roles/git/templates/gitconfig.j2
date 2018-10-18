@@ -43,9 +43,9 @@
   dn          = diff --name-only
   s           = status -s -b
   r           = remote -v
-  l           = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=short
+  l           = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=format:'%Y-%m-%d %H:%M:%S'
 {% for x in [ 1,2,3,4,5,6,7,8,9,10 ]  %}
-  l{{x}}          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=short -{{x}}
+  l{{x}}          = log --pretty='format:%C(yellow)%h %C(blue)%ad %C(green)%<(15)%an %C(reset)%s%C(red)%d' --date=format:'%Y-%m-%d %H:%M:%S' -{{x}}
 {% endfor %}
 
 {% if proxy == True %}
