@@ -1,5 +1,11 @@
 ---
 
+- name: "Check Ansible Version >= {{ min_ansible_version }}"
+  assert:
+    that: "ansible_version.full is version_compare('{{ min_ansible_version }}', '>=')"
+    msg : "You must be running at least version {{ min_ansible_version }}"
+  tags: [ "always" ]
+
 - name: "Additional Facts"
   set_fact:
     "{{ item.k }}": "{{ item.v }}"
@@ -23,11 +29,5 @@
 - name: "Desktop Environment"
   debug:
     msg: "{{ desktop_environment }}"
-  tags: [ "always" ]
-
-- name: "Check Ansible Version >= {{ min_ansible_version }}"
-  assert:
-    that: "ansible_version.full is version_compare('{{ min_ansible_version }}', '>=')"
-    msg : "You must be running at least version {{ min_ansible_version }}"
   tags: [ "always" ]
 

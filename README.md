@@ -9,7 +9,7 @@ ___
   It is referenced with `-u` below.  
 
 #### Run
-`./go.sh -s -p ubuntu -u {user_profile} -t proxy`  
+`./go.sh -s -p ubuntu -u {user_profile}`  
 
 ##### Bootstrap
 ```bash
