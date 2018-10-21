@@ -43,6 +43,8 @@
 - name: "add git repos"
   when:
     - git_repos is iterable
+  become: yes
+  become_user: "{{ primary_user.id }}"
   with_items:
     - "{{ git_repos }}"
   git:
