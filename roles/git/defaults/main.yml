@@ -6,3 +6,5 @@ libraries_apt:
 git:
   home  : "{{ primary_user.home }}/git"
 
+git_repos: []
+

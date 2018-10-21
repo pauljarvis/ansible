@@ -20,6 +20,11 @@ ssh_keys:
 
 #######################################################################
 
+git_repos:
+  - { repo: "https://github.com/OurFriendIrony/ansible.git", subdir: "ansible" }
+
+#######################################################################
+
 aws:
   region      : "eu-west-1"
   account     : "847108765099"

@@ -40,3 +40,16 @@
 
 #################################################################
 
+- name: "add git repos"
+  when:
+    - git_repos is iterable
+  with_items:
+    - "{{ git_repos }}"
+  git:
+    repo: "{{ item.repo }}"
+    dest: "{{ git.home }}/{{ item.subdir }}"
+  tags:
+    - "git"
+
+#################################################################
+
