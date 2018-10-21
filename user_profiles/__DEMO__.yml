@@ -2,7 +2,7 @@
 
 #######################################################################
 ## MANDATORY ##
-# Alot of the setup requires you provide valid information here.
+# A lot of the setup requires you provide valid information here.
 # Ensure the user id reflects that of the primary linux user.
 
 primary_user:
@@ -10,6 +10,16 @@ primary_user:
   home        : "/home/fredi"
   id          : "fredi"
   email       : "tiptoe.through.the.tulips@gmail.com"
+
+#######################################################################
+## OPTIONAL ##
+# If you would like some additional disks to be mounted, include
+#   them here
+
+mount_points:
+  path        : "mount_to_location"
+  uuid        : "unique_harddrive_id"
+  fs          : "file_system"
 
 #######################################################################
 ## OPTIONAL ##
@@ -26,6 +36,13 @@ ssh_keys:
   - name      : "key_name_2"
     type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3"
+
+#######################################################################
+## OPTIONAL ##
+# If you'd like to clone some git repos, they can be included here
+
+git_repos:
+  - { repo: "https://github.com/my_repos/my_repo.git", subdir: "my_repo" }
 
 #######################################################################
 ## OPTIONAL ##
@@ -53,8 +70,8 @@ aws:
 #   in game achievements
 
 retropie_achievements:
-  user    : "my_user"
-  pass    : "my_password"
+  user        : "my_user"
+  pass        : "my_password"
 
 #######################################################################
 

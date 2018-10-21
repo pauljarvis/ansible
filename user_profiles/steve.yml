@@ -10,6 +10,13 @@ primary_user:
 
 #######################################################################
 
+mount_points:
+  path        : "/media/videos"
+  uuid        : "2C9CA66F9CA632EE"
+  fs          : "ntfs"
+
+#######################################################################
+
 ssh_keys:
   - name      : "ourfriendirony"
     type      : "ssh-rsa"
@@ -34,8 +41,8 @@ aws:
 #######################################################################
 
 retropie_achievements:
-  user    : "OurFriendIrony"
-  pass    : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
+  user        : "OurFriendIrony"
+  pass        : "N3/YLjozYpoXKjqwa5hK0JyVG89aLzO4F1vjOUtkcug="
 
 #######################################################################
 

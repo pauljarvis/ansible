@@ -19,3 +19,5 @@ libraries_apt_gui:
   - vlc               # Media Player
   - gedit             # Text Editor
 
+mount_points: []
+

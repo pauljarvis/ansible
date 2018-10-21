@@ -9,6 +9,15 @@
   tags:
     - "general"
 
+- name: "apt | install | gui"
+  when:
+    - gui
+  apt:
+    name  : "{{ libraries_apt_gui }}"
+    state : "latest"
+  tags:
+    - "general"
+
 - name: "pip | install | no gui"
   pip:
     name  : "{{ libraries_pip }}"
@@ -16,13 +25,22 @@
   tags:
     - "general"
 
-- name: "apt | install | gui"
-  when: gui
-  apt:
-    name  : "{{ libraries_apt_gui }}"
-    state : "latest"
+#################################################################
+
+- name: "additional mounts"
+  when:
+    - mount_points is iterable
+  with_items:
+    - "{{ mount_points }}"
+  mount:
+    path  : "{{ item.path }}"
+    src   : "UUID={{ item.uuid }}"
+    fstype: "{{ item.fs }}"
+    opts  : "{% if item.opts is defined %}{{ item.opts }}{% else %}defaults{% endif %}"
+    state : "mounted"
   tags:
     - "general"
+    - "mount"
 
 #################################################################
 
