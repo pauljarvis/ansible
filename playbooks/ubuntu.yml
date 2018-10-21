@@ -7,8 +7,7 @@
   connection    : local
 
   vars:
-    - gui       : "{{ has_gui }}"
-      proxy     : False
+    - proxy     : False
 
       root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
 

@@ -7,8 +7,7 @@
 
 
   vars:
-    - gui       : "{{ has_gui }}"
-      proxy     : False
+    - proxy     : False
 
       root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
       pi_user:   { id : 'pi',     home : '/home/pi', name : 'pi',    email : 'pi@pi.com'     }

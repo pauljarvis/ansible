@@ -12,7 +12,7 @@
   with_items:
     - k: "desktop_environment"
       v: "{{ lookup('env', 'XDG_CURRENT_DESKTOP').split(':')[-1] | lower }}"
-    - k: "has_gui"
+    - k: "gui"
       v: "{{ lookup('env', 'XDG_CURRENT_DESKTOP').split(':')[-1] | lower != '' }}"
   tags: [ "always" ]
 
