@@ -16,7 +16,7 @@ proxy_hosts:
   - { host: "10.0.20.197", port: "8080" }
 
 no_proxy:
-  - "locahost"
+  - "localhost"
   - "127.0.0.*"
   - "10.*"
   - "192.168.*"
