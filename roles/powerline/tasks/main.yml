@@ -7,7 +7,7 @@
     name  : "{{ libraries_pip }}"
     state : "latest"
   tags:
-    - "powerline-shell"
+    - "powerline"
 
 #################################################################
 
@@ -21,7 +21,7 @@
     group : "{{ item.id }}"
     mode  : 0644
   tags:
-    - "powerline-shell"
+    - "powerline"
 
 #################################################################
 
@@ -34,7 +34,7 @@
     group : root
     mode  : 0644
   tags:
-    - "powerline-shell"
+    - "powerline"
 
 - name: "copy | font config"
   when: gui
@@ -47,7 +47,7 @@
     group : "{{ item.id }}"
     mode  : 0644
   tags:
-    - "powerline-shell"
+    - "powerline"
 
 #################################################################
 

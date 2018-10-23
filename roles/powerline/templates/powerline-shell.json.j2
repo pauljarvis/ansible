@@ -1,4 +1,8 @@
 {
+{% if not gui | bool %}
+  "mode": "flat",
+{% endif %}
+  "theme": "default",
   "segments": [
     "ssh",
     "username",
@@ -6,9 +10,6 @@
     "git",
     "git_stash"
   ],
-{% if not gui | bool %}
-  "mode": "flat",
-{% endif %}
   "cwd": {
     "mode": "plain"
   }

@@ -25,7 +25,7 @@
     - { role: ssh                                                                                               }
     - { role: bash,                     bash_welcome        : "retropie"                                        }
     - { role: vim                                                                                               }
-    - { role: powerline-shell                                                                                   }
+    - { role: powerline                                                                                         }
     - { role: general                                                                                           }
 
     - { role: retropie                                                                                          }
