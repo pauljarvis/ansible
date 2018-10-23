@@ -50,8 +50,8 @@ git_repos:
 #   through the proxy.
 # If not, this section can be deleted
 
-proxy         : True
-ntlm_pass     : ""
+proxy         : False
+ntlm_hash     : ""
 
 #######################################################################
 ## OPTIONAL ##
