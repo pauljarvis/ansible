@@ -48,8 +48,9 @@
   with_items:
     - "{{ git_repos }}"
   git:
-    repo: "{{ item.repo }}"
-    dest: "{{ git.home }}/{{ item.subdir }}"
+    repo    : "{{ item.repo }}"
+    dest    : "{{ git.home }}/{{ item.subdir }}"
+    update  : "no"
   tags:
     - "git"
 

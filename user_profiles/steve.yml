@@ -28,7 +28,8 @@ ssh_keys:
 #######################################################################
 
 git_repos:
-  - { repo: "https://github.com/OurFriendIrony/ansible.git", subdir: "ansible" }
+  - { repo: "https://github.com/OurFriendIrony/ansible.git",        subdir: "ourfriendirony/ansible"        }
+  - { repo: "https://github.com/OurFriendIrony/MediaNotifier.git",  subdir: "ourfriendirony/medianotifier"  }
 
 #######################################################################
 
