@@ -2,17 +2,44 @@
 
 #################################################################
 
+- name: "apt"
+  apt:
+    name  : "{{ packages.apt }}"
+    state : "latest"
+  tags:
+    - "wallpaper"
+
+- name: "pip"
+  pip:
+    name  : "{{ packages.pip }}"
+    state : "latest"
+  tags:
+    - "wallpaper"
+
 - name: "mkdir"
   with_items:
-    - "/{{ systemd_dir}}"
-    - "/{{ service_dir }}"
-    - "/{{ wallpapers_dir }}"
+    - { d: "{{ wallpaper.install.dir   }}"                              }
+    - { d: "{{ wallpaper.resource.dir  }}"                              }
+    - { d: "{{ wallpaper.config.dir    }}", u: "{{ primary_user.id }}"  }
+    - { d: "{{ wallpaper.service.dir   }}"                              }
   file:
-    path  : "{{ item }}"
-    state : directory
-    owner : "{{ root_user.id }}"
-    group : "{{ root_user.id }}"
-    mode  : 0755
+    path  : "{{ item.d }}"
+    state : "directory"
+    owner : "{{ item.u | default(root_user.id)  }}"
+    group : "{{ item.u | default(root_user.id)  }}"
+    mode  : "0755"
+  tags:
+    - "wallpaper"
+
+#################################################################
+
+- name: "copy | config "
+  template:
+    src   : "{{ wallpaper.config.name }}.j2"
+    dest  : "{{ wallpaper.config.dir  }}{{ wallpaper.config.name }}"
+    owner : "{{ primary_user.id       }}"
+    group : "{{ primary_user.id       }}"
+    mode  : "0644"
   tags:
     - "wallpaper"
 
@@ -21,28 +48,28 @@
 - name: "copy | wallpaper resources"
   copy:
     src   : "."
-    dest  : "/{{ wallpapers_dir }}/"
+    dest  : "{{ wallpaper.resource.dir }}"
   tags:
     - "wallpaper"
 
 - name: "copy | wallpaper service"
   template:
-    src   : "{{ service_dir }}/{{ service_name }}.sh.j2"
-    dest  : "/{{ service_dir }}/{{ service_name }}.sh"
+    src   : "{{ wallpaper.service.name }}.sh.j2"
+    dest  : "{{ wallpaper.install.dir }}{{ wallpaper.service.name }}.sh"
     owner : "{{ root_user.id }}"
     group : "{{ root_user.id }}"
-    mode  : 0755
+    mode  : "0755"
   notify: "wallpaper service | start"
   tags:
     - "wallpaper"
 
 - name: "copy | systemd service"
   template:
-    src   : "{{ systemd_dir }}/{{ service_name }}.service.j2"
-    dest  : "/{{ systemd_dir }}/{{ service_name }}.service"
+    src   : "{{ wallpaper.service.name }}.service.j2"
+    dest  : "{{ wallpaper.service.dir }}{{ wallpaper.service.name }}.service"
     owner : "{{ root_user.id }}"
     group : "{{ root_user.id }}"
-    mode: 0755
+    mode: "0755"
   notify: "wallpaper service | start"
   tags:
     - "wallpaper"
@@ -51,7 +78,7 @@
 
 - name: "service | start"
   service:
-    name    : "{{ service_name }}"
+    name    : "{{ wallpaper.service.name }}"
     enabled : yes
     state   : started
   tags:

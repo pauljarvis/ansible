@@ -1,9 +1,24 @@
 ---
 
-service_name: ofi-wallpaper
-service_desc: "OurFriendIrony Wallpaper"
+packages:
+  apt:
+    - "jq"
+  pip:
+    - "yq"
 
-service_dir: lib/ofi-wallpaper
-systemd_dir: lib/systemd/system
-wallpapers_dir: lib/ofi-wallpaper/resources
+wallpaper:
+  install :
+    dir     : "/lib/ofi-wallpaper/"
+
+  config  :
+    name    : "config.yml"
+    dir     : "{{ primary_user.home }}/.config/ofi-wallpaper/"
+
+  resource:
+    dir     : "/lib/ofi-wallpaper/resources/"
+
+  service :
+    name    : "ofi-wallpaper"
+    desc    : "OurFriendIrony Wallpaper"
+    dir     : "/lib/systemd/system/"
 

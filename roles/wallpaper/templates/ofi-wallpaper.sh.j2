@@ -1,5 +1,19 @@
 #!/bin/bash
 
+load_config() {
+  default_sleep=60
+  default_resource="{{ wallpaper.resource.dir }}"
+  config_file="{{ wallpaper.config.dir }}{{ wallpaper.config.name }}"
+
+  if [ -f ${config_file} ]; then
+    SLEEP=$(          cat ${config_file} | yq -r '.sleep.sec' )
+    WALLPAPER_DIR=$(  cat ${config_file} | yq -r '.wallpapers.dir' )
+  else
+    SLEEP="${default_sleep}"
+    WALLPAPER_DIR="${default_resource}"
+  fi
+}
+
 set_dbus() {
   PID=$(pgrep -u {{ primary_user.id }} gnome-session)
   DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/${PID}/environ|cut -d= -f2-)
@@ -21,18 +35,15 @@ change_background() {
   echo "Changed Background :: $(gsettings get org.gnome.desktop.background picture-uri)"
 }
 
-#WALLPAPER_DIR="/{{ wallpapers_dir }}/space_abstract/"
-#WALLPAPER_DIR="/{{ wallpapers_dir }}/space_solarsystem/"
-WALLPAPER_DIR="/{{ wallpapers_dir }}/video_games/"
-SLEEP=1m
-
 ###############################################################
+
+load_config
+while (true); do
 {% raw %}
-FILES_IN_DIR=( ${WALLPAPER_DIR}* )
-FILES_IN_DIR_CT="${#FILES_IN_DIR[@]}"
+  FILES_IN_DIR=( $( find ${WALLPAPER_DIR} -type f ) )
+  FILES_IN_DIR_CT="${#FILES_IN_DIR[@]}"
 {% endraw %}
 
-while (true); do
   set_dbus
   get_random_picture
   change_background

@@ -1,9 +1,9 @@
 [Unit]
-Description={{ service_name }}
+Description={{ wallpaper.service.desc }}
 
 [Service]
 Environment=DISPLAY=:0
-ExecStart=/bin/bash -c "/{{ service_dir }}/{{ service_name }}.sh"
+ExecStart=/bin/bash -c "{{ wallpaper.install.dir }}/{{ wallpaper.service.name }}.sh"
 User={{ primary_user.id }}
 Group={{ primary_user.id }}
 

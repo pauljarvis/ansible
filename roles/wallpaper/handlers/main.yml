@@ -4,7 +4,7 @@
 
 - name: "wallpaper service | start"
   service:
-    name    : "{{ service_name }}"
+    name    : "{{ wallpaper.service.name }}"
     enabled : yes
     state   : restarted
   tags:
