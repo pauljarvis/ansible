@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./scripts/setup.sh
+source ./.ansible-sys/scripts/setup.sh
 
 #######################################################################
 # Functions

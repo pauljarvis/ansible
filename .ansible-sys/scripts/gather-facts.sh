@@ -1,8 +1,9 @@
 #!/bin/bash
 
-fact_dir="$(pwd)/.ansible-sys/facts/"
+home=$( dirname "${BASH_SOURCE[0]}" )
+fact_dir="${home}/../facts/"
 
-source $(pwd)/scripts/setup.sh
+source "${home}/setup.sh"
 
 #######################################################################
 

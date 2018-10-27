@@ -9,8 +9,6 @@
   vars:
     - proxy     : True
 
-      root_user: { id : 'root',   home : '/root',    name : 'root',  email : 'root@root.com' }
-
       all_users:
         - "{{ root_user     }}"
         - "{{ primary_user  }}"
