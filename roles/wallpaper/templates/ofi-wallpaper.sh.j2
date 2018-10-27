@@ -15,10 +15,15 @@ load_config() {
 }
 
 set_dbus() {
-  PID=$(pgrep -u {{ primary_user.id }} gnome-session)
-  DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/${PID}/environ|cut -d= -f2-)
-
+  PID=$(pgrep -u ${LOGNAME} gnome-session)
+  DBUS_SESSION_BUS_ADDRESS=$( grep -z DBUS_SESSION_BUS_ADDRESS /proc/${PID}/environ | cut -d= -f2- )
   export DBUS_SESSION_BUS_ADDRESS
+  echo "PID=${PID} | DBUS_SESSION_BUS_ADDRESS=${DBUS_SESSION_BUS_ADDRESS}"
+}
+
+find_images() {
+  find ${WALLPAPER_DIR} -name '*' -exec file {} \; \
+    | awk -F: '{if ($2 ~/image/) print $1}'
 }
 
 get_random_picture() {
@@ -28,9 +33,7 @@ get_random_picture() {
 
 change_background() {
   echo "--------------------------------------------------"
-  echo "PID=${PID} | DBUS_SESSION_BUS_ADDRESS=${DBUS_SESSION_BUS_ADDRESS}"
   echo "Current Background :: $(gsettings get org.gnome.desktop.background picture-uri)"
-  echo "New Background     :: ${PICTURE}"
   gsettings set org.gnome.desktop.background picture-uri file:///${PICTURE}
   echo "Changed Background :: $(gsettings get org.gnome.desktop.background picture-uri)"
 }
@@ -38,13 +41,14 @@ change_background() {
 ###############################################################
 
 load_config
+set_dbus
+
 while (true); do
-{% raw %}
-  FILES_IN_DIR=( $( find ${WALLPAPER_DIR} -type f ) )
+  FILES_IN_DIR=( $( find_images ) )
+{%- raw %}
   FILES_IN_DIR_CT="${#FILES_IN_DIR[@]}"
 {% endraw %}
 
-  set_dbus
   get_random_picture
   change_background
   sleep ${SLEEP}
