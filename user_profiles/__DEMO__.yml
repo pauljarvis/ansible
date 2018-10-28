@@ -31,10 +31,8 @@ mount_points:
 
 ssh_keys:
   - name      : "key_name_1"
-    type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQCVe/JrnVSiRlrzHJHW4N1Knhb3"
   - name      : "key_name_2"
-    type      : "ssh-rsa"
     value     : "AAAAB3NzaC1yc2EAAAADAQABAAABAQDcXNVwZlQ9Udnh9v06POArB9J3"
 
 #######################################################################

@@ -1,6 +1,6 @@
 # ANSIBLE MANAGED
 
 {% for key in ssh_keys %}
-{{ key.type }} {{ key.value }} {{ key.name }}
+ssh-rsa {{ key.value }} {{ key.name }}
 {% endfor %}
 
