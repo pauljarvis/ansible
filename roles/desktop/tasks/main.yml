@@ -1,0 +1,25 @@
+---
+
+#################################################################
+
+- name: "desktop | apply dock config"
+  when:
+    - gui
+  become: "{{ primary_user.id }}"
+  block:
+    - name    : "dock | extend-height"
+      command : "{{ dock_cmd.set }} extend-height {{ dock.extend }}"
+
+    - name    : "dock | dock-position"
+      command : "{{ dock_cmd.set }} dock-position {{ dock.position }}"
+
+    - name    : "dock | dash-max-icon-size"
+      command : "{{ dock_cmd.set }} dash-max-icon-size {{ dock.size }}"
+
+    - name    : "dock | unity-backlit-items"
+      command : "{{ dock_cmd.set }} unity-backlit-items {{ dock.backlit }}"
+  tags:
+    - "desktop"
+
+#################################################################
+

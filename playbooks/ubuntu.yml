@@ -17,6 +17,7 @@
   roles:
     - { role: checks                                                                                            }
     - { role: users                                                                                             }
+    - { role: desktop                                                                                             }
     - { role: prereq                                                                                            }
 
 
