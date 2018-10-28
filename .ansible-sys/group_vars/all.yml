@@ -19,8 +19,11 @@ note:
     <!--
     MANAGED BY ANSIBLE
     -->
-  json: |
-    "_comment": "MANAGED BY ANSIBLE",
+# Adding this to some json payloads causes services
+# to fail, so it's safer to 'just not'
+#
+#  json: |
+#    "_comment": "MANAGED BY ANSIBLE",
 
 #################################################################
 # When using jinja2 'default( xyz )', refer here
