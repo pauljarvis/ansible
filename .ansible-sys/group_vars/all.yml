@@ -1,0 +1,45 @@
+---
+#################################################################
+# Placed in templates to identify them as Managed by Ansible
+
+note:
+  vim:  |
+    """"""""""""""""""""""""""
+    """ MANAGED BY ANSIBLE """
+    """"""""""""""""""""""""""
+  cfg:  |
+    ##########################
+    ### MANAGED BY ANSIBLE ###
+    ##########################
+  yml:  |
+    ##########################
+    ### MANAGED BY ANSIBLE ###
+    ##########################
+  xml:  |
+    <!--
+    MANAGED BY ANSIBLE
+    -->
+  json: |
+    "_comment": "MANAGED BY ANSIBLE",
+
+#################################################################
+# When using jinja2 'default( xyz )', refer here
+
+defaults:
+  mount_opts: "defaults,nofail"
+
+#################################################################
+# User definitions
+
+root_user:
+  id    : "root"
+  home  : "/root"
+  name  : "root"
+  email : "root@root.com"
+
+all_users:
+  - "{{ root_user     }}"
+  - "{{ primary_user  }}"
+
+#################################################################
+

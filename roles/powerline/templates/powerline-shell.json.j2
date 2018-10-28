@@ -1,17 +1,18 @@
 {
+    {{ note.json -}}
 {% if not gui | bool %}
-  "mode": "flat",
+    "mode": "flat",
 {% endif %}
-  "theme": "default",
-  "segments": [
-    "ssh",
-    "username",
-    "cwd",
-    "git",
-    "git_stash"
-  ],
-  "cwd": {
-    "mode": "plain"
-  }
+    "theme": "default",
+    "segments": [
+        "ssh",
+        "username",
+        "cwd",
+        "git",
+        "git_stash"
+    ],
+    "cwd": {
+        "mode": "plain"
+    }
 }
 

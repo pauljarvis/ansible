@@ -1,21 +1,22 @@
 {
-  "interval": 1.0,
-  "on_startup": false,
-  "sensors": {
-    "fs//.+": [ "Available space in file system.", true ],
-    "bat\\d*": [ "Battery capacity.", true ],
-    "swap": [ "Average swap usage", true ],
-    "upordown": [ "Display if your internet connection is up or down", true ],
-    "publicip": [ "Display your public IP address", true ],
-    "cputemp": [ "CPU temperature", true ],
-    "cpu\\d*": [ "Average CPU usage", true ],
-    "net": [ "Network activity.", true ],
-    "mem": [ "Physical memory in use.", true ]
-  },
+    {{ note.json -}}
+    "interval": 1.0,
+    "on_startup": false,
+    "sensors": {
+        "fs//.+": [ "Available space in file system.", true ],
+        "bat\\d*": [ "Battery capacity.", true ],
+        "swap": [ "Average swap usage", true ],
+        "upordown": [ "Display if your internet connection is up or down", true ],
+        "publicip": [ "Display your public IP address", true ],
+        "cputemp": [ "CPU temperature", true ],
+        "cpu\\d*": [ "Average CPU usage", true ],
+        "net": [ "Network activity.", true ],
+        "mem": [ "Physical memory in use.", true ]
+    },
 {% if ansible_virtualization_role == 'guest' %}
-  "custom_text": "| CPU {cpu} | RAM {mem} |"
+    "custom_text": "| CPU {cpu} | RAM {mem} |"
 {% else %}
-  "custom_text": "| CPU {cpu} | RAM {mem} | {cputemp} |"
+    "custom_text": "| CPU {cpu} | RAM {mem} | {cputemp} |"
 {% endif %}
 }
 
