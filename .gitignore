@@ -2,6 +2,9 @@
 **/*.swp
 *.retry
 
+# python
+*.pyc
+
 # build
 .ansible-sys/facts/**/*
 .ansible-sys/ansible.cfg
