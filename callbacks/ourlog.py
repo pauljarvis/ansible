@@ -27,6 +27,7 @@ COLOUR_UNCHANGED = 'green'
 COLOUR_SKIPPED = 'cyan'
 COLOUR_FAILED = 'red'
 
+
 def deep_serialize(data, indent=0):
     # THIS BLOCK IS RESPONSIBLE FOR OUTPUTTING THE OBJECT WHEN A CHANGE IS MADE
 
@@ -118,35 +119,30 @@ class CallbackModule(CallbackBase):
             return "%s | %s | %sms | rc=%s" % (hostname, caption, duration, result.get('rc', 0))
 
     def v2_playbook_on_task_start(self, task, is_conditional):
-        # pylint: disable=I0011,W0613
         self._open_section(task.get_name(), task.get_path())
-        self._task_level += 1
 
-    def _open_section(self, section_name, path=None):
-        # pylint: disable=I0011,W0201
+    def _open_section(self, section_name, task_path=None):
+        '''
+        This is the first part of the line that gets output, before the SUCCESS/result tag
+        '''
         self.task_started = datetime.now()
         timestamp = self.task_started.strftime("%H:%M:%S")
-
-        if self._task_level > 0:
-            prefix = '  -'
-        else:
-            prefix = ''
 
         if self._display.verbosity > 1 and path:
             self._emit_line("[{}]: {}".format(timestamp, path))
 
-        self.task_start_preamble = "[{}] {} {} ...".format(
-            timestamp, section_name, prefix)
+        self.task_start_preamble = "[{}] {} ...".format(
+            timestamp,
+            section_name
+        )
         sys.stdout.write(self.task_start_preamble)
 
     def v2_playbook_on_handler_task_start(self, task):
         self._emit_line("triggering handler | %s " % task.get_name().strip())
 
     def v2_runner_on_failed(self, result, ignore_errors=False):
-        # pylint: disable=I0011,W0613,W0201
         duration = self._get_duration()
         host_string = self._host_string(result)
-        self._task_level = 0
 
         if 'exception' in result._result:
             exception_message = "An exception occurred during task execution."
@@ -208,7 +204,6 @@ class CallbackModule(CallbackBase):
             sys.stdout.write("\b\b\b\b    \n")
             return
 
-        self._task_level = 0
         msg, color = self._changed_or_not(result._result, host_string)
 
         if result._task.loop and self._display.verbosity > 0 and 'results' in result._result:
@@ -287,16 +282,10 @@ class CallbackModule(CallbackBase):
                 colorize(u'failed', t['failures'], COLOUR_FAILED)))
 
     def __init__(self, *args, **kwargs):
-        for i in range(1,5):
-            sys.stdout.write("TESTING --%s" % i)
-            sys.stdout.flush()
-            sleep(1)
-        sys.stdout.write("\r| DONE TESTING")
-
         super(CallbackModule, self).__init__(*args, **kwargs)
-        self._task_level = 0
         self.task_start_preamble = None
-        # python2 only
+
+        # Python2
         try:
             reload(sys).setdefaultencoding('utf8')
         except:
