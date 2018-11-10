@@ -4,7 +4,7 @@
 
 path_config="$(pwd)/.ansible-sys/ansible.cfg"
 path_hosts="$(pwd)/.ansible-sys/hosts"
-path_callbacks="$(pwd)/.ansible-sys/callbacks/"
+path_callbacks="$(pwd)/callbacks/"
 path_roles="$(pwd)/roles/"
 
 cp ${path_config}.origin ${path_config}

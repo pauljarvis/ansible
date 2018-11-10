@@ -1,5 +1,7 @@
 from __future__ import (absolute_import, division, print_function)
 
+from time import sleep
+
 __metaclass__ = type
 
 import sys
@@ -20,13 +22,13 @@ DELETABLE_FIELDS = [
     'stdout', 'stdout_lines', 'rc', 'stderr', 'start', 'end', 'msg',
     '_ansible_verbose_always', '_ansible_no_log']
 
-CHANGED = 'yellow'
-UNCHANGED = 'green'
-SKIPPED = 'cyan'
-
+COLOUR_CHANGED = 'yellow'
+COLOUR_UNCHANGED = 'green'
+COLOUR_SKIPPED = 'cyan'
+COLOUR_FAILED = 'red'
 
 def deep_serialize(data, indent=0):
-    # pylint: disable=I0011,E0602,R0912,W0631
+    # THIS BLOCK IS RESPONSIBLE FOR OUTPUTTING THE OBJECT WHEN A CHANGE IS MADE
 
     padding = " " * indent * 2
     if isinstance(data, list):
@@ -231,10 +233,10 @@ class CallbackModule(CallbackBase):
     def _changed_or_not(self, result, host_string):
         if result.get('changed', False):
             msg = "CHANGED | %s" % host_string
-            color = CHANGED
+            color = COLOUR_CHANGED
         else:
             msg = "SUCCESS | %s" % host_string
-            color = UNCHANGED
+            color = COLOUR_UNCHANGED
 
         return [msg, color]
 
@@ -253,14 +255,13 @@ class CallbackModule(CallbackBase):
     def v2_runner_on_unreachable(self, result):
         self._task_level = 0
         self._emit_line("%s | UNREACHABLE!: %s" %
-                        (self._host_string(result), result._result.get('msg', '')), color=CHANGED)
+                        (self._host_string(result), result._result.get('msg', '')), color=COLOUR_CHANGED)
 
     def v2_runner_on_skipped(self, result):
         duration = self._get_duration()
         self._task_level = 0
 
-        self._emit_line("%dms | SKIPPED | %s" %
-                        (duration, self._host_string(result)), color=SKIPPED)
+        self._emit_line("%dms | SKIPPED | %s" % (duration, self._host_string(result)), color=COLOUR_SKIPPED)
 
     def v2_playbook_on_include(self, included_file):
         self._open_section("system")
@@ -268,7 +269,7 @@ class CallbackModule(CallbackBase):
         msg = 'included: %s for %s' % \
               (included_file._filename, ", ".join(
                   [h.name for h in included_file._hosts]))
-        self._emit_line(msg, color=SKIPPED)
+        self._emit_line(msg, color=COLOUR_SKIPPED)
 
     def v2_playbook_on_stats(self, stats):
         self._open_section("system")
@@ -280,12 +281,18 @@ class CallbackModule(CallbackBase):
 
             self._emit_line(u" %s : %s %s %s %s" % (
                 hostcolor(h, t),
-                colorize(u'ok', t['ok'], UNCHANGED),
-                colorize(u'changed', t['changed'], CHANGED),
-                colorize(u'unreachable', t['unreachable'], CHANGED),
-                colorize(u'failed', t['failures'], 'red')))
+                colorize(u'ok', t['ok'], COLOUR_UNCHANGED),
+                colorize(u'changed', t['changed'], COLOUR_CHANGED),
+                colorize(u'unreachable', t['unreachable'], COLOUR_CHANGED),
+                colorize(u'failed', t['failures'], COLOUR_FAILED)))
 
     def __init__(self, *args, **kwargs):
+        for i in range(1,5):
+            sys.stdout.write("TESTING --%s" % i)
+            sys.stdout.flush()
+            sleep(1)
+        sys.stdout.write("\r| DONE TESTING")
+
         super(CallbackModule, self).__init__(*args, **kwargs)
         self._task_level = 0
         self.task_start_preamble = None
