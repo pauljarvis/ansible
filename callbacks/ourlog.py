@@ -1,7 +1,5 @@
 from __future__ import (absolute_import, division, print_function)
 
-from time import sleep
-
 __metaclass__ = type
 
 import sys
@@ -93,11 +91,9 @@ class CallbackModule(CallbackBase):
     CALLBACK_NAME = 'ourlog'
 
     def _get_duration(self):
-        end = datetime.now()
-        total_duration = (end - self.task_started)
-        duration = total_duration.microseconds / \
-                   1000 + total_duration.total_seconds() * 1000
-        return duration
+        self.task_ended = datetime.now()
+        total_duration = (self.task_ended - self.task_started)
+        return total_duration.total_seconds() * 1000
 
     def _command_generic_msg(self, hostname, result, caption):
         duration = self._get_duration()
