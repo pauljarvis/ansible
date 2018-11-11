@@ -106,9 +106,17 @@ class CallbackModule(CallbackBase):
         total_duration = (self.task_ended - self.task_started)
         return total_duration.total_seconds()
 
-    def _emit_line(self, lines, color='normal'):
-        for line in lines.splitlines():
-            self._display.display(line, color=color)
+    def _capture_play_start(self):
+        self.play_started = datetime.now()
+        self.play_started_fmt = self.play_started.strftime("%H:%M:%S")
+
+    def _capture_play_end(self):
+        self.play_ended = datetime.now()
+
+    def _get_play_duration(self):
+        self._capture_play_end()
+        total_duration = (self.play_ended - self.play_started)
+        return total_duration.total_seconds()
 
     def _host_string(self, result):
         delegated_vars = result._result.get('_ansible_delegated_vars', None)
@@ -122,7 +130,7 @@ class CallbackModule(CallbackBase):
 
         return host_string
 
-    def _output_result(self, color, status, host, msg=None, extra_msgs=None):
+    def _output_result(self, colour, status, host, msg=None, extra_msgs=None):
         line = "\r[%s -> %s] %s | %s | %s" % (
             self.task_started_fmt,
             ("%ds" % self._get_task_duration()).ljust(self.ms_len),
@@ -135,9 +143,13 @@ class CallbackModule(CallbackBase):
                 line,
                 msg.rstrip()
             )
-        self._display.display(line, color)
+        self._display.display(line, color=colour)
         if extra_msgs:
-            self._display.display(extra_msgs, COLOUR_EXTRA)
+            self._display.display(extra_msgs, color=COLOUR_EXTRA)
+
+    def _output_general(self, lines, color='normal'):
+        for line in lines.splitlines():
+            self._display.display("\r" + line, color=color)
 
     def _collect_host_info(self, hosts):
         self.host_count = len(hosts)
@@ -160,14 +172,15 @@ class CallbackModule(CallbackBase):
             return deep_serialize(result._result).lstrip('\n').rstrip()
         return None
 
-#
-# Override Hooks
-#
+    #
+    # Override Hooks
+    #
     @override
     def v2_playbook_on_play_start(self, *args, **kwargs):
         self._collect_host_info(
             args[0].get_variable_manager()._inventory.get_hosts()
         )
+        self._capture_play_start()
 
     @override
     def v2_playbook_on_task_start(self, task, is_conditional):
@@ -183,9 +196,10 @@ class CallbackModule(CallbackBase):
 
     @override
     def v2_playbook_on_handler_task_start(self, task):
-        self._emit_line(
-            "triggering handler | %s " %
-            task.get_name().strip()
+        self._output_general(
+            "> triggering handler | %s " %
+            task.get_name().strip(),
+            COLOUR_EXTRA
         )
 
     @override
@@ -205,14 +219,14 @@ class CallbackModule(CallbackBase):
                 if 'diff' in res and res['diff'] and res.get('changed', False):
                     diff = self._get_diff(res['diff'])
                     if diff:
-                        self._emit_line(diff)
+                        self._output_general(diff)
 
         elif 'diff' in result._result and \
                 result._result['diff'] and \
                 result._result.get('changed', False):
             diff = self._get_diff(result._result['diff'])
             if diff:
-                self._emit_line(diff)
+                self._output_general(diff)
 
     @override
     def v2_runner_on_ok(self, result):
@@ -258,7 +272,7 @@ class CallbackModule(CallbackBase):
 
     @override
     def v2_playbook_on_include(self, included_file):
-        self._emit_line(
+        self._output_general(
             'included: %s for %s' % (
                 included_file._filename,
                 ", ".join([h.name for h in included_file._hosts])
@@ -268,12 +282,18 @@ class CallbackModule(CallbackBase):
 
     @override
     def v2_playbook_on_stats(self, stats):
-        self._emit_line("-- Summary --")
+        self._output_general(
+            "-- Summary -- [ %s -> %s ]" % (
+                self.play_started_fmt,
+                ("%ds" % self._get_play_duration()).ljust(self.ms_len)
+            ),
+            color=COLOUR_EXTRA
+        )
 
         hosts = sorted(stats.processed.keys())
         for host in hosts:
             totals = stats.summarize(host)
-            self._emit_line(
+            self._output_general(
                 u" %s : %s %s %s %s" % (
                     hostcolor(host, totals),
                     colorize(u'ok', totals['ok'], COLOUR_OK),

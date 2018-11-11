@@ -5,6 +5,7 @@
 - name: "apt | update cache"
   apt:
     update_cache: yes
+  changed_when: False
   tags:
     - "prereq"
 
@@ -37,6 +38,7 @@
   apt:
     autoclean : yes
     autoremove: yes
+  changed_when: False
   tags:
     - "prereq"
 

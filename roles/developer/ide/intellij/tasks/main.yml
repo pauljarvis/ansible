@@ -73,6 +73,7 @@
 - name    : "launcher | add"
   become  : "{{ primary_user.id }}"
   script  : "../../../scripts/add_{{ desktop_environment }}_launcher.sh {{ desktop }}"
+  changed_when: False
   tags:
     - "developer"
     - "ide"
