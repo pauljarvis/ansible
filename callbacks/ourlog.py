@@ -126,7 +126,7 @@ class CallbackModule(CallbackBase):
             host.ljust(self.host_len),
             status.ljust(self.stat_len),
             ("%dms" % self._get_duration()).ljust(self.ms_len),
-            msg
+            msg.rstrip()
         )
 
         self._display.display(line, color)
@@ -182,7 +182,7 @@ class CallbackModule(CallbackBase):
             COLOUR_FAILED,
             "FAILED",
             self._host_string(result),
-            result._result.get('msg', ''),
+            result._result.get('module_stderr', ''),
             extra_msgs
         )
 
