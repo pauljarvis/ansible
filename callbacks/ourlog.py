@@ -155,6 +155,14 @@ class CallbackModule(CallbackBase):
         return (self._display.verbosity > 0 or ('_ansible_verbose_always' in result._result)) \
                and not ('_ansible_verbose_override' in result._result)
 
+    def _get_extra_msgs(self, result):
+        if self._is_verbose(result):
+            return deep_serialize(result._result).lstrip('\n').rstrip()
+        return None
+
+#
+# Override Hooks
+#
     @override
     def v2_playbook_on_play_start(self, *args, **kwargs):
         self._collect_host_info(
@@ -182,17 +190,12 @@ class CallbackModule(CallbackBase):
 
     @override
     def v2_runner_on_failed(self, result, ignore_errors=False):
-        extra_msgs = ""
-
-        if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
-
         self._output_result(
             COLOUR_FAILED,
             "FAILED",
             self._host_string(result),
-            result._result.get('module_stderr', ''),
-            extra_msgs
+            result._result.get('module_stderr', result._result.get('msg', None)),
+            self._get_extra_msgs(result)
         )
 
     @override
@@ -215,55 +218,42 @@ class CallbackModule(CallbackBase):
     def v2_runner_on_ok(self, result):
         self._clean_results(result._result, result._task.action)
         self._handle_warnings(result._result)
-        extra_msgs = ""
-
-        if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
 
         if self._is_changed(result):
             self._output_result(
                 COLOUR_CHANGED,
                 "CHANGED",
                 self._host_string(result),
-                # result._result.get('msg', ''),
                 None,
-                extra_msgs
+                self._get_extra_msgs(result)
             )
         else:
             self._output_result(
                 COLOUR_OK,
                 "OK",
                 self._host_string(result),
-                # result._result.get('msg', ''),
                 None,
-                extra_msgs
+                self._get_extra_msgs(result)
             )
 
     @override
     def v2_runner_on_unreachable(self, result):
-        extra_msgs = ""
-
-        if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
-
         self._output_result(
             COLOUR_UNREACHABLE,
             "UNREACHABLE",
             self._host_string(result),
-            result._result.get('msg', '')
+            result._result.get('msg', ''),
+            self._get_extra_msgs(result)
         )
 
     @override
     def v2_runner_on_skipped(self, result):
-        extra_msgs = ""
-
-        if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
-
         self._output_result(
             COLOUR_SKIPPED,
             "SKIPPED",
-            self._host_string(result)
+            self._host_string(result),
+            None,
+            self._get_extra_msgs(result)
         )
 
     @override
