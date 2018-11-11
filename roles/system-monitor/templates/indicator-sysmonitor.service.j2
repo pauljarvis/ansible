@@ -1,0 +1,13 @@
+{{ note.cfg }}
+[Unit]
+Description={{ sysmonitor.service.desc }}
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/{{ sysmonitor.service.name }}
+User={{ primary_user.id }}
+Group={{ primary_user.id }}
+
+[Install]
+WantedBy=basic.target
+

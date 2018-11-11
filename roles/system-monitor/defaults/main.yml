@@ -6,3 +6,9 @@ repos_apt:
 libraries_apt:
   - indicator-sysmonitor
 
+sysmonitor:
+  service   :
+    name      : "indicator-sysmonitor"
+    desc      : "Indicator System Monitor"
+    dir       : "/lib/systemd/system/"
+

@@ -24,6 +24,18 @@
   tags:
     - "system-monitor"
 
+- name: "mkdir"
+  with_items:
+    - { d: "{{ sysmonitor.service.dir   }}"                              }
+  file:
+    path  : "{{ item.d }}"
+    state : "directory"
+    owner : "{{ item.u | default(root_user.id)  }}"
+    group : "{{ item.u | default(root_user.id)  }}"
+    mode  : "0755"
+  tags:
+    - "system-monitor"
+
 #################################################################
 
 - name: "apt | install"
@@ -36,17 +48,6 @@
 
 #################################################################
 
-- name: "mkdir"
-  file:
-    path  : "{{ primary_user.home }}/.config/autostart"
-    state : "directory"
-    owner : "{{ primary_user.id }}"
-    group : "{{ primary_user.id }}"
-    mode  : "0755"
-  notify: "application | start"
-  tags:
-    - "system-monitor"
-
 - name: "copy | config"
   template:
     src   : "indicator-sysmonitor.json.j2"
@@ -54,18 +55,29 @@
     owner : "{{ primary_user.id }}"
     group : "{{ primary_user.id }}"
     mode  : "0644"
-  notify: "application | start"
   tags:
     - "system-monitor"
 
-- name: "copy | autostart"
+#################################################################
+
+- name: "copy | systemd service"
   template:
-    src   : "indicator-sysmonitor.desktop.j2"
-    dest  : "{{ primary_user.home }}/.config/autostart/indicator-sysmonitor.desktop"
-    owner : "{{ primary_user.id }}"
-    group : "{{ primary_user.id }}"
-    mode  : "0644"
-  notify: "application | start"
+    src   : "{{ sysmonitor.service.name }}.service.j2"
+    dest  : "{{ sysmonitor.service.dir }}{{ sysmonitor.service.name }}.service"
+    owner : "{{ root_user.id }}"
+    group : "{{ root_user.id }}"
+    mode: "0755"
+  notify: "sysmonitor service | start"
+  tags:
+    - "system-monitor"
+
+#################################################################
+
+- name: "service | start"
+  service:
+    name    : "{{ sysmonitor.service.name }}"
+    enabled : yes
+    state   : started
   tags:
     - "system-monitor"
 
