@@ -2,11 +2,12 @@
 # ===============================================
 
 [defaults]
-inventory          =
-roles_path         =
-callback_plugins   =
-host_key_checking  = False
-stdout_callback    = ourlog
+inventory           =
+roles_path          =
+callback_plugins    =
+host_key_checking   = False
+stdout_callback     = ourlog
+retry_files_enabled = False
 
 [privilege_escalation]
 
@@ -15,9 +16,9 @@ stdout_callback    = ourlog
 [ssh_connection]
 
 [persistent_connection]
-connect_timeout    = 30
-connect_retries    = 30
-connect_interval   = 1
+connect_timeout     = 30
+connect_retries     = 30
+connect_interval    = 1
 
 [accelerate]
 

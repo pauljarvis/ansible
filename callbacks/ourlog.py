@@ -36,7 +36,7 @@ def override(o):
     return o
 
 
-def deep_serialize_list(data, indent=1):
+def deep_serialize_list(data, indent):
     padding = " " * indent * 2
     output = "\n"
     for item in data:
@@ -49,7 +49,7 @@ def deep_serialize_list(data, indent=1):
     return output
 
 
-def deep_serialize_dict(data, indent=1):
+def deep_serialize_dict(data, indent):
     padding = " " * indent * 2
     if "_ansible_no_log" in data and data["_ansible_no_log"]:
         data = {
@@ -80,7 +80,7 @@ def deep_serialize_string(data):
         return string_form
 
 
-def deep_serialize(data, indent=0):
+def deep_serialize(data, indent=1):
     if isinstance(data, list):
         return deep_serialize_list(data, indent)
     elif isinstance(data, dict):
@@ -96,14 +96,15 @@ class CallbackModule(CallbackBase):
 
     def _capture_task_start(self):
         self.task_started = datetime.now()
+        self.task_started_fmt = self.task_started.strftime("%H:%M:%S")
 
     def _capture_task_end(self):
         self.task_ended = datetime.now()
 
-    def _get_duration(self):
-        self.task_ended = datetime.now()
+    def _get_task_duration(self):
+        self._capture_task_end()
         total_duration = (self.task_ended - self.task_started)
-        return total_duration.total_seconds() * 1000
+        return total_duration.total_seconds()
 
     def _emit_line(self, lines, color='normal'):
         for line in lines.splitlines():
@@ -121,14 +122,19 @@ class CallbackModule(CallbackBase):
 
         return host_string
 
-    def _output_result(self, color, status, host, msg="", extra_msgs=[]):
-        line = " %s | %s | %s | %s" % (
+    def _output_result(self, color, status, host, msg=None, extra_msgs=None):
+        line = "\r[%s -> %s] %s | %s | %s" % (
+            self.task_started_fmt,
+            ("%ds" % self._get_task_duration()).ljust(self.ms_len),
             host.ljust(self.host_len),
             status.ljust(self.stat_len),
-            ("%dms" % self._get_duration()).ljust(self.ms_len),
-            msg.rstrip()
+            self.task_title.ljust(self.task_len)
         )
-
+        if msg:
+            line = "%s | %s" % (
+                line,
+                msg.rstrip()
+            )
         self._display.display(line, color)
         if extra_msgs:
             self._display.display(extra_msgs, COLOUR_EXTRA)
@@ -139,7 +145,8 @@ class CallbackModule(CallbackBase):
         for host in hosts:
             self.host_len = max(self.host_len, len(str(host)))
         self.stat_len = len(max(ANSIBLE_STATUSES, key=len))
-        self.ms_len = 8
+        self.ms_len = 4
+        self.task_len = 40
 
     def _is_changed(self, result):
         return result._result.get('changed', False)
@@ -157,10 +164,12 @@ class CallbackModule(CallbackBase):
     @override
     def v2_playbook_on_task_start(self, task, is_conditional):
         self._capture_task_start()
-        self._emit_line(
-            "[{}] {} ...".format(
-                self.task_started.strftime("%H:%M:%S"),
-                task.get_name()
+        self.task_title = task.get_name()
+
+        sys.stdout.write(
+            "[%s] %s" % (
+                self.task_started_fmt,
+                self.task_title
             )
         )
 
@@ -176,7 +185,7 @@ class CallbackModule(CallbackBase):
         extra_msgs = ""
 
         if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result)
+            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
 
         self._output_result(
             COLOUR_FAILED,
@@ -209,14 +218,15 @@ class CallbackModule(CallbackBase):
         extra_msgs = ""
 
         if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result)
+            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
 
         if self._is_changed(result):
             self._output_result(
                 COLOUR_CHANGED,
                 "CHANGED",
                 self._host_string(result),
-                result._result.get('msg', ''),
+                # result._result.get('msg', ''),
+                None,
                 extra_msgs
             )
         else:
@@ -224,7 +234,8 @@ class CallbackModule(CallbackBase):
                 COLOUR_OK,
                 "OK",
                 self._host_string(result),
-                result._result.get('msg', ''),
+                # result._result.get('msg', ''),
+                None,
                 extra_msgs
             )
 
@@ -233,7 +244,7 @@ class CallbackModule(CallbackBase):
         extra_msgs = ""
 
         if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result)
+            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
 
         self._output_result(
             COLOUR_UNREACHABLE,
@@ -247,7 +258,7 @@ class CallbackModule(CallbackBase):
         extra_msgs = ""
 
         if self._is_verbose(result):
-            extra_msgs = deep_serialize(result._result)
+            extra_msgs = deep_serialize(result._result).lstrip('\n').rstrip()
 
         self._output_result(
             COLOUR_SKIPPED,
