@@ -52,4 +52,5 @@
     - { role: developer/ide/pycharm                                                                             }
     - { role: developer/ide/android                                                                             }
     - { role: developer/ide/wso2studio                                                                          }
+    - { role: developer/ide/mongorobot3                                                                         }
 
