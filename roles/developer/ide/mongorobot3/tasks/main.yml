@@ -11,7 +11,7 @@
     recurse : "yes"
     owner   : "{{ primary_user.id }}"
     group   : "{{ primary_user.id }}"
-    mode    : "0755"
+    mode    : "0775"
   tags:
     - "developer"
     - "ide"
@@ -59,6 +59,39 @@
   copy:
     src         : "robo3t.png"
     dest        : "{{ robo3t.home }}/{{ robo3t_version }}/{{ robo3t_lib }}/"
+  tags:
+    - "developer"
+    - "ide"
+    - "robo3t"
+    - "mongo"
+
+#################################################################
+
+- name: "config | dirs"
+  with_items:
+    - "{{ all_users }}"
+  file:
+    name    : "{{ item.home }}/.3T/robo-3t/{{ robo3t_version }}/"
+    state   : "directory"
+    recurse : "yes"
+    owner   : "{{ item.id }}"
+    group   : "{{ item.id }}"
+    mode    : "u=rwX,g=rwX,o=rX"
+  tags:
+    - "developer"
+    - "ide"
+    - "robo3t"
+    - "mongo"
+
+- name: "config | connections"
+  with_items:
+    - "{{ all_users }}"
+  template:
+    src     : "robo3t.json.j2"
+    dest    : "{{ item.home }}/.3T/robo-3t/{{ robo3t_version }}/robo3t.json"
+    owner   : "{{ item.id }}"
+    group   : "{{ item.id }}"
+    mode    : "0644"
   tags:
     - "developer"
     - "ide"
