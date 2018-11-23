@@ -4,8 +4,7 @@ Host *
   StrictHostKeyChecking no
   ForwardX11            no
   ServerAliveInterval   120
-  LogLevel              QUIET
-#  LogLevel              INFO
+  LogLevel              {{ ssh_log_level }}
 {% for host in ssh_config.hosts %}
 
 Host {% for psuedo in host.psuedo_names -%}{{ psuedo }} {% endfor %}
