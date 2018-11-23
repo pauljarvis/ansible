@@ -48,8 +48,11 @@ To ensure successful executions, first run the following and then restart you ma
 
 #### Bootstrap
 ```bash
- TMP_PASS="__YOURPASSWORD__" \
-  && export https_proxy="http://${LOGNAME}:${TMP_PASS}@10.0.20.196:8080" \
+ TMP_PASS="__YOURPASSWORD__"
+```
+followed by
+```bash
+export https_proxy="http://${LOGNAME}:${TMP_PASS}@10.0.20.196:8080" \
   && echo -e "Acquire::http::Proxy \"${https_proxy}\";" | sudo tee /etc/apt/apt.conf.d/01proxy > /dev/null \
   && echo -e "[http]\n  proxy = ${https_proxy}" > ~/.gitconfig \
   && sudo apt-get update \
@@ -57,7 +60,7 @@ To ensure successful executions, first run the following and then restart you ma
   && sudo -E pip install ansible \
   && git clone https://github.com/OurFriendIrony/ansible.git /tmp/ansible \
   && cd /tmp/ansible \
-  && echo ${TMP_PASS} | sudo cntlm -H -u s | awk 'NR==3 {print "\nntlm_hash = "$2}' \
+  && echo ${TMP_PASS} | cntlm -H -d tpplc -u ${LOGNAME} | awk 'NR==4 {print "\nntlm_hash = "$2}' \
   && unset TMP_PASS
 ```
 ___
