@@ -37,7 +37,6 @@
     - { role: browser/firefox                                                                                   }
     - { role: terminator                                                                                        }
 
-
     - { role: developer/general                                                                                 }
     - { role: developer/gradle                                                                                  }
     - { role: developer/maven                                                                                   }
@@ -55,4 +54,5 @@
 
     - { role: media/steam                                                                                       }
     - { role: media/plex                                                                                        }
+    - { role: developer/ide/mongorobot3                                                                         }
 

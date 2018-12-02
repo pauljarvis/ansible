@@ -3,11 +3,11 @@
 
 [retropie:children]
 retropie-steve
-retropie-put
+retropie-other
 
 [retropie-steve]
 pi@192.168.1.90
 
-[retropie-put]
-pi@192.168.1.111
+[retropie-other]
+pi@192.168.1.118
 

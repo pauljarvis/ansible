@@ -9,11 +9,10 @@
   vars:
     - proxy     : False
 
-      pi_user:   { id : 'pi',     home : '/home/pi', name : 'pi',    email : 'pi@pi.com'     }
+      pi_user     : "{{ primary_user }}"
       all_users:
         - "{{ root_user     }}"
         - "{{ primary_user  }}"
-        - "{{ pi_user       }}"
 
   roles:
     - { role: checks                                                                                            }
