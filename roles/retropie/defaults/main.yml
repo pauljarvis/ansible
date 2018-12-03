@@ -54,66 +54,81 @@ retropie_emus:
     path        : "{{ retropie_home }}/retropiemenu"
     cmd         : "sudo /home/pi/RetroPie-Setup/retropie_packages.sh retropiemenu launch %ROM% &lt;/dev/tty &gt;/dev/tty"
     platform    : ""
+    enabled     : True
   - name        : "atari2600"
     desc        : "Atari 2600"
     extension   : [ ".7z", ".a78", ".bin", ".zip", ".7Z", ".A78", ".BIN", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "atari7800"
     desc        : "Atari 7800"
     extension   : [ ".7z", ".a78", ".bin", ".zip", ".7Z", ".A78", ".BIN", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "nes"
     desc        : "Nintendo"
     extension   : [ ".nes", ".NES" ]
     has_saves   : True
+    enabled     : True
   - name        : "snes"
     desc        : "Super Nintendo"
     extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "megadrive"
     desc        : "Sega Mega Drive"
     extension   : [ ".smd", ".bin", ".gen", ".md", ".sg", ".zip", ".SMD", ".BIN", ".GEN", ".MD", ".SG", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "gba"
     desc        : "Game Boy Advance"
     extension   : [ ".gba", ".zip", ".GBA", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "n64"
     desc        : "Nintendo 64"
     extension   : [ ".z64", ".n64", ".v64", ".Z64", ".N64", ".V64" ]
     has_saves   : True
+    enabled     : True
   - name        : "dreamcast"
     desc        : "Sega Dreamcast"
     extension   : [ ".cdi", ".chd", ".gdi", ".CDI", ".CHD", ".GHI" ]
     has_saves   : True
+    enabled     : True
   - name        : "psx"
     desc        : "PlayStation"
     extension   : [ ".cue", ".cbn", ".iso", ".m3u", ".mdf", ".pbp", ".toc", ".z", ".znx", ".CUE", ".CBN", ".ISO", ".M3U", ".MDF", ".PBP", ".TOC", ".Z", ".ZNX" ]
     has_saves   : True
+    enabled     : True
   - name        : "nds"
     desc        : "Nintendo DS"
     extension   : [ ".nds", ".zip", ".NDS", ".ZIP" ]
     has_saves   : True
+    enabled     : True
   - name        : "fba"
     desc        : "Final Burn Alpha"
     extension   : [ ".fba", ".zip", ".FBA", ".ZIP" ]
     platform    : "arcade"
     has_saves   : True
+    enabled     : True
   - name        : "ports"
     desc        : "Ports"
     extension   : [ ".sh", ".SH" ]
     cmd         : "bash %ROM%"
     platform    : "pc"
+    enabled     : True
   - name        : "python"
     desc        : "Python Scripts"
     extension   : [ ".py", ".PY" ]
     cmd         : "sudo python %ROM%"
     platform    : ""
+    enabled     : False
   - name        : "steam"
     desc        : "Steam"
     extension   : [ ".sh", ".SH" ]
     cmd         : "%ROM%"
     platform    : ""
+    enabled     : False
 
 #######################################################################
 

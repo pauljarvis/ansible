@@ -418,10 +418,8 @@
     - retropie-python
 
 - name: "python scripts | apt"
-  with_items:
-    - "{{ retropie_python.apt }}"
   apt:
-    name    : "{{ item }}"
+    name    : "{{ retropie_python.apt }}"
     state   : "latest"
   tags:
     - retropie

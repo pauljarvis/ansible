@@ -79,7 +79,7 @@ ___
     - Create a user profile in "**user_profiles/**" from template "**user_profiles/\_\_DEMO\_\_.yml**"
 
 #### Run
-`./go.sh -s -p retropie -u {user_profile}`  
+`./go.sh -s -p retropie -u pi`  
 
 #### Bootstrap
 ```bash

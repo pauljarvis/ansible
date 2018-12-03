@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <systemList>
 {% for emu in retropie_emus %}
+{% if emu.enabled %}
   <system>
     <name>{{ emu.name }}</name>
     <fullname>{{ emu.desc }}</fullname>
@@ -22,6 +23,7 @@
 {% endif %}
     <theme>{{ emu.name }}</theme>
   </system>
+{% endif %}
 {% endfor %}
 </systemList>
 
