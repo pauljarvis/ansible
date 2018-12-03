@@ -1,3 +1,162 @@
 <?xml version="1.0"?>
 <gameList>
+	<game>
+		<path>./Battletoads.nes</path>
+		<name>Battletoads</name>
+		<desc>The Battletoads, Rash and Zitz, embark on a mission to defeat the evil Dark Queen on her planet and rescue their kidnapped friends; Pimple, the third member of the Battletoads, and Princess Angelica.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/battletoads-image.jpg</image>
+		<releasedate>19910601T000000</releasedate>
+		<developer>Rare</developer>
+		<publisher>Masaya</publisher>
+		<genre>Beat'em Up</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Castlevania.nes</path>
+		<name>Castlevania</name>
+		<desc>In the late 15th century, vampire slayer Simon Belmont must destroy Count Dracula by infiltrating his sanctuary, Castlevania.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/castlevania-image.jpg</image>
+		<releasedate>19860926T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Contra.nes</path>
+		<name>Contra</name>
+		<desc>The universe teeters on the brink of total annihilation at the hands of the vile alien warmonger, Red Falcon. Earth's only hope rests with you, a courageous member of the Special Forces elite commando squad. Your mission: Battle deep into the deadly Amazon jungle, where the Red Falcon and his galactic henchmen have transformed ancient Mayan temples into awesome monuments dedicated to mass destruction. A multitude of weapons, from rapid-fire machine guns to high-tech lasers are at your disposal as you sweat blood, fighting past 3-D mazes, underground security systems, and tropical forests surrounded by giant waterfalls and alien cannons. This is the ultimate test for the ultimate guerilla warrior. And if you survive, Earth survives!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/contra-image.jpg</image>
+		<releasedate>19870220T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Run and Gun</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Excitebike.nes</path>
+		<name>Excitebike</name>
+		<desc>This thrilling Nintendo programmable game lets you vary the obstacles, change the sequence of events, and increase the racing challenge time and time again! You'll start out in a Nintendo designed preliminary race, and move through a series of increasingly difficult challenge races! You'll face crazy curves, hairpin turns, daredevil jumps, and some very fierce motorcross competition, as you race your bike towards the checkered flag. This thrilling test of driving strategy and skill will keep you riveted to the screen for hours!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/excitebike-image.jpg</image>
+		<releasedate>19841130T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Racing</genre>
+	</game>
+	<game>
+		<path>./Legend of Zelda, The.nes</path>
+		<name>Legend of Zelda</name>
+		<desc>Welcome to the Legend of Zelda. Where the only sound you'll hear is your own heart pounding as you race through forests, lakes, mountains and dungeonous mazes in an attempt to restore peace to the land of Hyrule. Along the way you'll be challenged by Tektites, Wizzrobes and an endless array of ruthless creatures who'll stop at nothing to prevent you from finding the lost fragments of the Triforce of Wisdom. But don't despair. With a little luck and a lot of courage, you'll conquer your adversaries, unite the Triforce fragments and unravel the mystery of the Legend of Zelda.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/legendofzelda-image.jpg</image>
+		<releasedate>19860221T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action-Adventure</genre>
+	</game>
+	<game>
+		<path>./Mega Man.nes</path>
+		<name>Mega Man</name>
+		<desc>It's MEGA MAN versus the powerful leaders and fighting forces of Monsteropolis - that strange multi-layered land of robot-like humanoids created by the wrongly-performed experiments with human beings by Dr. Wily. Mega Man - the chosen defender of the human race. For he dares to single-handedly penetrate Monsteropolis' seven separate societies to stop the rapid expansion of strange misrepresentations of humans. Mega Man's goal is monumental. He must infiltrate seven separate heavily-guarded empires. By himself, he must break down and destroy the following empire leaders: Cutman, Gutsman, Iceman, Bombman, Fireman, Elecman, and Dr. Wily. The action involves Mega Man armed only with laser beam weapons, encountering strangely-configured humanoids. They're atop, in and out of fortified prison-like structures strengthened with thick walls. Hidden amid gun turrets embedded in concrete uprights, even in subterranean passages below icefields. WOW!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/megaman-image.jpg</image>
+		<releasedate>19871217T000000</releasedate>
+		<developer>Capcom</developer>
+		<publisher>Capcom</publisher>
+		<genre>Action</genre>
+	</game>
+	<game>
+		<path>./Metal Gear.nes</path>
+		<name>Metal Gear</name>
+		<desc>Outer Heaven leader CaTaffy has activated the ultimate super weapon: Metal Gear! Responding to the crisis, covert unit "Fox Hound" is called into action, and that's where you come into play. Trained in hand-to-hand combat and skilled in every weapon known to man, you're Fox Hound's lethal fighting machine, code named "Solid Snake". But on this mission you better be sly as well, to surprise heavily-armed enemies, busting 'em up quietly and rescuing their hostages before alarms are triggered. Plus you gotta maintain radio contact with Commander South, who'll feed you crucial info on Metal Gear's whereabouts. To survive, capture sub-machine guns, Barettas, grenade launchers, and plastic explosives, until you find and destroy Metal Gear, ending CaTaffy's reign of terror!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/metalgear-image.png</image>
+		<releasedate>19870713T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Action-Adventure</genre>
+	</game>
+	<game>
+		<path>./Metroid.nes</path>
+		<name>Metroid</name>
+		<desc>It's you against the evil Mother Brain in the thrilling battle of Metroid! You're inside the fortress planet Zebes. The planet of endless secret passageways where the Metroid are multiplying. Left alone the Metroid are harmless. But in the wrong hands they could destroy the galaxy. It's up to you to prevent the Mother Brain that controls Zebes from using the Metroid for evil purposes. But that won't be easy. You'll have to use your spacesuit to absorb valuable energy for your search to gain the use of power items like the Ice Beam, Wave Beam, High Jump Boots and Varia. If you survive, it will be you and your acquired powers against the Mother Brain.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/metroid-image.jpg</image>
+		<releasedate>19860806T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Action-Adventure</genre>
+	</game>
+	<game>
+		<path>./Super Mario Bros.nes</path>
+		<name>Super Mario Bros</name>
+		<desc>Do you have what it takes to save the Mushroom Princess?
+You'll have to think fast and move even faster to complete this quest! The Mushroom Princess is being held captive by the evil Koopa tribe of turtles. It's up to you to rescue her from the clutches of the Koopa King before time runs out. But it won't be easy. To get to the princess, you'll have to climb mountains, cross seas, avoid bottomless pits, fight off turtle soldiers and a host of black magic traps that only a Koopa King can devise. It's another non-stop adventure from the SUPER MARIO BROS.!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/super-mario-bros-1-image.png</image>
+		<releasedate>19850913T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platformer</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario Bros 2.nes</path>
+		<name>Super Mario Bros 2</name>
+		<desc>Mario's back! Bigger and badder than ever before! This time it's a fierce action-packed battle to free the land of Subcon from the curse of the evil Wart. It's up to you, along with Mario, Luigi, Toad and the Princess, to fight your way through bizarre multi-level worlds and find him! This time you've got a brand new kind of power - plucking power - and now anything you find can be a weapon. But beware! You've never seen creatures like these! Shyguys and Tweeters! Ninji and Beezos! And you've never had an adventure like this! Only cunning and speed can save you now...</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/super-mario-bros-2-image.jpg</image>
+		<releasedate>19881009T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platformer</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Super Mario Bros 3.nes</path>
+		<name>Super Mario Bros 3</name>
+		<desc>New, different worlds!
+New exciting levels!
+New challenges galore!
+Fight monsters and mini-bosses, avoid ghosts and the burning sun. Make your way through water and quicksand. Dodge cannonballs and bullets and rescue the King's Wand!
+In Super Mario Bros. 3, there are more warps, more chances at extra lives, and new special suits! The Raccoon Suit lets you fly and knock out blocks. The Frog Suit helps you out-swim deadly fish. There are suits for every occasion!
+Store up flowers and mushrooms to use later on. Play game-show type bonus rounds! Go back to that last screen and get a mushroom! Pause to take a break, then continue where you left off!
+Super Mario Bros. 3 is fun to play alone, or team up with a buddy to prolong the adventure!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/super-mario-bros-3-image.png</image>
+		<releasedate>19900212T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Platformer</genre>
+		<players>2</players>
+	</game>
+	<game>
+		<path>./Tetris.nes</path>
+		<name>Tetris</name>
+		<desc>The Soviet game sensation is now on your Game Boy! Beams, boxes, zig-zags and L-shaped blocks drop down a narrow passage. Feel your pulse quicken as you spin, shift and align the shapes for a perfect fit. It's challenging and demands split-second decision making! Start at new heights for a tougher contest. Pick the music and set your pace from 20 progressive skill levels!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/tetris-image.jpg</image>
+		<releasedate>19890101T000000</releasedate>
+		<developer>Nintendo</developer>
+		<publisher>Nintendo</publisher>
+		<genre>Puzzle</genre>
+	</game>
+	<game>
+		<path>./Top Gun.nes</path>
+		<name>Top Gun</name>
+		<desc>You're a High Flying Fighter Jock. The Hottest Pilot in the Heat of a Battle.
+The sun shimmers on the horizon as your armed-to-the-teeth Navy fighter screams from the carrier deck, accelerating into the danger zone.
+High above hostile waters your mission is to defend the task force from enemy attack.
+Suddenly, bogeys flash onto your radar. They're everywhere, diving toward you at Mach 2. Only a second to react, you go to guns and arm missiles.
+Your heart pounds and palms sweat as you blast into the dogfight with cannons blazing. Tracers zip past your engines. Shells shatter your senses.
+Now it's just you against them. And to survive you'll need more than speed and firepower. You'll need guts and instinct.
+You'll need to be a "TOP GUN" pilot.</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/top-gun-image.jpg</image>
+		<releasedate>19871211T000000</releasedate>
+		<developer>Konami</developer>
+		<publisher>Konami</publisher>
+		<genre>Flight Simulator</genre>
+	</game>
+	<game>
+		<path>./Trog.nes</path>
+		<name>Trog</name>
+		<desc>It's survival of the fastest in the prehistoric land of Og. That crazy, one-eyed caveman, the Trog, is hungry... and dinos Spike and Bloop know what that means: RUN FOR YOUR LIVES! Here's your chance to change the course of history and save the dinosaurs. Don't become Trog's Stone Age feast! Instead, use your reflexes and wits racing through 50 fun-filled islands, packed with dino-mite action and surprises. You'll witness the greatest inventions of all time: fire, the wheel, the pogo stick (the pogo stick?) - all invented by Trog to catch his dinner - you! Just watch out for the Tar Pits... sticky business. You've got special pick-ups to keep that carnivorous chow hound in check, like pineapples that turn you into a ferocious Trog-munching T-Rex. It's like this: either you save the Dinos... or you're extinct!</desc>
+		<image>/home/pi/.emulationstation/downloaded_images/nes/trog-image.jpg</image>
+		<releasedate>19901001T000000</releasedate>
+		<developer>Acclaim</developer>
+		<publisher>Acclaim</publisher>
+		<genre>Puzzle</genre>
+		<players>2</players>
+	</game>
 </gameList>
