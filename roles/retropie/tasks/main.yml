@@ -132,7 +132,7 @@
   with_items:
     - "{{ retropie_emus }}"
   copy:
-    src     : "{{ item.name }}_gamelist.xml"
+    src     : "gamelists/{{ item.name }}_gamelist.xml"
     dest    : "/opt/retropie/configs/all/emulationstation/gamelists/{{ item.name }}/gamelist.xml"
     owner   : "pi"
     group   : "pi"
