@@ -307,6 +307,15 @@
     - retropie
     - retropie-n64
 
+- name: "n64 | "
+  template:
+    src     : "n64_auto_cfg.j2"
+    dest    : "{{ retropie_cfg }}/n64/InputAutoCfg.ini"
+  tags:
+    - retropie
+    - retropie-n64
+    - retropie-controllers
+
 #################################################################
 
 - name: "psx | mkdirs"
