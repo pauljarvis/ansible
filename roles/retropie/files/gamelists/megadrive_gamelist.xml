@@ -83,7 +83,7 @@ Unlike the previous game, Bubsy can enter any of the six worlds he wants to at a
 		<players>1</players>
 	</game>
 	<game>
-		<path>./Columns.gen</path>
+		<path>./Columns 1.gen</path>
 		<name>Columns</name>
 		<desc>The game takes place inside a tall, rectangular playing area, as in Tetris. Columns of three different symbols (such as differently-colored jewels) appear, one at a time, at the top of the well and fall to the bottom, landing either on the floor or on top of previously-fallen "Columns".
 
@@ -640,7 +640,7 @@ Dr. Eggman is still at large, and Sonic cant allow him to get his hands on the M
 		<players>2</players>
 	</game>
 	<game>
-		<path>./Sonic The Hedgehog 3.gen</path>
+		<path>./Sonic the Hedgehog 3.gen</path>
 		<name>Sonic the Hedgehog 3</name>
 		<desc>In single player mode, the player can choose to play solo, as either Sonic or Tails, or as a team, controlling Sonic, with the AI controlling Tails, which is the default configuration. Another player may take control of Tails at any time by using a controller plugged into port 2. The object of the game is to progress through the levels. In order to completely finish the game, seven Chaos Emeralds must also be collected from the special stages.</desc>
 		<image>/home/pi/.emulationstation/downloaded_images/megadrive/Sonic The Hedgehog 3-image.jpg</image>
