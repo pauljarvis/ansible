@@ -62,6 +62,10 @@ retropie_emus:
     desc        : "Atari 7800"
     extension   : [ ".7z", ".a78", ".bin", ".zip", ".7Z", ".A78", ".BIN", ".ZIP" ]
     has_saves   : True
+  - name        : "nes"
+    desc        : "Nintendo"
+    extension   : [ ".nes", ".NES" ]
+    has_saves   : True
   - name        : "snes"
     desc        : "Super Nintendo"
     extension   : [ ".bin", ".smc", ".sfc", ".fig", ".swc", ".mgd", ".zip", ".BIN", ".SMC", ".SFC", ".FIG", ".SWC", ".MGD", ".ZIP" ]
