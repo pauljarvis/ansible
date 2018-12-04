@@ -1,10 +1,11 @@
 ---
 #######################################################################
 
-retropie_home   : "/home/pi/RetroPie"
-retropie_cfg    : "/opt/retropie/configs"
-retropie_theme  : "eudora"
-retropie_splash : "retropie.mov"
+retropie_home       : "/home/pi/RetroPie"
+retropie_cfg        : "/opt/retropie/configs"
+retropie_cores      : "/opt/retropie/libretrocores"
+retropie_theme      : "eudora"
+retropie_splash     : "retropie.mov"
 
 #######################################################################
 
@@ -187,6 +188,10 @@ retropie_controllers:
 
 #######################################################################
 
+retropie_controller_analog_remap: false
+
+#######################################################################
+
 retropie_git:
   url     : "https://github.com/OurFriendIrony/python-retropie.git"
   dest    : "/home/pi/git/python-retropie/"
@@ -203,6 +208,7 @@ retropie_python:
 
 retropie_fba:
   home      : "{{ retropie_home }}/roms/fba"
+  core      : "lr-fbalpha"
 
 #######################################################################
 
@@ -211,12 +217,14 @@ retropie_n64:
   state     : "{{ retropie_home }}/states/n64"
   save      : "{{ retropie_home }}/saves/n64"
   cfg       : "{{ retropie_cfg  }}/n64"
+  core      : "lr-mupen64plus"
 
 #######################################################################
 
 retropie_psx:
   video_smoothing : true
-  emu   : "PCSX-ReARMed"
+  emu       : "PCSX-ReARMed"
+  core      : "lr-pcsx-rearmed"
 
 #######################################################################
 

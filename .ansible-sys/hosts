@@ -1,13 +1,6 @@
 [localhost]
 127.0.0.1
 
-[retropie:children]
-retropie-steve
-retropie-other
-
-[retropie-steve]
-pi@192.168.1.90
-
-[retropie-other]
-pi@192.168.1.123
+[retropie]
+pi@192.168.1.139
 

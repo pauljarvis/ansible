@@ -6,6 +6,7 @@ input_down_btn                = "{{ item.down      }}"
 input_left_btn                = "{{ item.left      }}"
 input_right_btn               = "{{ item.right     }}"
 
+{% if retropie_controller_analog_remap %}
 {% if item.up_j is defined %}
 input_up_axis                 = "{{ item.up_j      }}"
 {% endif %}
@@ -17,6 +18,7 @@ input_left_axis               = "{{ item.left_j    }}"
 {% endif %}
 {% if item.right_j is defined %}
 input_right_axis              = "{{ item.right_j   }}"
+{% endif %}
 {% endif %}
 
 input_a_btn                   = "{{ item.a         }}"

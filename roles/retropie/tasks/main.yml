@@ -289,32 +289,14 @@
 
 #################################################################
 
-- name: "n64 | save locations | mupen64plus.cfg"
+- name: "n64 | change default emulator"
   lineinfile:
-    path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
-    regexp  : "^SaveStatePath"
-    line    : 'SaveStatePath   = "{{ retropie_n64.state }}"'
+    path    : "{{ retropie_n64.cfg }}/emulators.cfg"
+    regexp  : "^default"
+    line    : 'default = "lr-mupen64plus"'
   tags:
     - retropie
     - retropie-n64
-
-- name: "n64 | state locations | mupen64plus.cfg"
-  lineinfile:
-    path    : "{{ retropie_n64.cfg }}/mupen64plus.cfg"
-    regexp  : "^SaveSRAMPath"
-    line    : 'SaveSRAMPath    = "{{ retropie_n64.save  }}"'
-  tags:
-    - retropie
-    - retropie-n64
-
-- name: "n64 | "
-  template:
-    src     : "n64_auto_cfg.j2"
-    dest    : "{{ retropie_cfg }}/n64/InputAutoCfg.ini"
-  tags:
-    - retropie
-    - retropie-n64
-    - retropie-controllers
 
 #################################################################
 
