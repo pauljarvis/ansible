@@ -22,11 +22,8 @@ if [[ -f "/opt/vc/bin/vcgencmd" ]]; then
   fi
 fi
 
-local df_out=()
-local line
-while read line; do
-  df_out+=("$line")
-done < <(df -h /)
+local df_perc=$(df -h | awk 'NR==2 { print $5 }')
+local df_out=$(df -h | awk 'NR==2 { print $3 " / " $2 }')
 
 # Set Colours
 local rst="$(tput sgr0)"
@@ -65,6 +62,7 @@ local logo=(
   "${bg}╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝${fgrst}"
   "${fg}█████████████████████████████████████████${bg}╗ ${fg}█████████████████${bg}╗"
   "${bg}╚════════════════════════════════════════╝ ╚════════════════╝"
+  "                                                             "
 )
 
 local out
@@ -73,34 +71,37 @@ for i in "${!logo[@]}"; do
   out+="  ${logo[$i]}    "
   case "$i" in
     0)
-      out+="${fggrn}$(date +"%A, %e %B %Y, %r")"
+      out+="${fgylw}$(lsb_release -d | awk '{$1=""; print $0}')"
       ;;
     1)
-      out+="${fggrn}$(lsb_release -d | awk '{$1=""; print $0}')"
+      out+="${fgwht}The RetroPie Project, https://retropie.org.uk"
+      ;;
+    2)
       ;;
     3)
-      out+="${fgylw}${df_out[0]}"
+      out+="${fgred}Date.......:${fggrn} $(date -R)"
       ;;
     4)
-      out+="${fgwht}${df_out[1]}"
+      out+="${fgred}Uptime.....:${fggrn} ${UPTIME}"
       ;;
     5)
-      out+="${fgred}Uptime.............:${fggrn} ${UPTIME}"
+      out+="${fgred}IP.........:${fggrn} $(ip route get 8.8.8.8 | awk '{print $NF; exit}')"
       ;;
     6)
-      out+="${fgred}Memory in Use......:${fggrn} $(free | grep Mem | awk '{printf("%.0f", ($3/$2 * 100.0) )}')%"
+      out+="${fgred}Processes..:${fggrn} $(ps ax | wc -l | tr -d " ")"
       ;;
     7)
-      out+="${fgred}Running Processes..:${fggrn} $(ps ax | wc -l | tr -d " ")"
       ;;
     8)
-      out+="${fgred}IP Address.........:${fggrn} $(ip route get 8.8.8.8 | awk '{print $NF; exit}')"
+      out+="${fgred}Disk.......:${fggrn} ${df_out}  ${df_perc}"
       ;;
     9)
-      out+="${fgred}Temperature........:${fggrn} CPU: $cpuTempC°C   GPU: $gpuTempC°C"
+      out+="${fgred}Memory.....:${fggrn} $(free | grep Mem | awk '{printf("%.0f", ($3/$2 * 100.0) )}')%"
       ;;
     10)
-      out+="${fgwht}The RetroPie Project, https://retropie.org.uk"
+      out+="${fgred}Temp.......:${fggrn} CPU: $cpuTempC°C   GPU: $gpuTempC°C"
+      ;;
+    11)
       ;;
   esac
   out+="\n"
