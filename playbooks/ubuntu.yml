@@ -8,6 +8,7 @@
 
   vars:
     - proxy     : False
+      has_gui   : True
 
       all_users:
         - "{{ root_user     }}"

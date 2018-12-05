@@ -13,7 +13,7 @@
     - k: "desktop_environment"
       v: "{{ lookup('env', 'XDG_CURRENT_DESKTOP').split(':')[-1] | lower }}"
     - k: "gui"
-      v: "{{ lookup('env', 'XDG_CURRENT_DESKTOP').split(':')[-1] | lower != '' }}"
+      v: "{{ has_gui }}"
   tags: [ "always" ]
 
 - name: "Distribution"

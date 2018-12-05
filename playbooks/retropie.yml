@@ -8,6 +8,7 @@
 
   vars:
     - proxy     : False
+      has_gui   : False
 
       pi_user     : "{{ primary_user }}"
       all_users:
