@@ -217,6 +217,7 @@ retropie_n64:
   state     : "{{ retropie_home }}/states/n64"
   save      : "{{ retropie_home }}/saves/n64"
   cfg       : "{{ retropie_cfg  }}/n64"
+  emu       : "Mupen64Plus GLES2"
   core      : "lr-mupen64plus"
 
 #######################################################################
